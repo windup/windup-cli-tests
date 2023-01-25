@@ -1,7 +1,6 @@
 import os
 import subprocess
 from bs4 import BeautifulSoup
-from pytest_check import check
 
 
 def test_analysis(json_analysis):
@@ -20,8 +19,7 @@ def test_analysis(json_analysis):
 
     output = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, encoding='utf-8').stdout
 
-    with check:
-        assert 'Report created' in output
+    assert 'Report created' in output
 
     with open(report_path + "/index.html") as file:
         html_report = file.read()
