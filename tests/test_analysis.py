@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 
 
 def test_analysis(json_analysis):
-    windup_path = os.getenv('WINDUP_PATH')
-    report_path = os.getenv('OUTPUT_PATH')
+    windup_path = os.getenv('WINDUP_CLI_PATH')
+    report_path = os.getenv('REPORT_OUTPUT_PATH')
     application_data = json_analysis['jee_example_app']
     binary_path = os.path.join(
         os.getenv('PROJECT_PATH'),
