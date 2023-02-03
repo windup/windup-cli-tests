@@ -3,10 +3,10 @@ import subprocess
 from bs4 import BeautifulSoup
 
 
-def test_analysis(json_analysis):
+def test_jee_example_app_analysis(analysis_data):
     windup_path = os.getenv('WINDUP_CLI_PATH')
     report_path = os.getenv('REPORT_OUTPUT_PATH')
-    application_data = json_analysis['jee_example_app']
+    application_data = analysis_data['jee_example_app']
     binary_path = os.path.join(
         os.getenv('PROJECT_PATH'),
         "fixtures/applications",
