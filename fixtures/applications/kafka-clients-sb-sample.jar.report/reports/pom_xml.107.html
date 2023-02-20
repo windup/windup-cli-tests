@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for pom.xml</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/snakeyaml-1.26.jar/META-INF/maven/org.yaml/snakeyaml/pom.xml
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">15</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Maven XML</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Maven POM (pom.xml)</em>
+<a title='View Rule: DiscoverMavenProjectsRuleProvider_1' href='windup_ruleproviders.html#DiscoverMavenProjectsRuleProvider_1'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">Maven Project Object Model (POM) File</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;groupId&gt;org.yaml&lt;/groupId&gt;
+    &lt;artifactId&gt;snakeyaml&lt;/artifactId&gt;
+    &lt;version&gt;1.26&lt;/version&gt;
+    &lt;packaging&gt;bundle&lt;/packaging&gt;
+    &lt;properties&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;project.scm.id&gt;bitbucket&lt;/project.scm.id&gt;
+        &lt;release.repo.url&gt;https://oss.sonatype.org/service/local/staging/deploy/maven2/&lt;/release.repo.url&gt;
+        &lt;snapshot.repo.url&gt;https://oss.sonatype.org/content/repositories/snapshots/&lt;/snapshot.repo.url&gt;
+        &lt;maven.compiler.source&gt;7&lt;/maven.compiler.source&gt;
+        &lt;maven.compiler.target&gt;7&lt;/maven.compiler.target&gt;
+        &lt;maven.javadoc.failOnError&gt;false&lt;/maven.javadoc.failOnError&gt;
+        &lt;spring.version&gt;3.2.17.RELEASE&lt;/spring.version&gt;
+        &lt;maven-bundle-plugin.version&gt;3.5.0&lt;/maven-bundle-plugin.version&gt;
+        &lt;cobertura-maven-plugin.version&gt;2.7&lt;/cobertura-maven-plugin.version&gt;
+        &lt;maven-site-plugin.version&gt;3.7.1&lt;/maven-site-plugin.version&gt;
+        &lt;maven-surefire-plugin.version&gt;3.0.0-M1&lt;/maven-surefire-plugin.version&gt;
+        &lt;jdk9-illegal-access-level&gt;deny&lt;/jdk9-illegal-access-level&gt;
+    &lt;/properties&gt;
+    &lt;name&gt;SnakeYAML&lt;/name&gt;
+    &lt;description&gt;YAML 1.1 parser and emitter for Java&lt;/description&gt;
+    &lt;inceptionYear&gt;2008&lt;/inceptionYear&gt;
+    &lt;url&gt;http://www.snakeyaml.org&lt;/url&gt;
+    &lt;issueManagement&gt;
+        &lt;system&gt;Bitbucket&lt;/system&gt;
+        &lt;url&gt;https://bitbucket.org/asomov/snakeyaml/issues&lt;/url&gt;
+    &lt;/issueManagement&gt;
+    &lt;!-- ciManagement&gt;
+        &lt;system&gt;jenkins&lt;/system&gt;
+        &lt;url&gt;https://snakeyaml.ci.cloudbees.com/job/SnakeYAML/&lt;/url&gt;
+    &lt;/ciManagement--&gt;
+    &lt;mailingLists&gt;
+        &lt;mailingList&gt;
+            &lt;name&gt;SnakeYAML developers and users List&lt;/name&gt;
+            &lt;post&gt;snakeyaml-core@googlegroups.com&lt;/post&gt;
+        &lt;/mailingList&gt;
+    &lt;/mailingLists&gt;
+    &lt;scm&gt;
+        &lt;connection&gt;scm:hg:http://bitbucket.org/asomov/snakeyaml&lt;/connection&gt;
+        &lt;developerConnection&gt;scm:hg:ssh://hg@bitbucket.org/asomov/snakeyaml&lt;/developerConnection&gt;
+        &lt;url&gt;https://bitbucket.org/asomov/snakeyaml/src&lt;/url&gt;
+        &lt;tag&gt;snakeyaml-1.26&lt;/tag&gt;
+    &lt;/scm&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;Apache License, Version 2.0&lt;/name&gt;
+            &lt;url&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+            &lt;distribution&gt;repo&lt;/distribution&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;asomov&lt;/id&gt;
+            &lt;name&gt;Andrey Somov&lt;/name&gt;
+            &lt;email&gt;public.somov@gmail.com&lt;/email&gt;
+        &lt;/developer&gt;
+        &lt;developer&gt;
+            &lt;id&gt;maslovalex&lt;/id&gt;
+            &lt;name&gt;Alexander Maslov&lt;/name&gt;
+            &lt;email&gt;alexander.maslov@gmail.com&lt;/email&gt;
+        &lt;/developer&gt;
+        &lt;developer&gt;
+            &lt;id&gt;Jordan&lt;/id&gt;
+            &lt;name&gt;Jordan Angold&lt;/name&gt;
+            &lt;email&gt;jordanangold@gmail.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;junit&lt;/groupId&gt;
+            &lt;artifactId&gt;junit&lt;/artifactId&gt;
+            &lt;version&gt;4.12&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.commons&lt;/groupId&gt;
+            &lt;artifactId&gt;commons-lang3&lt;/artifactId&gt;
+            &lt;version&gt;3.4&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;commons-io&lt;/groupId&gt;
+            &lt;artifactId&gt;commons-io&lt;/artifactId&gt;
+            &lt;version&gt;2.5&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-core&lt;/artifactId&gt;
+            &lt;version&gt;${spring.version}&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
+            &lt;version&gt;${spring.version}&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;
+            &lt;version&gt;${spring.version}&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;
+            &lt;artifactId&gt;velocity&lt;/artifactId&gt;
+            &lt;version&gt;1.6.2&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;joda-time&lt;/groupId&gt;
+            &lt;artifactId&gt;joda-time&lt;/artifactId&gt;
+            &lt;version&gt;2.10.1&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+    &lt;distributionManagement&gt;
+        &lt;repository&gt;
+            &lt;id&gt;sonatype-nexus-staging&lt;/id&gt;
+            &lt;name&gt;Nexus Release Repository&lt;/name&gt;
+            &lt;url&gt;${release.repo.url}&lt;/url&gt;
+        &lt;/repository&gt;
+        &lt;snapshotRepository&gt;
+            &lt;id&gt;sonatype-nexus-staging&lt;/id&gt;
+            &lt;name&gt;Sonatype Nexus Snapshots&lt;/name&gt;
+            &lt;url&gt;${snapshot.repo.url}&lt;/url&gt;
+            &lt;uniqueVersion&gt;false&lt;/uniqueVersion&gt;
+        &lt;/snapshotRepository&gt;
+    &lt;/distributionManagement&gt;
+    &lt;build&gt;
+        &lt;testResources&gt;
+            &lt;testResource&gt;
+                &lt;directory&gt;${basedir}/src/test/resources&lt;/directory&gt;
+                &lt;filtering&gt;true&lt;/filtering&gt;
+            &lt;/testResource&gt;
+        &lt;/testResources&gt;
+        &lt;pluginManagement&gt;
+            &lt;plugins&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.0.0&lt;/version&gt;
+                    &lt;configuration&gt;
+                        &lt;excludePackageNames&gt;org.yaml.snakeyaml.external.*&lt;/excludePackageNames&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-site-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;${maven-site-plugin.version}&lt;/version&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.1.0&lt;/version&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                    &lt;artifactId&gt;cobertura-maven-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;${cobertura-maven-plugin.version}&lt;/version&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;
+                  &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                  &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                  &lt;version&gt;3.7.0&lt;/version&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;
+                  &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                  &lt;artifactId&gt;build-helper-maven-plugin&lt;/artifactId&gt;
+                  &lt;version&gt;3.0.0&lt;/version&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;
+                  &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                  &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+                  &lt;version&gt;${maven-surefire-plugin.version}&lt;/version&gt;
+                    &lt;configuration&gt;
+                        &lt;environmentVariables&gt;
+                            &lt;EnvironmentKey1&gt;EnvironmentValue1&lt;/EnvironmentKey1&gt;
+                            &lt;EnvironmentEmpty /&gt;
+                        &lt;/environmentVariables&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+            &lt;/plugins&gt;
+        &lt;/pluginManagement&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-enforcer-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.0.0-M2&lt;/version&gt;
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;id&gt;enforce-maven&lt;/id&gt;
+                        &lt;goals&gt;
+                            &lt;goal&gt;enforce&lt;/goal&gt;
+                        &lt;/goals&gt;
+                        &lt;configuration&gt;
+                            &lt;rules&gt;
+                                &lt;requireMavenVersion&gt;
+                                    &lt;version&gt;3.3.0&lt;/version&gt;
+                                &lt;/requireMavenVersion&gt;
+                            &lt;/rules&gt;
+                        &lt;/configuration&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                 &lt;configuration&gt;
+                    &lt;source&gt;${maven.compiler.source}&lt;/source&gt;
+                    &lt;target&gt;${maven.compiler.target}&lt;/target&gt;
+                    &lt;encoding&gt;${project.build.sourceEncoding}&lt;/encoding&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;argLine&gt;-Xmx512m&lt;/argLine&gt;
+                    &lt;includes&gt;
+                        &lt;include&gt;**/*Test.java&lt;/include&gt;
+                    &lt;/includes&gt;
+                    &lt;excludes&gt;
+                        &lt;exclude&gt;**/StressTest.java&lt;/exclude&gt;
+                        &lt;exclude&gt;**/ParallelTest.java&lt;/exclude&gt;
+                    &lt;/excludes&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-eclipse-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.10&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;buildOutputDirectory&gt;bin&lt;/buildOutputDirectory&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-changes-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.12.1&lt;/version&gt;
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;id&gt;validate-changes&lt;/id&gt;
+                        &lt;phase&gt;pre-site&lt;/phase&gt;
+                        &lt;goals&gt;
+                            &lt;goal&gt;changes-validate&lt;/goal&gt;
+                        &lt;/goals&gt;
+                        &lt;configuration&gt;
+                            &lt;failOnError&gt;true&lt;/failOnError&gt;
+                        &lt;/configuration&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.0.1&lt;/version&gt;
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;goals&gt;
+                            &lt;goal&gt;jar-no-fork&lt;/goal&gt;
+                        &lt;/goals&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.1.1&lt;/version&gt;
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;id&gt;attach-javadocs&lt;/id&gt;
+                        &lt;goals&gt;
+                            &lt;goal&gt;jar&lt;/goal&gt;
+                        &lt;/goals&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;com.mycila.maven-license-plugin&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-license-plugin&lt;/artifactId&gt;
+                &lt;version&gt;1.10.b1&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;header&gt;src/etc/header.txt&lt;/header&gt;
+                    &lt;quiet&gt;false&lt;/quiet&gt;
+                    &lt;failIfMissing&gt;true&lt;/failIfMissing&gt;
+                    &lt;aggregate&gt;false&lt;/aggregate&gt;
+                    &lt;includes&gt;
+                        &lt;include&gt;src/**/*.java&lt;/include&gt;
+                    &lt;/includes&gt;
+                    &lt;excludes&gt;
+                        &lt;exclude&gt;src/main/java/org/yaml/snakeyaml/external/**&lt;/exclude&gt;
+                    &lt;/excludes&gt;
+                    &lt;useDefaultExcludes&gt;true&lt;/useDefaultExcludes&gt;
+                    &lt;useDefaultMapping&gt;true&lt;/useDefaultMapping&gt;
+                    &lt;strictCheck&gt;true&lt;/strictCheck&gt;
+                    &lt;encoding&gt;UTF-8&lt;/encoding&gt;
+                &lt;/configuration&gt;
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;phase&gt;site&lt;/phase&gt;
+                        &lt;goals&gt;
+                            &lt;goal&gt;format&lt;/goal&gt;
+                        &lt;/goals&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.felix&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-bundle-plugin&lt;/artifactId&gt;
+                &lt;version&gt;${maven-bundle-plugin.version}&lt;/version&gt;
+                &lt;extensions&gt;true&lt;/extensions&gt;
+                &lt;configuration&gt;
+                    &lt;instructions&gt;
+                        &lt;_nouses&gt;true&lt;/_nouses&gt;
+                        &lt;Export-Package&gt;
+                            !org.yaml.snakeyaml.external*,
+                            org.yaml.snakeyaml.*;version=${project.version}
+                        &lt;/Export-Package&gt;
+                        &lt;Automatic-Module-Name&gt;org.yaml.snakeyaml&lt;/Automatic-Module-Name&gt;
+                    &lt;/instructions&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;artifactId&gt;maven-site-plugin&lt;/artifactId&gt;
+                &lt;version&gt;${maven-site-plugin.version}&lt;/version&gt;
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;id&gt;attach-descriptor&lt;/id&gt;
+                        &lt;goals&gt;
+                            &lt;goal&gt;attach-descriptor&lt;/goal&gt;
+                        &lt;/goals&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-release-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.5.3&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;
+                    &lt;useReleaseProfile&gt;false&lt;/useReleaseProfile&gt;
+                    &lt;releaseProfiles&gt;android,release&lt;/releaseProfiles&gt;
+                    &lt;goals&gt;deploy nexus-staging:release&lt;/goals&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.sonatype.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;nexus-staging-maven-plugin&lt;/artifactId&gt;
+                &lt;version&gt;1.6.8&lt;/version&gt;
+                &lt;extensions&gt;true&lt;/extensions&gt;
+                &lt;configuration&gt;
+                    &lt;serverId&gt;sonatype-nexus-staging&lt;/serverId&gt;
+                    &lt;nexusUrl&gt;https://oss.sonatype.org/&lt;/nexusUrl&gt;
+                    &lt;autoReleaseAfterClose&gt;false&lt;/autoReleaseAfterClose&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+    &lt;reporting&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-changes-plugin&lt;/artifactId&gt;
+                &lt;version&gt;2.11&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;issueLinkTemplate&gt;https://bitbucket.org/asomov/snakeyaml/issues/%ISSUE%&lt;/issueLinkTemplate&gt;
+                &lt;/configuration&gt;
+                &lt;reportSets&gt;
+                    &lt;reportSet&gt;
+                        &lt;reports&gt;
+                            &lt;report&gt;changes-report&lt;/report&gt;
+                        &lt;/reports&gt;
+                    &lt;/reportSet&gt;
+                &lt;/reportSets&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-surefire-report-plugin&lt;/artifactId&gt;
+                &lt;version&gt;${maven-surefire-plugin.version}&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;showSuccess&gt;true&lt;/showSuccess&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                &lt;reportSets&gt;
+                    &lt;reportSet&gt;
+                        &lt;id&gt;html&lt;/id&gt;
+                        &lt;configuration&gt;
+                            &lt;doctitle&gt;API for ${project.name} ${project.version}&lt;/doctitle&gt;
+                            &lt;windowtitle&gt;API for ${project.name} ${project.version}&lt;/windowtitle&gt;
+                            &lt;testDoctitle&gt;Test API for ${project.name} ${project.version}&lt;/testDoctitle&gt;
+                            &lt;testWindowtitle&gt;Test API for ${project.name} ${project.version}&lt;/testWindowtitle&gt;
+                        &lt;/configuration&gt;
+                        &lt;reports&gt;
+                            &lt;report&gt;javadoc&lt;/report&gt;
+                        &lt;/reports&gt;
+                    &lt;/reportSet&gt;
+                &lt;/reportSets&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/reporting&gt;
+    &lt;profiles&gt;
+        &lt;profile&gt;
+            &lt;id&gt;toolchain&lt;/id&gt;
+            &lt;activation&gt;
+                &lt;file&gt;
+                    &lt;exists&gt;${user.home}/.m2/toolchains.xml&lt;/exists&gt;
+                &lt;/file&gt;
+            &lt;/activation&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-toolchains-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;1.1&lt;/version&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;phase&gt;validate&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;toolchain&lt;/goal&gt;
+                                &lt;/goals&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                        &lt;configuration&gt;
+                            &lt;toolchains&gt;
+                                &lt;jdk&gt;
+                                    &lt;version&gt;${maven.compiler.target}&lt;/version&gt;
+                                &lt;/jdk&gt;
+                            &lt;/toolchains&gt;
+                        &lt;/configuration&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;build-is-under-jdk6&lt;/id&gt;
+            &lt;activation&gt;
+                &lt;jdk&gt;1.6&lt;/jdk&gt;
+            &lt;/activation&gt;
+            &lt;properties&gt;
+                &lt;maven-bundle-plugin.version&gt;2.5.4&lt;/maven-bundle-plugin.version&gt;
+            &lt;/properties&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;with-coverage&lt;/id&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                        &lt;artifactId&gt;cobertura-maven-plugin&lt;/artifactId&gt;
+                        &lt;configuration&gt;
+                            &lt;check&gt;
+                                &lt;totalBranchRate&gt;80&lt;/totalBranchRate&gt;
+                                &lt;totalLineRate&gt;95&lt;/totalLineRate&gt;
+                            &lt;/check&gt;
+                            &lt;formats&gt;
+                                &lt;format&gt;html&lt;/format&gt;
+                                &lt;format&gt;xml&lt;/format&gt;
+                            &lt;/formats&gt;
+                            &lt;instrumentation&gt;
+                                &lt;excludes&gt;
+                                    &lt;exclude&gt;org/yaml/snakeyaml/external/**&lt;/exclude&gt;
+                                &lt;/excludes&gt;
+                            &lt;/instrumentation&gt;
+                        &lt;/configuration&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;clean&lt;/goal&gt;
+                                    &lt;goal&gt;check&lt;/goal&gt;
+                                &lt;/goals&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;
+            &lt;reporting&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                        &lt;artifactId&gt;cobertura-maven-plugin&lt;/artifactId&gt;
+                        &lt;configuration&gt;
+                            &lt;check&gt;
+                                &lt;branchRate&gt;85&lt;/branchRate&gt;
+                                &lt;lineRate&gt;85&lt;/lineRate&gt;
+                                &lt;haltOnFailure&gt;true&lt;/haltOnFailure&gt;
+                            &lt;/check&gt;
+                            &lt;formats&gt;
+                                &lt;format&gt;html&lt;/format&gt;
+                                &lt;format&gt;xml&lt;/format&gt;
+                            &lt;/formats&gt;
+                        &lt;/configuration&gt;
+                        &lt;reportSets&gt;
+                            &lt;reportSet&gt;
+                                &lt;reports&gt;
+                                    &lt;report&gt;cobertura&lt;/report&gt;
+                                &lt;/reports&gt;
+                            &lt;/reportSet&gt;
+                        &lt;/reportSets&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/reporting&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;with-java8-tests&lt;/id&gt;
+            &lt;properties&gt;
+                &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
+                &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
+            &lt;/properties&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                        &lt;artifactId&gt;build-helper-maven-plugin&lt;/artifactId&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;add-java8-test-source&lt;/id&gt;
+                                &lt;phase&gt;generate-test-sources&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;add-test-source&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;sources&gt;
+                                        &lt;source&gt;${basedir}/src/test/java8/&lt;/source&gt;
+                                    &lt;/sources&gt;
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+          &lt;id&gt;with-java11-tests&lt;/id&gt;
+          &lt;properties&gt;
+            &lt;maven.compiler.source&gt;11&lt;/maven.compiler.source&gt;
+            &lt;maven.compiler.target&gt;11&lt;/maven.compiler.target&gt;
+          &lt;/properties&gt;
+          &lt;build&gt;
+            &lt;plugins&gt;
+              &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                  &lt;argLine&gt;--illegal-access=${jdk9-illegal-access-level} -Xmx512m&lt;/argLine&gt;
+                &lt;/configuration&gt;
+              &lt;/plugin&gt;
+              &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                  &lt;compilerArgs&gt;
+                    &lt;!-- arg&gt;-Xlint:unchecked&lt;/arg --&gt;
+                    &lt;arg&gt;-Xlint:deprecation&lt;/arg&gt;
+                  &lt;/compilerArgs&gt;
+                &lt;/configuration&gt;
+              &lt;/plugin&gt;
+              &lt;plugin&gt;
+                &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                &lt;artifactId&gt;build-helper-maven-plugin&lt;/artifactId&gt;
+                &lt;executions&gt;
+                  &lt;execution&gt;
+                    &lt;id&gt;add-java11-test-source&lt;/id&gt;
+                    &lt;phase&gt;generate-test-sources&lt;/phase&gt;
+                    &lt;goals&gt;
+                      &lt;goal&gt;add-test-source&lt;/goal&gt;
+                    &lt;/goals&gt;
+                    &lt;configuration&gt;
+                      &lt;sources&gt;
+                        &lt;source&gt;${basedir}/src/test/java8/&lt;/source&gt;
+                        &lt;source&gt;${basedir}/src/test/java11/&lt;/source&gt;
+                      &lt;/sources&gt;
+                    &lt;/configuration&gt;
+                  &lt;/execution&gt;
+                &lt;/executions&gt;
+              &lt;/plugin&gt;
+            &lt;/plugins&gt;
+          &lt;/build&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;release&lt;/id&gt;
+            &lt;activation&gt;
+                &lt;property&gt;
+                    &lt;name&gt;performRelease&lt;/name&gt;
+                    &lt;value&gt;true&lt;/value&gt;
+                &lt;/property&gt;
+            &lt;/activation&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;1.6&lt;/version&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;sign-artifacts&lt;/id&gt;
+                                &lt;phase&gt;verify&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;sign&lt;/goal&gt;
+                                &lt;/goals&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;findbugs&lt;/id&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                        &lt;artifactId&gt;findbugs-maven-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;3.0.5&lt;/version&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-pmd-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;3.9.0&lt;/version&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;
+            &lt;reporting&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-jxr-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;2.5&lt;/version&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                        &lt;artifactId&gt;findbugs-maven-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;3.0.4&lt;/version&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-pmd-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;3.6&lt;/version&gt;
+                        &lt;configuration&gt;
+                            &lt;linkXref&gt;true&lt;/linkXref&gt;
+                            &lt;sourceEncoding&gt;utf-8&lt;/sourceEncoding&gt;
+                            &lt;minimumTokens&gt;100&lt;/minimumTokens&gt;
+                            &lt;targetJdk&gt;1.5&lt;/targetJdk&gt;
+                            &lt;excludes&gt;
+                                &lt;exclude&gt;**/external/*.java&lt;/exclude&gt;
+                            &lt;/excludes&gt;
+                        &lt;/configuration&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/reporting&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;android&lt;/id&gt;
+            &lt;properties&gt;
+                &lt;android.src&gt;${project.build.directory}/android/src&lt;/android.src&gt;
+                &lt;android.src.main&gt;${android.src}/main/java&lt;/android.src.main&gt;
+                &lt;android.src.test&gt;${android.src}/test/java&lt;/android.src.test&gt;
+                &lt;android.classes&gt;${project.build.directory}/android/classes/&lt;/android.classes&gt;
+                &lt;android.test.classes&gt;${project.build.directory}/android/test-classes/&lt;/android.test.classes&gt;
+            &lt;/properties&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;artifactId&gt;maven-resources-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;3.0.2&lt;/version&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;copy-src-for-android&lt;/id&gt;
+                                &lt;phase&gt;generate-sources&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;copy-resources&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;outputDirectory&gt;${android.src.main}&lt;/outputDirectory&gt;
+                                    &lt;resources&gt;
+                                        &lt;resource&gt;
+                                            &lt;directory&gt;${basedir}/src/main/java&lt;/directory&gt;
+                                            &lt;filtering&gt;false&lt;/filtering&gt;
+                                            &lt;excludes&gt;
+                                                &lt;exclude&gt;org/yaml/snakeyaml/introspector/MethodProperty.java&lt;/exclude&gt;
+                                            &lt;/excludes&gt;
+                                        &lt;/resource&gt;
+                                    &lt;/resources&gt;
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;copy-test-src-for-android&lt;/id&gt;
+                                &lt;phase&gt;generate-sources&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;copy-resources&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;outputDirectory&gt;${android.src.test}&lt;/outputDirectory&gt;
+                                    &lt;resources&gt;
+                                        &lt;resource&gt;
+                                            &lt;directory&gt;${basedir}/src/test/java&lt;/directory&gt;
+                                            &lt;filtering&gt;false&lt;/filtering&gt;
+                                            &lt;excludes&gt;
+                                                &lt;exclude&gt;org/yaml/snakeyaml/introspector/MethodProperty.java&lt;/exclude&gt;
+                                            &lt;/excludes&gt;
+                                        &lt;/resource&gt;
+                                    &lt;/resources&gt;
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;copy-test-resources-for-android&lt;/id&gt;
+                                &lt;phase&gt;process-test-resources&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;copy-resources&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;outputDirectory&gt;${android.test.classes}&lt;/outputDirectory&gt;
+                                    &lt;resources&gt;
+                                        &lt;resource&gt;
+                                            &lt;directory&gt;${basedir}/src/test/resources&lt;/directory&gt;
+                                            &lt;filtering&gt;true&lt;/filtering&gt;
+                                        &lt;/resource&gt;
+                                    &lt;/resources&gt;
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-patch-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;1.2&lt;/version&gt;
+                        &lt;configuration&gt;
+                            &lt;patchDirectory&gt;${basedir}/src/patches/android/&lt;/patchDirectory&gt;
+                            &lt;targetDirectory&gt;${android.src}&lt;/targetDirectory&gt;
+                            &lt;skipApplication&gt;false&lt;/skipApplication&gt;
+                            &lt;strip&gt;2&lt;/strip&gt;
+                        &lt;/configuration&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;android-patches&lt;/id&gt;
+                                &lt;phase&gt;process-sources&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;apply&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;patchTrackingFile&gt;${project.build.directory}/android/patches-applied.txt&lt;/patchTrackingFile&gt;
+                                    &lt;naturalOrderProcessing&gt;true&lt;/naturalOrderProcessing&gt;
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-antrun-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;1.8&lt;/version&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;build-for-android&lt;/id&gt;
+                                &lt;phase&gt;compile&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;run&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;target&gt;
+                                        &lt;mkdir dir=&quot;${android.classes}&quot; /&gt;
+                                        &lt;mkdir dir=&quot;${android.test.classes}&quot; /&gt;
+
+                                        &lt;!-- compile patched sources --&gt;
+                                        &lt;javac srcdir=&quot;${android.src.main}&quot; destdir=&quot;${android.classes}&quot; classpath=&quot;${android.classes}&quot; encoding=&quot;${project.build.sourceEncoding}&quot; target=&quot;1.7&quot; source=&quot;1.7&quot; debug=&quot;true&quot; includeantruntime=&quot;true&quot; fork=&quot;true&quot; /&gt;
+
+                                        &lt;!-- compile test classes. Exclude some - not for BeanAccess.FIELD --&gt;
+                                        &lt;javac srcdir=&quot;${android.src.test}:${basedir}/src/test/resources&quot; destdir=&quot;${android.test.classes}&quot; classpath=&quot;${android.classes}:${android.test.classes}:${junit:junit:jar}:${org.springframework:spring-core:jar}:${org.springframework:spring-beans:jar}:${org.springframework:spring-context:jar}:${org.apache.velocity:velocity:jar}:${joda-time:joda-time:jar}:${commons-io:commons-io:jar}:${commons-lang:commons-lang:jar}:${org.hamcrest:hamcrest-core:jar}&quot; encoding=&quot;${project.build.sourceEncoding}&quot; target=&quot;1.7&quot; source=&quot;1.7&quot; debug=&quot;true&quot; includeantruntime=&quot;true&quot; fork=&quot;true&quot;&gt;
+
+                                            &lt;exclude name=&quot;org/yaml/snakeyaml/introspector/MethodPropertyTest.java&quot; /&gt;
+                                            &lt;exclude name=&quot;org/yaml/snakeyaml/representer/FilterPropertyToDumpTest.java&quot; /&gt;
+                                            &lt;exclude name=&quot;org/yaml/snakeyaml/issues/issue60/CustomOrderTest.java&quot; /&gt;
+                                            &lt;exclude name=&quot;org/yaml/snakeyaml/issues/issue29/FlexibleScalarStylesInJavaBeanTest.java&quot; /&gt;
+                                            &lt;!-- uses filtered resources. Addidional tricks needed to be able to run under current build --&gt;
+                                            &lt;exclude name=&quot;org/yaml/snakeyaml/issues/issue318/ContextClassLoaderTest.java&quot; /&gt;
+                                        &lt;/javac&gt;
+                                    &lt;/target&gt;
+
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;test-android&lt;/id&gt;
+                                &lt;phase&gt;test&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;test&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;classesDirectory&gt;${android.classes}&lt;/classesDirectory&gt;
+                                    &lt;reportsDirectory&gt;${project.build.directory}/android/surefire-reports&lt;/reportsDirectory&gt;
+                                    &lt;testClassesDirectory&gt;${android.test.classes}&lt;/testClassesDirectory&gt;
+                                    &lt;!--
+                                    We ignore test failures for android build at the moment.
+                                    Most of the FAILs are because of testing with &quot;property&quot; not &quot;field&quot; access.
+                                    But we still fail whole build if there are test errors.
+                                    --&gt;
+                                    &lt;testFailureIgnore&gt;true&lt;/testFailureIgnore&gt;
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;package-android-jar&lt;/id&gt;
+                                &lt;phase&gt;package&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;jar&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;classesDirectory&gt;${android.classes}&lt;/classesDirectory&gt;
+                                    &lt;classifier&gt;android&lt;/classifier&gt;
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+&lt;/project&gt;
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:28 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("xml",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "90,96,102" });
+
+            $("<div id='90-inlines' class='inline-source-hint-group'/>").appendTo('ol.snippet-num li:nth-child(90)');
+            $("<div id='96-inlines' class='inline-source-hint-group'/>").appendTo('ol.snippet-num li:nth-child(96)');
+            $("<div id='102-inlines' class='inline-source-hint-group'/>").appendTo('ol.snippet-num li:nth-child(102)');
+
+
+$("<a name='38392032' class='windup-file-location'></a><div class='inline-source-comment green tag-none'><div class='inline-comment'><div class='inline-comment-heading'><strong class='notification warning'>Spring component spring-core requires investigation</strong><a title='View Rule: springboot-generic-catchall-groovy-00000' href='windup_ruleproviders.html#springboot-generic-catchall-groovy-00000'><span class='glyphicon glyphicon-link rule-link floatRight'></span></a></div><div class='inline-comment-body'><p>Check if there is a Quarkus Extensions with Spring API compatibility for the Spring <code>spring-core<\/code> component.<br/> If yes, then replace the <code>org.springframework:spring-core<\/code> dependency with the Quarkus extension.<br/> If no, consider rewrite the code that relies on this dependency leveraging the Quarkus Guides linked below.<\/p><ul><li><a href='https://quarkus.io/guides/' target='_blank'>Quarkus - Guides</a></li></ul></div></div></div>").appendTo('#90-inlines');
+
+$("<a name='38858752' class='windup-file-location'></a><div class='inline-source-comment green tag-none'><div class='inline-comment'><div class='inline-comment-heading'><strong class='notification warning'>Spring component spring-beans requires investigation</strong><a title='View Rule: springboot-generic-catchall-groovy-00000' href='windup_ruleproviders.html#springboot-generic-catchall-groovy-00000'><span class='glyphicon glyphicon-link rule-link floatRight'></span></a></div><div class='inline-comment-body'><p>Check if there is a Quarkus Extensions with Spring API compatibility for the Spring <code>spring-beans<\/code> component.<br/> If yes, then replace the <code>org.springframework:spring-beans<\/code> dependency with the Quarkus extension.<br/> If no, consider rewrite the code that relies on this dependency leveraging the Quarkus Guides linked below.<\/p><ul><li><a href='https://quarkus.io/guides/' target='_blank'>Quarkus - Guides</a></li></ul></div></div></div>").appendTo('#96-inlines');
+
+$("<a name='39157784' class='windup-file-location'></a><div class='inline-source-comment green tag-none'><div class='inline-comment'><div class='inline-comment-heading'><strong class='notification warning'>Spring component spring-context-support requires investigation</strong><a title='View Rule: springboot-generic-catchall-groovy-00000' href='windup_ruleproviders.html#springboot-generic-catchall-groovy-00000'><span class='glyphicon glyphicon-link rule-link floatRight'></span></a></div><div class='inline-comment-body'><p>Check if there is a Quarkus Extensions with Spring API compatibility for the Spring <code>spring-context-support<\/code> component.<br/> If yes, then replace the <code>org.springframework:spring-context-support<\/code> dependency with the Quarkus extension.<br/> If no, consider rewrite the code that relies on this dependency leveraging the Quarkus Guides linked below.<\/p><ul><li><a href='https://quarkus.io/guides/' target='_blank'>Quarkus - Guides</a></li></ul></div></div></div>").appendTo('#102-inlines');
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

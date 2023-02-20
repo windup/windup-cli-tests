@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for InternalThreadLocalMap.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/netty-common-4.1.51.Final.jar/io/netty/util/internal/InternalThreadLocalMap.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.netty.util.internal;
+
+import io.netty.util.concurrent.FastThreadLocalThread;
+import io.netty.util.internal.logging.InternalLogger;
+import io.netty.util.internal.logging.InternalLoggerFactory;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.CharsetEncoder;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.BitSet;
+import java.util.IdentityHashMap;
+import java.util.Map;
+import java.util.WeakHashMap;
+
+public final class InternalThreadLocalMap extends UnpaddedInternalThreadLocalMap {
+   private static final InternalLogger logger = InternalLoggerFactory.getInstance(InternalThreadLocalMap.class);
+   private static final int DEFAULT_ARRAY_LIST_INITIAL_CAPACITY = 8;
+   private static final int STRING_BUILDER_INITIAL_SIZE = SystemPropertyUtil.getInt(&quot;io.netty.threadLocalMap.stringBuilder.initialSize&quot;, 1024);
+   private static final int STRING_BUILDER_MAX_SIZE;
+   private static final int HANDLER_SHARABLE_CACHE_INITIAL_CAPACITY = 4;
+   private static final int INDEXED_VARIABLE_TABLE_INITIAL_SIZE = 32;
+   public static final Object UNSET = new Object();
+   private BitSet cleanerFlags;
+   public long rp1;
+   public long rp2;
+   public long rp3;
+   public long rp4;
+   public long rp5;
+   public long rp6;
+   public long rp7;
+   public long rp8;
+   public long rp9;
+
+   public static InternalThreadLocalMap getIfSet() {
+      Thread thread = Thread.currentThread();
+      return thread instanceof FastThreadLocalThread ? ((FastThreadLocalThread)thread).threadLocalMap() : (InternalThreadLocalMap)slowThreadLocalMap.get();
+   }
+
+   public static InternalThreadLocalMap get() {
+      Thread thread = Thread.currentThread();
+      return thread instanceof FastThreadLocalThread ? fastGet((FastThreadLocalThread)thread) : slowGet();
+   }
+
+   private static InternalThreadLocalMap fastGet(FastThreadLocalThread thread) {
+      InternalThreadLocalMap threadLocalMap = thread.threadLocalMap();
+      if (threadLocalMap == null) {
+         thread.setThreadLocalMap(threadLocalMap = new InternalThreadLocalMap());
+      }
+
+      return threadLocalMap;
+   }
+
+   private static InternalThreadLocalMap slowGet() {
+      ThreadLocal&lt;InternalThreadLocalMap&gt; slowThreadLocalMap = UnpaddedInternalThreadLocalMap.slowThreadLocalMap;
+      InternalThreadLocalMap ret = (InternalThreadLocalMap)slowThreadLocalMap.get();
+      if (ret == null) {
+         ret = new InternalThreadLocalMap();
+         slowThreadLocalMap.set(ret);
+      }
+
+      return ret;
+   }
+
+   public static void remove() {
+      Thread thread = Thread.currentThread();
+      if (thread instanceof FastThreadLocalThread) {
+         ((FastThreadLocalThread)thread).setThreadLocalMap((InternalThreadLocalMap)null);
+      } else {
+         slowThreadLocalMap.remove();
+      }
+
+   }
+
+   public static void destroy() {
+      slowThreadLocalMap.remove();
+   }
+
+   public static int nextVariableIndex() {
+      int index = nextIndex.getAndIncrement();
+      if (index &lt; 0) {
+         nextIndex.decrementAndGet();
+         throw new IllegalStateException(&quot;too many thread-local indexed variables&quot;);
+      } else {
+         return index;
+      }
+   }
+
+   public static int lastVariableIndex() {
+      return nextIndex.get() - 1;
+   }
+
+   private InternalThreadLocalMap() {
+      super(newIndexedVariableTable());
+   }
+
+   private static Object[] newIndexedVariableTable() {
+      Object[] array = new Object[32];
+      Arrays.fill(array, UNSET);
+      return array;
+   }
+
+   public int size() {
+      int count = 0;
+      if (this.futureListenerStackDepth != 0) {
+         ++count;
+      }
+
+      if (this.localChannelReaderStackDepth != 0) {
+         ++count;
+      }
+
+      if (this.handlerSharableCache != null) {
+         ++count;
+      }
+
+      if (this.counterHashCode != null) {
+         ++count;
+      }
+
+      if (this.random != null) {
+         ++count;
+      }
+
+      if (this.typeParameterMatcherGetCache != null) {
+         ++count;
+      }
+
+      if (this.typeParameterMatcherFindCache != null) {
+         ++count;
+      }
+
+      if (this.stringBuilder != null) {
+         ++count;
+      }
+
+      if (this.charsetEncoderCache != null) {
+         ++count;
+      }
+
+      if (this.charsetDecoderCache != null) {
+         ++count;
+      }
+
+      if (this.arrayList != null) {
+         ++count;
+      }
+
+      Object[] var2 = this.indexedVariables;
+      int var3 = var2.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         Object o = var2[var4];
+         if (o != UNSET) {
+            ++count;
+         }
+      }
+
+      return count - 1;
+   }
+
+   public StringBuilder stringBuilder() {
+      StringBuilder sb = this.stringBuilder;
+      if (sb == null) {
+         return this.stringBuilder = new StringBuilder(STRING_BUILDER_INITIAL_SIZE);
+      } else {
+         if (sb.capacity() &gt; STRING_BUILDER_MAX_SIZE) {
+            sb.setLength(STRING_BUILDER_INITIAL_SIZE);
+            sb.trimToSize();
+         }
+
+         sb.setLength(0);
+         return sb;
+      }
+   }
+
+   public Map&lt;Charset, CharsetEncoder&gt; charsetEncoderCache() {
+      Map&lt;Charset, CharsetEncoder&gt; cache = this.charsetEncoderCache;
+      if (cache == null) {
+         this.charsetEncoderCache = (Map)(cache = new IdentityHashMap());
+      }
+
+      return (Map)cache;
+   }
+
+   public Map&lt;Charset, CharsetDecoder&gt; charsetDecoderCache() {
+      Map&lt;Charset, CharsetDecoder&gt; cache = this.charsetDecoderCache;
+      if (cache == null) {
+         this.charsetDecoderCache = (Map)(cache = new IdentityHashMap());
+      }
+
+      return (Map)cache;
+   }
+
+   public &lt;E&gt; ArrayList&lt;E&gt; arrayList() {
+      return this.arrayList(8);
+   }
+
+   public &lt;E&gt; ArrayList&lt;E&gt; arrayList(int minCapacity) {
+      ArrayList&lt;E&gt; list = this.arrayList;
+      if (list == null) {
+         this.arrayList = new ArrayList(minCapacity);
+         return this.arrayList;
+      } else {
+         list.clear();
+         list.ensureCapacity(minCapacity);
+         return list;
+      }
+   }
+
+   public int futureListenerStackDepth() {
+      return this.futureListenerStackDepth;
+   }
+
+   public void setFutureListenerStackDepth(int futureListenerStackDepth) {
+      this.futureListenerStackDepth = futureListenerStackDepth;
+   }
+
+   public ThreadLocalRandom random() {
+      ThreadLocalRandom r = this.random;
+      if (r == null) {
+         this.random = r = new ThreadLocalRandom();
+      }
+
+      return r;
+   }
+
+   public Map&lt;Class&lt;?&gt;, TypeParameterMatcher&gt; typeParameterMatcherGetCache() {
+      Map&lt;Class&lt;?&gt;, TypeParameterMatcher&gt; cache = this.typeParameterMatcherGetCache;
+      if (cache == null) {
+         this.typeParameterMatcherGetCache = (Map)(cache = new IdentityHashMap());
+      }
+
+      return (Map)cache;
+   }
+
+   public Map&lt;Class&lt;?&gt;, Map&lt;String, TypeParameterMatcher&gt;&gt; typeParameterMatcherFindCache() {
+      Map&lt;Class&lt;?&gt;, Map&lt;String, TypeParameterMatcher&gt;&gt; cache = this.typeParameterMatcherFindCache;
+      if (cache == null) {
+         this.typeParameterMatcherFindCache = (Map)(cache = new IdentityHashMap());
+      }
+
+      return (Map)cache;
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public IntegerHolder counterHashCode() {
+      return this.counterHashCode;
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public void setCounterHashCode(IntegerHolder counterHashCode) {
+      this.counterHashCode = counterHashCode;
+   }
+
+   public Map&lt;Class&lt;?&gt;, Boolean&gt; handlerSharableCache() {
+      Map&lt;Class&lt;?&gt;, Boolean&gt; cache = this.handlerSharableCache;
+      if (cache == null) {
+         this.handlerSharableCache = (Map)(cache = new WeakHashMap(4));
+      }
+
+      return (Map)cache;
+   }
+
+   public int localChannelReaderStackDepth() {
+      return this.localChannelReaderStackDepth;
+   }
+
+   public void setLocalChannelReaderStackDepth(int localChannelReaderStackDepth) {
+      this.localChannelReaderStackDepth = localChannelReaderStackDepth;
+   }
+
+   public Object indexedVariable(int index) {
+      Object[] lookup = this.indexedVariables;
+      return index &lt; lookup.length ? lookup[index] : UNSET;
+   }
+
+   public boolean setIndexedVariable(int index, Object value) {
+      Object[] lookup = this.indexedVariables;
+      if (index &lt; lookup.length) {
+         Object oldValue = lookup[index];
+         lookup[index] = value;
+         return oldValue == UNSET;
+      } else {
+         this.expandIndexedVariableTableAndSet(index, value);
+         return true;
+      }
+   }
+
+   private void expandIndexedVariableTableAndSet(int index, Object value) {
+      Object[] oldArray = this.indexedVariables;
+      int oldCapacity = oldArray.length;
+      int newCapacity = index | index &gt;&gt;&gt; 1;
+      newCapacity |= newCapacity &gt;&gt;&gt; 2;
+      newCapacity |= newCapacity &gt;&gt;&gt; 4;
+      newCapacity |= newCapacity &gt;&gt;&gt; 8;
+      newCapacity |= newCapacity &gt;&gt;&gt; 16;
+      ++newCapacity;
+      Object[] newArray = Arrays.copyOf(oldArray, newCapacity);
+      Arrays.fill(newArray, oldCapacity, newArray.length, UNSET);
+      newArray[index] = value;
+      this.indexedVariables = newArray;
+   }
+
+   public Object removeIndexedVariable(int index) {
+      Object[] lookup = this.indexedVariables;
+      if (index &lt; lookup.length) {
+         Object v = lookup[index];
+         lookup[index] = UNSET;
+         return v;
+      } else {
+         return UNSET;
+      }
+   }
+
+   public boolean isIndexedVariableSet(int index) {
+      Object[] lookup = this.indexedVariables;
+      return index &lt; lookup.length &amp;&amp; lookup[index] != UNSET;
+   }
+
+   public boolean isCleanerFlagSet(int index) {
+      return this.cleanerFlags != null &amp;&amp; this.cleanerFlags.get(index);
+   }
+
+   public void setCleanerFlag(int index) {
+      if (this.cleanerFlags == null) {
+         this.cleanerFlags = new BitSet();
+      }
+
+      this.cleanerFlags.set(index);
+   }
+
+   static {
+      logger.debug(&quot;-Dio.netty.threadLocalMap.stringBuilder.initialSize: {}&quot;, STRING_BUILDER_INITIAL_SIZE);
+      STRING_BUILDER_MAX_SIZE = SystemPropertyUtil.getInt(&quot;io.netty.threadLocalMap.stringBuilder.maxSize&quot;, 4096);
+      logger.debug(&quot;-Dio.netty.threadLocalMap.stringBuilder.maxSize: {}&quot;, STRING_BUILDER_MAX_SIZE);
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:29 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

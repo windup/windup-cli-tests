@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for JSONDeserializer.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/classgraph-4.8.69.jar/nonapi/io/github/classgraph/json/JSONDeserializer.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package nonapi.io.github.classgraph.json;
+
+import io.github.classgraph.ClassGraphException;
+import java.lang.reflect.Array;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.AbstractMap.SimpleEntry;
+import java.util.Map.Entry;
+import nonapi.io.github.classgraph.types.ParseException;
+
+public class JSONDeserializer {
+   private static Object jsonBasicValueToObject(Object jsonVal, Type expectedType, boolean convertStringToNumber) {
+      if (jsonVal == null) {
+         return null;
+      } else if (!(jsonVal instanceof JSONArray) &amp;&amp; !(jsonVal instanceof JSONObject)) {
+         int intValue;
+         if (expectedType instanceof ParameterizedType) {
+            if (((ParameterizedType)expectedType).getRawType().getClass() == Class.class) {
+               String str = jsonVal.toString();
+               intValue = str.indexOf(60);
+               String className = str.substring(0, intValue &lt; 0 ? str.length() : intValue);
+
+               try {
+                  return Class.forName(className);
+               } catch (ClassNotFoundException var7) {
+                  throw new IllegalArgumentException(&quot;Could not deserialize class reference &quot; + jsonVal, var7);
+               }
+            } else {
+               throw new IllegalArgumentException(&quot;Got illegal ParameterizedType: &quot; + expectedType);
+            }
+         } else if (!(expectedType instanceof Class)) {
+            throw new IllegalArgumentException(&quot;Got illegal basic value type: &quot; + expectedType);
+         } else {
+            Class&lt;?&gt; rawType = (Class)expectedType;
+            if (rawType == String.class) {
+               if (!(jsonVal instanceof CharSequence)) {
+                  throw new IllegalArgumentException(&quot;Expected string; got &quot; + jsonVal.getClass().getName());
+               } else {
+                  return jsonVal.toString();
+               }
+            } else if (rawType == CharSequence.class) {
+               if (!(jsonVal instanceof CharSequence)) {
+                  throw new IllegalArgumentException(&quot;Expected CharSequence; got &quot; + jsonVal.getClass().getName());
+               } else {
+                  return jsonVal;
+               }
+            } else if (rawType != Integer.class &amp;&amp; rawType != Integer.TYPE) {
+               if (rawType != Long.class &amp;&amp; rawType != Long.TYPE) {
+                  if (rawType != Short.class &amp;&amp; rawType != Short.TYPE) {
+                     if (rawType != Float.class &amp;&amp; rawType != Float.TYPE) {
+                        if (rawType != Double.class &amp;&amp; rawType != Double.TYPE) {
+                           if (rawType != Byte.class &amp;&amp; rawType != Byte.TYPE) {
+                              if (rawType != Character.class &amp;&amp; rawType != Character.TYPE) {
+                                 if (rawType != Boolean.class &amp;&amp; rawType != Boolean.TYPE) {
+                                    if (Enum.class.isAssignableFrom(rawType)) {
+                                       if (!(jsonVal instanceof CharSequence)) {
+                                          throw new IllegalArgumentException(&quot;Expected string for enum value; got &quot; + jsonVal.getClass().getName());
+                                       } else {
+                                          Enum enumValue = Enum.valueOf(rawType, jsonVal.toString());
+                                          return enumValue;
+                                       }
+                                    } else if (JSONUtils.getRawType(expectedType).isAssignableFrom(jsonVal.getClass())) {
+                                       return jsonVal;
+                                    } else {
+                                       throw new IllegalArgumentException(&quot;Got type &quot; + jsonVal.getClass() + &quot;; expected &quot; + expectedType);
+                                    }
+                                 } else if (convertStringToNumber &amp;&amp; jsonVal instanceof CharSequence) {
+                                    return Boolean.parseBoolean(jsonVal.toString());
+                                 } else if (!(jsonVal instanceof Boolean)) {
+                                    throw new IllegalArgumentException(&quot;Expected boolean; got &quot; + jsonVal.getClass().getName());
+                                 } else {
+                                    return jsonVal;
+                                 }
+                              } else if (!(jsonVal instanceof CharSequence)) {
+                                 throw new IllegalArgumentException(&quot;Expected character; got &quot; + jsonVal.getClass().getName());
+                              } else {
+                                 CharSequence charSequence = (CharSequence)jsonVal;
+                                 if (charSequence.length() != 1) {
+                                    throw new IllegalArgumentException(&quot;Expected single character; got string&quot;);
+                                 } else {
+                                    return charSequence.charAt(0);
+                                 }
+                              }
+                           } else if (convertStringToNumber &amp;&amp; jsonVal instanceof CharSequence) {
+                              return Byte.parseByte(jsonVal.toString());
+                           } else if (!(jsonVal instanceof Integer)) {
+                              throw new IllegalArgumentException(&quot;Expected byte; got &quot; + jsonVal.getClass().getName());
+                           } else {
+                              intValue = ((Integer)jsonVal).intValue();
+                              if (intValue &gt;= -128 &amp;&amp; intValue &lt;= 127) {
+                                 return (byte)intValue;
+                              } else {
+                                 throw new IllegalArgumentException(&quot;Expected byte; got out-of-range value &quot; + intValue);
+                              }
+                           }
+                        } else if (convertStringToNumber &amp;&amp; jsonVal instanceof CharSequence) {
+                           return Double.parseDouble(jsonVal.toString());
+                        } else if (!(jsonVal instanceof Double)) {
+                           throw new IllegalArgumentException(&quot;Expected double; got &quot; + jsonVal.getClass().getName());
+                        } else {
+                           return jsonVal;
+                        }
+                     } else if (convertStringToNumber &amp;&amp; jsonVal instanceof CharSequence) {
+                        return Float.parseFloat(jsonVal.toString());
+                     } else if (!(jsonVal instanceof Double)) {
+                        throw new IllegalArgumentException(&quot;Expected float; got &quot; + jsonVal.getClass().getName());
+                     } else {
+                        double doubleValue = ((Double)jsonVal).doubleValue();
+                        if (doubleValue &gt;= 1.401298464324817E-45D &amp;&amp; doubleValue &lt;= 3.4028234663852886E38D) {
+                           return (float)doubleValue;
+                        } else {
+                           throw new IllegalArgumentException(&quot;Expected float; got out-of-range value &quot; + doubleValue);
+                        }
+                     }
+                  } else if (convertStringToNumber &amp;&amp; jsonVal instanceof CharSequence) {
+                     return Short.parseShort(jsonVal.toString());
+                  } else if (!(jsonVal instanceof Integer)) {
+                     throw new IllegalArgumentException(&quot;Expected short; got &quot; + jsonVal.getClass().getName());
+                  } else {
+                     intValue = ((Integer)jsonVal).intValue();
+                     if (intValue &gt;= -32768 &amp;&amp; intValue &lt;= 32767) {
+                        return (short)intValue;
+                     } else {
+                        throw new IllegalArgumentException(&quot;Expected short; got out-of-range value &quot; + intValue);
+                     }
+                  }
+               } else {
+                  boolean isLong = jsonVal instanceof Long;
+                  boolean isInteger = jsonVal instanceof Integer;
+                  if (convertStringToNumber &amp;&amp; jsonVal instanceof CharSequence) {
+                     return isLong ? Long.parseLong(jsonVal.toString()) : (long)Integer.parseInt(jsonVal.toString());
+                  } else if (!isLong &amp;&amp; !isInteger) {
+                     throw new IllegalArgumentException(&quot;Expected long; got &quot; + jsonVal.getClass().getName());
+                  } else {
+                     return isLong ? jsonVal : (long)((Integer)jsonVal).intValue();
+                  }
+               }
+            } else if (convertStringToNumber &amp;&amp; jsonVal instanceof CharSequence) {
+               return Integer.parseInt(jsonVal.toString());
+            } else if (!(jsonVal instanceof Integer)) {
+               throw new IllegalArgumentException(&quot;Expected integer; got &quot; + jsonVal.getClass().getName());
+            } else {
+               return jsonVal;
+            }
+         }
+      } else {
+         throw ClassGraphException.newClassGraphException(&quot;Expected a basic value type&quot;);
+      }
+   }
+
+   private static void populateObjectFromJsonObject(Object objectInstance, Type objectResolvedType, Object jsonVal, ClassFieldCache classFieldCache, Map&lt;CharSequence, Object&gt; idToObjectInstance, List&lt;Runnable&gt; collectionElementAdders) {
+      if (jsonVal != null) {
+         boolean isJsonObject = jsonVal instanceof JSONObject;
+         boolean isJsonArray = jsonVal instanceof JSONArray;
+         if (!isJsonArray &amp;&amp; !isJsonObject) {
+            throw new IllegalArgumentException(&quot;Expected JSONObject or JSONArray, got &quot; + jsonVal.getClass().getSimpleName());
+         } else {
+            JSONObject jsonObject = isJsonObject ? (JSONObject)jsonVal : null;
+            JSONArray jsonArray = isJsonArray ? (JSONArray)jsonVal : null;
+            Class&lt;?&gt; rawType = objectInstance.getClass();
+            boolean isMap = Map.class.isAssignableFrom(rawType);
+            Map&lt;Object, Object&gt; mapInstance = isMap ? (Map)objectInstance : null;
+            boolean isCollection = Collection.class.isAssignableFrom(rawType);
+            final Collection&lt;Object&gt; collectionInstance = isCollection ? (Collection)objectInstance : null;
+            boolean isArray = rawType.isArray();
+            boolean isObj = !isMap &amp;&amp; !isCollection &amp;&amp; !isArray;
+            if ((isMap || isObj) == isJsonObject &amp;&amp; (isCollection || isArray) == isJsonArray) {
+               Type objectResolvedTypeGeneric = objectResolvedType;
+               if (objectResolvedType instanceof Class) {
+                  Class&lt;?&gt; objectResolvedCls = (Class)objectResolvedType;
+                  if (Map.class.isAssignableFrom(objectResolvedCls)) {
+                     if (!isMap) {
+                        throw new IllegalArgumentException(&quot;Got an unexpected map type&quot;);
+                     }
+
+                     objectResolvedTypeGeneric = objectResolvedCls.getGenericSuperclass();
+                  } else if (Collection.class.isAssignableFrom(objectResolvedCls)) {
+                     if (!isCollection) {
+                        throw new IllegalArgumentException(&quot;Got an unexpected map type&quot;);
+                     }
+
+                     objectResolvedTypeGeneric = objectResolvedCls.getGenericSuperclass();
+                  }
+               }
+
+               Type mapKeyType;
+               Type commonResolvedValueType;
+               Class arrayComponentType;
+               boolean is1DArray;
+               Class commonValueRawType;
+               TypeResolutions typeResolutions;
+               if (objectResolvedTypeGeneric instanceof Class) {
+                  typeResolutions = null;
+                  mapKeyType = null;
+                  commonValueRawType = (Class)objectResolvedTypeGeneric;
+                  if (isArray) {
+                     arrayComponentType = commonValueRawType.getComponentType();
+                     is1DArray = !arrayComponentType.isArray();
+                  } else {
+                     arrayComponentType = null;
+                     is1DArray = false;
+                  }
+
+                  commonResolvedValueType = null;
+               } else {
+                  if (!(objectResolvedTypeGeneric instanceof ParameterizedType)) {
+                     throw new IllegalArgumentException(&quot;Got illegal type: &quot; + objectResolvedTypeGeneric);
+                  }
+
+                  ParameterizedType parameterizedResolvedType = (ParameterizedType)objectResolvedTypeGeneric;
+                  typeResolutions = new TypeResolutions(parameterizedResolvedType);
+                  int numTypeArgs = typeResolutions.resolvedTypeArguments.length;
+                  if (isMap &amp;&amp; numTypeArgs != 2) {
+                     throw new IllegalArgumentException(&quot;Wrong number of type arguments for Map: got &quot; + numTypeArgs + &quot;; expected 2&quot;);
+                  }
+
+                  if (isCollection &amp;&amp; numTypeArgs != 1) {
+                     throw new IllegalArgumentException(&quot;Wrong number of type arguments for Collection: got &quot; + numTypeArgs + &quot;; expected 1&quot;);
+                  }
+
+                  mapKeyType = isMap ? typeResolutions.resolvedTypeArguments[0] : null;
+                  commonResolvedValueType = isMap ? typeResolutions.resolvedTypeArguments[1] : (isCollection ? typeResolutions.resolvedTypeArguments[0] : null);
+                  is1DArray = false;
+                  arrayComponentType = null;
+               }
+
+               commonValueRawType = commonResolvedValueType == null ? null : JSONUtils.getRawType(commonResolvedValueType);
+               Constructor commonValueDefaultConstructor;
+               Constructor commonValueConstructorWithSizeHint;
+               if (!isMap &amp;&amp; !isCollection &amp;&amp; (!is1DArray || JSONUtils.isBasicValueType(arrayComponentType))) {
+                  commonValueConstructorWithSizeHint = null;
+                  commonValueDefaultConstructor = null;
+               } else {
+                  commonValueConstructorWithSizeHint = classFieldCache.getConstructorWithSizeHintForConcreteTypeOf(is1DArray ? arrayComponentType : commonValueRawType);
+                  if (commonValueConstructorWithSizeHint != null) {
+                     commonValueDefaultConstructor = null;
+                  } else {
+                     commonValueDefaultConstructor = classFieldCache.getDefaultConstructorForConcreteTypeOf(is1DArray ? arrayComponentType : commonValueRawType);
+                  }
+               }
+
+               ClassFields classFields = isObj ? classFieldCache.get(rawType) : null;
+               ArrayList&lt;JSONDeserializer.ObjectInstantiation&gt; itemsToRecurseToInPass2 = null;
+               int numItems = jsonObject != null ? jsonObject.items.size() : (jsonArray != null ? jsonArray.items.size() : 0);
+
+               for(int i = 0; i &lt; numItems; ++i) {
+                  Object itemJsonValue;
+                  String itemJsonKey;
+                  if (jsonObject != null) {
+                     Entry&lt;String, Object&gt; jsonObjectItem = (Entry)jsonObject.items.get(i);
+                     itemJsonKey = (String)jsonObjectItem.getKey();
+                     itemJsonValue = jsonObjectItem.getValue();
+                  } else {
+                     if (jsonArray == null) {
+                        throw ClassGraphException.newClassGraphException(&quot;This exception should not be thrown&quot;);
+                     }
+
+                     itemJsonKey = null;
+                     itemJsonValue = jsonArray.items.get(i);
+                  }
+
+                  boolean itemJsonValueIsJsonObject = itemJsonValue instanceof JSONObject;
+                  boolean itemJsonValueIsJsonArray = itemJsonValue instanceof JSONArray;
+                  JSONObject itemJsonValueJsonObject = itemJsonValueIsJsonObject ? (JSONObject)itemJsonValue : null;
+                  JSONArray itemJsonValueJsonArray = itemJsonValueIsJsonArray ? (JSONArray)itemJsonValue : null;
+                  FieldTypeInfo fieldTypeInfo;
+                  if (classFields != null) {
+                     fieldTypeInfo = (FieldTypeInfo)classFields.fieldNameToFieldTypeInfo.get(itemJsonKey);
+                     if (fieldTypeInfo == null) {
+                        throw new IllegalArgumentException(&quot;Field &quot; + rawType.getName() + &quot;.&quot; + itemJsonKey + &quot; does not exist or is not accessible, non-final, and non-transient&quot;);
+                     }
+                  } else {
+                     fieldTypeInfo = null;
+                  }
+
+                  Type resolvedItemValueType = fieldTypeInfo != null ? fieldTypeInfo.getFullyResolvedFieldType(typeResolutions) : (isArray ? arrayComponentType : commonResolvedValueType);
+                  final Object instantiatedItemObject;
+                  Object linkedObject;
+                  if (itemJsonValue == null) {
+                     instantiatedItemObject = null;
+                  } else if (resolvedItemValueType == Object.class) {
+                     if (itemJsonValueIsJsonObject) {
+                        instantiatedItemObject = new HashMap();
+                        if (itemsToRecurseToInPass2 == null) {
+                           itemsToRecurseToInPass2 = new ArrayList();
+                        }
+
+                        itemsToRecurseToInPass2.add(new JSONDeserializer.ObjectInstantiation(instantiatedItemObject, ParameterizedTypeImpl.MAP_OF_UNKNOWN_TYPE, itemJsonValue));
+                     } else if (itemJsonValueIsJsonArray) {
+                        instantiatedItemObject = new ArrayList();
+                        if (itemsToRecurseToInPass2 == null) {
+                           itemsToRecurseToInPass2 = new ArrayList();
+                        }
+
+                        itemsToRecurseToInPass2.add(new JSONDeserializer.ObjectInstantiation(instantiatedItemObject, ParameterizedTypeImpl.LIST_OF_UNKNOWN_TYPE, itemJsonValue));
+                     } else {
+                        instantiatedItemObject = jsonBasicValueToObject(itemJsonValue, (Type)resolvedItemValueType, false);
+                     }
+                  } else if (JSONUtils.isBasicValueType((Type)resolvedItemValueType)) {
+                     if (itemJsonValueIsJsonObject || itemJsonValueIsJsonArray) {
+                        throw new IllegalArgumentException(&quot;Got JSONObject or JSONArray type when expecting a simple value type&quot;);
+                     }
+
+                     instantiatedItemObject = jsonBasicValueToObject(itemJsonValue, (Type)resolvedItemValueType, false);
+                  } else if (CharSequence.class.isAssignableFrom(itemJsonValue.getClass())) {
+                     linkedObject = idToObjectInstance.get(itemJsonValue);
+                     if (linkedObject == null) {
+                        throw new IllegalArgumentException(&quot;Object id not found: &quot; + itemJsonValue);
+                     }
+
+                     instantiatedItemObject = linkedObject;
+                  } else {
+                     if (!itemJsonValueIsJsonObject &amp;&amp; !itemJsonValueIsJsonArray) {
+                        throw new IllegalArgumentException(&quot;Got simple value type when expecting a JSON object or JSON array&quot;);
+                     }
+
+                     try {
+                        int numSubItems = itemJsonValueJsonObject != null ? itemJsonValueJsonObject.items.size() : (itemJsonValueJsonArray != null ? itemJsonValueJsonArray.items.size() : 0);
+                        if (resolvedItemValueType instanceof Class &amp;&amp; ((Class)resolvedItemValueType).isArray()) {
+                           if (!itemJsonValueIsJsonArray) {
+                              throw new IllegalArgumentException(&quot;Expected JSONArray, got &quot; + itemJsonValue.getClass().getName());
+                           }
+
+                           instantiatedItemObject = Array.newInstance(((Class)resolvedItemValueType).getComponentType(), numSubItems);
+                        } else if (!isCollection &amp;&amp; !isMap &amp;&amp; !is1DArray) {
+                           if (fieldTypeInfo != null) {
+                              Constructor&lt;?&gt; valueConstructorWithSizeHint = fieldTypeInfo.getConstructorForFieldTypeWithSizeHint((Type)resolvedItemValueType, classFieldCache);
+                              if (valueConstructorWithSizeHint != null) {
+                                 instantiatedItemObject = valueConstructorWithSizeHint.newInstance(numSubItems);
+                              } else {
+                                 instantiatedItemObject = fieldTypeInfo.getDefaultConstructorForFieldType((Type)resolvedItemValueType, classFieldCache).newInstance();
+                              }
+                           } else {
+                              if (!isArray || is1DArray) {
+                                 throw new IllegalArgumentException(&quot;Got illegal type&quot;);
+                              }
+
+                              instantiatedItemObject = Array.newInstance(rawType.getComponentType(), numSubItems);
+                           }
+                        } else {
+                           instantiatedItemObject = commonValueConstructorWithSizeHint != null ? commonValueConstructorWithSizeHint.newInstance(numSubItems) : (commonValueDefaultConstructor != null ? commonValueDefaultConstructor.newInstance() : null);
+                        }
+                     } catch (SecurityException | ReflectiveOperationException var41) {
+                        throw new IllegalArgumentException(&quot;Could not instantiate type &quot; + resolvedItemValueType, var41);
+                     }
+
+                     if (itemJsonValue instanceof JSONObject) {
+                        JSONObject itemJsonObject = (JSONObject)itemJsonValue;
+                        if (itemJsonObject.objectId != null) {
+                           idToObjectInstance.put(itemJsonObject.objectId, instantiatedItemObject);
+                        }
+                     }
+
+                     if (itemsToRecurseToInPass2 == null) {
+                        itemsToRecurseToInPass2 = new ArrayList();
+                     }
+
+                     itemsToRecurseToInPass2.add(new JSONDeserializer.ObjectInstantiation(instantiatedItemObject, (Type)resolvedItemValueType, itemJsonValue));
+                  }
+
+                  if (fieldTypeInfo != null) {
+                     fieldTypeInfo.setFieldValue(objectInstance, instantiatedItemObject);
+                  } else if (mapInstance != null) {
+                     linkedObject = jsonBasicValueToObject(itemJsonKey, mapKeyType, true);
+                     mapInstance.put(linkedObject, instantiatedItemObject);
+                  } else if (isArray) {
+                     Array.set(objectInstance, i, instantiatedItemObject);
+                  } else if (collectionInstance != null) {
+                     collectionElementAdders.add(new Runnable() {
+                        public void run() {
+                           collectionInstance.add(instantiatedItemObject);
+                        }
+                     });
+                  }
+               }
+
+               if (itemsToRecurseToInPass2 != null) {
+                  Iterator var45 = itemsToRecurseToInPass2.iterator();
+
+                  while(var45.hasNext()) {
+                     JSONDeserializer.ObjectInstantiation i = (JSONDeserializer.ObjectInstantiation)var45.next();
+                     populateObjectFromJsonObject(i.objectInstance, i.type, i.jsonVal, classFieldCache, idToObjectInstance, collectionElementAdders);
+                  }
+               }
+
+            } else {
+               throw new IllegalArgumentException(&quot;Wrong JSON type for class &quot; + objectInstance.getClass().getName());
+            }
+         }
+      }
+   }
+
+   private static Map&lt;CharSequence, Object&gt; getInitialIdToObjectMap(Object objectInstance, Object parsedJSON) {
+      Map&lt;CharSequence, Object&gt; idToObjectInstance = new HashMap();
+      if (parsedJSON instanceof JSONObject) {
+         JSONObject itemJsonObject = (JSONObject)parsedJSON;
+         if (!itemJsonObject.items.isEmpty()) {
+            Entry&lt;String, Object&gt; firstItem = (Entry)itemJsonObject.items.get(0);
+            if (((String)firstItem.getKey()).equals(&quot;__ID&quot;)) {
+               Object firstItemValue = firstItem.getValue();
+               if (firstItemValue == null || !CharSequence.class.isAssignableFrom(firstItemValue.getClass())) {
+                  idToObjectInstance.put((CharSequence)firstItemValue, objectInstance);
+               }
+            }
+         }
+      }
+
+      return idToObjectInstance;
+   }
+
+   private static &lt;T&gt; T deserializeObject(Class&lt;T&gt; expectedType, String json, ClassFieldCache classFieldCache) throws IllegalArgumentException {
+      Object parsedJSON;
+      try {
+         parsedJSON = JSONParser.parseJSON(json);
+      } catch (ParseException var9) {
+         throw new IllegalArgumentException(&quot;Could not parse JSON&quot;, var9);
+      }
+
+      Object objectInstance;
+      try {
+         Constructor&lt;?&gt; constructor = classFieldCache.getDefaultConstructorForConcreteTypeOf(expectedType);
+         T newInstance = constructor.newInstance();
+         objectInstance = newInstance;
+      } catch (SecurityException | ReflectiveOperationException var8) {
+         throw new IllegalArgumentException(&quot;Could not construct object of type &quot; + expectedType.getName(), var8);
+      }
+
+      List&lt;Runnable&gt; collectionElementAdders = new ArrayList();
+      populateObjectFromJsonObject(objectInstance, expectedType, parsedJSON, classFieldCache, getInitialIdToObjectMap(objectInstance, parsedJSON), collectionElementAdders);
+      Iterator var11 = collectionElementAdders.iterator();
+
+      while(var11.hasNext()) {
+         Runnable runnable = (Runnable)var11.next();
+         runnable.run();
+      }
+
+      return objectInstance;
+   }
+
+   public static &lt;T&gt; T deserializeObject(Class&lt;T&gt; expectedType, String json) throws IllegalArgumentException {
+      ClassFieldCache classFieldCache = new ClassFieldCache(true, false);
+      return deserializeObject(expectedType, json, classFieldCache);
+   }
+
+   public static void deserializeToField(Object containingObject, String fieldName, String json, ClassFieldCache classFieldCache) throws IllegalArgumentException {
+      if (containingObject == null) {
+         throw new IllegalArgumentException(&quot;Cannot deserialize to a field of a null object&quot;);
+      } else {
+         Object parsedJSON;
+         try {
+            parsedJSON = JSONParser.parseJSON(json);
+         } catch (ParseException var9) {
+            throw new IllegalArgumentException(&quot;Could not parse JSON&quot;, var9);
+         }
+
+         JSONObject wrapperJsonObj = new JSONObject(1);
+         wrapperJsonObj.items.add(new SimpleEntry(fieldName, parsedJSON));
+         List&lt;Runnable&gt; collectionElementAdders = new ArrayList();
+         populateObjectFromJsonObject(containingObject, containingObject.getClass(), wrapperJsonObj, classFieldCache, new HashMap(), collectionElementAdders);
+         Iterator var7 = collectionElementAdders.iterator();
+
+         while(var7.hasNext()) {
+            Runnable runnable = (Runnable)var7.next();
+            runnable.run();
+         }
+
+      }
+   }
+
+   public static void deserializeToField(Object containingObject, String fieldName, String json) throws IllegalArgumentException {
+      ClassFieldCache typeCache = new ClassFieldCache(true, false);
+      deserializeToField(containingObject, fieldName, json, typeCache);
+   }
+
+   private static class ObjectInstantiation {
+      Object jsonVal;
+      Object objectInstance;
+      Type type;
+
+      public ObjectInstantiation(Object objectInstance, Type type, Object jsonVal) {
+         this.jsonVal = jsonVal;
+         this.objectInstance = objectInstance;
+         this.type = type;
+      }
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:26 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

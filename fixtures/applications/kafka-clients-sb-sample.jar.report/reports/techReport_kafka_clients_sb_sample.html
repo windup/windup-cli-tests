@@ -1,0 +1,547 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+            kafka-clients-sb-sample -
+        Technologies
+    </title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen">
+    <link href="resources/css/windup.java.css" rel="stylesheet" media="screen">
+    <link href="resources/css/jquery-ui.min.css" rel="stylesheet" media="screen">
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <style>
+        /* Colors. */
+        .sectorView    div { background-color: #1155CC; color: white; }
+        .sectorConnect div { background-color: #38761D; color: white; }
+        .sectorStore   div { background-color: #F4B400; color: white; }
+        .sectorSustain div { background-color: #DB4437; color: white; }
+        .sectorExecute div { background-color: #674EA7; color: white; }
+        .sectorStats   div { background-color: white; color: black; }
+
+        /* Partition, sector, group */
+
+        table.technologiesBoxCard { border-collapse: collapse; width: 90%; margin: 10pt auto; }
+        table.technologiesBoxCard td,
+        table.technologiesBoxCard th { border: 0px solid silver; }
+        table.technologiesBoxCard td.heading { border-bottom-width: 1px; border-bottom-color:  #d9d9d9; }
+
+        /* Sector headers */
+        tr.sectorsHeaders { font-size: 20pt; font-weight: bold; }
+        tr.sectorsHeaders > td { text-align: center; padding: 10pt 20pt 0; } /* Around the sector header box. */
+        tr.rowSectors > td { padding: 2ex 2em; }
+        tr.sectorsHeaders > td div { text-align: center; padding: 1ex 2em; }
+
+        /* Partitions = gray areas */
+        tr.rowHeader { font-size: 14pt; font-weight: bold; }
+        tr.rowHeader > td > div { background-color: #D9D9D9; padding: 1ex 20pt 0; margin-top: 18pt; }
+        /*tr.rowHeader td,*/
+        tr.rowSectors > td { background-color: #D9D9D9; padding: 1ex 2em; vertical-align: top; }
+        tr.rowSectors > td  > div.box { padding: 8pt 18pt 8pt 12pt; margin-bottom: 10pt; }
+        tr.rowSectors > td  > div.box > h4 { font-size: 12pt; font-weight: bold; }
+
+        tr.rowSectors .box h4  { font-size: 12pt; font-weight: bold; text-align: right; }
+        tr.rowSectors .box ul li  { font-size: 12px; }
+
+        tr.rowSectors .box .icon {
+            float: left;
+            width: 70px; height: 70px;
+            background-image: url("resources/icons/techreport/Object_Shield-CoatOfArms.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        tr.rowSectors .box .content { margin-left: 62px; }
+        tr.rowSectors .box .content ul { list-style: none; margin: 0; -webkit-padding-start: 10px; }
+        tr.rowSectors .box .content ul li { margin: 0; text-align: right; }
+        tr.rowSectors .box .content ul li b { width: 3ex; display: inline-block; }
+        tr.headersGroup { height: 215px; }
+    </style>
+
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body role="document">
+    <!-- Navbar -->
+    <div id="main-navbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+            </div><!-- /.nav-collapse -->
+    </div>
+    <!-- / Navbar -->
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Technologies
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report is a statistic of technologies occurrences in the input applications. It is an overview of what technologies are found in given project or a set of projects."></i></div>
+                        <div class="path">kafka-clients-sb-sample.jar</div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+
+                <table class="technologiesBoxCard">
+                    <tr class="sectorsHeaders">
+                            <td class="sectorView"><div>View</div></td>
+                            <td class="sectorConnect"><div>Connect</div></td>
+                            <td class="sectorStore"><div>Store</div></td>
+                            <td class="sectorSustain"><div>Sustain</div></td>
+                            <td class="sectorExecute"><div>Execute</div></td>
+                    </tr>
+
+                    <!-- For each gray row group... -->
+                     
+                        <tr class="rowHeader row-techrow:java-ee">
+                            <td class="heading" colspan="5"><div>Java EE / Jakarta EE</div></td>
+                        </tr>
+                        <tr class="rowSectors">
+                                <td class="sectorView">
+                                </td>
+                                <td class="sectorConnect">
+                                                <div class="box box-techbox:binding" id="box19869888">
+                                                    <div class="icon icon-Link_broken-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Link_broken-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Binding</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Java EE JAXB
+                                                                        <b>1</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:http" id="box39264256">
+                                                    <div class="icon icon-Website-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Website-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>HTTP</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Servlet
+                                                                        <b>5</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:other" id="box19947624">
+                                                    <div class="icon icon-Telecommunications-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Telecommunications-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Other</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Mail
+                                                                        <b>41</b>
+                                                                </li>
+                                                                <li>
+                                                                    JNI
+                                                                        <b>13</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:rest" id="box19263576">
+                                                    <div class="icon icon-API-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/API-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>REST</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    JAX-RS
+                                                                        <b>33</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                </td>
+                                <td class="sectorStore">
+                                                <div class="box box-techbox:validation" id="box39616536">
+                                                    <div class="icon icon-Clipboard_Checklist-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Clipboard_Checklist-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Validation</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Bean Validation
+                                                                        <b>3</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                </td>
+                                <td class="sectorSustain">
+                                </td>
+                                <td class="sectorExecute">
+                                                <div class="box box-techbox:processing" id="box39256064">
+                                                    <div class="icon icon-GPU-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/GPU-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Processing</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Java Threads
+                                                                        <b>19</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                </td>
+                        </tr>
+ 
+                        <tr class="rowHeader row-techrow:embedded">
+                            <td class="heading" colspan="5"><div>Embedded</div></td>
+                        </tr>
+                        <tr class="rowSectors">
+                                <td class="sectorView">
+                                                <div class="box box-techbox:markup" id="box39657496">
+                                                    <div class="icon icon-Code-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Code-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Markup</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    CSS
+                                                                        <b>1</b>
+                                                                </li>
+                                                                <li>
+                                                                    JavaScript
+                                                                        <b>3</b>
+                                                                </li>
+                                                                <li>
+                                                                    HTML
+                                                                        <b>2</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:mvc" id="box19271768">
+                                                    <div class="icon icon-Orchestration-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Orchestration-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>MVC</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Spring MVC
+                                                                        <b>1</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:web" id="box39612440">
+                                                    <div class="icon icon-Network-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Network-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Web</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Spring Web
+                                                                        <b>1</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                </td>
+                                <td class="sectorConnect">
+                                                <div class="box box-techbox:other" id="box19947624">
+                                                    <div class="icon icon-Telecommunications-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Telecommunications-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Other</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Spring Messaging Client
+                                                                        <b>1</b>
+                                                                </li>
+                                                                <li>
+                                                                    Properties
+                                                                        <b>40</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                </td>
+                                <td class="sectorStore">
+                                </td>
+                                <td class="sectorSustain">
+                                                <div class="box box-techbox:configuration-management" id="box19878080">
+                                                    <div class="icon icon-Gear_group-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Gear_group-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Configuration Management</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Spring Properties
+                                                                        <b>2</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:logging" id="box19964008">
+                                                    <div class="icon icon-Notepad-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Notepad-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Logging</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    SLF4J
+                                                                        <b>3</b>
+                                                                </li>
+                                                                <li>
+                                                                    Logback
+                                                                        <b>2</b>
+                                                                </li>
+                                                                <li>
+                                                                    Log4J
+                                                                        <b>2</b>
+                                                                </li>
+                                                                <li>
+                                                                    JBoss logging
+                                                                        <b>1</b>
+                                                                </li>
+                                                                <li>
+                                                                    Commons Logging
+                                                                        <b>2</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:observability" id="box39637016">
+                                                    <div class="icon icon-Heart_monitor-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Heart_monitor-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Observability</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Spring Boot Actuator
+                                                                        <b>1</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                </td>
+                                <td class="sectorExecute">
+                                                <div class="box box-techbox:3rd-party" id="box39649304">
+                                                    <div class="icon icon-Pricetag-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Pricetag-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>3rd party</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Tomcat
+                                                                        <b>3</b>
+                                                                </li>
+                                                                <li>
+                                                                    Spring Boot
+                                                                        <b>10</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:integration" id="box38838496">
+                                                    <div class="icon icon-Interoperability-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Interoperability-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Integration</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    Swagger
+                                                                        <b>5</b>
+                                                                </li>
+                                                                <li>
+                                                                    Spring Integration
+                                                                        <b>2</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <div class="box box-techbox:ioc" id="box39645208">
+                                                    <div class="icon icon-Hierarchy-A-White-RGB"
+                                                         style="background-image: url('resources/icons/techreport/Hierarchy-A-White-RGB.png');"></div>
+                                                    <div class="content">
+                                                        <h4>Inversion of Control</h4>
+                                                        <ul>
+                                                                <li>
+                                                                    CDI
+                                                                        <b>6</b>
+                                                                </li>
+                                                                <li>
+                                                                    Spring
+                                                                        <b>25</b>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                </td>
+                        </tr>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

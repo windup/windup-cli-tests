@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for DefaultPromise.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/netty-common-4.1.51.Final.jar/io/netty/util/concurrent/DefaultPromise.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.netty.util.concurrent;
+
+import io.netty.util.internal.InternalThreadLocalMap;
+import io.netty.util.internal.ObjectUtil;
+import io.netty.util.internal.PlatformDependent;
+import io.netty.util.internal.StringUtil;
+import io.netty.util.internal.SystemPropertyUtil;
+import io.netty.util.internal.ThrowableUtil;
+import io.netty.util.internal.logging.InternalLogger;
+import io.netty.util.internal.logging.InternalLoggerFactory;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+
+public class DefaultPromise&lt;V&gt; extends AbstractFuture&lt;V&gt; implements Promise&lt;V&gt; {
+   private static final InternalLogger logger = InternalLoggerFactory.getInstance(DefaultPromise.class);
+   private static final InternalLogger rejectedExecutionLogger = InternalLoggerFactory.getInstance(DefaultPromise.class.getName() + &quot;.rejectedExecution&quot;);
+   private static final int MAX_LISTENER_STACK_DEPTH = Math.min(8, SystemPropertyUtil.getInt(&quot;io.netty.defaultPromise.maxListenerStackDepth&quot;, 8));
+   private static final AtomicReferenceFieldUpdater&lt;DefaultPromise, Object&gt; RESULT_UPDATER = AtomicReferenceFieldUpdater.newUpdater(DefaultPromise.class, Object.class, &quot;result&quot;);
+   private static final Object SUCCESS = new Object();
+   private static final Object UNCANCELLABLE = new Object();
+   private static final DefaultPromise.CauseHolder CANCELLATION_CAUSE_HOLDER = new DefaultPromise.CauseHolder(ThrowableUtil.unknownStackTrace(new CancellationException(), DefaultPromise.class, &quot;cancel(...)&quot;));
+   private static final StackTraceElement[] CANCELLATION_STACK;
+   private volatile Object result;
+   private final EventExecutor executor;
+   private Object listeners;
+   private short waiters;
+   private boolean notifyingListeners;
+
+   public DefaultPromise(EventExecutor executor) {
+      this.executor = (EventExecutor)ObjectUtil.checkNotNull(executor, &quot;executor&quot;);
+   }
+
+   protected DefaultPromise() {
+      this.executor = null;
+   }
+
+   public Promise&lt;V&gt; setSuccess(V result) {
+      if (this.setSuccess0(result)) {
+         return this;
+      } else {
+         throw new IllegalStateException(&quot;complete already: &quot; + this);
+      }
+   }
+
+   public boolean trySuccess(V result) {
+      return this.setSuccess0(result);
+   }
+
+   public Promise&lt;V&gt; setFailure(Throwable cause) {
+      if (this.setFailure0(cause)) {
+         return this;
+      } else {
+         throw new IllegalStateException(&quot;complete already: &quot; + this, cause);
+      }
+   }
+
+   public boolean tryFailure(Throwable cause) {
+      return this.setFailure0(cause);
+   }
+
+   public boolean setUncancellable() {
+      if (RESULT_UPDATER.compareAndSet(this, (Object)null, UNCANCELLABLE)) {
+         return true;
+      } else {
+         Object result = this.result;
+         return !isDone0(result) || !isCancelled0(result);
+      }
+   }
+
+   public boolean isSuccess() {
+      Object result = this.result;
+      return result != null &amp;&amp; result != UNCANCELLABLE &amp;&amp; !(result instanceof DefaultPromise.CauseHolder);
+   }
+
+   public boolean isCancellable() {
+      return this.result == null;
+   }
+
+   public Throwable cause() {
+      return this.cause0(this.result);
+   }
+
+   private Throwable cause0(Object result) {
+      if (!(result instanceof DefaultPromise.CauseHolder)) {
+         return null;
+      } else {
+         if (result == CANCELLATION_CAUSE_HOLDER) {
+            CancellationException ce = new DefaultPromise.LeanCancellationException(null);
+            if (RESULT_UPDATER.compareAndSet(this, CANCELLATION_CAUSE_HOLDER, new DefaultPromise.CauseHolder(ce))) {
+               return ce;
+            }
+
+            result = this.result;
+         }
+
+         return ((DefaultPromise.CauseHolder)result).cause;
+      }
+   }
+
+   public Promise&lt;V&gt; addListener(GenericFutureListener&lt;? extends Future&lt;? super V&gt;&gt; listener) {
+      ObjectUtil.checkNotNull(listener, &quot;listener&quot;);
+      synchronized(this) {
+         this.addListener0(listener);
+      }
+
+      if (this.isDone()) {
+         this.notifyListeners();
+      }
+
+      return this;
+   }
+
+   public Promise&lt;V&gt; addListeners(GenericFutureListener... listeners) {
+      ObjectUtil.checkNotNull(listeners, &quot;listeners&quot;);
+      synchronized(this) {
+         GenericFutureListener[] var3 = listeners;
+         int var4 = listeners.length;
+         int var5 = 0;
+
+         while(var5 &lt; var4) {
+            GenericFutureListener&lt;? extends Future&lt;? super V&gt;&gt; listener = var3[var5];
+            if (listener != null) {
+               this.addListener0(listener);
+               ++var5;
+               continue;
+            }
+         }
+      }
+
+      if (this.isDone()) {
+         this.notifyListeners();
+      }
+
+      return this;
+   }
+
+   public Promise&lt;V&gt; removeListener(GenericFutureListener&lt;? extends Future&lt;? super V&gt;&gt; listener) {
+      ObjectUtil.checkNotNull(listener, &quot;listener&quot;);
+      synchronized(this) {
+         this.removeListener0(listener);
+         return this;
+      }
+   }
+
+   public Promise&lt;V&gt; removeListeners(GenericFutureListener... listeners) {
+      ObjectUtil.checkNotNull(listeners, &quot;listeners&quot;);
+      synchronized(this) {
+         GenericFutureListener[] var3 = listeners;
+         int var4 = listeners.length;
+
+         for(int var5 = 0; var5 &lt; var4; ++var5) {
+            GenericFutureListener&lt;? extends Future&lt;? super V&gt;&gt; listener = var3[var5];
+            if (listener == null) {
+               break;
+            }
+
+            this.removeListener0(listener);
+         }
+
+         return this;
+      }
+   }
+
+   public Promise&lt;V&gt; await() throws InterruptedException {
+      if (this.isDone()) {
+         return this;
+      } else if (Thread.interrupted()) {
+         throw new InterruptedException(this.toString());
+      } else {
+         this.checkDeadLock();
+         synchronized(this) {
+            while(!this.isDone()) {
+               this.incWaiters();
+
+               try {
+                  this.wait();
+               } finally {
+                  this.decWaiters();
+               }
+            }
+
+            return this;
+         }
+      }
+   }
+
+   public Promise&lt;V&gt; awaitUninterruptibly() {
+      if (this.isDone()) {
+         return this;
+      } else {
+         this.checkDeadLock();
+         boolean interrupted = false;
+         synchronized(this) {
+            while(!this.isDone()) {
+               this.incWaiters();
+
+               try {
+                  this.wait();
+               } catch (InterruptedException var9) {
+                  interrupted = true;
+               } finally {
+                  this.decWaiters();
+               }
+            }
+         }
+
+         if (interrupted) {
+            Thread.currentThread().interrupt();
+         }
+
+         return this;
+      }
+   }
+
+   public boolean await(long timeout, TimeUnit unit) throws InterruptedException {
+      return this.await0(unit.toNanos(timeout), true);
+   }
+
+   public boolean await(long timeoutMillis) throws InterruptedException {
+      return this.await0(TimeUnit.MILLISECONDS.toNanos(timeoutMillis), true);
+   }
+
+   public boolean awaitUninterruptibly(long timeout, TimeUnit unit) {
+      try {
+         return this.await0(unit.toNanos(timeout), false);
+      } catch (InterruptedException var5) {
+         throw new InternalError();
+      }
+   }
+
+   public boolean awaitUninterruptibly(long timeoutMillis) {
+      try {
+         return this.await0(TimeUnit.MILLISECONDS.toNanos(timeoutMillis), false);
+      } catch (InterruptedException var4) {
+         throw new InternalError();
+      }
+   }
+
+   public V getNow() {
+      Object result = this.result;
+      return !(result instanceof DefaultPromise.CauseHolder) &amp;&amp; result != SUCCESS &amp;&amp; result != UNCANCELLABLE ? result : null;
+   }
+
+   public V get() throws InterruptedException, ExecutionException {
+      Object result = this.result;
+      if (!isDone0(result)) {
+         this.await();
+         result = this.result;
+      }
+
+      if (result != SUCCESS &amp;&amp; result != UNCANCELLABLE) {
+         Throwable cause = this.cause0(result);
+         if (cause == null) {
+            return result;
+         } else if (cause instanceof CancellationException) {
+            throw (CancellationException)cause;
+         } else {
+            throw new ExecutionException(cause);
+         }
+      } else {
+         return null;
+      }
+   }
+
+   public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException {
+      Object result = this.result;
+      if (!isDone0(result)) {
+         if (!this.await(timeout, unit)) {
+            throw new TimeoutException();
+         }
+
+         result = this.result;
+      }
+
+      if (result != SUCCESS &amp;&amp; result != UNCANCELLABLE) {
+         Throwable cause = this.cause0(result);
+         if (cause == null) {
+            return result;
+         } else if (cause instanceof CancellationException) {
+            throw (CancellationException)cause;
+         } else {
+            throw new ExecutionException(cause);
+         }
+      } else {
+         return null;
+      }
+   }
+
+   public boolean cancel(boolean mayInterruptIfRunning) {
+      if (RESULT_UPDATER.compareAndSet(this, (Object)null, CANCELLATION_CAUSE_HOLDER)) {
+         if (this.checkNotifyWaiters()) {
+            this.notifyListeners();
+         }
+
+         return true;
+      } else {
+         return false;
+      }
+   }
+
+   public boolean isCancelled() {
+      return isCancelled0(this.result);
+   }
+
+   public boolean isDone() {
+      return isDone0(this.result);
+   }
+
+   public Promise&lt;V&gt; sync() throws InterruptedException {
+      this.await();
+      this.rethrowIfFailed();
+      return this;
+   }
+
+   public Promise&lt;V&gt; syncUninterruptibly() {
+      this.awaitUninterruptibly();
+      this.rethrowIfFailed();
+      return this;
+   }
+
+   public String toString() {
+      return this.toStringBuilder().toString();
+   }
+
+   protected StringBuilder toStringBuilder() {
+      StringBuilder buf = (new StringBuilder(64)).append(StringUtil.simpleClassName(this)).append(&#39;@&#39;).append(Integer.toHexString(this.hashCode()));
+      Object result = this.result;
+      if (result == SUCCESS) {
+         buf.append(&quot;(success)&quot;);
+      } else if (result == UNCANCELLABLE) {
+         buf.append(&quot;(uncancellable)&quot;);
+      } else if (result instanceof DefaultPromise.CauseHolder) {
+         buf.append(&quot;(failure: &quot;).append(((DefaultPromise.CauseHolder)result).cause).append(&#39;)&#39;);
+      } else if (result != null) {
+         buf.append(&quot;(success: &quot;).append(result).append(&#39;)&#39;);
+      } else {
+         buf.append(&quot;(incomplete)&quot;);
+      }
+
+      return buf;
+   }
+
+   protected EventExecutor executor() {
+      return this.executor;
+   }
+
+   protected void checkDeadLock() {
+      EventExecutor e = this.executor();
+      if (e != null &amp;&amp; e.inEventLoop()) {
+         throw new BlockingOperationException(this.toString());
+      }
+   }
+
+   protected static void notifyListener(EventExecutor eventExecutor, Future&lt;?&gt; future, GenericFutureListener&lt;?&gt; listener) {
+      notifyListenerWithStackOverFlowProtection((EventExecutor)ObjectUtil.checkNotNull(eventExecutor, &quot;eventExecutor&quot;), (Future)ObjectUtil.checkNotNull(future, &quot;future&quot;), (GenericFutureListener)ObjectUtil.checkNotNull(listener, &quot;listener&quot;));
+   }
+
+   private void notifyListeners() {
+      EventExecutor executor = this.executor();
+      if (executor.inEventLoop()) {
+         InternalThreadLocalMap threadLocals = InternalThreadLocalMap.get();
+         int stackDepth = threadLocals.futureListenerStackDepth();
+         if (stackDepth &lt; MAX_LISTENER_STACK_DEPTH) {
+            threadLocals.setFutureListenerStackDepth(stackDepth + 1);
+
+            try {
+               this.notifyListenersNow();
+            } finally {
+               threadLocals.setFutureListenerStackDepth(stackDepth);
+            }
+
+            return;
+         }
+      }
+
+      safeExecute(executor, new Runnable() {
+         public void run() {
+            DefaultPromise.this.notifyListenersNow();
+         }
+      });
+   }
+
+   private static void notifyListenerWithStackOverFlowProtection(EventExecutor executor, final Future&lt;?&gt; future, final GenericFutureListener&lt;?&gt; listener) {
+      if (executor.inEventLoop()) {
+         InternalThreadLocalMap threadLocals = InternalThreadLocalMap.get();
+         int stackDepth = threadLocals.futureListenerStackDepth();
+         if (stackDepth &lt; MAX_LISTENER_STACK_DEPTH) {
+            threadLocals.setFutureListenerStackDepth(stackDepth + 1);
+
+            try {
+               notifyListener0(future, listener);
+            } finally {
+               threadLocals.setFutureListenerStackDepth(stackDepth);
+            }
+
+            return;
+         }
+      }
+
+      safeExecute(executor, new Runnable() {
+         public void run() {
+            DefaultPromise.notifyListener0(future, listener);
+         }
+      });
+   }
+
+   private void notifyListenersNow() {
+      Object listeners;
+      synchronized(this) {
+         if (this.notifyingListeners || this.listeners == null) {
+            return;
+         }
+
+         this.notifyingListeners = true;
+         listeners = this.listeners;
+         this.listeners = null;
+      }
+
+      while(true) {
+         if (listeners instanceof DefaultFutureListeners) {
+            this.notifyListeners0((DefaultFutureListeners)listeners);
+         } else {
+            notifyListener0(this, (GenericFutureListener)listeners);
+         }
+
+         synchronized(this) {
+            if (this.listeners == null) {
+               this.notifyingListeners = false;
+               return;
+            }
+
+            listeners = this.listeners;
+            this.listeners = null;
+         }
+      }
+   }
+
+   private void notifyListeners0(DefaultFutureListeners listeners) {
+      GenericFutureListener&lt;?&gt;[] a = listeners.listeners();
+      int size = listeners.size();
+
+      for(int i = 0; i &lt; size; ++i) {
+         notifyListener0(this, a[i]);
+      }
+
+   }
+
+   private static void notifyListener0(Future future, GenericFutureListener l) {
+      try {
+         l.operationComplete(future);
+      } catch (Throwable var3) {
+         if (logger.isWarnEnabled()) {
+            logger.warn(&quot;An exception was thrown by &quot; + l.getClass().getName() + &quot;.operationComplete()&quot;, var3);
+         }
+      }
+
+   }
+
+   private void addListener0(GenericFutureListener&lt;? extends Future&lt;? super V&gt;&gt; listener) {
+      if (this.listeners == null) {
+         this.listeners = listener;
+      } else if (this.listeners instanceof DefaultFutureListeners) {
+         ((DefaultFutureListeners)this.listeners).add(listener);
+      } else {
+         this.listeners = new DefaultFutureListeners((GenericFutureListener)this.listeners, listener);
+      }
+
+   }
+
+   private void removeListener0(GenericFutureListener&lt;? extends Future&lt;? super V&gt;&gt; listener) {
+      if (this.listeners instanceof DefaultFutureListeners) {
+         ((DefaultFutureListeners)this.listeners).remove(listener);
+      } else if (this.listeners == listener) {
+         this.listeners = null;
+      }
+
+   }
+
+   private boolean setSuccess0(V result) {
+      return this.setValue0(result == null ? SUCCESS : result);
+   }
+
+   private boolean setFailure0(Throwable cause) {
+      return this.setValue0(new DefaultPromise.CauseHolder((Throwable)ObjectUtil.checkNotNull(cause, &quot;cause&quot;)));
+   }
+
+   private boolean setValue0(Object objResult) {
+      if (!RESULT_UPDATER.compareAndSet(this, (Object)null, objResult) &amp;&amp; !RESULT_UPDATER.compareAndSet(this, UNCANCELLABLE, objResult)) {
+         return false;
+      } else {
+         if (this.checkNotifyWaiters()) {
+            this.notifyListeners();
+         }
+
+         return true;
+      }
+   }
+
+   private synchronized boolean checkNotifyWaiters() {
+      if (this.waiters &gt; 0) {
+         this.notifyAll();
+      }
+
+      return this.listeners != null;
+   }
+
+   private void incWaiters() {
+      if (this.waiters == 32767) {
+         throw new IllegalStateException(&quot;too many waiters: &quot; + this);
+      } else {
+         ++this.waiters;
+      }
+   }
+
+   private void decWaiters() {
+      --this.waiters;
+   }
+
+   private void rethrowIfFailed() {
+      Throwable cause = this.cause();
+      if (cause != null) {
+         PlatformDependent.throwException(cause);
+      }
+   }
+
+   private boolean await0(long timeoutNanos, boolean interruptable) throws InterruptedException {
+      if (this.isDone()) {
+         return true;
+      } else if (timeoutNanos &lt;= 0L) {
+         return this.isDone();
+      } else if (interruptable &amp;&amp; Thread.interrupted()) {
+         throw new InterruptedException(this.toString());
+      } else {
+         this.checkDeadLock();
+         long startTime = System.nanoTime();
+         long waitTime = timeoutNanos;
+         boolean interrupted = false;
+
+         try {
+            boolean var9;
+            do {
+               synchronized(this) {
+                  if (this.isDone()) {
+                     boolean var10 = true;
+                     return var10;
+                  }
+
+                  this.incWaiters();
+
+                  try {
+                     this.wait(waitTime / 1000000L, (int)(waitTime % 1000000L));
+                  } catch (InterruptedException var22) {
+                     if (interruptable) {
+                        throw var22;
+                     }
+
+                     interrupted = true;
+                  } finally {
+                     this.decWaiters();
+                  }
+               }
+
+               if (this.isDone()) {
+                  var9 = true;
+                  return var9;
+               }
+
+               waitTime = timeoutNanos - (System.nanoTime() - startTime);
+            } while(waitTime &gt; 0L);
+
+            var9 = this.isDone();
+            return var9;
+         } finally {
+            if (interrupted) {
+               Thread.currentThread().interrupt();
+            }
+
+         }
+      }
+   }
+
+   void notifyProgressiveListeners(final long progress, final long total) {
+      Object listeners = this.progressiveListeners();
+      if (listeners != null) {
+         final ProgressiveFuture&lt;V&gt; self = (ProgressiveFuture)this;
+         EventExecutor executor = this.executor();
+         if (executor.inEventLoop()) {
+            if (listeners instanceof GenericProgressiveFutureListener[]) {
+               notifyProgressiveListeners0(self, (GenericProgressiveFutureListener[])((GenericProgressiveFutureListener[])listeners), progress, total);
+            } else {
+               notifyProgressiveListener0(self, (GenericProgressiveFutureListener)listeners, progress, total);
+            }
+         } else if (listeners instanceof GenericProgressiveFutureListener[]) {
+            final GenericProgressiveFutureListener&lt;?&gt;[] array = (GenericProgressiveFutureListener[])((GenericProgressiveFutureListener[])listeners);
+            safeExecute(executor, new Runnable() {
+               public void run() {
+                  DefaultPromise.notifyProgressiveListeners0(self, array, progress, total);
+               }
+            });
+         } else {
+            final GenericProgressiveFutureListener&lt;ProgressiveFuture&lt;V&gt;&gt; l = (GenericProgressiveFutureListener)listeners;
+            safeExecute(executor, new Runnable() {
+               public void run() {
+                  DefaultPromise.notifyProgressiveListener0(self, l, progress, total);
+               }
+            });
+         }
+
+      }
+   }
+
+   private synchronized Object progressiveListeners() {
+      Object listeners = this.listeners;
+      if (listeners == null) {
+         return null;
+      } else if (listeners instanceof DefaultFutureListeners) {
+         DefaultFutureListeners dfl = (DefaultFutureListeners)listeners;
+         int progressiveSize = dfl.progressiveSize();
+         GenericFutureListener[] array;
+         int i;
+         switch(progressiveSize) {
+         case 0:
+            return null;
+         case 1:
+            array = dfl.listeners();
+            int var5 = array.length;
+
+            for(i = 0; i &lt; var5; ++i) {
+               GenericFutureListener&lt;?&gt; l = array[i];
+               if (l instanceof GenericProgressiveFutureListener) {
+                  return l;
+               }
+            }
+
+            return null;
+         default:
+            array = dfl.listeners();
+            GenericProgressiveFutureListener&lt;?&gt;[] copy = new GenericProgressiveFutureListener[progressiveSize];
+            i = 0;
+
+            for(int j = 0; j &lt; progressiveSize; ++i) {
+               GenericFutureListener&lt;?&gt; l = array[i];
+               if (l instanceof GenericProgressiveFutureListener) {
+                  copy[j++] = (GenericProgressiveFutureListener)l;
+               }
+            }
+
+            return copy;
+         }
+      } else {
+         return listeners instanceof GenericProgressiveFutureListener ? listeners : null;
+      }
+   }
+
+   private static void notifyProgressiveListeners0(ProgressiveFuture&lt;?&gt; future, GenericProgressiveFutureListener&lt;?&gt;[] listeners, long progress, long total) {
+      GenericProgressiveFutureListener[] var6 = listeners;
+      int var7 = listeners.length;
+
+      for(int var8 = 0; var8 &lt; var7; ++var8) {
+         GenericProgressiveFutureListener&lt;?&gt; l = var6[var8];
+         if (l == null) {
+            break;
+         }
+
+         notifyProgressiveListener0(future, l, progress, total);
+      }
+
+   }
+
+   private static void notifyProgressiveListener0(ProgressiveFuture future, GenericProgressiveFutureListener l, long progress, long total) {
+      try {
+         l.operationProgressed(future, progress, total);
+      } catch (Throwable var7) {
+         if (logger.isWarnEnabled()) {
+            logger.warn(&quot;An exception was thrown by &quot; + l.getClass().getName() + &quot;.operationProgressed()&quot;, var7);
+         }
+      }
+
+   }
+
+   private static boolean isCancelled0(Object result) {
+      return result instanceof DefaultPromise.CauseHolder &amp;&amp; ((DefaultPromise.CauseHolder)result).cause instanceof CancellationException;
+   }
+
+   private static boolean isDone0(Object result) {
+      return result != null &amp;&amp; result != UNCANCELLABLE;
+   }
+
+   private static void safeExecute(EventExecutor executor, Runnable task) {
+      try {
+         executor.execute(task);
+      } catch (Throwable var3) {
+         rejectedExecutionLogger.error(&quot;Failed to submit a listener notification task. Event loop shut down?&quot;, var3);
+      }
+
+   }
+
+   static {
+      CANCELLATION_STACK = CANCELLATION_CAUSE_HOLDER.cause.getStackTrace();
+   }
+
+   private static final class CauseHolder {
+      final Throwable cause;
+
+      CauseHolder(Throwable cause) {
+         this.cause = cause;
+      }
+   }
+
+   private static final class LeanCancellationException extends CancellationException {
+      private static final long serialVersionUID = 2794674970981187807L;
+
+      private LeanCancellationException() {
+      }
+
+      public Throwable fillInStackTrace() {
+         this.setStackTrace(DefaultPromise.CANCELLATION_STACK);
+         return this;
+      }
+
+      public String toString() {
+         return CancellationException.class.getName();
+      }
+
+      // $FF: synthetic method
+      LeanCancellationException(Object x0) {
+         this();
+      }
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:29 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

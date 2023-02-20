@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for AbstractRequestBuilder.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/springdoc-openapi-common-1.4.3.jar/org/springdoc/core/AbstractRequestBuilder.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Bean Validation</em>
+<a title='View Rule: javaee-technology-usage-00110' href='windup_ruleproviders.html#javaee-technology-usage-00110'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Bean Validation</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package org.springdoc.core;
+
+import com.fasterxml.jackson.annotation.JsonView;
+import io.swagger.v3.oas.annotations.Parameters;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.models.Components;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.Operation;
+import io.swagger.v3.oas.models.media.Content;
+import io.swagger.v3.oas.models.media.MediaType;
+import io.swagger.v3.oas.models.media.Schema;
+import io.swagger.v3.oas.models.media.StringSchema;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.Reader;
+import java.io.Writer;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
+import java.math.BigDecimal;
+import java.security.Principal;
+import java.time.ZoneId;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
+import java.util.TimeZone;
+import java.util.Map.Entry;
+import java.util.function.BinaryOperator;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.IntFunction;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+import org.apache.commons.lang3.StringUtils;
+import org.springdoc.core.converters.SchemaPropertyDeprecatingConverter;
+import org.springdoc.core.customizers.ParameterCustomizer;
+import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
+import org.springframework.core.MethodParameter;
+import org.springframework.core.annotation.AnnotatedElementUtils;
+import org.springframework.http.HttpMethod;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.util.CollectionUtils;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestAttribute;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.context.request.NativeWebRequest;
+import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.method.HandlerMethod;
+import org.springframework.web.util.UriComponentsBuilder;
+
+public abstract class AbstractRequestBuilder {
+   private static final List&lt;Class&lt;?&gt;&gt; PARAM_TYPES_TO_IGNORE = new ArrayList();
+   private static final String[] ANNOTATIONS_FOR_REQUIRED = new String[]{NotNull.class.getName(), &quot;javax.validation.constraints.NotBlank&quot;, &quot;javax.validation.constraints.NotEmpty&quot;};
+   private static final String POSITIVE_OR_ZERO = &quot;javax.validation.constraints.PositiveOrZero&quot;;
+   private static final String NEGATIVE_OR_ZERO = &quot;javax.validation.constraints.NegativeOrZero&quot;;
+   private final GenericParameterBuilder parameterBuilder;
+   private final RequestBodyBuilder requestBodyBuilder;
+   private final OperationBuilder operationBuilder;
+   private final LocalVariableTableParameterNameDiscoverer localSpringDocParameterNameDiscoverer;
+   private final Optional&lt;List&lt;ParameterCustomizer&gt;&gt; parameterCustomizers;
+
+   protected AbstractRequestBuilder(GenericParameterBuilder parameterBuilder, RequestBodyBuilder requestBodyBuilder, OperationBuilder operationBuilder, Optional&lt;List&lt;ParameterCustomizer&gt;&gt; parameterCustomizers, LocalVariableTableParameterNameDiscoverer localSpringDocParameterNameDiscoverer) {
+      this.parameterBuilder = parameterBuilder;
+      this.requestBodyBuilder = requestBodyBuilder;
+      this.operationBuilder = operationBuilder;
+      if (parameterCustomizers.isPresent()) {
+         ((List)parameterCustomizers.get()).removeIf(Objects::isNull);
+      }
+
+      this.parameterCustomizers = parameterCustomizers;
+      this.localSpringDocParameterNameDiscoverer = localSpringDocParameterNameDiscoverer;
+   }
+
+   public static void addRequestWrapperToIgnore(Class... classes) {
+      PARAM_TYPES_TO_IGNORE.addAll(Arrays.asList(classes));
+   }
+
+   public static void removeRequestWrapperToIgnore(Class... classes) {
+      List&lt;Class&lt;?&gt;&gt; classesToIgnore = Arrays.asList(classes);
+      if (PARAM_TYPES_TO_IGNORE.containsAll(classesToIgnore)) {
+         PARAM_TYPES_TO_IGNORE.removeAll(Arrays.asList(classes));
+      }
+
+   }
+
+   public static boolean isRequestTypeToIgnore(Class&lt;?&gt; rawClass) {
+      return PARAM_TYPES_TO_IGNORE.stream().anyMatch((clazz) -&gt; {
+         return clazz.isAssignableFrom(rawClass);
+      });
+   }
+
+   public Operation build(HandlerMethod handlerMethod, RequestMethod requestMethod, Operation operation, MethodAttributes methodAttributes, OpenAPI openAPI) {
+      String operationId = this.operationBuilder.getOperationId(handlerMethod.getMethod().getName(), operation.getOperationId(), openAPI);
+      operation.setOperationId(operationId);
+      String[] pNames = this.localSpringDocParameterNameDiscoverer.getParameterNames(handlerMethod.getMethod());
+      MethodParameter[] parameters = handlerMethod.getMethodParameters();
+      String[] reflectionParametersNames = (String[])Arrays.stream(handlerMethod.getMethod().getParameters()).map(Parameter::getName).toArray((x$0) -&gt; {
+         return new String[x$0];
+      });
+      if (pNames == null || Arrays.stream(pNames).anyMatch(Objects::isNull)) {
+         pNames = reflectionParametersNames;
+      }
+
+      parameters = DelegatingMethodParameter.customize(pNames, parameters);
+      RequestBodyInfo requestBodyInfo = new RequestBodyInfo();
+      List&lt;io.swagger.v3.oas.models.parameters.Parameter&gt; operationParameters = operation.getParameters() != null ? operation.getParameters() : new ArrayList();
+      Map&lt;String, io.swagger.v3.oas.annotations.Parameter&gt; parametersDocMap = this.getApiParameters(handlerMethod.getMethod());
+      Components components = openAPI.getComponents();
+      MethodParameter[] var14 = parameters;
+      int var15 = parameters.length;
+
+      for(int var16 = 0; var16 &lt; var15; ++var16) {
+         MethodParameter methodParameter = var14[var16];
+         io.swagger.v3.oas.models.parameters.Parameter parameter = null;
+         io.swagger.v3.oas.annotations.Parameter parameterDoc = (io.swagger.v3.oas.annotations.Parameter)AnnotatedElementUtils.findMergedAnnotation(AnnotatedElementUtils.forAnnotations(methodParameter.getParameterAnnotations()), io.swagger.v3.oas.annotations.Parameter.class);
+         String pName = methodParameter.getParameterName();
+         ParameterInfo parameterInfo = new ParameterInfo(pName, methodParameter);
+         if (parameterDoc == null) {
+            parameterDoc = (io.swagger.v3.oas.annotations.Parameter)parametersDocMap.get(parameterInfo.getpName());
+         }
+
+         if (parameterDoc != null) {
+            if (parameterDoc.hidden() || parameterDoc.schema().hidden()) {
+               continue;
+            }
+
+            parameter = this.parameterBuilder.buildParameterFromDoc(parameterDoc, components, methodAttributes.getJsonViewAnnotation());
+            parameterInfo.setParameterModel(parameter);
+         }
+
+         if (!this.isParamToIgnore(methodParameter)) {
+            parameter = this.buildParams(parameterInfo, components, requestMethod, methodAttributes.getJsonViewAnnotation());
+            parameter = GenericParameterBuilder.mergeParameter((List)operationParameters, parameter);
+            List&lt;Annotation&gt; parameterAnnotations = Arrays.asList(methodParameter.getParameterAnnotations());
+            if (this.isValidParameter(parameter)) {
+               this.applyBeanValidatorAnnotations(parameter, parameterAnnotations);
+            } else if (!RequestMethod.GET.equals(requestMethod)) {
+               if (operation.getRequestBody() != null) {
+                  requestBodyInfo.setRequestBody(operation.getRequestBody());
+               }
+
+               this.requestBodyBuilder.calculateRequestBodyInfo(components, methodAttributes, parameterInfo, requestBodyInfo);
+               this.applyBeanValidatorAnnotations(requestBodyInfo.getRequestBody(), parameterAnnotations, methodParameter.isOptional());
+            }
+
+            this.customiseParameter(parameter, parameterInfo);
+         }
+      }
+
+      LinkedHashMap&lt;String, io.swagger.v3.oas.models.parameters.Parameter&gt; map = this.getParameterLinkedHashMap(components, methodAttributes, (List)operationParameters, parametersDocMap);
+      this.setParams(operation, new ArrayList(map.values()), requestBodyInfo);
+      return operation;
+   }
+
+   private LinkedHashMap&lt;String, io.swagger.v3.oas.models.parameters.Parameter&gt; getParameterLinkedHashMap(Components components, MethodAttributes methodAttributes, List&lt;io.swagger.v3.oas.models.parameters.Parameter&gt; operationParameters, Map&lt;String, io.swagger.v3.oas.annotations.Parameter&gt; parametersDocMap) {
+      LinkedHashMap&lt;String, io.swagger.v3.oas.models.parameters.Parameter&gt; map = (LinkedHashMap)operationParameters.stream().collect(Collectors.toMap((parameterx) -&gt; {
+         return parameterx.getName() != null ? parameterx.getName() : Integer.toString(parameterx.hashCode());
+      }, (parameterx) -&gt; {
+         return parameterx;
+      }, (u, v) -&gt; {
+         throw new IllegalStateException(String.format(&quot;Duplicate key %s&quot;, u));
+      }, LinkedHashMap::new));
+      Iterator var6 = parametersDocMap.entrySet().iterator();
+
+      while(var6.hasNext()) {
+         Entry&lt;String, io.swagger.v3.oas.annotations.Parameter&gt; entry = (Entry)var6.next();
+         if (entry.getKey() != null &amp;&amp; !map.containsKey(entry.getKey()) &amp;&amp; !((io.swagger.v3.oas.annotations.Parameter)entry.getValue()).hidden()) {
+            io.swagger.v3.oas.models.parameters.Parameter parameter = this.parameterBuilder.buildParameterFromDoc((io.swagger.v3.oas.annotations.Parameter)entry.getValue(), components, methodAttributes.getJsonViewAnnotation());
+            map.put(entry.getKey(), parameter);
+         }
+      }
+
+      getHeaders(methodAttributes, map);
+      return map;
+   }
+
+   public static Collection&lt;io.swagger.v3.oas.models.parameters.Parameter&gt; getHeaders(MethodAttributes methodAttributes, Map&lt;String, io.swagger.v3.oas.models.parameters.Parameter&gt; map) {
+      Entry entry;
+      io.swagger.v3.oas.models.parameters.Parameter parameter;
+      for(Iterator var2 = methodAttributes.getHeaders().entrySet().iterator(); var2.hasNext(); map.put(entry.getKey(), parameter)) {
+         entry = (Entry)var2.next();
+         parameter = (new io.swagger.v3.oas.models.parameters.Parameter()).in(ParameterIn.HEADER.toString()).name((String)entry.getKey()).schema((new StringSchema()).addEnumItem((String)entry.getValue()));
+         if (map.containsKey(entry.getKey())) {
+            parameter = (io.swagger.v3.oas.models.parameters.Parameter)map.get(entry.getKey());
+            parameter.getSchema().addEnumItemObject(entry.getValue());
+            parameter.setSchema(parameter.getSchema());
+         }
+      }
+
+      return map.values();
+   }
+
+   protected io.swagger.v3.oas.models.parameters.Parameter customiseParameter(io.swagger.v3.oas.models.parameters.Parameter parameter, ParameterInfo parameterInfo) {
+      this.parameterCustomizers.ifPresent((customizers) -&gt; {
+         customizers.forEach((customizer) -&gt; {
+            customizer.customize(parameter, parameterInfo.getMethodParameter());
+         });
+      });
+      return parameter;
+   }
+
+   public boolean isParamToIgnore(MethodParameter parameter) {
+      if (this.parameterBuilder.isAnnotationToIgnore(parameter)) {
+         return true;
+      } else {
+         return (parameter.getParameterAnnotation(PathVariable.class) == null || !((PathVariable)parameter.getParameterAnnotation(PathVariable.class)).required()) &amp;&amp; (parameter.getParameterAnnotation(RequestParam.class) == null || !((RequestParam)parameter.getParameterAnnotation(RequestParam.class)).required()) &amp;&amp; (parameter.getParameterAnnotation(RequestBody.class) == null || !((RequestBody)parameter.getParameterAnnotation(RequestBody.class)).required()) ? isRequestTypeToIgnore(parameter.getParameterType()) : false;
+      }
+   }
+
+   private void setParams(Operation operation, List&lt;io.swagger.v3.oas.models.parameters.Parameter&gt; operationParameters, RequestBodyInfo requestBodyInfo) {
+      if (!CollectionUtils.isEmpty(operationParameters)) {
+         operation.setParameters(operationParameters);
+      }
+
+      if (requestBodyInfo.getRequestBody() != null) {
+         operation.setRequestBody(requestBodyInfo.getRequestBody());
+      }
+
+   }
+
+   public boolean isValidParameter(io.swagger.v3.oas.models.parameters.Parameter parameter) {
+      return parameter != null &amp;&amp; (parameter.getName() != null || parameter.get$ref() != null);
+   }
+
+   public io.swagger.v3.oas.models.parameters.Parameter buildParams(ParameterInfo parameterInfo, Components components, RequestMethod requestMethod, JsonView jsonView) {
+      MethodParameter methodParameter = parameterInfo.getMethodParameter();
+      RequestHeader requestHeader = parameterInfo.getRequestHeader();
+      RequestParam requestParam = parameterInfo.getRequestParam();
+      PathVariable pathVar = parameterInfo.getPathVar();
+      CookieValue cookieValue = parameterInfo.getCookieValue();
+      RequestInfo requestInfo;
+      if (requestHeader != null) {
+         requestInfo = new RequestInfo(ParameterIn.HEADER.toString(), parameterInfo.getpName(), requestHeader.required(), requestHeader.defaultValue());
+         return this.buildParam(parameterInfo, components, requestInfo, jsonView);
+      } else if (requestParam != null &amp;&amp; !this.parameterBuilder.isFile(parameterInfo.getMethodParameter())) {
+         requestInfo = new RequestInfo(ParameterIn.QUERY.toString(), parameterInfo.getpName(), requestParam.required() &amp;&amp; !methodParameter.isOptional(), requestParam.defaultValue());
+         return this.buildParam(parameterInfo, components, requestInfo, jsonView);
+      } else if (pathVar != null) {
+         requestInfo = new RequestInfo(ParameterIn.PATH.toString(), parameterInfo.getpName(), !methodParameter.isOptional(), (String)null);
+         return this.buildParam(parameterInfo, components, requestInfo, jsonView);
+      } else if (cookieValue != null) {
+         requestInfo = new RequestInfo(ParameterIn.COOKIE.toString(), parameterInfo.getpName(), cookieValue.required(), cookieValue.defaultValue());
+         return this.buildParam(parameterInfo, components, requestInfo, jsonView);
+      } else {
+         DelegatingMethodParameter delegatingMethodParameter = (DelegatingMethodParameter)methodParameter;
+         return !RequestMethod.GET.equals(requestMethod) &amp;&amp; (parameterInfo.getParameterModel() == null || !ParameterIn.PATH.toString().equals(parameterInfo.getParameterModel().getIn())) &amp;&amp; !delegatingMethodParameter.isParameterObject() ? null : this.buildParam(&quot;query&quot;, components, parameterInfo, !methodParameter.isOptional(), (String)null, jsonView);
+      }
+   }
+
+   private io.swagger.v3.oas.models.parameters.Parameter buildParam(ParameterInfo parameterInfo, Components components, RequestInfo requestInfo, JsonView jsonView) {
+      String pName = parameterInfo.getpName();
+      String name = StringUtils.isBlank(requestInfo.value()) ? pName : requestInfo.value();
+      parameterInfo.setpName(name);
+      io.swagger.v3.oas.models.parameters.Parameter parameter;
+      if (!&quot;\n\t\t\n\t\t\n\ue000\ue001\ue002\n\t\t\t\t\n&quot;.equals(requestInfo.defaultValue())) {
+         parameter = this.buildParam(requestInfo.type(), components, parameterInfo, false, requestInfo.defaultValue(), jsonView);
+      } else {
+         parameter = this.buildParam(requestInfo.type(), components, parameterInfo, requestInfo.required(), (String)null, jsonView);
+      }
+
+      return parameter;
+   }
+
+   private io.swagger.v3.oas.models.parameters.Parameter buildParam(String in, Components components, ParameterInfo parameterInfo, Boolean required, String defaultValue, JsonView jsonView) {
+      io.swagger.v3.oas.models.parameters.Parameter parameter = parameterInfo.getParameterModel();
+      String name = parameterInfo.getpName();
+      if (parameter == null) {
+         parameter = new io.swagger.v3.oas.models.parameters.Parameter();
+         parameterInfo.setParameterModel(parameter);
+      }
+
+      if (StringUtils.isBlank(parameter.getName())) {
+         parameter.setName(name);
+      }
+
+      if (StringUtils.isBlank(parameter.getIn())) {
+         parameter.setIn(in);
+      }
+
+      if (required != null &amp;&amp; parameter.getRequired() == null) {
+         parameter.setRequired(required);
+      }
+
+      if (SchemaPropertyDeprecatingConverter.containsDeprecatedAnnotation(parameterInfo.getMethodParameter().getParameterAnnotations())) {
+         parameter.setDeprecated(true);
+      }
+
+      if (parameter.getSchema() == null) {
+         Schema&lt;?&gt; schema = this.parameterBuilder.calculateSchema(components, parameterInfo, (RequestBodyInfo)null, jsonView);
+         if (defaultValue != null) {
+            schema.setDefault(defaultValue);
+         }
+
+         parameter.setSchema(schema);
+      }
+
+      return parameter;
+   }
+
+   public void applyBeanValidatorAnnotations(io.swagger.v3.oas.models.parameters.Parameter parameter, List&lt;Annotation&gt; annotations) {
+      Map&lt;String, Annotation&gt; annos = new HashMap();
+      if (annotations != null) {
+         annotations.forEach((annotation) -&gt; {
+            Annotation var10000 = (Annotation)annos.put(annotation.annotationType().getName(), annotation);
+         });
+      }
+
+      Stream var10000 = Arrays.stream(ANNOTATIONS_FOR_REQUIRED);
+      annos.getClass();
+      boolean annotationExists = var10000.anyMatch(annos::containsKey);
+      if (annotationExists) {
+         parameter.setRequired(true);
+      }
+
+      Schema&lt;?&gt; schema = parameter.getSchema();
+      this.applyValidationsToSchema(annos, schema);
+   }
+
+   public void applyBeanValidatorAnnotations(io.swagger.v3.oas.models.parameters.RequestBody requestBody, List&lt;Annotation&gt; annotations, boolean isOptional) {
+      Map&lt;String, Annotation&gt; annos = new HashMap();
+      boolean requestBodyRequired = false;
+      if (!CollectionUtils.isEmpty(annotations)) {
+         annotations.forEach((annotation) -&gt; {
+            Annotation var10000 = (Annotation)annos.put(annotation.annotationType().getName(), annotation);
+         });
+         requestBodyRequired = annotations.stream().filter((annotation) -&gt; {
+            return RequestBody.class.equals(annotation.annotationType());
+         }).anyMatch((annotation) -&gt; {
+            return ((RequestBody)annotation).required();
+         });
+      }
+
+      Stream var10000 = Arrays.stream(ANNOTATIONS_FOR_REQUIRED);
+      annos.getClass();
+      boolean validationExists = var10000.anyMatch(annos::containsKey);
+      if (validationExists || !isOptional &amp;&amp; requestBodyRequired) {
+         requestBody.setRequired(true);
+      }
+
+      Content content = requestBody.getContent();
+      Iterator var8 = content.values().iterator();
+
+      while(var8.hasNext()) {
+         MediaType mediaType = (MediaType)var8.next();
+         Schema&lt;?&gt; schema = mediaType.getSchema();
+         this.applyValidationsToSchema(annos, schema);
+      }
+
+   }
+
+   private void calculateSize(Map&lt;String, Annotation&gt; annos, Schema&lt;?&gt; schema) {
+      if (annos.containsKey(Size.class.getName())) {
+         Size size = (Size)annos.get(Size.class.getName());
+         if (&quot;array&quot;.equals(schema.getType())) {
+            schema.setMinItems(size.min());
+            schema.setMaxItems(size.max());
+         } else if (&quot;string&quot;.equals(schema.getType())) {
+            schema.setMinLength(size.min());
+            schema.setMaxLength(size.max());
+         }
+      }
+
+   }
+
+   public RequestBodyBuilder getRequestBodyBuilder() {
+      return this.requestBodyBuilder;
+   }
+
+   private Map&lt;String, io.swagger.v3.oas.annotations.Parameter&gt; getApiParameters(Method method) {
+      Class&lt;?&gt; declaringClass = method.getDeclaringClass();
+      Set&lt;Parameters&gt; apiParametersDoc = AnnotatedElementUtils.findAllMergedAnnotations(method, Parameters.class);
+      LinkedHashMap&lt;String, io.swagger.v3.oas.annotations.Parameter&gt; apiParametersMap = (LinkedHashMap)apiParametersDoc.stream().flatMap((x) -&gt; {
+         return Stream.of(x.value());
+      }).collect(Collectors.toMap(io.swagger.v3.oas.annotations.Parameter::name, (x) -&gt; {
+         return x;
+      }, (e1, e2) -&gt; {
+         return e2;
+      }, LinkedHashMap::new));
+      Set&lt;Parameters&gt; apiParametersDocDeclaringClass = AnnotatedElementUtils.findAllMergedAnnotations(declaringClass, Parameters.class);
+      LinkedHashMap&lt;String, io.swagger.v3.oas.annotations.Parameter&gt; apiParametersDocDeclaringClassMap = (LinkedHashMap)apiParametersDocDeclaringClass.stream().flatMap((x) -&gt; {
+         return Stream.of(x.value());
+      }).collect(Collectors.toMap(io.swagger.v3.oas.annotations.Parameter::name, (x) -&gt; {
+         return x;
+      }, (e1, e2) -&gt; {
+         return e2;
+      }, LinkedHashMap::new));
+      apiParametersMap.putAll(apiParametersDocDeclaringClassMap);
+      Set&lt;io.swagger.v3.oas.annotations.Parameter&gt; apiParameterDoc = AnnotatedElementUtils.findAllMergedAnnotations(method, io.swagger.v3.oas.annotations.Parameter.class);
+      LinkedHashMap&lt;String, io.swagger.v3.oas.annotations.Parameter&gt; apiParameterDocMap = (LinkedHashMap)apiParameterDoc.stream().collect(Collectors.toMap(io.swagger.v3.oas.annotations.Parameter::name, (x) -&gt; {
+         return x;
+      }, (e1, e2) -&gt; {
+         return e2;
+      }, LinkedHashMap::new));
+      apiParametersMap.putAll(apiParameterDocMap);
+      Set&lt;io.swagger.v3.oas.annotations.Parameter&gt; apiParameterDocDeclaringClass = AnnotatedElementUtils.findAllMergedAnnotations(declaringClass, io.swagger.v3.oas.annotations.Parameter.class);
+      LinkedHashMap&lt;String, io.swagger.v3.oas.annotations.Parameter&gt; apiParameterDocDeclaringClassMap = (LinkedHashMap)apiParameterDocDeclaringClass.stream().collect(Collectors.toMap(io.swagger.v3.oas.annotations.Parameter::name, (x) -&gt; {
+         return x;
+      }, (e1, e2) -&gt; {
+         return e2;
+      }, LinkedHashMap::new));
+      apiParametersMap.putAll(apiParameterDocDeclaringClassMap);
+      return apiParametersMap;
+   }
+
+   private void applyValidationsToSchema(Map&lt;String, Annotation&gt; annos, Schema&lt;?&gt; schema) {
+      if (annos.containsKey(Min.class.getName())) {
+         Min min = (Min)annos.get(Min.class.getName());
+         schema.setMinimum(BigDecimal.valueOf(min.value()));
+      }
+
+      if (annos.containsKey(Max.class.getName())) {
+         Max max = (Max)annos.get(Max.class.getName());
+         schema.setMaximum(BigDecimal.valueOf(max.value()));
+      }
+
+      this.calculateSize(annos, schema);
+      if (annos.containsKey(DecimalMin.class.getName())) {
+         DecimalMin min = (DecimalMin)annos.get(DecimalMin.class.getName());
+         if (min.inclusive()) {
+            schema.setMinimum(BigDecimal.valueOf(Double.parseDouble(min.value())));
+         } else {
+            schema.setExclusiveMinimum(!min.inclusive());
+         }
+      }
+
+      if (annos.containsKey(DecimalMax.class.getName())) {
+         DecimalMax max = (DecimalMax)annos.get(DecimalMax.class.getName());
+         if (max.inclusive()) {
+            schema.setMaximum(BigDecimal.valueOf(Double.parseDouble(max.value())));
+         } else {
+            schema.setExclusiveMaximum(!max.inclusive());
+         }
+      }
+
+      if (annos.containsKey(&quot;javax.validation.constraints.PositiveOrZero&quot;)) {
+         schema.setMinimum(BigDecimal.ZERO);
+      }
+
+      if (annos.containsKey(&quot;javax.validation.constraints.NegativeOrZero&quot;)) {
+         schema.setMaximum(BigDecimal.ZERO);
+      }
+
+      if (annos.containsKey(Pattern.class.getName())) {
+         Pattern pattern = (Pattern)annos.get(Pattern.class.getName());
+         schema.setPattern(pattern.regexp());
+      }
+
+   }
+
+   static {
+      PARAM_TYPES_TO_IGNORE.add(WebRequest.class);
+      PARAM_TYPES_TO_IGNORE.add(NativeWebRequest.class);
+      PARAM_TYPES_TO_IGNORE.add(Principal.class);
+      PARAM_TYPES_TO_IGNORE.add(HttpMethod.class);
+      PARAM_TYPES_TO_IGNORE.add(Locale.class);
+      PARAM_TYPES_TO_IGNORE.add(TimeZone.class);
+      PARAM_TYPES_TO_IGNORE.add(InputStream.class);
+      PARAM_TYPES_TO_IGNORE.add(ZoneId.class);
+      PARAM_TYPES_TO_IGNORE.add(Reader.class);
+      PARAM_TYPES_TO_IGNORE.add(OutputStream.class);
+      PARAM_TYPES_TO_IGNORE.add(Writer.class);
+      PARAM_TYPES_TO_IGNORE.add(Map.class);
+      PARAM_TYPES_TO_IGNORE.add(Model.class);
+      PARAM_TYPES_TO_IGNORE.add(ModelMap.class);
+      PARAM_TYPES_TO_IGNORE.add(Errors.class);
+      PARAM_TYPES_TO_IGNORE.add(BindingResult.class);
+      PARAM_TYPES_TO_IGNORE.add(SessionStatus.class);
+      PARAM_TYPES_TO_IGNORE.add(UriComponentsBuilder.class);
+      PARAM_TYPES_TO_IGNORE.add(RequestAttribute.class);
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:25 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

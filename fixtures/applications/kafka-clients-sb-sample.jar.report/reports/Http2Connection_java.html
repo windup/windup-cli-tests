@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for Http2Connection.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/okhttp-3.14.9.jar/okhttp3/internal/http2/Http2Connection.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package okhttp3.internal.http2;
+
+import java.io.Closeable;
+import java.io.IOException;
+import java.io.InterruptedIOException;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.net.SocketAddress;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.RejectedExecutionException;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import javax.annotation.Nullable;
+import okhttp3.Headers;
+import okhttp3.internal.NamedRunnable;
+import okhttp3.internal.Util;
+import okhttp3.internal.http2.Http2Reader.Handler;
+import okhttp3.internal.platform.Platform;
+import okio.Buffer;
+import okio.BufferedSink;
+import okio.BufferedSource;
+import okio.ByteString;
+import okio.Okio;
+
+public final class Http2Connection implements Closeable {
+   static final int OKHTTP_CLIENT_WINDOW_SIZE = 16777216;
+   static final int INTERVAL_PING = 1;
+   static final int DEGRADED_PING = 2;
+   static final int AWAIT_PING = 3;
+   static final long DEGRADED_PONG_TIMEOUT_NS = 1000000000L;
+   private static final ExecutorService listenerExecutor;
+   final boolean client;
+   final Http2Connection.Listener listener;
+   final Map&lt;Integer, Http2Stream&gt; streams = new LinkedHashMap();
+   final String connectionName;
+   int lastGoodStreamId;
+   int nextStreamId;
+   private boolean shutdown;
+   private final ScheduledExecutorService writerExecutor;
+   private final ExecutorService pushExecutor;
+   final PushObserver pushObserver;
+   private long intervalPingsSent = 0L;
+   private long intervalPongsReceived = 0L;
+   private long degradedPingsSent = 0L;
+   private long degradedPongsReceived = 0L;
+   private long awaitPingsSent = 0L;
+   private long awaitPongsReceived = 0L;
+   private long degradedPongDeadlineNs = 0L;
+   long unacknowledgedBytesRead = 0L;
+   long bytesLeftInWriteWindow;
+   Settings okHttpSettings = new Settings();
+   final Settings peerSettings = new Settings();
+   final Socket socket;
+   final Http2Writer writer;
+   final Http2Connection.ReaderRunnable readerRunnable;
+   final Set&lt;Integer&gt; currentPushRequests = new LinkedHashSet();
+
+   Http2Connection(Http2Connection.Builder builder) {
+      this.pushObserver = builder.pushObserver;
+      this.client = builder.client;
+      this.listener = builder.listener;
+      this.nextStreamId = builder.client ? 1 : 2;
+      if (builder.client) {
+         this.nextStreamId += 2;
+      }
+
+      if (builder.client) {
+         this.okHttpSettings.set(7, 16777216);
+      }
+
+      this.connectionName = builder.connectionName;
+      this.writerExecutor = new ScheduledThreadPoolExecutor(1, Util.threadFactory(Util.format(&quot;OkHttp %s Writer&quot;, new Object[]{this.connectionName}), false));
+      if (builder.pingIntervalMillis != 0) {
+         this.writerExecutor.scheduleAtFixedRate(new Http2Connection.IntervalPingRunnable(), (long)builder.pingIntervalMillis, (long)builder.pingIntervalMillis, TimeUnit.MILLISECONDS);
+      }
+
+      this.pushExecutor = new ThreadPoolExecutor(0, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), Util.threadFactory(Util.format(&quot;OkHttp %s Push Observer&quot;, new Object[]{this.connectionName}), true));
+      this.peerSettings.set(7, 65535);
+      this.peerSettings.set(5, 16384);
+      this.bytesLeftInWriteWindow = (long)this.peerSettings.getInitialWindowSize();
+      this.socket = builder.socket;
+      this.writer = new Http2Writer(builder.sink, this.client);
+      this.readerRunnable = new Http2Connection.ReaderRunnable(new Http2Reader(builder.source, this.client));
+   }
+
+   public synchronized int openStreamCount() {
+      return this.streams.size();
+   }
+
+   synchronized Http2Stream getStream(int id) {
+      return (Http2Stream)this.streams.get(id);
+   }
+
+   synchronized Http2Stream removeStream(int streamId) {
+      Http2Stream stream = (Http2Stream)this.streams.remove(streamId);
+      this.notifyAll();
+      return stream;
+   }
+
+   public synchronized int maxConcurrentStreams() {
+      return this.peerSettings.getMaxConcurrentStreams(Integer.MAX_VALUE);
+   }
+
+   synchronized void updateConnectionFlowControl(long read) {
+      this.unacknowledgedBytesRead += read;
+      if (this.unacknowledgedBytesRead &gt;= (long)(this.okHttpSettings.getInitialWindowSize() / 2)) {
+         this.writeWindowUpdateLater(0, this.unacknowledgedBytesRead);
+         this.unacknowledgedBytesRead = 0L;
+      }
+
+   }
+
+   public Http2Stream pushStream(int associatedStreamId, List&lt;Header&gt; requestHeaders, boolean out) throws IOException {
+      if (this.client) {
+         throw new IllegalStateException(&quot;Client cannot push requests.&quot;);
+      } else {
+         return this.newStream(associatedStreamId, requestHeaders, out);
+      }
+   }
+
+   public Http2Stream newStream(List&lt;Header&gt; requestHeaders, boolean out) throws IOException {
+      return this.newStream(0, requestHeaders, out);
+   }
+
+   private Http2Stream newStream(int associatedStreamId, List&lt;Header&gt; requestHeaders, boolean out) throws IOException {
+      boolean outFinished = !out;
+      boolean inFinished = false;
+      Http2Writer var9 = this.writer;
+      boolean flushHeaders;
+      Http2Stream stream;
+      synchronized(this.writer) {
+         int streamId;
+         synchronized(this) {
+            if (this.nextStreamId &gt; 1073741823) {
+               this.shutdown(ErrorCode.REFUSED_STREAM);
+            }
+
+            if (this.shutdown) {
+               throw new ConnectionShutdownException();
+            }
+
+            streamId = this.nextStreamId;
+            this.nextStreamId += 2;
+            stream = new Http2Stream(streamId, this, outFinished, inFinished, (Headers)null);
+            flushHeaders = !out || this.bytesLeftInWriteWindow == 0L || stream.bytesLeftInWriteWindow == 0L;
+            if (stream.isOpen()) {
+               this.streams.put(streamId, stream);
+            }
+         }
+
+         if (associatedStreamId == 0) {
+            this.writer.headers(outFinished, streamId, requestHeaders);
+         } else {
+            if (this.client) {
+               throw new IllegalArgumentException(&quot;client streams shouldn&#39;t have associated stream IDs&quot;);
+            }
+
+            this.writer.pushPromise(associatedStreamId, streamId, requestHeaders);
+         }
+      }
+
+      if (flushHeaders) {
+         this.writer.flush();
+      }
+
+      return stream;
+   }
+
+   void writeHeaders(int streamId, boolean outFinished, List&lt;Header&gt; alternating) throws IOException {
+      this.writer.headers(outFinished, streamId, alternating);
+   }
+
+   public void writeData(int streamId, boolean outFinished, Buffer buffer, long byteCount) throws IOException {
+      if (byteCount == 0L) {
+         this.writer.data(outFinished, streamId, buffer, 0);
+      } else {
+         while(byteCount &gt; 0L) {
+            int toWrite;
+            synchronized(this) {
+               try {
+                  while(this.bytesLeftInWriteWindow &lt;= 0L) {
+                     if (!this.streams.containsKey(streamId)) {
+                        throw new IOException(&quot;stream closed&quot;);
+                     }
+
+                     this.wait();
+                  }
+               } catch (InterruptedException var10) {
+                  Thread.currentThread().interrupt();
+                  throw new InterruptedIOException();
+               }
+
+               toWrite = (int)Math.min(byteCount, this.bytesLeftInWriteWindow);
+               toWrite = Math.min(toWrite, this.writer.maxDataLength());
+               this.bytesLeftInWriteWindow -= (long)toWrite;
+            }
+
+            byteCount -= (long)toWrite;
+            this.writer.data(outFinished &amp;&amp; byteCount == 0L, streamId, buffer, toWrite);
+         }
+
+      }
+   }
+
+   void writeSynResetLater(final int streamId, final ErrorCode errorCode) {
+      try {
+         this.writerExecutor.execute(new NamedRunnable(&quot;OkHttp %s stream %d&quot;, new Object[]{this.connectionName, streamId}) {
+            public void execute() {
+               try {
+                  Http2Connection.this.writeSynReset(streamId, errorCode);
+               } catch (IOException var2) {
+                  Http2Connection.this.failConnection(var2);
+               }
+
+            }
+         });
+      } catch (RejectedExecutionException var4) {
+         ;
+      }
+
+   }
+
+   void writeSynReset(int streamId, ErrorCode statusCode) throws IOException {
+      this.writer.rstStream(streamId, statusCode);
+   }
+
+   void writeWindowUpdateLater(final int streamId, final long unacknowledgedBytesRead) {
+      try {
+         this.writerExecutor.execute(new NamedRunnable(&quot;OkHttp Window Update %s stream %d&quot;, new Object[]{this.connectionName, streamId}) {
+            public void execute() {
+               try {
+                  Http2Connection.this.writer.windowUpdate(streamId, unacknowledgedBytesRead);
+               } catch (IOException var2) {
+                  Http2Connection.this.failConnection(var2);
+               }
+
+            }
+         });
+      } catch (RejectedExecutionException var5) {
+         ;
+      }
+
+   }
+
+   void writePing(boolean reply, int payload1, int payload2) {
+      try {
+         this.writer.ping(reply, payload1, payload2);
+      } catch (IOException var5) {
+         this.failConnection(var5);
+      }
+
+   }
+
+   void writePingAndAwaitPong() throws InterruptedException {
+      this.writePing();
+      this.awaitPong();
+   }
+
+   void writePing() {
+      synchronized(this) {
+         ++this.awaitPingsSent;
+      }
+
+      this.writePing(false, 3, 1330343787);
+   }
+
+   synchronized void awaitPong() throws InterruptedException {
+      while(this.awaitPongsReceived &lt; this.awaitPingsSent) {
+         this.wait();
+      }
+
+   }
+
+   public void flush() throws IOException {
+      this.writer.flush();
+   }
+
+   public void shutdown(ErrorCode statusCode) throws IOException {
+      Http2Writer var2 = this.writer;
+      synchronized(this.writer) {
+         int lastGoodStreamId;
+         synchronized(this) {
+            if (this.shutdown) {
+               return;
+            }
+
+            this.shutdown = true;
+            lastGoodStreamId = this.lastGoodStreamId;
+         }
+
+         this.writer.goAway(lastGoodStreamId, statusCode, Util.EMPTY_BYTE_ARRAY);
+      }
+   }
+
+   public void close() {
+      this.close(ErrorCode.NO_ERROR, ErrorCode.CANCEL, (IOException)null);
+   }
+
+   void close(ErrorCode connectionCode, ErrorCode streamCode, @Nullable IOException cause) {
+      assert !Thread.holdsLock(this);
+
+      try {
+         this.shutdown(connectionCode);
+      } catch (IOException var13) {
+         ;
+      }
+
+      Http2Stream[] streamsToClose = null;
+      synchronized(this) {
+         if (!this.streams.isEmpty()) {
+            streamsToClose = (Http2Stream[])this.streams.values().toArray(new Http2Stream[this.streams.size()]);
+            this.streams.clear();
+         }
+      }
+
+      if (streamsToClose != null) {
+         Http2Stream[] var5 = streamsToClose;
+         int var6 = streamsToClose.length;
+
+         for(int var7 = 0; var7 &lt; var6; ++var7) {
+            Http2Stream stream = var5[var7];
+
+            try {
+               stream.close(streamCode, cause);
+            } catch (IOException var12) {
+               ;
+            }
+         }
+      }
+
+      try {
+         this.writer.close();
+      } catch (IOException var11) {
+         ;
+      }
+
+      try {
+         this.socket.close();
+      } catch (IOException var10) {
+         ;
+      }
+
+      this.writerExecutor.shutdown();
+      this.pushExecutor.shutdown();
+   }
+
+   private void failConnection(@Nullable IOException e) {
+      this.close(ErrorCode.PROTOCOL_ERROR, ErrorCode.PROTOCOL_ERROR, e);
+   }
+
+   public void start() throws IOException {
+      this.start(true);
+   }
+
+   void start(boolean sendConnectionPreface) throws IOException {
+      if (sendConnectionPreface) {
+         this.writer.connectionPreface();
+         this.writer.settings(this.okHttpSettings);
+         int windowSize = this.okHttpSettings.getInitialWindowSize();
+         if (windowSize != 65535) {
+            this.writer.windowUpdate(0, (long)(windowSize - &#39;\uffff&#39;));
+         }
+      }
+
+      (new Thread(this.readerRunnable)).start();
+   }
+
+   public void setSettings(Settings settings) throws IOException {
+      Http2Writer var2 = this.writer;
+      synchronized(this.writer) {
+         synchronized(this) {
+            if (this.shutdown) {
+               throw new ConnectionShutdownException();
+            }
+
+            this.okHttpSettings.merge(settings);
+         }
+
+         this.writer.settings(settings);
+      }
+   }
+
+   public synchronized boolean isHealthy(long nowNs) {
+      if (this.shutdown) {
+         return false;
+      } else {
+         return this.degradedPongsReceived &gt;= this.degradedPingsSent || nowNs &lt; this.degradedPongDeadlineNs;
+      }
+   }
+
+   void sendDegradedPingLater() {
+      synchronized(this) {
+         if (this.degradedPongsReceived &lt; this.degradedPingsSent) {
+            return;
+         }
+
+         ++this.degradedPingsSent;
+         this.degradedPongDeadlineNs = System.nanoTime() + 1000000000L;
+      }
+
+      try {
+         this.writerExecutor.execute(new NamedRunnable(&quot;OkHttp %s ping&quot;, new Object[]{this.connectionName}) {
+            public void execute() {
+               Http2Connection.this.writePing(false, 2, 0);
+            }
+         });
+      } catch (RejectedExecutionException var3) {
+         ;
+      }
+
+   }
+
+   boolean pushedStream(int streamId) {
+      return streamId != 0 &amp;&amp; (streamId &amp; 1) == 0;
+   }
+
+   void pushRequestLater(final int streamId, final List&lt;Header&gt; requestHeaders) {
+      synchronized(this) {
+         if (this.currentPushRequests.contains(streamId)) {
+            this.writeSynResetLater(streamId, ErrorCode.PROTOCOL_ERROR);
+            return;
+         }
+
+         this.currentPushRequests.add(streamId);
+      }
+
+      try {
+         this.pushExecutorExecute(new NamedRunnable(&quot;OkHttp %s Push Request[%s]&quot;, new Object[]{this.connectionName, streamId}) {
+            public void execute() {
+               boolean cancel = Http2Connection.this.pushObserver.onRequest(streamId, requestHeaders);
+
+               try {
+                  if (cancel) {
+                     Http2Connection.this.writer.rstStream(streamId, ErrorCode.CANCEL);
+                     Http2Connection var2 = Http2Connection.this;
+                     synchronized(Http2Connection.this) {
+                        Http2Connection.this.currentPushRequests.remove(streamId);
+                     }
+                  }
+               } catch (IOException var5) {
+                  ;
+               }
+
+            }
+         });
+      } catch (RejectedExecutionException var5) {
+         ;
+      }
+
+   }
+
+   void pushHeadersLater(final int streamId, final List&lt;Header&gt; requestHeaders, final boolean inFinished) {
+      try {
+         this.pushExecutorExecute(new NamedRunnable(&quot;OkHttp %s Push Headers[%s]&quot;, new Object[]{this.connectionName, streamId}) {
+            public void execute() {
+               boolean cancel = Http2Connection.this.pushObserver.onHeaders(streamId, requestHeaders, inFinished);
+
+               try {
+                  if (cancel) {
+                     Http2Connection.this.writer.rstStream(streamId, ErrorCode.CANCEL);
+                  }
+
+                  if (cancel || inFinished) {
+                     Http2Connection var2 = Http2Connection.this;
+                     synchronized(Http2Connection.this) {
+                        Http2Connection.this.currentPushRequests.remove(streamId);
+                     }
+                  }
+               } catch (IOException var5) {
+                  ;
+               }
+
+            }
+         });
+      } catch (RejectedExecutionException var5) {
+         ;
+      }
+
+   }
+
+   void pushDataLater(final int streamId, BufferedSource source, final int byteCount, final boolean inFinished) throws IOException {
+      final Buffer buffer = new Buffer();
+      source.require((long)byteCount);
+      source.read(buffer, (long)byteCount);
+      if (buffer.size() != (long)byteCount) {
+         throw new IOException(buffer.size() + &quot; != &quot; + byteCount);
+      } else {
+         this.pushExecutorExecute(new NamedRunnable(&quot;OkHttp %s Push Data[%s]&quot;, new Object[]{this.connectionName, streamId}) {
+            public void execute() {
+               try {
+                  boolean cancel = Http2Connection.this.pushObserver.onData(streamId, buffer, byteCount, inFinished);
+                  if (cancel) {
+                     Http2Connection.this.writer.rstStream(streamId, ErrorCode.CANCEL);
+                  }
+
+                  if (cancel || inFinished) {
+                     Http2Connection var2 = Http2Connection.this;
+                     synchronized(Http2Connection.this) {
+                        Http2Connection.this.currentPushRequests.remove(streamId);
+                     }
+                  }
+               } catch (IOException var5) {
+                  ;
+               }
+
+            }
+         });
+      }
+   }
+
+   void pushResetLater(final int streamId, final ErrorCode errorCode) {
+      this.pushExecutorExecute(new NamedRunnable(&quot;OkHttp %s Push Reset[%s]&quot;, new Object[]{this.connectionName, streamId}) {
+         public void execute() {
+            Http2Connection.this.pushObserver.onReset(streamId, errorCode);
+            Http2Connection var1 = Http2Connection.this;
+            synchronized(Http2Connection.this) {
+               Http2Connection.this.currentPushRequests.remove(streamId);
+            }
+         }
+      });
+   }
+
+   private synchronized void pushExecutorExecute(NamedRunnable namedRunnable) {
+      if (!this.shutdown) {
+         this.pushExecutor.execute(namedRunnable);
+      }
+
+   }
+
+   static {
+      listenerExecutor = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue(), Util.threadFactory(&quot;OkHttp Http2Connection&quot;, true));
+   }
+
+   public abstract static class Listener {
+      public static final Http2Connection.Listener REFUSE_INCOMING_STREAMS = new Http2Connection.Listener() {
+         public void onStream(Http2Stream stream) throws IOException {
+            stream.close(ErrorCode.REFUSED_STREAM, (IOException)null);
+         }
+      };
+
+      public abstract void onStream(Http2Stream var1) throws IOException;
+
+      public void onSettings(Http2Connection connection) {
+      }
+   }
+
+   class ReaderRunnable extends NamedRunnable implements Handler {
+      final Http2Reader reader;
+
+      ReaderRunnable(Http2Reader reader) {
+         super(&quot;OkHttp %s&quot;, new Object[]{Http2Connection.this.connectionName});
+         this.reader = reader;
+      }
+
+      protected void execute() {
+         ErrorCode connectionErrorCode = ErrorCode.INTERNAL_ERROR;
+         ErrorCode streamErrorCode = ErrorCode.INTERNAL_ERROR;
+         IOException errorException = null;
+
+         try {
+            this.reader.readConnectionPreface(this);
+
+            while(true) {
+               if (!this.reader.nextFrame(false, this)) {
+                  connectionErrorCode = ErrorCode.NO_ERROR;
+                  streamErrorCode = ErrorCode.CANCEL;
+                  break;
+               }
+            }
+         } catch (IOException var8) {
+            errorException = var8;
+            connectionErrorCode = ErrorCode.PROTOCOL_ERROR;
+            streamErrorCode = ErrorCode.PROTOCOL_ERROR;
+         } finally {
+            Http2Connection.this.close(connectionErrorCode, streamErrorCode, errorException);
+            Util.closeQuietly(this.reader);
+         }
+
+      }
+
+      public void data(boolean inFinished, int streamId, BufferedSource source, int length) throws IOException {
+         if (Http2Connection.this.pushedStream(streamId)) {
+            Http2Connection.this.pushDataLater(streamId, source, length, inFinished);
+         } else {
+            Http2Stream dataStream = Http2Connection.this.getStream(streamId);
+            if (dataStream == null) {
+               Http2Connection.this.writeSynResetLater(streamId, ErrorCode.PROTOCOL_ERROR);
+               Http2Connection.this.updateConnectionFlowControl((long)length);
+               source.skip((long)length);
+            } else {
+               dataStream.receiveData(source, length);
+               if (inFinished) {
+                  dataStream.receiveHeaders(Util.EMPTY_HEADERS, true);
+               }
+
+            }
+         }
+      }
+
+      public void headers(boolean inFinished, int streamId, int associatedStreamId, List&lt;Header&gt; headerBlock) {
+         if (Http2Connection.this.pushedStream(streamId)) {
+            Http2Connection.this.pushHeadersLater(streamId, headerBlock, inFinished);
+         } else {
+            Http2Connection var6 = Http2Connection.this;
+            Http2Stream stream;
+            synchronized(Http2Connection.this) {
+               stream = Http2Connection.this.getStream(streamId);
+               if (stream == null) {
+                  if (Http2Connection.this.shutdown) {
+                     return;
+                  }
+
+                  if (streamId &lt;= Http2Connection.this.lastGoodStreamId) {
+                     return;
+                  }
+
+                  if (streamId % 2 == Http2Connection.this.nextStreamId % 2) {
+                     return;
+                  }
+
+                  Headers headers = Util.toHeaders(headerBlock);
+                  final Http2Stream newStream = new Http2Stream(streamId, Http2Connection.this, false, inFinished, headers);
+                  Http2Connection.this.lastGoodStreamId = streamId;
+                  Http2Connection.this.streams.put(streamId, newStream);
+                  Http2Connection.listenerExecutor.execute(new NamedRunnable(&quot;OkHttp %s stream %d&quot;, new Object[]{Http2Connection.this.connectionName, streamId}) {
+                     public void execute() {
+                        try {
+                           Http2Connection.this.listener.onStream(newStream);
+                        } catch (IOException var4) {
+                           IOException e = var4;
+                           Platform.get().log(4, &quot;Http2Connection.Listener failure for &quot; + Http2Connection.this.connectionName, var4);
+
+                           try {
+                              newStream.close(ErrorCode.PROTOCOL_ERROR, e);
+                           } catch (IOException var3) {
+                              ;
+                           }
+                        }
+
+                     }
+                  });
+                  return;
+               }
+            }
+
+            stream.receiveHeaders(Util.toHeaders(headerBlock), inFinished);
+         }
+      }
+
+      public void rstStream(int streamId, ErrorCode errorCode) {
+         if (Http2Connection.this.pushedStream(streamId)) {
+            Http2Connection.this.pushResetLater(streamId, errorCode);
+         } else {
+            Http2Stream rstStream = Http2Connection.this.removeStream(streamId);
+            if (rstStream != null) {
+               rstStream.receiveRstStream(errorCode);
+            }
+
+         }
+      }
+
+      public void settings(final boolean clearPrevious, final Settings settings) {
+         try {
+            Http2Connection.this.writerExecutor.execute(new NamedRunnable(&quot;OkHttp %s ACK Settings&quot;, new Object[]{Http2Connection.this.connectionName}) {
+               public void execute() {
+                  ReaderRunnable.this.applyAndAckSettings(clearPrevious, settings);
+               }
+            });
+         } catch (RejectedExecutionException var4) {
+            ;
+         }
+
+      }
+
+      void applyAndAckSettings(boolean clearPrevious, Settings settings) {
+         long delta = 0L;
+         Http2Stream[] streamsToNotify = null;
+         Http2Writer var6 = Http2Connection.this.writer;
+         int priorWriteWindowSize;
+         synchronized(Http2Connection.this.writer) {
+            Http2Connection var7 = Http2Connection.this;
+            synchronized(Http2Connection.this) {
+               priorWriteWindowSize = Http2Connection.this.peerSettings.getInitialWindowSize();
+               if (clearPrevious) {
+                  Http2Connection.this.peerSettings.clear();
+               }
+
+               Http2Connection.this.peerSettings.merge(settings);
+               int peerInitialWindowSize = Http2Connection.this.peerSettings.getInitialWindowSize();
+               if (peerInitialWindowSize != -1 &amp;&amp; peerInitialWindowSize != priorWriteWindowSize) {
+                  delta = (long)(peerInitialWindowSize - priorWriteWindowSize);
+                  streamsToNotify = !Http2Connection.this.streams.isEmpty() ? (Http2Stream[])Http2Connection.this.streams.values().toArray(new Http2Stream[Http2Connection.this.streams.size()]) : null;
+               }
+            }
+
+            try {
+               Http2Connection.this.writer.applyAndAckSettings(Http2Connection.this.peerSettings);
+            } catch (IOException var14) {
+               Http2Connection.this.failConnection(var14);
+            }
+         }
+
+         if (streamsToNotify != null) {
+            Http2Stream[] var17 = streamsToNotify;
+            int var18 = streamsToNotify.length;
+
+            for(priorWriteWindowSize = 0; priorWriteWindowSize &lt; var18; ++priorWriteWindowSize) {
+               Http2Stream stream = var17[priorWriteWindowSize];
+               synchronized(stream) {
+                  stream.addBytesToWriteWindow(delta);
+               }
+            }
+         }
+
+         Http2Connection.listenerExecutor.execute(new NamedRunnable(&quot;OkHttp %s settings&quot;, new Object[]{Http2Connection.this.connectionName}) {
+            public void execute() {
+               Http2Connection.this.listener.onSettings(Http2Connection.this);
+            }
+         });
+      }
+
+      public void ackSettings() {
+      }
+
+      public void ping(boolean reply, int payload1, int payload2) {
+         if (reply) {
+            Http2Connection var4 = Http2Connection.this;
+            synchronized(Http2Connection.this) {
+               if (payload1 == 1) {
+                  Http2Connection.this.intervalPongsReceived++;
+               } else if (payload1 == 2) {
+                  Http2Connection.this.degradedPongsReceived++;
+               } else if (payload1 == 3) {
+                  Http2Connection.this.awaitPongsReceived++;
+                  Http2Connection.this.notifyAll();
+               }
+            }
+         } else {
+            try {
+               Http2Connection.this.writerExecutor.execute(Http2Connection.this.new PingRunnable(true, payload1, payload2));
+            } catch (RejectedExecutionException var6) {
+               ;
+            }
+         }
+
+      }
+
+      public void goAway(int lastGoodStreamId, ErrorCode errorCode, ByteString debugData) {
+         if (debugData.size() &gt; 0) {
+            ;
+         }
+
+         Http2Connection var5 = Http2Connection.this;
+         Http2Stream[] streamsCopy;
+         synchronized(Http2Connection.this) {
+            streamsCopy = (Http2Stream[])Http2Connection.this.streams.values().toArray(new Http2Stream[Http2Connection.this.streams.size()]);
+            Http2Connection.this.shutdown = true;
+         }
+
+         Http2Stream[] var10 = streamsCopy;
+         int var6 = streamsCopy.length;
+
+         for(int var7 = 0; var7 &lt; var6; ++var7) {
+            Http2Stream http2Stream = var10[var7];
+            if (http2Stream.getId() &gt; lastGoodStreamId &amp;&amp; http2Stream.isLocallyInitiated()) {
+               http2Stream.receiveRstStream(ErrorCode.REFUSED_STREAM);
+               Http2Connection.this.removeStream(http2Stream.getId());
+            }
+         }
+
+      }
+
+      public void windowUpdate(int streamId, long windowSizeIncrement) {
+         if (streamId == 0) {
+            Http2Connection var4 = Http2Connection.this;
+            synchronized(Http2Connection.this) {
+               Http2Connection.this.bytesLeftInWriteWindow += windowSizeIncrement;
+               Http2Connection.this.notifyAll();
+            }
+         } else {
+            Http2Stream stream = Http2Connection.this.getStream(streamId);
+            if (stream != null) {
+               synchronized(stream) {
+                  stream.addBytesToWriteWindow(windowSizeIncrement);
+               }
+            }
+         }
+
+      }
+
+      public void priority(int streamId, int streamDependency, int weight, boolean exclusive) {
+      }
+
+      public void pushPromise(int streamId, int promisedStreamId, List&lt;Header&gt; requestHeaders) {
+         Http2Connection.this.pushRequestLater(promisedStreamId, requestHeaders);
+      }
+
+      public void alternateService(int streamId, String origin, ByteString protocol, String host, int port, long maxAge) {
+      }
+   }
+
+   public static class Builder {
+      Socket socket;
+      String connectionName;
+      BufferedSource source;
+      BufferedSink sink;
+      Http2Connection.Listener listener;
+      PushObserver pushObserver;
+      boolean client;
+      int pingIntervalMillis;
+
+      public Builder(boolean client) {
+         this.listener = Http2Connection.Listener.REFUSE_INCOMING_STREAMS;
+         this.pushObserver = PushObserver.CANCEL;
+         this.client = client;
+      }
+
+      public Http2Connection.Builder socket(Socket socket) throws IOException {
+         SocketAddress remoteSocketAddress = socket.getRemoteSocketAddress();
+         String connectionName = remoteSocketAddress instanceof InetSocketAddress ? ((InetSocketAddress)remoteSocketAddress).getHostName() : remoteSocketAddress.toString();
+         return this.socket(socket, connectionName, Okio.buffer(Okio.source(socket)), Okio.buffer(Okio.sink(socket)));
+      }
+
+      public Http2Connection.Builder socket(Socket socket, String connectionName, BufferedSource source, BufferedSink sink) {
+         this.socket = socket;
+         this.connectionName = connectionName;
+         this.source = source;
+         this.sink = sink;
+         return this;
+      }
+
+      public Http2Connection.Builder listener(Http2Connection.Listener listener) {
+         this.listener = listener;
+         return this;
+      }
+
+      public Http2Connection.Builder pushObserver(PushObserver pushObserver) {
+         this.pushObserver = pushObserver;
+         return this;
+      }
+
+      public Http2Connection.Builder pingIntervalMillis(int pingIntervalMillis) {
+         this.pingIntervalMillis = pingIntervalMillis;
+         return this;
+      }
+
+      public Http2Connection build() {
+         return new Http2Connection(this);
+      }
+   }
+
+   final class IntervalPingRunnable extends NamedRunnable {
+      IntervalPingRunnable() {
+         super(&quot;OkHttp %s ping&quot;, new Object[]{Http2Connection.this.connectionName});
+      }
+
+      public void execute() {
+         Http2Connection var2 = Http2Connection.this;
+         boolean failDueToMissingPong;
+         synchronized(Http2Connection.this) {
+            if (Http2Connection.this.intervalPongsReceived &lt; Http2Connection.this.intervalPingsSent) {
+               failDueToMissingPong = true;
+            } else {
+               Http2Connection.this.intervalPingsSent++;
+               failDueToMissingPong = false;
+            }
+         }
+
+         if (failDueToMissingPong) {
+            Http2Connection.this.failConnection((IOException)null);
+         } else {
+            Http2Connection.this.writePing(false, 1, 0);
+         }
+
+      }
+   }
+
+   final class PingRunnable extends NamedRunnable {
+      final boolean reply;
+      final int payload1;
+      final int payload2;
+
+      PingRunnable(boolean reply, int payload1, int payload2) {
+         super(&quot;OkHttp %s ping %08x%08x&quot;, new Object[]{Http2Connection.this.connectionName, payload1, payload2});
+         this.reply = reply;
+         this.payload1 = payload1;
+         this.payload2 = payload2;
+      }
+
+      public void execute() {
+         Http2Connection.this.writePing(this.reply, this.payload1, this.payload2);
+      }
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:25 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

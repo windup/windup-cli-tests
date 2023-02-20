@@ -1,0 +1,2575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for Flux.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/reactor-core-3.3.8.RELEASE.jar/reactor/core/publisher/Flux.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package reactor.core.publisher;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.Objects;
+import java.util.Queue;
+import java.util.Set;
+import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.BiPredicate;
+import java.util.function.BooleanSupplier;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.IntFunction;
+import java.util.function.LongConsumer;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.logging.Level;
+import java.util.stream.Collector;
+import java.util.stream.Stream;
+import org.reactivestreams.Publisher;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+import reactor.core.CorePublisher;
+import reactor.core.CoreSubscriber;
+import reactor.core.Disposable;
+import reactor.core.Exceptions;
+import reactor.core.Fuseable;
+import reactor.core.Fuseable.ScalarCallable;
+import reactor.core.publisher.FluxBufferPredicate.ChangedPredicate;
+import reactor.core.publisher.FluxBufferPredicate.Mode;
+import reactor.core.publisher.FluxConcatMap.ErrorMode;
+import reactor.core.publisher.FluxCreate.CreateMode;
+import reactor.core.publisher.FluxOnAssembly.AssemblyLightSnapshot;
+import reactor.core.publisher.FluxOnAssembly.AssemblySnapshot;
+import reactor.core.publisher.FluxSink.OverflowStrategy;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
+import reactor.util.Logger;
+import reactor.util.Metrics;
+import reactor.util.annotation.Nullable;
+import reactor.util.concurrent.Queues;
+import reactor.util.context.Context;
+import reactor.util.function.Tuple2;
+import reactor.util.function.Tuple3;
+import reactor.util.function.Tuple4;
+import reactor.util.function.Tuple5;
+import reactor.util.function.Tuple6;
+import reactor.util.function.Tuple7;
+import reactor.util.function.Tuple8;
+import reactor.util.function.Tuples;
+import reactor.util.retry.Retry;
+import reactor.util.retry.Retry.RetrySignal;
+
+public abstract class Flux&lt;T&gt; implements CorePublisher&lt;T&gt; {
+   static final BiFunction TUPLE2_BIFUNCTION = Tuples::of;
+   static final Supplier LIST_SUPPLIER = ArrayList::new;
+   static final Supplier SET_SUPPLIER = HashSet::new;
+   static final BooleanSupplier ALWAYS_BOOLEAN_SUPPLIER = () -&gt; {
+      return true;
+   };
+   static final BiPredicate OBJECT_EQUAL = Object::equals;
+   static final Function IDENTITY_FUNCTION = Function.identity();
+
+   @SafeVarargs
+   public static &lt;T, V&gt; Flux&lt;V&gt; combineLatest(Function&lt;Object[], V&gt; combinator, Publisher... sources) {
+      return combineLatest(combinator, Queues.XS_BUFFER_SIZE, sources);
+   }
+
+   @SafeVarargs
+   public static &lt;T, V&gt; Flux&lt;V&gt; combineLatest(Function&lt;Object[], V&gt; combinator, int prefetch, Publisher... sources) {
+      if (sources.length == 0) {
+         return empty();
+      } else if (sources.length == 1) {
+         Publisher&lt;? extends T&gt; source = sources[0];
+         return source instanceof Fuseable ? onAssembly((Flux)(new FluxMapFuseable(from(source), (v) -&gt; {
+            return combinator.apply(new Object[]{v});
+         }))) : onAssembly((Flux)(new FluxMap(from(source), (v) -&gt; {
+            return combinator.apply(new Object[]{v});
+         })));
+      } else {
+         return onAssembly((Flux)(new FluxCombineLatest(sources, combinator, Queues.get(prefetch), prefetch)));
+      }
+   }
+
+   public static &lt;T1, T2, V&gt; Flux&lt;V&gt; combineLatest(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, BiFunction&lt;? super T1, ? super T2, ? extends V&gt; combinator) {
+      return combineLatest((tuple) -&gt; {
+         return combinator.apply(tuple[0], tuple[1]);
+      }, source1, source2);
+   }
+
+   public static &lt;T1, T2, T3, V&gt; Flux&lt;V&gt; combineLatest(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Function&lt;Object[], V&gt; combinator) {
+      return combineLatest(combinator, source1, source2, source3);
+   }
+
+   public static &lt;T1, T2, T3, T4, V&gt; Flux&lt;V&gt; combineLatest(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Publisher&lt;? extends T4&gt; source4, Function&lt;Object[], V&gt; combinator) {
+      return combineLatest(combinator, source1, source2, source3, source4);
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, V&gt; Flux&lt;V&gt; combineLatest(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Publisher&lt;? extends T4&gt; source4, Publisher&lt;? extends T5&gt; source5, Function&lt;Object[], V&gt; combinator) {
+      return combineLatest(combinator, source1, source2, source3, source4, source5);
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6, V&gt; Flux&lt;V&gt; combineLatest(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Publisher&lt;? extends T4&gt; source4, Publisher&lt;? extends T5&gt; source5, Publisher&lt;? extends T6&gt; source6, Function&lt;Object[], V&gt; combinator) {
+      return combineLatest(combinator, source1, source2, source3, source4, source5, source6);
+   }
+
+   public static &lt;T, V&gt; Flux&lt;V&gt; combineLatest(Iterable&lt;? extends Publisher&lt;? extends T&gt;&gt; sources, Function&lt;Object[], V&gt; combinator) {
+      return combineLatest(sources, Queues.XS_BUFFER_SIZE, combinator);
+   }
+
+   public static &lt;T, V&gt; Flux&lt;V&gt; combineLatest(Iterable&lt;? extends Publisher&lt;? extends T&gt;&gt; sources, int prefetch, Function&lt;Object[], V&gt; combinator) {
+      return onAssembly((Flux)(new FluxCombineLatest(sources, combinator, Queues.get(prefetch), prefetch)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; concat(Iterable&lt;? extends Publisher&lt;? extends T&gt;&gt; sources) {
+      return onAssembly((Flux)(new FluxConcatIterable(sources)));
+   }
+
+   @SafeVarargs
+   public final Flux&lt;T&gt; concatWithValues(T... values) {
+      return this.concatWith(fromArray(values));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; concat(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources) {
+      return concat(sources, Queues.XS_BUFFER_SIZE);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; concat(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources, int prefetch) {
+      return onAssembly((Flux)(new FluxConcatMap(from(sources), identityFunction(), Queues.get(prefetch), prefetch, ErrorMode.IMMEDIATE)));
+   }
+
+   @SafeVarargs
+   public static &lt;T&gt; Flux&lt;T&gt; concat(Publisher... sources) {
+      return onAssembly((Flux)(new FluxConcatArray(false, sources)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; concatDelayError(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources) {
+      return concatDelayError(sources, Queues.XS_BUFFER_SIZE);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; concatDelayError(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources, int prefetch) {
+      return onAssembly((Flux)(new FluxConcatMap(from(sources), identityFunction(), Queues.get(prefetch), prefetch, ErrorMode.END)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; concatDelayError(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources, boolean delayUntilEnd, int prefetch) {
+      return onAssembly((Flux)(new FluxConcatMap(from(sources), identityFunction(), Queues.get(prefetch), prefetch, delayUntilEnd ? ErrorMode.END : ErrorMode.BOUNDARY)));
+   }
+
+   @SafeVarargs
+   public static &lt;T&gt; Flux&lt;T&gt; concatDelayError(Publisher... sources) {
+      return onAssembly((Flux)(new FluxConcatArray(true, sources)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; create(Consumer&lt;? super FluxSink&lt;T&gt;&gt; emitter) {
+      return create(emitter, OverflowStrategy.BUFFER);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; create(Consumer&lt;? super FluxSink&lt;T&gt;&gt; emitter, OverflowStrategy backpressure) {
+      return onAssembly((Flux)(new FluxCreate(emitter, backpressure, CreateMode.PUSH_PULL)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; push(Consumer&lt;? super FluxSink&lt;T&gt;&gt; emitter) {
+      return onAssembly((Flux)(new FluxCreate(emitter, OverflowStrategy.BUFFER, CreateMode.PUSH_ONLY)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; push(Consumer&lt;? super FluxSink&lt;T&gt;&gt; emitter, OverflowStrategy backpressure) {
+      return onAssembly((Flux)(new FluxCreate(emitter, backpressure, CreateMode.PUSH_ONLY)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; defer(Supplier&lt;? extends Publisher&lt;T&gt;&gt; supplier) {
+      return onAssembly((Flux)(new FluxDefer(supplier)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; deferWithContext(Function&lt;Context, ? extends Publisher&lt;T&gt;&gt; supplier) {
+      return onAssembly((Flux)(new FluxDeferWithContext(supplier)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; empty() {
+      return FluxEmpty.instance();
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; error(Throwable error) {
+      return error(error, false);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; error(Supplier&lt;? extends Throwable&gt; errorSupplier) {
+      return onAssembly((Flux)(new FluxErrorSupplied(errorSupplier)));
+   }
+
+   public static &lt;O&gt; Flux&lt;O&gt; error(Throwable throwable, boolean whenRequested) {
+      return whenRequested ? onAssembly((Flux)(new FluxErrorOnRequest(throwable))) : onAssembly((Flux)(new FluxError(throwable)));
+   }
+
+   @SafeVarargs
+   public static &lt;I&gt; Flux&lt;I&gt; first(Publisher... sources) {
+      return onAssembly((Flux)(new FluxFirstEmitting(sources)));
+   }
+
+   public static &lt;I&gt; Flux&lt;I&gt; first(Iterable&lt;? extends Publisher&lt;? extends I&gt;&gt; sources) {
+      return onAssembly((Flux)(new FluxFirstEmitting(sources)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; from(Publisher&lt;? extends T&gt; source) {
+      if (source instanceof Flux) {
+         Flux&lt;T&gt; casted = (Flux)source;
+         return casted;
+      } else {
+         return onAssembly(wrap(source));
+      }
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; fromArray(T[] array) {
+      if (array.length == 0) {
+         return empty();
+      } else {
+         return array.length == 1 ? just(array[0]) : onAssembly((Flux)(new FluxArray(array)));
+      }
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; fromIterable(Iterable&lt;? extends T&gt; it) {
+      return onAssembly((Flux)(new FluxIterable(it)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; fromStream(Stream&lt;? extends T&gt; s) {
+      Objects.requireNonNull(s, &quot;Stream s must be provided&quot;);
+      return onAssembly((Flux)(new FluxStream(() -&gt; {
+         return s;
+      })));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; fromStream(Supplier&lt;Stream&lt;? extends T&gt;&gt; streamSupplier) {
+      return onAssembly((Flux)(new FluxStream(streamSupplier)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; generate(Consumer&lt;SynchronousSink&lt;T&gt;&gt; generator) {
+      Objects.requireNonNull(generator, &quot;generator&quot;);
+      return onAssembly((Flux)(new FluxGenerate(generator)));
+   }
+
+   public static &lt;T, S&gt; Flux&lt;T&gt; generate(Callable&lt;S&gt; stateSupplier, BiFunction&lt;S, SynchronousSink&lt;T&gt;, S&gt; generator) {
+      return onAssembly((Flux)(new FluxGenerate(stateSupplier, generator)));
+   }
+
+   public static &lt;T, S&gt; Flux&lt;T&gt; generate(Callable&lt;S&gt; stateSupplier, BiFunction&lt;S, SynchronousSink&lt;T&gt;, S&gt; generator, Consumer&lt;? super S&gt; stateConsumer) {
+      return onAssembly((Flux)(new FluxGenerate(stateSupplier, generator, stateConsumer)));
+   }
+
+   public static Flux&lt;Long&gt; interval(Duration period) {
+      return interval(period, Schedulers.parallel());
+   }
+
+   public static Flux&lt;Long&gt; interval(Duration delay, Duration period) {
+      return interval(delay, period, Schedulers.parallel());
+   }
+
+   public static Flux&lt;Long&gt; interval(Duration period, Scheduler timer) {
+      return onAssembly((Flux)(new FluxInterval(period.toMillis(), period.toMillis(), TimeUnit.MILLISECONDS, timer)));
+   }
+
+   public static Flux&lt;Long&gt; interval(Duration delay, Duration period, Scheduler timer) {
+      return onAssembly((Flux)(new FluxInterval(delay.toMillis(), period.toMillis(), TimeUnit.MILLISECONDS, timer)));
+   }
+
+   @SafeVarargs
+   public static &lt;T&gt; Flux&lt;T&gt; just(T... data) {
+      return fromArray(data);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; just(T data) {
+      return onAssembly((Flux)(new FluxJust(data)));
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; merge(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; source) {
+      return merge(source, Queues.SMALL_BUFFER_SIZE, Queues.XS_BUFFER_SIZE);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; merge(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; source, int concurrency) {
+      return merge(source, concurrency, Queues.XS_BUFFER_SIZE);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; merge(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; source, int concurrency, int prefetch) {
+      return onAssembly((Flux)(new FluxFlatMap(from(source), identityFunction(), false, concurrency, Queues.get(concurrency), prefetch, Queues.get(prefetch))));
+   }
+
+   public static &lt;I&gt; Flux&lt;I&gt; merge(Iterable&lt;? extends Publisher&lt;? extends I&gt;&gt; sources) {
+      return merge((Publisher)fromIterable(sources));
+   }
+
+   @SafeVarargs
+   public static &lt;I&gt; Flux&lt;I&gt; merge(Publisher... sources) {
+      return merge(Queues.XS_BUFFER_SIZE, sources);
+   }
+
+   @SafeVarargs
+   public static &lt;I&gt; Flux&lt;I&gt; merge(int prefetch, Publisher... sources) {
+      return merge(prefetch, false, sources);
+   }
+
+   @SafeVarargs
+   public static &lt;I&gt; Flux&lt;I&gt; mergeDelayError(int prefetch, Publisher... sources) {
+      return merge(prefetch, true, sources);
+   }
+
+   @SafeVarargs
+   public static &lt;I extends Comparable&lt;? super I&gt;&gt; Flux&lt;I&gt; mergeOrdered(Publisher... sources) {
+      return mergeOrdered(Queues.SMALL_BUFFER_SIZE, Comparator.naturalOrder(), sources);
+   }
+
+   @SafeVarargs
+   public static &lt;T&gt; Flux&lt;T&gt; mergeOrdered(Comparator&lt;? super T&gt; comparator, Publisher... sources) {
+      return mergeOrdered(Queues.SMALL_BUFFER_SIZE, comparator, sources);
+   }
+
+   @SafeVarargs
+   public static &lt;T&gt; Flux&lt;T&gt; mergeOrdered(int prefetch, Comparator&lt;? super T&gt; comparator, Publisher... sources) {
+      if (sources.length == 0) {
+         return empty();
+      } else {
+         return sources.length == 1 ? from(sources[0]) : onAssembly((Flux)(new FluxMergeOrdered(prefetch, Queues.get(prefetch), comparator, sources)));
+      }
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; mergeSequential(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources) {
+      return mergeSequential(sources, false, Queues.SMALL_BUFFER_SIZE, Queues.XS_BUFFER_SIZE);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; mergeSequential(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources, int maxConcurrency, int prefetch) {
+      return mergeSequential(sources, false, maxConcurrency, prefetch);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; mergeSequentialDelayError(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources, int maxConcurrency, int prefetch) {
+      return mergeSequential(sources, true, maxConcurrency, prefetch);
+   }
+
+   @SafeVarargs
+   public static &lt;I&gt; Flux&lt;I&gt; mergeSequential(Publisher... sources) {
+      return mergeSequential(Queues.XS_BUFFER_SIZE, false, sources);
+   }
+
+   @SafeVarargs
+   public static &lt;I&gt; Flux&lt;I&gt; mergeSequential(int prefetch, Publisher... sources) {
+      return mergeSequential(prefetch, false, sources);
+   }
+
+   @SafeVarargs
+   public static &lt;I&gt; Flux&lt;I&gt; mergeSequentialDelayError(int prefetch, Publisher... sources) {
+      return mergeSequential(prefetch, true, sources);
+   }
+
+   public static &lt;I&gt; Flux&lt;I&gt; mergeSequential(Iterable&lt;? extends Publisher&lt;? extends I&gt;&gt; sources) {
+      return mergeSequential(sources, false, Queues.SMALL_BUFFER_SIZE, Queues.XS_BUFFER_SIZE);
+   }
+
+   public static &lt;I&gt; Flux&lt;I&gt; mergeSequential(Iterable&lt;? extends Publisher&lt;? extends I&gt;&gt; sources, int maxConcurrency, int prefetch) {
+      return mergeSequential(sources, false, maxConcurrency, prefetch);
+   }
+
+   public static &lt;I&gt; Flux&lt;I&gt; mergeSequentialDelayError(Iterable&lt;? extends Publisher&lt;? extends I&gt;&gt; sources, int maxConcurrency, int prefetch) {
+      return mergeSequential(sources, true, maxConcurrency, prefetch);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; never() {
+      return FluxNever.instance();
+   }
+
+   public static Flux&lt;Integer&gt; range(int start, int count) {
+      if (count == 1) {
+         return just((Object)start);
+      } else {
+         return count == 0 ? empty() : onAssembly((Flux)(new FluxRange(start, count)));
+      }
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; switchOnNext(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; mergedPublishers) {
+      return switchOnNext(mergedPublishers, Queues.XS_BUFFER_SIZE);
+   }
+
+   public static &lt;T&gt; Flux&lt;T&gt; switchOnNext(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; mergedPublishers, int prefetch) {
+      return onAssembly((Flux)(new FluxSwitchMap(from(mergedPublishers), identityFunction(), Queues.unbounded(prefetch), prefetch)));
+   }
+
+   public static &lt;T, D&gt; Flux&lt;T&gt; using(Callable&lt;? extends D&gt; resourceSupplier, Function&lt;? super D, ? extends Publisher&lt;? extends T&gt;&gt; sourceSupplier, Consumer&lt;? super D&gt; resourceCleanup) {
+      return using(resourceSupplier, sourceSupplier, resourceCleanup, true);
+   }
+
+   public static &lt;T, D&gt; Flux&lt;T&gt; using(Callable&lt;? extends D&gt; resourceSupplier, Function&lt;? super D, ? extends Publisher&lt;? extends T&gt;&gt; sourceSupplier, Consumer&lt;? super D&gt; resourceCleanup, boolean eager) {
+      return onAssembly((Flux)(new FluxUsing(resourceSupplier, sourceSupplier, resourceCleanup, eager)));
+   }
+
+   public static &lt;T, D&gt; Flux&lt;T&gt; usingWhen(Publisher&lt;D&gt; resourceSupplier, Function&lt;? super D, ? extends Publisher&lt;? extends T&gt;&gt; resourceClosure, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncCleanup) {
+      return usingWhen(resourceSupplier, resourceClosure, asyncCleanup, (resource, error) -&gt; {
+         return (Publisher)asyncCleanup.apply(resource);
+      }, asyncCleanup);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static &lt;T, D&gt; Flux&lt;T&gt; usingWhen(Publisher&lt;D&gt; resourceSupplier, Function&lt;? super D, ? extends Publisher&lt;? extends T&gt;&gt; resourceClosure, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncComplete, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncError) {
+      return onAssembly((Flux)(new FluxUsingWhen(resourceSupplier, resourceClosure, asyncComplete, (res, err) -&gt; {
+         return (Publisher)asyncError.apply(res);
+      }, (Function)null)));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static &lt;T, D&gt; Flux&lt;T&gt; usingWhen(Publisher&lt;D&gt; resourceSupplier, Function&lt;? super D, ? extends Publisher&lt;? extends T&gt;&gt; resourceClosure, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncComplete, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncError, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncCancel) {
+      return onAssembly((Flux)(new FluxUsingWhen(resourceSupplier, resourceClosure, asyncComplete, (res, err) -&gt; {
+         return (Publisher)asyncError.apply(res);
+      }, asyncCancel)));
+   }
+
+   public static &lt;T, D&gt; Flux&lt;T&gt; usingWhen(Publisher&lt;D&gt; resourceSupplier, Function&lt;? super D, ? extends Publisher&lt;? extends T&gt;&gt; resourceClosure, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncComplete, BiFunction&lt;? super D, ? super Throwable, ? extends Publisher&lt;?&gt;&gt; asyncError, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncCancel) {
+      return onAssembly((Flux)(new FluxUsingWhen(resourceSupplier, resourceClosure, asyncComplete, asyncError, asyncCancel)));
+   }
+
+   public static &lt;T1, T2, O&gt; Flux&lt;O&gt; zip(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, BiFunction&lt;? super T1, ? super T2, ? extends O&gt; combinator) {
+      return onAssembly((Flux)(new FluxZip(source1, source2, combinator, Queues.xs(), Queues.XS_BUFFER_SIZE)));
+   }
+
+   public static &lt;T1, T2&gt; Flux&lt;Tuple2&lt;T1, T2&gt;&gt; zip(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2) {
+      return zip(source1, source2, tuple2Function());
+   }
+
+   public static &lt;T1, T2, T3&gt; Flux&lt;Tuple3&lt;T1, T2, T3&gt;&gt; zip(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3) {
+      return zip(Tuples.fn3(), source1, source2, source3);
+   }
+
+   public static &lt;T1, T2, T3, T4&gt; Flux&lt;Tuple4&lt;T1, T2, T3, T4&gt;&gt; zip(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Publisher&lt;? extends T4&gt; source4) {
+      return zip(Tuples.fn4(), source1, source2, source3, source4);
+   }
+
+   public static &lt;T1, T2, T3, T4, T5&gt; Flux&lt;Tuple5&lt;T1, T2, T3, T4, T5&gt;&gt; zip(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Publisher&lt;? extends T4&gt; source4, Publisher&lt;? extends T5&gt; source5) {
+      return zip(Tuples.fn5(), source1, source2, source3, source4, source5);
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6&gt; Flux&lt;Tuple6&lt;T1, T2, T3, T4, T5, T6&gt;&gt; zip(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Publisher&lt;? extends T4&gt; source4, Publisher&lt;? extends T5&gt; source5, Publisher&lt;? extends T6&gt; source6) {
+      return zip(Tuples.fn6(), source1, source2, source3, source4, source5, source6);
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6, T7&gt; Flux&lt;Tuple7&lt;T1, T2, T3, T4, T5, T6, T7&gt;&gt; zip(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Publisher&lt;? extends T4&gt; source4, Publisher&lt;? extends T5&gt; source5, Publisher&lt;? extends T6&gt; source6, Publisher&lt;? extends T7&gt; source7) {
+      return zip(Tuples.fn7(), source1, source2, source3, source4, source5, source6, source7);
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6, T7, T8&gt; Flux&lt;Tuple8&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;&gt; zip(Publisher&lt;? extends T1&gt; source1, Publisher&lt;? extends T2&gt; source2, Publisher&lt;? extends T3&gt; source3, Publisher&lt;? extends T4&gt; source4, Publisher&lt;? extends T5&gt; source5, Publisher&lt;? extends T6&gt; source6, Publisher&lt;? extends T7&gt; source7, Publisher&lt;? extends T8&gt; source8) {
+      return zip(Tuples.fn8(), source1, source2, source3, source4, source5, source6, source7, source8);
+   }
+
+   public static &lt;O&gt; Flux&lt;O&gt; zip(Iterable&lt;? extends Publisher&lt;?&gt;&gt; sources, Function&lt;? super Object[], ? extends O&gt; combinator) {
+      return zip(sources, Queues.XS_BUFFER_SIZE, combinator);
+   }
+
+   public static &lt;O&gt; Flux&lt;O&gt; zip(Iterable&lt;? extends Publisher&lt;?&gt;&gt; sources, int prefetch, Function&lt;? super Object[], ? extends O&gt; combinator) {
+      return onAssembly((Flux)(new FluxZip(sources, combinator, Queues.get(prefetch), prefetch)));
+   }
+
+   @SafeVarargs
+   public static &lt;I, O&gt; Flux&lt;O&gt; zip(Function&lt;? super Object[], ? extends O&gt; combinator, Publisher... sources) {
+      return zip(combinator, Queues.XS_BUFFER_SIZE, sources);
+   }
+
+   @SafeVarargs
+   public static &lt;I, O&gt; Flux&lt;O&gt; zip(Function&lt;? super Object[], ? extends O&gt; combinator, int prefetch, Publisher... sources) {
+      if (sources.length == 0) {
+         return empty();
+      } else if (sources.length == 1) {
+         Publisher&lt;? extends I&gt; source = sources[0];
+         return source instanceof Fuseable ? onAssembly((Flux)(new FluxMapFuseable(from(source), (v) -&gt; {
+            return combinator.apply(new Object[]{v});
+         }))) : onAssembly((Flux)(new FluxMap(from(source), (v) -&gt; {
+            return combinator.apply(new Object[]{v});
+         })));
+      } else {
+         return onAssembly((Flux)(new FluxZip(sources, combinator, Queues.get(prefetch), prefetch)));
+      }
+   }
+
+   public static &lt;TUPLE extends Tuple2, V&gt; Flux&lt;V&gt; zip(Publisher&lt;? extends Publisher&lt;?&gt;&gt; sources, final Function&lt;? super TUPLE, ? extends V&gt; combinator) {
+      return onAssembly((new FluxBuffer(from(sources), Integer.MAX_VALUE, listSupplier())).flatMap(new Function&lt;List&lt;? extends Publisher&lt;?&gt;&gt;, Publisher&lt;V&gt;&gt;() {
+         public Publisher&lt;V&gt; apply(List&lt;? extends Publisher&lt;?&gt;&gt; publishers) {
+            return Flux.zip(Tuples.fnAny(combinator), (Publisher[])publishers.toArray(new Publisher[publishers.size()]));
+         }
+      }));
+   }
+
+   public final Mono&lt;Boolean&gt; all(Predicate&lt;? super T&gt; predicate) {
+      return Mono.onAssembly(new MonoAll(this, predicate));
+   }
+
+   public final Mono&lt;Boolean&gt; any(Predicate&lt;? super T&gt; predicate) {
+      return Mono.onAssembly(new MonoAny(this, predicate));
+   }
+
+   public final &lt;P&gt; P as(Function&lt;? super Flux&lt;T&gt;, P&gt; transformer) {
+      return transformer.apply(this);
+   }
+
+   @Nullable
+   public final T blockFirst() {
+      BlockingFirstSubscriber&lt;T&gt; subscriber = new BlockingFirstSubscriber();
+      this.subscribe((Subscriber)subscriber);
+      return subscriber.blockingGet();
+   }
+
+   @Nullable
+   public final T blockFirst(Duration timeout) {
+      BlockingFirstSubscriber&lt;T&gt; subscriber = new BlockingFirstSubscriber();
+      this.subscribe((Subscriber)subscriber);
+      return subscriber.blockingGet(timeout.toMillis(), TimeUnit.MILLISECONDS);
+   }
+
+   @Nullable
+   public final T blockLast() {
+      BlockingLastSubscriber&lt;T&gt; subscriber = new BlockingLastSubscriber();
+      this.subscribe((Subscriber)subscriber);
+      return subscriber.blockingGet();
+   }
+
+   @Nullable
+   public final T blockLast(Duration timeout) {
+      BlockingLastSubscriber&lt;T&gt; subscriber = new BlockingLastSubscriber();
+      this.subscribe((Subscriber)subscriber);
+      return subscriber.blockingGet(timeout.toMillis(), TimeUnit.MILLISECONDS);
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; buffer() {
+      return this.buffer(Integer.MAX_VALUE);
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; buffer(int maxSize) {
+      return this.buffer(maxSize, listSupplier());
+   }
+
+   public final &lt;C extends Collection&lt;? super T&gt;&gt; Flux&lt;C&gt; buffer(int maxSize, Supplier&lt;C&gt; bufferSupplier) {
+      return onAssembly((Flux)(new FluxBuffer(this, maxSize, bufferSupplier)));
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; buffer(int maxSize, int skip) {
+      return this.buffer(maxSize, skip, listSupplier());
+   }
+
+   public final &lt;C extends Collection&lt;? super T&gt;&gt; Flux&lt;C&gt; buffer(int maxSize, int skip, Supplier&lt;C&gt; bufferSupplier) {
+      return onAssembly((Flux)(new FluxBuffer(this, maxSize, skip, bufferSupplier)));
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; buffer(Publisher&lt;?&gt; other) {
+      return this.buffer(other, listSupplier());
+   }
+
+   public final &lt;C extends Collection&lt;? super T&gt;&gt; Flux&lt;C&gt; buffer(Publisher&lt;?&gt; other, Supplier&lt;C&gt; bufferSupplier) {
+      return onAssembly((Flux)(new FluxBufferBoundary(this, other, bufferSupplier)));
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; buffer(Duration bufferingTimespan) {
+      return this.buffer(bufferingTimespan, Schedulers.parallel());
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; buffer(Duration bufferingTimespan, Duration openBufferEvery) {
+      return this.buffer(bufferingTimespan, openBufferEvery, Schedulers.parallel());
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; buffer(Duration bufferingTimespan, Scheduler timer) {
+      return this.buffer((Publisher)interval(bufferingTimespan, timer));
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; buffer(Duration bufferingTimespan, Duration openBufferEvery, Scheduler timer) {
+      return bufferingTimespan.equals(openBufferEvery) ? this.buffer(bufferingTimespan, timer) : this.bufferWhen(interval(Duration.ZERO, openBufferEvery, timer), (aLong) -&gt; {
+         return Mono.delay(bufferingTimespan, timer);
+      });
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; bufferTimeout(int maxSize, Duration maxTime) {
+      return this.bufferTimeout(maxSize, maxTime, listSupplier());
+   }
+
+   public final &lt;C extends Collection&lt;? super T&gt;&gt; Flux&lt;C&gt; bufferTimeout(int maxSize, Duration maxTime, Supplier&lt;C&gt; bufferSupplier) {
+      return this.bufferTimeout(maxSize, maxTime, Schedulers.parallel(), bufferSupplier);
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; bufferTimeout(int maxSize, Duration maxTime, Scheduler timer) {
+      return this.bufferTimeout(maxSize, maxTime, timer, listSupplier());
+   }
+
+   public final &lt;C extends Collection&lt;? super T&gt;&gt; Flux&lt;C&gt; bufferTimeout(int maxSize, Duration maxTime, Scheduler timer, Supplier&lt;C&gt; bufferSupplier) {
+      return onAssembly((Flux)(new FluxBufferTimeout(this, maxSize, maxTime.toMillis(), timer, bufferSupplier)));
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; bufferUntil(Predicate&lt;? super T&gt; predicate) {
+      return onAssembly((Flux)(new FluxBufferPredicate(this, predicate, listSupplier(), Mode.UNTIL)));
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; bufferUntil(Predicate&lt;? super T&gt; predicate, boolean cutBefore) {
+      return onAssembly((Flux)(new FluxBufferPredicate(this, predicate, listSupplier(), cutBefore ? Mode.UNTIL_CUT_BEFORE : Mode.UNTIL)));
+   }
+
+   public final &lt;V&gt; Flux&lt;List&lt;T&gt;&gt; bufferUntilChanged() {
+      return this.bufferUntilChanged(identityFunction());
+   }
+
+   public final &lt;V&gt; Flux&lt;List&lt;T&gt;&gt; bufferUntilChanged(Function&lt;? super T, ? extends V&gt; keySelector) {
+      return this.bufferUntilChanged(keySelector, equalPredicate());
+   }
+
+   public final &lt;V&gt; Flux&lt;List&lt;T&gt;&gt; bufferUntilChanged(Function&lt;? super T, ? extends V&gt; keySelector, BiPredicate&lt;? super V, ? super V&gt; keyComparator) {
+      return defer(() -&gt; {
+         return this.bufferUntil(new ChangedPredicate(keySelector, keyComparator), true);
+      });
+   }
+
+   public final Flux&lt;List&lt;T&gt;&gt; bufferWhile(Predicate&lt;? super T&gt; predicate) {
+      return onAssembly((Flux)(new FluxBufferPredicate(this, predicate, listSupplier(), Mode.WHILE)));
+   }
+
+   public final &lt;U, V&gt; Flux&lt;List&lt;T&gt;&gt; bufferWhen(Publisher&lt;U&gt; bucketOpening, Function&lt;? super U, ? extends Publisher&lt;V&gt;&gt; closeSelector) {
+      return this.bufferWhen(bucketOpening, closeSelector, listSupplier());
+   }
+
+   public final &lt;U, V, C extends Collection&lt;? super T&gt;&gt; Flux&lt;C&gt; bufferWhen(Publisher&lt;U&gt; bucketOpening, Function&lt;? super U, ? extends Publisher&lt;V&gt;&gt; closeSelector, Supplier&lt;C&gt; bufferSupplier) {
+      return onAssembly((Flux)(new FluxBufferWhen(this, bucketOpening, closeSelector, bufferSupplier, Queues.unbounded(Queues.XS_BUFFER_SIZE))));
+   }
+
+   public final Flux&lt;T&gt; cache() {
+      return this.cache(Integer.MAX_VALUE);
+   }
+
+   public final Flux&lt;T&gt; cache(int history) {
+      return this.replay(history).autoConnect();
+   }
+
+   public final Flux&lt;T&gt; cache(Duration ttl) {
+      return this.cache(ttl, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; cache(Duration ttl, Scheduler timer) {
+      return this.cache(Integer.MAX_VALUE, ttl, timer);
+   }
+
+   public final Flux&lt;T&gt; cache(int history, Duration ttl) {
+      return this.cache(history, ttl, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; cache(int history, Duration ttl, Scheduler timer) {
+      return this.replay(history, ttl, timer).autoConnect();
+   }
+
+   public final &lt;E&gt; Flux&lt;E&gt; cast(Class&lt;E&gt; clazz) {
+      Objects.requireNonNull(clazz, &quot;clazz&quot;);
+      clazz.getClass();
+      return this.map(clazz::cast);
+   }
+
+   public final Flux&lt;T&gt; cancelOn(Scheduler scheduler) {
+      return onAssembly((Flux)(new FluxCancelOn(this, scheduler)));
+   }
+
+   public final Flux&lt;T&gt; checkpoint() {
+      return this.checkpoint((String)null, true);
+   }
+
+   public final Flux&lt;T&gt; checkpoint(String description) {
+      return this.checkpoint((String)Objects.requireNonNull(description), false);
+   }
+
+   public final Flux&lt;T&gt; checkpoint(@Nullable String description, boolean forceStackTrace) {
+      Object stacktrace;
+      if (!forceStackTrace) {
+         stacktrace = new AssemblyLightSnapshot(description);
+      } else {
+         stacktrace = new AssemblySnapshot(description, (Supplier)Traces.callSiteSupplierFactory.get());
+      }
+
+      return new FluxOnAssembly(this, (AssemblySnapshot)stacktrace);
+   }
+
+   public final &lt;E&gt; Mono&lt;E&gt; collect(Supplier&lt;E&gt; containerSupplier, BiConsumer&lt;E, ? super T&gt; collector) {
+      return Mono.onAssembly(new MonoCollect(this, containerSupplier, collector));
+   }
+
+   public final &lt;R, A&gt; Mono&lt;R&gt; collect(Collector&lt;? super T, A, ? extends R&gt; collector) {
+      return Mono.onAssembly(new MonoStreamCollector(this, collector));
+   }
+
+   public final Mono&lt;List&lt;T&gt;&gt; collectList() {
+      if (this instanceof Callable) {
+         if (this instanceof ScalarCallable) {
+            ScalarCallable scalarCallable = (ScalarCallable)this;
+
+            Object v;
+            try {
+               v = scalarCallable.call();
+            } catch (Exception var4) {
+               return Mono.error(Exceptions.unwrap(var4));
+            }
+
+            return Mono.onAssembly(new MonoCallable(() -&gt; {
+               List&lt;T&gt; list = (List)listSupplier().get();
+               if (v != null) {
+                  list.add(v);
+               }
+
+               return list;
+            }));
+         } else {
+            Callable&lt;T&gt; thiz = (Callable)this;
+            return Mono.onAssembly(new MonoCallable(() -&gt; {
+               List&lt;T&gt; list = (List)listSupplier().get();
+               T u = thiz.call();
+               if (u != null) {
+                  list.add(u);
+               }
+
+               return list;
+            }));
+         }
+      } else {
+         return Mono.onAssembly(new MonoCollectList(this));
+      }
+   }
+
+   public final &lt;K&gt; Mono&lt;Map&lt;K, T&gt;&gt; collectMap(Function&lt;? super T, ? extends K&gt; keyExtractor) {
+      return this.collectMap(keyExtractor, identityFunction());
+   }
+
+   public final &lt;K, V&gt; Mono&lt;Map&lt;K, V&gt;&gt; collectMap(Function&lt;? super T, ? extends K&gt; keyExtractor, Function&lt;? super T, ? extends V&gt; valueExtractor) {
+      return this.collectMap(keyExtractor, valueExtractor, () -&gt; {
+         return new HashMap();
+      });
+   }
+
+   public final &lt;K, V&gt; Mono&lt;Map&lt;K, V&gt;&gt; collectMap(Function&lt;? super T, ? extends K&gt; keyExtractor, Function&lt;? super T, ? extends V&gt; valueExtractor, Supplier&lt;Map&lt;K, V&gt;&gt; mapSupplier) {
+      Objects.requireNonNull(keyExtractor, &quot;Key extractor is null&quot;);
+      Objects.requireNonNull(valueExtractor, &quot;Value extractor is null&quot;);
+      Objects.requireNonNull(mapSupplier, &quot;Map supplier is null&quot;);
+      return this.collect(mapSupplier, (m, d) -&gt; {
+         m.put(keyExtractor.apply(d), valueExtractor.apply(d));
+      });
+   }
+
+   public final &lt;K&gt; Mono&lt;Map&lt;K, Collection&lt;T&gt;&gt;&gt; collectMultimap(Function&lt;? super T, ? extends K&gt; keyExtractor) {
+      return this.collectMultimap(keyExtractor, identityFunction());
+   }
+
+   public final &lt;K, V&gt; Mono&lt;Map&lt;K, Collection&lt;V&gt;&gt;&gt; collectMultimap(Function&lt;? super T, ? extends K&gt; keyExtractor, Function&lt;? super T, ? extends V&gt; valueExtractor) {
+      return this.collectMultimap(keyExtractor, valueExtractor, () -&gt; {
+         return new HashMap();
+      });
+   }
+
+   public final &lt;K, V&gt; Mono&lt;Map&lt;K, Collection&lt;V&gt;&gt;&gt; collectMultimap(Function&lt;? super T, ? extends K&gt; keyExtractor, Function&lt;? super T, ? extends V&gt; valueExtractor, Supplier&lt;Map&lt;K, Collection&lt;V&gt;&gt;&gt; mapSupplier) {
+      Objects.requireNonNull(keyExtractor, &quot;Key extractor is null&quot;);
+      Objects.requireNonNull(valueExtractor, &quot;Value extractor is null&quot;);
+      Objects.requireNonNull(mapSupplier, &quot;Map supplier is null&quot;);
+      return this.collect(mapSupplier, (m, d) -&gt; {
+         K key = keyExtractor.apply(d);
+         Collection&lt;V&gt; values = (Collection)m.computeIfAbsent(key, (k) -&gt; {
+            return new ArrayList();
+         });
+         values.add(valueExtractor.apply(d));
+      });
+   }
+
+   public final Mono&lt;List&lt;T&gt;&gt; collectSortedList() {
+      return this.collectSortedList((Comparator)null);
+   }
+
+   public final Mono&lt;List&lt;T&gt;&gt; collectSortedList(@Nullable Comparator&lt;? super T&gt; comparator) {
+      return this.collectList().doOnNext((list) -&gt; {
+         list.sort(comparator);
+      });
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final &lt;V&gt; Flux&lt;V&gt; compose(Function&lt;? super Flux&lt;T&gt;, ? extends Publisher&lt;V&gt;&gt; transformer) {
+      return defer(() -&gt; {
+         return (Publisher)transformer.apply(this);
+      });
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; concatMap(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper) {
+      return this.concatMap(mapper, Queues.XS_BUFFER_SIZE);
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; concatMap(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper, int prefetch) {
+      return onAssembly((Flux)(new FluxConcatMap(this, mapper, Queues.get(prefetch), prefetch, ErrorMode.IMMEDIATE)));
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; concatMapDelayError(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper) {
+      return this.concatMapDelayError(mapper, Queues.XS_BUFFER_SIZE);
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; concatMapDelayError(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper, int prefetch) {
+      return onAssembly((Flux)(new FluxConcatMap(this, mapper, Queues.get(prefetch), prefetch, ErrorMode.END)));
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; concatMapDelayError(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper, boolean delayUntilEnd, int prefetch) {
+      return onAssembly((Flux)(new FluxConcatMap(this, mapper, Queues.get(prefetch), prefetch, delayUntilEnd ? ErrorMode.END : ErrorMode.BOUNDARY)));
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; concatMapIterable(Function&lt;? super T, ? extends Iterable&lt;? extends R&gt;&gt; mapper) {
+      return this.concatMapIterable(mapper, Queues.XS_BUFFER_SIZE);
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; concatMapIterable(Function&lt;? super T, ? extends Iterable&lt;? extends R&gt;&gt; mapper, int prefetch) {
+      return onAssembly((Flux)(new FluxFlattenIterable(this, mapper, prefetch, Queues.get(prefetch))));
+   }
+
+   public final Flux&lt;T&gt; concatWith(Publisher&lt;? extends T&gt; other) {
+      if (this instanceof FluxConcatArray) {
+         FluxConcatArray&lt;T&gt; fluxConcatArray = (FluxConcatArray)this;
+         return fluxConcatArray.concatAdditionalSourceLast(other);
+      } else {
+         return concat(this, other);
+      }
+   }
+
+   public final Mono&lt;Long&gt; count() {
+      return Mono.onAssembly(new MonoCount(this));
+   }
+
+   public final Flux&lt;T&gt; defaultIfEmpty(T defaultV) {
+      return onAssembly((Flux)(new FluxDefaultIfEmpty(this, defaultV)));
+   }
+
+   public final Flux&lt;T&gt; delayElements(Duration delay) {
+      return this.delayElements(delay, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; delayElements(Duration delay, Scheduler timer) {
+      return this.delayUntil((d) -&gt; {
+         return Mono.delay(delay, timer);
+      });
+   }
+
+   public final Flux&lt;T&gt; delaySequence(Duration delay) {
+      return this.delaySequence(delay, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; delaySequence(Duration delay, Scheduler timer) {
+      return onAssembly((Flux)(new FluxDelaySequence(this, delay, timer)));
+   }
+
+   public final Flux&lt;T&gt; delayUntil(Function&lt;? super T, ? extends Publisher&lt;?&gt;&gt; triggerProvider) {
+      return this.concatMap((v) -&gt; {
+         return Mono.just(v).delayUntil(triggerProvider);
+      });
+   }
+
+   public final Flux&lt;T&gt; delaySubscription(Duration delay) {
+      return this.delaySubscription(delay, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; delaySubscription(Duration delay, Scheduler timer) {
+      return this.delaySubscription((Publisher)Mono.delay(delay, timer));
+   }
+
+   public final &lt;U&gt; Flux&lt;T&gt; delaySubscription(Publisher&lt;U&gt; subscriptionDelay) {
+      return onAssembly((Flux)(new FluxDelaySubscription(this, subscriptionDelay)));
+   }
+
+   public final &lt;X&gt; Flux&lt;X&gt; dematerialize() {
+      return onAssembly((Flux)(new FluxDematerialize(this)));
+   }
+
+   public final Flux&lt;T&gt; distinct() {
+      return this.distinct(identityFunction());
+   }
+
+   public final &lt;V&gt; Flux&lt;T&gt; distinct(Function&lt;? super T, ? extends V&gt; keySelector) {
+      return this.distinct(keySelector, hashSetSupplier());
+   }
+
+   public final &lt;V, C extends Collection&lt;? super V&gt;&gt; Flux&lt;T&gt; distinct(Function&lt;? super T, ? extends V&gt; keySelector, Supplier&lt;C&gt; distinctCollectionSupplier) {
+      return this.distinct(keySelector, distinctCollectionSupplier, Collection::add, Collection::clear);
+   }
+
+   public final &lt;V, C&gt; Flux&lt;T&gt; distinct(Function&lt;? super T, ? extends V&gt; keySelector, Supplier&lt;C&gt; distinctStoreSupplier, BiPredicate&lt;C, V&gt; distinctPredicate, Consumer&lt;C&gt; cleanup) {
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxDistinctFuseable(this, keySelector, distinctStoreSupplier, distinctPredicate, cleanup))) : onAssembly((Flux)(new FluxDistinct(this, keySelector, distinctStoreSupplier, distinctPredicate, cleanup)));
+   }
+
+   public final Flux&lt;T&gt; distinctUntilChanged() {
+      return this.distinctUntilChanged(identityFunction());
+   }
+
+   public final &lt;V&gt; Flux&lt;T&gt; distinctUntilChanged(Function&lt;? super T, ? extends V&gt; keySelector) {
+      return this.distinctUntilChanged(keySelector, equalPredicate());
+   }
+
+   public final &lt;V&gt; Flux&lt;T&gt; distinctUntilChanged(Function&lt;? super T, ? extends V&gt; keySelector, BiPredicate&lt;? super V, ? super V&gt; keyComparator) {
+      return onAssembly((Flux)(new FluxDistinctUntilChanged(this, keySelector, keyComparator)));
+   }
+
+   public final Flux&lt;T&gt; doAfterTerminate(Runnable afterTerminate) {
+      Objects.requireNonNull(afterTerminate, &quot;afterTerminate&quot;);
+      return doOnSignal(this, (Consumer)null, (Consumer)null, (Consumer)null, (Runnable)null, afterTerminate, (LongConsumer)null, (Runnable)null);
+   }
+
+   public final Flux&lt;T&gt; doOnCancel(Runnable onCancel) {
+      Objects.requireNonNull(onCancel, &quot;onCancel&quot;);
+      return doOnSignal(this, (Consumer)null, (Consumer)null, (Consumer)null, (Runnable)null, (Runnable)null, (LongConsumer)null, onCancel);
+   }
+
+   public final Flux&lt;T&gt; doOnComplete(Runnable onComplete) {
+      Objects.requireNonNull(onComplete, &quot;onComplete&quot;);
+      return doOnSignal(this, (Consumer)null, (Consumer)null, (Consumer)null, onComplete, (Runnable)null, (LongConsumer)null, (Runnable)null);
+   }
+
+   public final &lt;R&gt; Flux&lt;T&gt; doOnDiscard(Class&lt;R&gt; type, Consumer&lt;? super R&gt; discardHook) {
+      return this.subscriberContext(Operators.discardLocalAdapter(type, discardHook));
+   }
+
+   public final Flux&lt;T&gt; doOnEach(Consumer&lt;? super Signal&lt;T&gt;&gt; signalConsumer) {
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxDoOnEachFuseable(this, signalConsumer))) : onAssembly((Flux)(new FluxDoOnEach(this, signalConsumer)));
+   }
+
+   public final Flux&lt;T&gt; doOnError(Consumer&lt;? super Throwable&gt; onError) {
+      Objects.requireNonNull(onError, &quot;onError&quot;);
+      return doOnSignal(this, (Consumer)null, (Consumer)null, onError, (Runnable)null, (Runnable)null, (LongConsumer)null, (Runnable)null);
+   }
+
+   public final &lt;E extends Throwable&gt; Flux&lt;T&gt; doOnError(Class&lt;E&gt; exceptionType, Consumer&lt;? super E&gt; onError) {
+      Objects.requireNonNull(exceptionType, &quot;type&quot;);
+      return this.doOnError(exceptionType::isInstance, onError);
+   }
+
+   public final Flux&lt;T&gt; doOnError(Predicate&lt;? super Throwable&gt; predicate, Consumer&lt;? super Throwable&gt; onError) {
+      Objects.requireNonNull(predicate, &quot;predicate&quot;);
+      return this.doOnError((t) -&gt; {
+         if (predicate.test(t)) {
+            onError.accept(t);
+         }
+
+      });
+   }
+
+   public final Flux&lt;T&gt; doOnNext(Consumer&lt;? super T&gt; onNext) {
+      Objects.requireNonNull(onNext, &quot;onNext&quot;);
+      return doOnSignal(this, (Consumer)null, onNext, (Consumer)null, (Runnable)null, (Runnable)null, (LongConsumer)null, (Runnable)null);
+   }
+
+   public final Flux&lt;T&gt; doOnRequest(LongConsumer consumer) {
+      Objects.requireNonNull(consumer, &quot;consumer&quot;);
+      return doOnSignal(this, (Consumer)null, (Consumer)null, (Consumer)null, (Runnable)null, (Runnable)null, consumer, (Runnable)null);
+   }
+
+   public final Flux&lt;T&gt; doOnSubscribe(Consumer&lt;? super Subscription&gt; onSubscribe) {
+      Objects.requireNonNull(onSubscribe, &quot;onSubscribe&quot;);
+      return doOnSignal(this, onSubscribe, (Consumer)null, (Consumer)null, (Runnable)null, (Runnable)null, (LongConsumer)null, (Runnable)null);
+   }
+
+   public final Flux&lt;T&gt; doOnTerminate(Runnable onTerminate) {
+      Objects.requireNonNull(onTerminate, &quot;onTerminate&quot;);
+      return doOnSignal(this, (Consumer)null, (Consumer)null, (e) -&gt; {
+         onTerminate.run();
+      }, onTerminate, (Runnable)null, (LongConsumer)null, (Runnable)null);
+   }
+
+   public final Flux&lt;T&gt; doFirst(Runnable onFirst) {
+      Objects.requireNonNull(onFirst, &quot;onFirst&quot;);
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxDoFirstFuseable(this, onFirst))) : onAssembly((Flux)(new FluxDoFirst(this, onFirst)));
+   }
+
+   public final Flux&lt;T&gt; doFinally(Consumer&lt;SignalType&gt; onFinally) {
+      Objects.requireNonNull(onFinally, &quot;onFinally&quot;);
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxDoFinallyFuseable(this, onFinally))) : onAssembly((Flux)(new FluxDoFinally(this, onFinally)));
+   }
+
+   public final Flux&lt;Tuple2&lt;Long, T&gt;&gt; elapsed() {
+      return this.elapsed(Schedulers.parallel());
+   }
+
+   public final Flux&lt;Tuple2&lt;Long, T&gt;&gt; elapsed(Scheduler scheduler) {
+      Objects.requireNonNull(scheduler, &quot;scheduler&quot;);
+      return onAssembly((Flux)(new FluxElapsed(this, scheduler)));
+   }
+
+   public final Mono&lt;T&gt; elementAt(int index) {
+      return Mono.onAssembly(new MonoElementAt(this, (long)index));
+   }
+
+   public final Mono&lt;T&gt; elementAt(int index, T defaultValue) {
+      return Mono.onAssembly(new MonoElementAt(this, (long)index, defaultValue));
+   }
+
+   public final Flux&lt;T&gt; expandDeep(Function&lt;? super T, ? extends Publisher&lt;? extends T&gt;&gt; expander, int capacityHint) {
+      return onAssembly((Flux)(new FluxExpand(this, expander, false, capacityHint)));
+   }
+
+   public final Flux&lt;T&gt; expandDeep(Function&lt;? super T, ? extends Publisher&lt;? extends T&gt;&gt; expander) {
+      return this.expandDeep(expander, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Flux&lt;T&gt; expand(Function&lt;? super T, ? extends Publisher&lt;? extends T&gt;&gt; expander, int capacityHint) {
+      return onAssembly((Flux)(new FluxExpand(this, expander, true, capacityHint)));
+   }
+
+   public final Flux&lt;T&gt; expand(Function&lt;? super T, ? extends Publisher&lt;? extends T&gt;&gt; expander) {
+      return this.expand(expander, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Flux&lt;T&gt; filter(Predicate&lt;? super T&gt; p) {
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxFilterFuseable(this, p))) : onAssembly((Flux)(new FluxFilter(this, p)));
+   }
+
+   public final Flux&lt;T&gt; filterWhen(Function&lt;? super T, ? extends Publisher&lt;Boolean&gt;&gt; asyncPredicate) {
+      return this.filterWhen(asyncPredicate, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Flux&lt;T&gt; filterWhen(Function&lt;? super T, ? extends Publisher&lt;Boolean&gt;&gt; asyncPredicate, int bufferSize) {
+      return onAssembly((Flux)(new FluxFilterWhen(this, asyncPredicate, bufferSize)));
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMap(Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapper) {
+      return this.flatMap(mapper, Queues.SMALL_BUFFER_SIZE, Queues.XS_BUFFER_SIZE);
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; flatMap(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper, int concurrency) {
+      return this.flatMap(mapper, concurrency, Queues.XS_BUFFER_SIZE);
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; flatMap(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper, int concurrency, int prefetch) {
+      return this.flatMap(mapper, false, concurrency, prefetch);
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; flatMapDelayError(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper, int concurrency, int prefetch) {
+      return this.flatMap(mapper, true, concurrency, prefetch);
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMap(@Nullable Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapperOnNext, @Nullable Function&lt;? super Throwable, ? extends Publisher&lt;? extends R&gt;&gt; mapperOnError, @Nullable Supplier&lt;? extends Publisher&lt;? extends R&gt;&gt; mapperOnComplete) {
+      return onAssembly((Flux)(new FluxFlatMap(new FluxMapSignal(this, mapperOnNext, mapperOnError, mapperOnComplete), identityFunction(), false, Queues.XS_BUFFER_SIZE, Queues.xs(), Queues.XS_BUFFER_SIZE, Queues.xs())));
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapIterable(Function&lt;? super T, ? extends Iterable&lt;? extends R&gt;&gt; mapper) {
+      return this.flatMapIterable(mapper, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapIterable(Function&lt;? super T, ? extends Iterable&lt;? extends R&gt;&gt; mapper, int prefetch) {
+      return onAssembly((Flux)(new FluxFlattenIterable(this, mapper, prefetch, Queues.get(prefetch))));
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapSequential(Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapper) {
+      return this.flatMapSequential(mapper, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapSequential(Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapper, int maxConcurrency) {
+      return this.flatMapSequential(mapper, maxConcurrency, Queues.XS_BUFFER_SIZE);
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapSequential(Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapper, int maxConcurrency, int prefetch) {
+      return this.flatMapSequential(mapper, false, maxConcurrency, prefetch);
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapSequentialDelayError(Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapper, int maxConcurrency, int prefetch) {
+      return this.flatMapSequential(mapper, true, maxConcurrency, prefetch);
+   }
+
+   public int getPrefetch() {
+      return -1;
+   }
+
+   public final &lt;K&gt; Flux&lt;GroupedFlux&lt;K, T&gt;&gt; groupBy(Function&lt;? super T, ? extends K&gt; keyMapper) {
+      return this.groupBy(keyMapper, identityFunction());
+   }
+
+   public final &lt;K&gt; Flux&lt;GroupedFlux&lt;K, T&gt;&gt; groupBy(Function&lt;? super T, ? extends K&gt; keyMapper, int prefetch) {
+      return this.groupBy(keyMapper, identityFunction(), prefetch);
+   }
+
+   public final &lt;K, V&gt; Flux&lt;GroupedFlux&lt;K, V&gt;&gt; groupBy(Function&lt;? super T, ? extends K&gt; keyMapper, Function&lt;? super T, ? extends V&gt; valueMapper) {
+      return this.groupBy(keyMapper, valueMapper, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final &lt;K, V&gt; Flux&lt;GroupedFlux&lt;K, V&gt;&gt; groupBy(Function&lt;? super T, ? extends K&gt; keyMapper, Function&lt;? super T, ? extends V&gt; valueMapper, int prefetch) {
+      return onAssembly((Flux)(new FluxGroupBy(this, keyMapper, valueMapper, Queues.unbounded(prefetch), Queues.unbounded(prefetch), prefetch)));
+   }
+
+   public final &lt;TRight, TLeftEnd, TRightEnd, R&gt; Flux&lt;R&gt; groupJoin(Publisher&lt;? extends TRight&gt; other, Function&lt;? super T, ? extends Publisher&lt;TLeftEnd&gt;&gt; leftEnd, Function&lt;? super TRight, ? extends Publisher&lt;TRightEnd&gt;&gt; rightEnd, BiFunction&lt;? super T, ? super Flux&lt;TRight&gt;, ? extends R&gt; resultSelector) {
+      return onAssembly((Flux)(new FluxGroupJoin(this, other, leftEnd, rightEnd, resultSelector, Queues.unbounded(Queues.XS_BUFFER_SIZE), Queues.unbounded(Queues.XS_BUFFER_SIZE))));
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; handle(BiConsumer&lt;? super T, SynchronousSink&lt;R&gt;&gt; handler) {
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxHandleFuseable(this, handler))) : onAssembly((Flux)(new FluxHandle(this, handler)));
+   }
+
+   public final Mono&lt;Boolean&gt; hasElement(T value) {
+      Objects.requireNonNull(value, &quot;value&quot;);
+      return this.any((t) -&gt; {
+         return Objects.equals(value, t);
+      });
+   }
+
+   public final Mono&lt;Boolean&gt; hasElements() {
+      return Mono.onAssembly(new MonoHasElements(this));
+   }
+
+   public Flux&lt;T&gt; hide() {
+      return new FluxHide(this);
+   }
+
+   public final Flux&lt;Tuple2&lt;Long, T&gt;&gt; index() {
+      return this.index(tuple2Function());
+   }
+
+   public final &lt;I&gt; Flux&lt;I&gt; index(BiFunction&lt;? super Long, ? super T, ? extends I&gt; indexMapper) {
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxIndexFuseable(this, indexMapper))) : onAssembly((Flux)(new FluxIndex(this, indexMapper)));
+   }
+
+   public final Mono&lt;T&gt; ignoreElements() {
+      return Mono.onAssembly(new MonoIgnoreElements(this));
+   }
+
+   public final &lt;TRight, TLeftEnd, TRightEnd, R&gt; Flux&lt;R&gt; join(Publisher&lt;? extends TRight&gt; other, Function&lt;? super T, ? extends Publisher&lt;TLeftEnd&gt;&gt; leftEnd, Function&lt;? super TRight, ? extends Publisher&lt;TRightEnd&gt;&gt; rightEnd, BiFunction&lt;? super T, ? super TRight, ? extends R&gt; resultSelector) {
+      return onAssembly((Flux)(new FluxJoin(this, other, leftEnd, rightEnd, resultSelector)));
+   }
+
+   public final Mono&lt;T&gt; last() {
+      if (this instanceof Callable) {
+         Callable&lt;T&gt; thiz = (Callable)this;
+         Mono&lt;T&gt; callableMono = wrapToMono(thiz);
+         return callableMono == Mono.empty() ? Mono.onAssembly(new MonoError(new NoSuchElementException(&quot;Flux#last() didn&#39;t observe any onNext signal from Callable flux&quot;))) : Mono.onAssembly(callableMono);
+      } else {
+         return Mono.onAssembly(new MonoTakeLastOne(this));
+      }
+   }
+
+   public final Mono&lt;T&gt; last(T defaultValue) {
+      if (this instanceof Callable) {
+         Callable&lt;T&gt; thiz = (Callable)this;
+         if (thiz instanceof ScalarCallable) {
+            ScalarCallable c = (ScalarCallable)thiz;
+
+            Object v;
+            try {
+               v = c.call();
+            } catch (Exception var6) {
+               return Mono.error(Exceptions.unwrap(var6));
+            }
+
+            if (v == null) {
+               return Mono.just(defaultValue);
+            }
+
+            return Mono.just(v);
+         }
+
+         Mono.onAssembly(new MonoCallable(thiz));
+      }
+
+      return Mono.onAssembly(new MonoTakeLastOne(this, defaultValue));
+   }
+
+   public final Flux&lt;T&gt; limitRate(int prefetchRate) {
+      return onAssembly(this.publishOn(Schedulers.immediate(), prefetchRate));
+   }
+
+   public final Flux&lt;T&gt; limitRate(int highTide, int lowTide) {
+      return onAssembly(this.publishOn(Schedulers.immediate(), true, highTide, lowTide));
+   }
+
+   public final Flux&lt;T&gt; limitRequest(long requestCap) {
+      return onAssembly((Flux)(new FluxLimitRequest(this, requestCap)));
+   }
+
+   public final Flux&lt;T&gt; log() {
+      return this.log((String)null, Level.INFO);
+   }
+
+   public final Flux&lt;T&gt; log(String category) {
+      return this.log(category, Level.INFO);
+   }
+
+   public final Flux&lt;T&gt; log(@Nullable String category, Level level, SignalType... options) {
+      return this.log(category, level, false, options);
+   }
+
+   public final Flux&lt;T&gt; log(@Nullable String category, Level level, boolean showOperatorLine, SignalType... options) {
+      SignalLogger&lt;T&gt; log = new SignalLogger(this, category, level, showOperatorLine, options);
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxLogFuseable(this, log))) : onAssembly((Flux)(new FluxLog(this, log)));
+   }
+
+   public final Flux&lt;T&gt; log(Logger logger) {
+      return this.log(logger, Level.INFO, false);
+   }
+
+   public final Flux&lt;T&gt; log(Logger logger, Level level, boolean showOperatorLine, SignalType... options) {
+      SignalLogger&lt;T&gt; log = new SignalLogger(this, &quot;IGNORED&quot;, level, showOperatorLine, (s) -&gt; {
+         return logger;
+      }, options);
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxLogFuseable(this, log))) : onAssembly((Flux)(new FluxLog(this, log)));
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; map(Function&lt;? super T, ? extends V&gt; mapper) {
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxMapFuseable(this, mapper))) : onAssembly((Flux)(new FluxMap(this, mapper)));
+   }
+
+   public final Flux&lt;Signal&lt;T&gt;&gt; materialize() {
+      return onAssembly((Flux)(new FluxMaterialize(this)));
+   }
+
+   public final Flux&lt;T&gt; mergeOrderedWith(Publisher&lt;? extends T&gt; other, Comparator&lt;? super T&gt; otherComparator) {
+      if (this instanceof FluxMergeOrdered) {
+         FluxMergeOrdered&lt;T&gt; fluxMerge = (FluxMergeOrdered)this;
+         return fluxMerge.mergeAdditionalSource(other, otherComparator);
+      } else {
+         return mergeOrdered(otherComparator, this, other);
+      }
+   }
+
+   public final Flux&lt;T&gt; mergeWith(Publisher&lt;? extends T&gt; other) {
+      if (this instanceof FluxMerge) {
+         FluxMerge&lt;T&gt; fluxMerge = (FluxMerge)this;
+         return fluxMerge.mergeAdditionalSource(other, Queues::get);
+      } else {
+         return merge(this, other);
+      }
+   }
+
+   public final Flux&lt;T&gt; metrics() {
+      if (!Metrics.isInstrumentationAvailable()) {
+         return this;
+      } else {
+         return this instanceof Fuseable ? onAssembly((Flux)(new FluxMetricsFuseable(this))) : onAssembly((Flux)(new FluxMetrics(this)));
+      }
+   }
+
+   public final Flux&lt;T&gt; name(String name) {
+      return FluxName.createOrAppend(this, name);
+   }
+
+   public final Mono&lt;T&gt; next() {
+      if (this instanceof Callable) {
+         Callable&lt;T&gt; m = (Callable)this;
+         return Mono.onAssembly(wrapToMono(m));
+      } else {
+         return Mono.onAssembly(new MonoNext(this));
+      }
+   }
+
+   public final &lt;U&gt; Flux&lt;U&gt; ofType(Class&lt;U&gt; clazz) {
+      Objects.requireNonNull(clazz, &quot;clazz&quot;);
+      return this.filter((o) -&gt; {
+         return clazz.isAssignableFrom(o.getClass());
+      }).cast(clazz);
+   }
+
+   public final Flux&lt;T&gt; onBackpressureBuffer() {
+      return onAssembly((Flux)(new FluxOnBackpressureBuffer(this, Queues.SMALL_BUFFER_SIZE, true, (Consumer)null)));
+   }
+
+   public final Flux&lt;T&gt; onBackpressureBuffer(int maxSize) {
+      return onAssembly((Flux)(new FluxOnBackpressureBuffer(this, maxSize, false, (Consumer)null)));
+   }
+
+   public final Flux&lt;T&gt; onBackpressureBuffer(int maxSize, Consumer&lt;? super T&gt; onOverflow) {
+      Objects.requireNonNull(onOverflow, &quot;onOverflow&quot;);
+      return onAssembly((Flux)(new FluxOnBackpressureBuffer(this, maxSize, false, onOverflow)));
+   }
+
+   public final Flux&lt;T&gt; onBackpressureBuffer(int maxSize, BufferOverflowStrategy bufferOverflowStrategy) {
+      Objects.requireNonNull(bufferOverflowStrategy, &quot;bufferOverflowStrategy&quot;);
+      return onAssembly((Flux)(new FluxOnBackpressureBufferStrategy(this, maxSize, (Consumer)null, bufferOverflowStrategy)));
+   }
+
+   public final Flux&lt;T&gt; onBackpressureBuffer(int maxSize, Consumer&lt;? super T&gt; onBufferOverflow, BufferOverflowStrategy bufferOverflowStrategy) {
+      Objects.requireNonNull(onBufferOverflow, &quot;onBufferOverflow&quot;);
+      Objects.requireNonNull(bufferOverflowStrategy, &quot;bufferOverflowStrategy&quot;);
+      return onAssembly((Flux)(new FluxOnBackpressureBufferStrategy(this, maxSize, onBufferOverflow, bufferOverflowStrategy)));
+   }
+
+   public final Flux&lt;T&gt; onBackpressureBuffer(Duration ttl, int maxSize, Consumer&lt;? super T&gt; onBufferEviction) {
+      return this.onBackpressureBuffer(ttl, maxSize, onBufferEviction, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; onBackpressureBuffer(Duration ttl, int maxSize, Consumer&lt;? super T&gt; onBufferEviction, Scheduler scheduler) {
+      Objects.requireNonNull(ttl, &quot;ttl&quot;);
+      Objects.requireNonNull(onBufferEviction, &quot;onBufferEviction&quot;);
+      return onAssembly((Flux)(new FluxOnBackpressureBufferTimeout(this, ttl, scheduler, maxSize, onBufferEviction)));
+   }
+
+   public final Flux&lt;T&gt; onBackpressureDrop() {
+      return onAssembly((Flux)(new FluxOnBackpressureDrop(this)));
+   }
+
+   public final Flux&lt;T&gt; onBackpressureDrop(Consumer&lt;? super T&gt; onDropped) {
+      return onAssembly((Flux)(new FluxOnBackpressureDrop(this, onDropped)));
+   }
+
+   public final Flux&lt;T&gt; onBackpressureError() {
+      return this.onBackpressureDrop((t) -&gt; {
+         throw Exceptions.failWithOverflow();
+      });
+   }
+
+   public final Flux&lt;T&gt; onBackpressureLatest() {
+      return onAssembly((Flux)(new FluxOnBackpressureLatest(this)));
+   }
+
+   public final Flux&lt;T&gt; onErrorContinue(BiConsumer&lt;Throwable, Object&gt; errorConsumer) {
+      return this.subscriberContext(Context.of(&quot;reactor.onNextError.localStrategy&quot;, OnNextFailureStrategy.resume(errorConsumer)));
+   }
+
+   public final &lt;E extends Throwable&gt; Flux&lt;T&gt; onErrorContinue(Class&lt;E&gt; type, BiConsumer&lt;Throwable, Object&gt; errorConsumer) {
+      return this.onErrorContinue(type::isInstance, errorConsumer);
+   }
+
+   public final &lt;E extends Throwable&gt; Flux&lt;T&gt; onErrorContinue(Predicate&lt;E&gt; errorPredicate, BiConsumer&lt;Throwable, Object&gt; errorConsumer) {
+      return this.subscriberContext(Context.of(&quot;reactor.onNextError.localStrategy&quot;, OnNextFailureStrategy.resumeIf(errorPredicate, errorConsumer)));
+   }
+
+   public final Flux&lt;T&gt; onErrorStop() {
+      return this.subscriberContext(Context.of(&quot;reactor.onNextError.localStrategy&quot;, OnNextFailureStrategy.stop()));
+   }
+
+   public final Flux&lt;T&gt; onErrorMap(Function&lt;? super Throwable, ? extends Throwable&gt; mapper) {
+      return this.onErrorResume((e) -&gt; {
+         return Mono.error((Throwable)mapper.apply(e));
+      });
+   }
+
+   public final &lt;E extends Throwable&gt; Flux&lt;T&gt; onErrorMap(Class&lt;E&gt; type, Function&lt;? super E, ? extends Throwable&gt; mapper) {
+      return this.onErrorMap(type::isInstance, mapper);
+   }
+
+   public final Flux&lt;T&gt; onErrorMap(Predicate&lt;? super Throwable&gt; predicate, Function&lt;? super Throwable, ? extends Throwable&gt; mapper) {
+      return this.onErrorResume(predicate, (e) -&gt; {
+         return Mono.error((Throwable)mapper.apply(e));
+      });
+   }
+
+   public final Flux&lt;T&gt; onErrorResume(Function&lt;? super Throwable, ? extends Publisher&lt;? extends T&gt;&gt; fallback) {
+      return onAssembly((Flux)(new FluxOnErrorResume(this, fallback)));
+   }
+
+   public final &lt;E extends Throwable&gt; Flux&lt;T&gt; onErrorResume(Class&lt;E&gt; type, Function&lt;? super E, ? extends Publisher&lt;? extends T&gt;&gt; fallback) {
+      Objects.requireNonNull(type, &quot;type&quot;);
+      return this.onErrorResume(type::isInstance, fallback);
+   }
+
+   public final Flux&lt;T&gt; onErrorResume(Predicate&lt;? super Throwable&gt; predicate, Function&lt;? super Throwable, ? extends Publisher&lt;? extends T&gt;&gt; fallback) {
+      Objects.requireNonNull(predicate, &quot;predicate&quot;);
+      return this.onErrorResume((e) -&gt; {
+         return (Publisher)(predicate.test(e) ? (Publisher)fallback.apply(e) : error(e));
+      });
+   }
+
+   public final Flux&lt;T&gt; onErrorReturn(T fallbackValue) {
+      return this.onErrorResume((t) -&gt; {
+         return just(fallbackValue);
+      });
+   }
+
+   public final &lt;E extends Throwable&gt; Flux&lt;T&gt; onErrorReturn(Class&lt;E&gt; type, T fallbackValue) {
+      return this.onErrorResume(type, (t) -&gt; {
+         return just(fallbackValue);
+      });
+   }
+
+   public final Flux&lt;T&gt; onErrorReturn(Predicate&lt;? super Throwable&gt; predicate, T fallbackValue) {
+      return this.onErrorResume(predicate, (t) -&gt; {
+         return just(fallbackValue);
+      });
+   }
+
+   public final Flux&lt;T&gt; onTerminateDetach() {
+      return new FluxDetach(this);
+   }
+
+   public final Flux&lt;T&gt; or(Publisher&lt;? extends T&gt; other) {
+      if (this instanceof FluxFirstEmitting) {
+         FluxFirstEmitting&lt;T&gt; publisherAmb = (FluxFirstEmitting)this;
+         FluxFirstEmitting&lt;T&gt; result = publisherAmb.ambAdditionalSource(other);
+         if (result != null) {
+            return result;
+         }
+      }
+
+      return first(this, other);
+   }
+
+   public final ParallelFlux&lt;T&gt; parallel() {
+      return this.parallel(Schedulers.DEFAULT_POOL_SIZE);
+   }
+
+   public final ParallelFlux&lt;T&gt; parallel(int parallelism) {
+      return this.parallel(parallelism, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final ParallelFlux&lt;T&gt; parallel(int parallelism, int prefetch) {
+      return ParallelFlux.from(this, parallelism, prefetch, Queues.get(prefetch));
+   }
+
+   public final ConnectableFlux&lt;T&gt; publish() {
+      return this.publish(Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final ConnectableFlux&lt;T&gt; publish(int prefetch) {
+      return onAssembly((ConnectableFlux)(new FluxPublish(this, prefetch, Queues.get(prefetch))));
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; publish(Function&lt;? super Flux&lt;T&gt;, ? extends Publisher&lt;? extends R&gt;&gt; transform) {
+      return this.publish(transform, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; publish(Function&lt;? super Flux&lt;T&gt;, ? extends Publisher&lt;? extends R&gt;&gt; transform, int prefetch) {
+      return onAssembly((Flux)(new FluxPublishMulticast(this, transform, prefetch, Queues.get(prefetch))));
+   }
+
+   public final Mono&lt;T&gt; publishNext() {
+      return Mono.onAssembly(new MonoProcessor(this));
+   }
+
+   public final Flux&lt;T&gt; publishOn(Scheduler scheduler) {
+      return this.publishOn(scheduler, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Flux&lt;T&gt; publishOn(Scheduler scheduler, int prefetch) {
+      return this.publishOn(scheduler, true, prefetch);
+   }
+
+   public final Flux&lt;T&gt; publishOn(Scheduler scheduler, boolean delayError, int prefetch) {
+      return this.publishOn(scheduler, delayError, prefetch, prefetch);
+   }
+
+   final Flux&lt;T&gt; publishOn(Scheduler scheduler, boolean delayError, int prefetch, int lowTide) {
+      if (!(this instanceof Callable)) {
+         return onAssembly((Flux)(new FluxPublishOn(this, scheduler, delayError, prefetch, lowTide, Queues.get(prefetch))));
+      } else {
+         if (this instanceof ScalarCallable) {
+            ScalarCallable s = (ScalarCallable)this;
+
+            try {
+               return onAssembly((Flux)(new FluxSubscribeOnValue(s.call(), scheduler)));
+            } catch (Exception var7) {
+               ;
+            }
+         }
+
+         Callable&lt;T&gt; c = (Callable)this;
+         return onAssembly((Flux)(new FluxSubscribeOnCallable(c, scheduler)));
+      }
+   }
+
+   public final Mono&lt;T&gt; reduce(BiFunction&lt;T, T, T&gt; aggregator) {
+      if (this instanceof Callable) {
+         Callable&lt;T&gt; thiz = (Callable)this;
+         return Mono.onAssembly(wrapToMono(thiz));
+      } else {
+         return Mono.onAssembly(new MonoReduce(this, aggregator));
+      }
+   }
+
+   public final &lt;A&gt; Mono&lt;A&gt; reduce(A initial, BiFunction&lt;A, ? super T, A&gt; accumulator) {
+      return this.reduceWith(() -&gt; {
+         return initial;
+      }, accumulator);
+   }
+
+   public final &lt;A&gt; Mono&lt;A&gt; reduceWith(Supplier&lt;A&gt; initial, BiFunction&lt;A, ? super T, A&gt; accumulator) {
+      return Mono.onAssembly(new MonoReduceSeed(this, initial, accumulator));
+   }
+
+   public final Flux&lt;T&gt; repeat() {
+      return this.repeat(ALWAYS_BOOLEAN_SUPPLIER);
+   }
+
+   public final Flux&lt;T&gt; repeat(BooleanSupplier predicate) {
+      return onAssembly((Flux)(new FluxRepeatPredicate(this, predicate)));
+   }
+
+   public final Flux&lt;T&gt; repeat(long numRepeat) {
+      return numRepeat == 0L ? this : onAssembly((Flux)(new FluxRepeat(this, numRepeat)));
+   }
+
+   public final Flux&lt;T&gt; repeat(long numRepeat, BooleanSupplier predicate) {
+      if (numRepeat &lt; 0L) {
+         throw new IllegalArgumentException(&quot;numRepeat &gt;= 0 required&quot;);
+      } else {
+         return numRepeat == 0L ? this : defer(() -&gt; {
+            return this.repeat(countingBooleanSupplier(predicate, numRepeat));
+         });
+      }
+   }
+
+   public final Flux&lt;T&gt; repeatWhen(Function&lt;Flux&lt;Long&gt;, ? extends Publisher&lt;?&gt;&gt; repeatFactory) {
+      return onAssembly((Flux)(new FluxRepeatWhen(this, repeatFactory)));
+   }
+
+   public final ConnectableFlux&lt;T&gt; replay() {
+      return this.replay(Integer.MAX_VALUE);
+   }
+
+   public final ConnectableFlux&lt;T&gt; replay(int history) {
+      return onAssembly((ConnectableFlux)(new FluxReplay(this, history, 0L, (Scheduler)null)));
+   }
+
+   public final ConnectableFlux&lt;T&gt; replay(Duration ttl) {
+      return this.replay(Integer.MAX_VALUE, ttl);
+   }
+
+   public final ConnectableFlux&lt;T&gt; replay(int history, Duration ttl) {
+      return this.replay(history, ttl, Schedulers.parallel());
+   }
+
+   public final ConnectableFlux&lt;T&gt; replay(Duration ttl, Scheduler timer) {
+      return this.replay(Integer.MAX_VALUE, ttl, timer);
+   }
+
+   public final ConnectableFlux&lt;T&gt; replay(int history, Duration ttl, Scheduler timer) {
+      Objects.requireNonNull(timer, &quot;timer&quot;);
+      return onAssembly((ConnectableFlux)(new FluxReplay(this, history, ttl.toMillis(), timer)));
+   }
+
+   public final Flux&lt;T&gt; retry() {
+      return this.retry(Long.MAX_VALUE);
+   }
+
+   public final Flux&lt;T&gt; retry(long numRetries) {
+      return onAssembly((Flux)(new FluxRetry(this, numRetries)));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Flux&lt;T&gt; retry(Predicate&lt;? super Throwable&gt; retryMatcher) {
+      return onAssembly((Flux)(new FluxRetryPredicate(this, retryMatcher)));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Flux&lt;T&gt; retry(long numRetries, Predicate&lt;? super Throwable&gt; retryMatcher) {
+      return defer(() -&gt; {
+         return this.retry(countingPredicate(retryMatcher, numRetries));
+      });
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Flux&lt;T&gt; retryWhen(Function&lt;Flux&lt;Throwable&gt;, ? extends Publisher&lt;?&gt;&gt; whenFactory) {
+      Objects.requireNonNull(whenFactory, &quot;whenFactory&quot;);
+      return onAssembly((Flux)(new FluxRetryWhen(this, Retry.from((fluxRetryWhenState) -&gt; {
+         return (Publisher)fluxRetryWhenState.map(RetrySignal::failure).as(whenFactory);
+      }))));
+   }
+
+   public final Flux&lt;T&gt; retryWhen(Retry retrySpec) {
+      return onAssembly((Flux)(new FluxRetryWhen(this, retrySpec)));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Flux&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff) {
+      return this.retryWhen((Retry)Retry.backoff(numRetries, firstBackoff));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Flux&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff, Duration maxBackoff) {
+      return this.retryWhen((Retry)Retry.backoff(numRetries, firstBackoff).maxBackoff(maxBackoff));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Flux&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff, Duration maxBackoff, Scheduler backoffScheduler) {
+      return this.retryWhen((Retry)Retry.backoff(numRetries, firstBackoff).maxBackoff(maxBackoff).scheduler(backoffScheduler));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Flux&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff, Duration maxBackoff, double jitterFactor) {
+      return this.retryWhen((Retry)Retry.backoff(numRetries, firstBackoff).maxBackoff(maxBackoff).jitter(jitterFactor));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Flux&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff, Duration maxBackoff, double jitterFactor, Scheduler backoffScheduler) {
+      return this.retryWhen((Retry)Retry.backoff(numRetries, firstBackoff).maxBackoff(maxBackoff).jitter(jitterFactor).scheduler(backoffScheduler));
+   }
+
+   public final Flux&lt;T&gt; sample(Duration timespan) {
+      return this.sample((Publisher)interval(timespan));
+   }
+
+   public final &lt;U&gt; Flux&lt;T&gt; sample(Publisher&lt;U&gt; sampler) {
+      return onAssembly((Flux)(new FluxSample(this, sampler)));
+   }
+
+   public final Flux&lt;T&gt; sampleFirst(Duration timespan) {
+      return this.sampleFirst((t) -&gt; {
+         return Mono.delay(timespan);
+      });
+   }
+
+   public final &lt;U&gt; Flux&lt;T&gt; sampleFirst(Function&lt;? super T, ? extends Publisher&lt;U&gt;&gt; samplerFactory) {
+      return onAssembly((Flux)(new FluxSampleFirst(this, samplerFactory)));
+   }
+
+   public final &lt;U&gt; Flux&lt;T&gt; sampleTimeout(Function&lt;? super T, ? extends Publisher&lt;U&gt;&gt; throttlerFactory) {
+      return this.sampleTimeout(throttlerFactory, Queues.XS_BUFFER_SIZE);
+   }
+
+   public final &lt;U&gt; Flux&lt;T&gt; sampleTimeout(Function&lt;? super T, ? extends Publisher&lt;U&gt;&gt; throttlerFactory, int maxConcurrency) {
+      return onAssembly((Flux)(new FluxSampleTimeout(this, throttlerFactory, Queues.get(maxConcurrency))));
+   }
+
+   public final Flux&lt;T&gt; scan(BiFunction&lt;T, T, T&gt; accumulator) {
+      return onAssembly((Flux)(new FluxScan(this, accumulator)));
+   }
+
+   public final &lt;A&gt; Flux&lt;A&gt; scan(A initial, BiFunction&lt;A, ? super T, A&gt; accumulator) {
+      Objects.requireNonNull(initial, &quot;seed&quot;);
+      return this.scanWith(() -&gt; {
+         return initial;
+      }, accumulator);
+   }
+
+   public final &lt;A&gt; Flux&lt;A&gt; scanWith(Supplier&lt;A&gt; initial, BiFunction&lt;A, ? super T, A&gt; accumulator) {
+      return onAssembly((Flux)(new FluxScanSeed(this, initial, accumulator)));
+   }
+
+   public final Flux&lt;T&gt; share() {
+      return onAssembly((Flux)(new FluxRefCount(new FluxPublish(this, Queues.SMALL_BUFFER_SIZE, Queues.small()), 1)));
+   }
+
+   public final Mono&lt;T&gt; single() {
+      if (this instanceof Callable) {
+         if (this instanceof ScalarCallable) {
+            ScalarCallable scalarCallable = (ScalarCallable)this;
+
+            Object v;
+            try {
+               v = scalarCallable.call();
+            } catch (Exception var4) {
+               return Mono.error(Exceptions.unwrap(var4));
+            }
+
+            return v == null ? Mono.error(new NoSuchElementException(&quot;Source was a (constant) empty&quot;)) : Mono.just(v);
+         } else {
+            Callable&lt;T&gt; thiz = (Callable)this;
+            return Mono.onAssembly(new MonoCallable(thiz));
+         }
+      } else {
+         return Mono.onAssembly(new MonoSingle(this));
+      }
+   }
+
+   public final Mono&lt;T&gt; single(T defaultValue) {
+      if (this instanceof Callable) {
+         if (this instanceof ScalarCallable) {
+            ScalarCallable scalarCallable = (ScalarCallable)this;
+
+            Object v;
+            try {
+               v = scalarCallable.call();
+            } catch (Exception var5) {
+               return Mono.error(Exceptions.unwrap(var5));
+            }
+
+            return v == null ? Mono.just(defaultValue) : Mono.just(v);
+         } else {
+            Callable&lt;T&gt; thiz = (Callable)this;
+            return Mono.onAssembly(new MonoCallable(thiz));
+         }
+      } else {
+         return Mono.onAssembly(new MonoSingle(this, defaultValue, false));
+      }
+   }
+
+   public final Mono&lt;T&gt; singleOrEmpty() {
+      if (this instanceof Callable) {
+         Callable&lt;T&gt; thiz = (Callable)this;
+         return Mono.onAssembly(wrapToMono(thiz));
+      } else {
+         return Mono.onAssembly(new MonoSingle(this, (Object)null, true));
+      }
+   }
+
+   public final Flux&lt;T&gt; skip(long skipped) {
+      return skipped == 0L ? this : onAssembly((Flux)(new FluxSkip(this, skipped)));
+   }
+
+   public final Flux&lt;T&gt; skip(Duration timespan) {
+      return this.skip(timespan, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; skip(Duration timespan, Scheduler timer) {
+      return !timespan.isZero() ? this.skipUntilOther(Mono.delay(timespan, timer)) : this;
+   }
+
+   public final Flux&lt;T&gt; skipLast(int n) {
+      return n == 0 ? this : onAssembly((Flux)(new FluxSkipLast(this, n)));
+   }
+
+   public final Flux&lt;T&gt; skipUntil(Predicate&lt;? super T&gt; untilPredicate) {
+      return onAssembly((Flux)(new FluxSkipUntil(this, untilPredicate)));
+   }
+
+   public final Flux&lt;T&gt; skipUntilOther(Publisher&lt;?&gt; other) {
+      return onAssembly((Flux)(new FluxSkipUntilOther(this, other)));
+   }
+
+   public final Flux&lt;T&gt; skipWhile(Predicate&lt;? super T&gt; skipPredicate) {
+      return onAssembly((Flux)(new FluxSkipWhile(this, skipPredicate)));
+   }
+
+   public final Flux&lt;T&gt; sort() {
+      return this.collectSortedList().flatMapIterable(identityFunction());
+   }
+
+   public final Flux&lt;T&gt; sort(Comparator&lt;? super T&gt; sortFunction) {
+      return this.collectSortedList(sortFunction).flatMapIterable(identityFunction());
+   }
+
+   public final Flux&lt;T&gt; startWith(Iterable&lt;? extends T&gt; iterable) {
+      return this.startWith((Publisher)fromIterable(iterable));
+   }
+
+   @SafeVarargs
+   public final Flux&lt;T&gt; startWith(T... values) {
+      return this.startWith((Publisher)just(values));
+   }
+
+   public final Flux&lt;T&gt; startWith(Publisher&lt;? extends T&gt; publisher) {
+      if (this instanceof FluxConcatArray) {
+         FluxConcatArray&lt;T&gt; fluxConcatArray = (FluxConcatArray)this;
+         return fluxConcatArray.concatAdditionalSourceFirst(publisher);
+      } else {
+         return concat(publisher, this);
+      }
+   }
+
+   public final Disposable subscribe() {
+      return this.subscribe((Consumer)null, (Consumer)null, (Runnable)null);
+   }
+
+   public final Disposable subscribe(Consumer&lt;? super T&gt; consumer) {
+      Objects.requireNonNull(consumer, &quot;consumer&quot;);
+      return this.subscribe(consumer, (Consumer)null, (Runnable)null);
+   }
+
+   public final Disposable subscribe(@Nullable Consumer&lt;? super T&gt; consumer, Consumer&lt;? super Throwable&gt; errorConsumer) {
+      Objects.requireNonNull(errorConsumer, &quot;errorConsumer&quot;);
+      return this.subscribe(consumer, errorConsumer, (Runnable)null);
+   }
+
+   public final Disposable subscribe(@Nullable Consumer&lt;? super T&gt; consumer, @Nullable Consumer&lt;? super Throwable&gt; errorConsumer, @Nullable Runnable completeConsumer) {
+      return this.subscribe(consumer, errorConsumer, completeConsumer, (Context)null);
+   }
+
+   public final Disposable subscribe(@Nullable Consumer&lt;? super T&gt; consumer, @Nullable Consumer&lt;? super Throwable&gt; errorConsumer, @Nullable Runnable completeConsumer, @Nullable Consumer&lt;? super Subscription&gt; subscriptionConsumer) {
+      return (Disposable)this.subscribeWith(new LambdaSubscriber(consumer, errorConsumer, completeConsumer, subscriptionConsumer, (Context)null));
+   }
+
+   public final Disposable subscribe(@Nullable Consumer&lt;? super T&gt; consumer, @Nullable Consumer&lt;? super Throwable&gt; errorConsumer, @Nullable Runnable completeConsumer, @Nullable Context initialContext) {
+      return (Disposable)this.subscribeWith(new LambdaSubscriber(consumer, errorConsumer, completeConsumer, (Consumer)null, initialContext));
+   }
+
+   public final void subscribe(Subscriber&lt;? super T&gt; actual) {
+      CorePublisher publisher = Operators.onLastAssembly(this);
+      CoreSubscriber subscriber = Operators.toCoreSubscriber(actual);
+
+      try {
+         if (publisher instanceof OptimizableOperator) {
+            OptimizableOperator operator = (OptimizableOperator)publisher;
+
+            while(true) {
+               subscriber = operator.subscribeOrReturn(subscriber);
+               if (subscriber == null) {
+                  return;
+               }
+
+               OptimizableOperator newSource = operator.nextOptimizableSource();
+               if (newSource == null) {
+                  publisher = operator.source();
+                  break;
+               }
+
+               operator = newSource;
+            }
+         }
+
+         publisher.subscribe(subscriber);
+      } catch (Throwable var6) {
+         Operators.reportThrowInSubscribe(subscriber, var6);
+      }
+   }
+
+   public abstract void subscribe(CoreSubscriber&lt;? super T&gt; var1);
+
+   public final Flux&lt;T&gt; subscriberContext(Context mergeContext) {
+      return this.subscriberContext((c) -&gt; {
+         return c.putAll(mergeContext);
+      });
+   }
+
+   public final Flux&lt;T&gt; subscriberContext(Function&lt;Context, Context&gt; doOnContext) {
+      return new FluxContextStart(this, doOnContext);
+   }
+
+   public final Flux&lt;T&gt; subscribeOn(Scheduler scheduler) {
+      return this.subscribeOn(scheduler, true);
+   }
+
+   public final Flux&lt;T&gt; subscribeOn(Scheduler scheduler, boolean requestOnSeparateThread) {
+      if (!(this instanceof Callable)) {
+         return onAssembly((Flux)(new FluxSubscribeOn(this, scheduler, requestOnSeparateThread)));
+      } else {
+         if (this instanceof ScalarCallable) {
+            try {
+               T value = ((ScalarCallable)this).call();
+               return onAssembly((Flux)(new FluxSubscribeOnValue(value, scheduler)));
+            } catch (Exception var4) {
+               ;
+            }
+         }
+
+         Callable&lt;T&gt; c = (Callable)this;
+         return onAssembly((Flux)(new FluxSubscribeOnCallable(c, scheduler)));
+      }
+   }
+
+   public final &lt;E extends Subscriber&lt;? super T&gt;&gt; E subscribeWith(E subscriber) {
+      this.subscribe(subscriber);
+      return subscriber;
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; switchOnFirst(BiFunction&lt;Signal&lt;? extends T&gt;, Flux&lt;T&gt;, Publisher&lt;? extends V&gt;&gt; transformer) {
+      return this.switchOnFirst(transformer, true);
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; switchOnFirst(BiFunction&lt;Signal&lt;? extends T&gt;, Flux&lt;T&gt;, Publisher&lt;? extends V&gt;&gt; transformer, boolean cancelSourceOnComplete) {
+      return onAssembly((Flux)(new FluxSwitchOnFirst(this, transformer, cancelSourceOnComplete)));
+   }
+
+   public final Flux&lt;T&gt; switchIfEmpty(Publisher&lt;? extends T&gt; alternate) {
+      return onAssembly((Flux)(new FluxSwitchIfEmpty(this, alternate)));
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; switchMap(Function&lt;? super T, Publisher&lt;? extends V&gt;&gt; fn) {
+      return this.switchMap(fn, Queues.XS_BUFFER_SIZE);
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; switchMap(Function&lt;? super T, Publisher&lt;? extends V&gt;&gt; fn, int prefetch) {
+      return onAssembly((Flux)(new FluxSwitchMap(this, fn, Queues.unbounded(prefetch), prefetch)));
+   }
+
+   public final Flux&lt;T&gt; tag(String key, String value) {
+      return FluxName.createOrAppend(this, key, value);
+   }
+
+   public final Flux&lt;T&gt; take(long n) {
+      return this instanceof Fuseable ? onAssembly((Flux)(new FluxTakeFuseable(this, n))) : onAssembly((Flux)(new FluxTake(this, n)));
+   }
+
+   public final Flux&lt;T&gt; take(Duration timespan) {
+      return this.take(timespan, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; take(Duration timespan, Scheduler timer) {
+      return !timespan.isZero() ? this.takeUntilOther(Mono.delay(timespan, timer)) : this.take(0L);
+   }
+
+   public final Flux&lt;T&gt; takeLast(int n) {
+      return n == 1 ? onAssembly((Flux)(new FluxTakeLastOne(this))) : onAssembly((Flux)(new FluxTakeLast(this, n)));
+   }
+
+   public final Flux&lt;T&gt; takeUntil(Predicate&lt;? super T&gt; predicate) {
+      return onAssembly((Flux)(new FluxTakeUntil(this, predicate)));
+   }
+
+   public final Flux&lt;T&gt; takeUntilOther(Publisher&lt;?&gt; other) {
+      return onAssembly((Flux)(new FluxTakeUntilOther(this, other)));
+   }
+
+   public final Flux&lt;T&gt; takeWhile(Predicate&lt;? super T&gt; continuePredicate) {
+      return onAssembly((Flux)(new FluxTakeWhile(this, continuePredicate)));
+   }
+
+   public final Mono&lt;Void&gt; then() {
+      Mono&lt;Void&gt; then = new MonoIgnoreElements(this);
+      return Mono.onAssembly(then);
+   }
+
+   public final &lt;V&gt; Mono&lt;V&gt; then(Mono&lt;V&gt; other) {
+      return Mono.onAssembly(new MonoIgnoreThen(new Publisher[]{this}, other));
+   }
+
+   public final Mono&lt;Void&gt; thenEmpty(Publisher&lt;Void&gt; other) {
+      return this.then(Mono.fromDirect(other));
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; thenMany(Publisher&lt;V&gt; other) {
+      if (this instanceof FluxConcatArray) {
+         FluxConcatArray&lt;T&gt; fluxConcatArray = (FluxConcatArray)this;
+         return fluxConcatArray.concatAdditionalIgnoredLast(other);
+      } else {
+         Flux&lt;V&gt; concat = concat(this.ignoreElements(), other);
+         return concat;
+      }
+   }
+
+   public final Flux&lt;T&gt; timeout(Duration timeout) {
+      return this.timeout((Duration)timeout, (Publisher)null, (Scheduler)Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; timeout(Duration timeout, @Nullable Publisher&lt;? extends T&gt; fallback) {
+      return this.timeout(timeout, fallback, Schedulers.parallel());
+   }
+
+   public final Flux&lt;T&gt; timeout(Duration timeout, Scheduler timer) {
+      return this.timeout((Duration)timeout, (Publisher)null, (Scheduler)timer);
+   }
+
+   public final Flux&lt;T&gt; timeout(Duration timeout, @Nullable Publisher&lt;? extends T&gt; fallback, Scheduler timer) {
+      Mono&lt;Long&gt; _timer = Mono.delay(timeout, timer).onErrorReturn(0L);
+      Function&lt;T, Publisher&lt;Long&gt;&gt; rest = (o) -&gt; {
+         return _timer;
+      };
+      return fallback == null ? this.timeout((Publisher)_timer, (Function)rest, (String)(timeout.toMillis() + &quot;ms&quot;)) : this.timeout((Publisher)_timer, (Function)rest, (Publisher)fallback);
+   }
+
+   public final &lt;U&gt; Flux&lt;T&gt; timeout(Publisher&lt;U&gt; firstTimeout) {
+      return this.timeout(firstTimeout, (t) -&gt; {
+         return never();
+      });
+   }
+
+   public final &lt;U, V&gt; Flux&lt;T&gt; timeout(Publisher&lt;U&gt; firstTimeout, Function&lt;? super T, ? extends Publisher&lt;V&gt;&gt; nextTimeoutFactory) {
+      return this.timeout(firstTimeout, nextTimeoutFactory, &quot;first signal from a Publisher&quot;);
+   }
+
+   private final &lt;U, V&gt; Flux&lt;T&gt; timeout(Publisher&lt;U&gt; firstTimeout, Function&lt;? super T, ? extends Publisher&lt;V&gt;&gt; nextTimeoutFactory, String timeoutDescription) {
+      return onAssembly((Flux)(new FluxTimeout(this, firstTimeout, nextTimeoutFactory, timeoutDescription)));
+   }
+
+   public final &lt;U, V&gt; Flux&lt;T&gt; timeout(Publisher&lt;U&gt; firstTimeout, Function&lt;? super T, ? extends Publisher&lt;V&gt;&gt; nextTimeoutFactory, Publisher&lt;? extends T&gt; fallback) {
+      return onAssembly((Flux)(new FluxTimeout(this, firstTimeout, nextTimeoutFactory, fallback)));
+   }
+
+   public final Flux&lt;Tuple2&lt;Long, T&gt;&gt; timestamp() {
+      return this.timestamp(Schedulers.parallel());
+   }
+
+   public final Flux&lt;Tuple2&lt;Long, T&gt;&gt; timestamp(Scheduler scheduler) {
+      Objects.requireNonNull(scheduler, &quot;scheduler&quot;);
+      return this.map((d) -&gt; {
+         return Tuples.of(scheduler.now(TimeUnit.MILLISECONDS), d);
+      });
+   }
+
+   public final Iterable&lt;T&gt; toIterable() {
+      return this.toIterable(Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Iterable&lt;T&gt; toIterable(int batchSize) {
+      return this.toIterable(batchSize, (Supplier)null);
+   }
+
+   public final Iterable&lt;T&gt; toIterable(int batchSize, @Nullable Supplier&lt;Queue&lt;T&gt;&gt; queueProvider) {
+      Supplier provider;
+      if (queueProvider == null) {
+         provider = Queues.get(batchSize);
+      } else {
+         provider = queueProvider;
+      }
+
+      return new BlockingIterable(this, batchSize, provider);
+   }
+
+   public final Stream&lt;T&gt; toStream() {
+      return this.toStream(Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Stream&lt;T&gt; toStream(int batchSize) {
+      Supplier&lt;Queue&lt;T&gt;&gt; provider = Queues.get(batchSize);
+      return (new BlockingIterable(this, batchSize, provider)).stream();
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; transform(Function&lt;? super Flux&lt;T&gt;, ? extends Publisher&lt;V&gt;&gt; transformer) {
+      if (Hooks.DETECT_CONTEXT_LOSS) {
+         transformer = new ContextTrackingFunctionWrapper((Function)transformer);
+      }
+
+      return onAssembly(from((Publisher)((Function)transformer).apply(this)));
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; transformDeferred(Function&lt;? super Flux&lt;T&gt;, ? extends Publisher&lt;V&gt;&gt; transformer) {
+      return defer(() -&gt; {
+         return (Publisher)(Hooks.DETECT_CONTEXT_LOSS ? (new ContextTrackingFunctionWrapper(transformer)).apply(this) : (Publisher)transformer.apply(this));
+      });
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; window(int maxSize) {
+      return onAssembly((Flux)(new FluxWindow(this, maxSize, Queues.get(maxSize))));
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; window(int maxSize, int skip) {
+      return onAssembly((Flux)(new FluxWindow(this, maxSize, skip, Queues.unbounded(Queues.XS_BUFFER_SIZE), Queues.unbounded(Queues.XS_BUFFER_SIZE))));
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; window(Publisher&lt;?&gt; boundary) {
+      return onAssembly((Flux)(new FluxWindowBoundary(this, boundary, Queues.unbounded(Queues.XS_BUFFER_SIZE))));
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; window(Duration windowingTimespan) {
+      return this.window(windowingTimespan, Schedulers.parallel());
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; window(Duration windowingTimespan, Duration openWindowEvery) {
+      return this.window(windowingTimespan, openWindowEvery, Schedulers.parallel());
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; window(Duration windowingTimespan, Scheduler timer) {
+      return this.window((Publisher)interval(windowingTimespan, timer));
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; window(Duration windowingTimespan, Duration openWindowEvery, Scheduler timer) {
+      return openWindowEvery.equals(windowingTimespan) ? this.window(windowingTimespan) : this.windowWhen(interval(Duration.ZERO, openWindowEvery, timer), (aLong) -&gt; {
+         return Mono.delay(windowingTimespan, timer);
+      });
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; windowTimeout(int maxSize, Duration maxTime) {
+      return this.windowTimeout(maxSize, maxTime, Schedulers.parallel());
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; windowTimeout(int maxSize, Duration maxTime, Scheduler timer) {
+      return onAssembly((Flux)(new FluxWindowTimeout(this, maxSize, maxTime.toMillis(), timer)));
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; windowUntil(Predicate&lt;T&gt; boundaryTrigger) {
+      return this.windowUntil(boundaryTrigger, false);
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; windowUntil(Predicate&lt;T&gt; boundaryTrigger, boolean cutBefore) {
+      return this.windowUntil(boundaryTrigger, cutBefore, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; windowUntil(Predicate&lt;T&gt; boundaryTrigger, boolean cutBefore, int prefetch) {
+      return onAssembly((Flux)(new FluxWindowPredicate(this, Queues.unbounded(prefetch), Queues.unbounded(prefetch), prefetch, boundaryTrigger, cutBefore ? Mode.UNTIL_CUT_BEFORE : Mode.UNTIL)));
+   }
+
+   public final &lt;V&gt; Flux&lt;Flux&lt;T&gt;&gt; windowUntilChanged() {
+      return this.windowUntilChanged(identityFunction());
+   }
+
+   public final &lt;V&gt; Flux&lt;Flux&lt;T&gt;&gt; windowUntilChanged(Function&lt;? super T, ? super V&gt; keySelector) {
+      return this.windowUntilChanged(keySelector, equalPredicate());
+   }
+
+   public final &lt;V&gt; Flux&lt;Flux&lt;T&gt;&gt; windowUntilChanged(Function&lt;? super T, ? extends V&gt; keySelector, BiPredicate&lt;? super V, ? super V&gt; keyComparator) {
+      return defer(() -&gt; {
+         return this.windowUntil(new ChangedPredicate(keySelector, keyComparator), true);
+      });
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; windowWhile(Predicate&lt;T&gt; inclusionPredicate) {
+      return this.windowWhile(inclusionPredicate, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Flux&lt;Flux&lt;T&gt;&gt; windowWhile(Predicate&lt;T&gt; inclusionPredicate, int prefetch) {
+      return onAssembly((Flux)(new FluxWindowPredicate(this, Queues.unbounded(prefetch), Queues.unbounded(prefetch), prefetch, inclusionPredicate, Mode.WHILE)));
+   }
+
+   public final &lt;U, V&gt; Flux&lt;Flux&lt;T&gt;&gt; windowWhen(Publisher&lt;U&gt; bucketOpening, Function&lt;? super U, ? extends Publisher&lt;V&gt;&gt; closeSelector) {
+      return onAssembly((Flux)(new FluxWindowWhen(this, bucketOpening, closeSelector, Queues.unbounded(Queues.XS_BUFFER_SIZE))));
+   }
+
+   public final &lt;U, R&gt; Flux&lt;R&gt; withLatestFrom(Publisher&lt;? extends U&gt; other, BiFunction&lt;? super T, ? super U, ? extends R&gt; resultSelector) {
+      return onAssembly((Flux)(new FluxWithLatestFrom(this, other, resultSelector)));
+   }
+
+   public final &lt;T2&gt; Flux&lt;Tuple2&lt;T, T2&gt;&gt; zipWith(Publisher&lt;? extends T2&gt; source2) {
+      return this.zipWith(source2, tuple2Function());
+   }
+
+   public final &lt;T2, V&gt; Flux&lt;V&gt; zipWith(Publisher&lt;? extends T2&gt; source2, BiFunction&lt;? super T, ? super T2, ? extends V&gt; combinator) {
+      if (this instanceof FluxZip) {
+         FluxZip&lt;T, V&gt; o = (FluxZip)this;
+         Flux&lt;V&gt; result = o.zipAdditionalSource(source2, combinator);
+         if (result != null) {
+            return result;
+         }
+      }
+
+      return zip(this, source2, (BiFunction)combinator);
+   }
+
+   public final &lt;T2, V&gt; Flux&lt;V&gt; zipWith(Publisher&lt;? extends T2&gt; source2, int prefetch, BiFunction&lt;? super T, ? super T2, ? extends V&gt; combinator) {
+      return zip((objects) -&gt; {
+         return combinator.apply(objects[0], objects[1]);
+      }, prefetch, this, source2);
+   }
+
+   public final &lt;T2&gt; Flux&lt;Tuple2&lt;T, T2&gt;&gt; zipWith(Publisher&lt;? extends T2&gt; source2, int prefetch) {
+      return this.zipWith(source2, prefetch, tuple2Function());
+   }
+
+   public final &lt;T2&gt; Flux&lt;Tuple2&lt;T, T2&gt;&gt; zipWithIterable(Iterable&lt;? extends T2&gt; iterable) {
+      return this.zipWithIterable(iterable, tuple2Function());
+   }
+
+   public final &lt;T2, V&gt; Flux&lt;V&gt; zipWithIterable(Iterable&lt;? extends T2&gt; iterable, BiFunction&lt;? super T, ? super T2, ? extends V&gt; zipper) {
+      return onAssembly((Flux)(new FluxZipIterable(this, iterable, zipper)));
+   }
+
+   protected static &lt;T&gt; Flux&lt;T&gt; onAssembly(Flux&lt;T&gt; source) {
+      Function&lt;Publisher, Publisher&gt; hook = Hooks.onEachOperatorHook;
+      if (hook != null) {
+         source = (Flux)hook.apply(source);
+      }
+
+      if (Hooks.GLOBAL_TRACE) {
+         AssemblySnapshot stacktrace = new AssemblySnapshot((String)null, (Supplier)Traces.callSiteSupplierFactory.get());
+         source = (Flux)Hooks.addAssemblyInfo(source, stacktrace);
+      }
+
+      return source;
+   }
+
+   /** @deprecated */
+   @Deprecated
+   protected static &lt;T&gt; Flux&lt;T&gt; onLastAssembly(Flux&lt;T&gt; source) {
+      Function&lt;Publisher, Publisher&gt; hook = Hooks.onLastOperatorHook;
+      return hook == null ? source : (Flux)Objects.requireNonNull(hook.apply(source), &quot;LastOperator hook returned null&quot;);
+   }
+
+   protected static &lt;T&gt; ConnectableFlux&lt;T&gt; onAssembly(ConnectableFlux&lt;T&gt; source) {
+      Function&lt;Publisher, Publisher&gt; hook = Hooks.onEachOperatorHook;
+      if (hook != null) {
+         source = (ConnectableFlux)hook.apply(source);
+      }
+
+      if (Hooks.GLOBAL_TRACE) {
+         AssemblySnapshot stacktrace = new AssemblySnapshot((String)null, (Supplier)Traces.callSiteSupplierFactory.get());
+         source = (ConnectableFlux)Hooks.addAssemblyInfo(source, stacktrace);
+      }
+
+      return source;
+   }
+
+   public String toString() {
+      return this.getClass().getSimpleName();
+   }
+
+   final &lt;V&gt; Flux&lt;V&gt; flatMap(Function&lt;? super T, ? extends Publisher&lt;? extends V&gt;&gt; mapper, boolean delayError, int concurrency, int prefetch) {
+      return onAssembly((Flux)(new FluxFlatMap(this, mapper, delayError, concurrency, Queues.get(concurrency), prefetch, Queues.get(prefetch))));
+   }
+
+   final &lt;R&gt; Flux&lt;R&gt; flatMapSequential(Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapper, boolean delayError, int maxConcurrency, int prefetch) {
+      return onAssembly((Flux)(new FluxMergeSequential(this, mapper, maxConcurrency, prefetch, delayError ? ErrorMode.END : ErrorMode.IMMEDIATE)));
+   }
+
+   static &lt;T&gt; Flux&lt;T&gt; doOnSignal(Flux&lt;T&gt; source, @Nullable Consumer&lt;? super Subscription&gt; onSubscribe, @Nullable Consumer&lt;? super T&gt; onNext, @Nullable Consumer&lt;? super Throwable&gt; onError, @Nullable Runnable onComplete, @Nullable Runnable onAfterTerminate, @Nullable LongConsumer onRequest, @Nullable Runnable onCancel) {
+      return source instanceof Fuseable ? onAssembly((Flux)(new FluxPeekFuseable(source, onSubscribe, onNext, onError, onComplete, onAfterTerminate, onRequest, onCancel))) : onAssembly((Flux)(new FluxPeek(source, onSubscribe, onNext, onError, onComplete, onAfterTerminate, onRequest, onCancel)));
+   }
+
+   static &lt;T&gt; Mono&lt;T&gt; wrapToMono(Callable&lt;T&gt; supplier) {
+      if (supplier instanceof ScalarCallable) {
+         ScalarCallable scalarCallable = (ScalarCallable)supplier;
+
+         Object v;
+         try {
+            v = scalarCallable.call();
+         } catch (Exception var4) {
+            return new MonoError(Exceptions.unwrap(var4));
+         }
+
+         return (Mono)(v == null ? MonoEmpty.instance() : new MonoJust(v));
+      } else {
+         return new MonoCallable(supplier);
+      }
+   }
+
+   @SafeVarargs
+   static &lt;I&gt; Flux&lt;I&gt; merge(int prefetch, boolean delayError, Publisher... sources) {
+      if (sources.length == 0) {
+         return empty();
+      } else {
+         return sources.length == 1 ? from(sources[0]) : onAssembly((Flux)(new FluxMerge(sources, delayError, sources.length, Queues.get(sources.length), prefetch, Queues.get(prefetch))));
+      }
+   }
+
+   @SafeVarargs
+   static &lt;I&gt; Flux&lt;I&gt; mergeSequential(int prefetch, boolean delayError, Publisher... sources) {
+      if (sources.length == 0) {
+         return empty();
+      } else {
+         return sources.length == 1 ? from(sources[0]) : onAssembly((Flux)(new FluxMergeSequential(new FluxArray(sources), identityFunction(), sources.length, prefetch, delayError ? ErrorMode.END : ErrorMode.IMMEDIATE)));
+      }
+   }
+
+   static &lt;T&gt; Flux&lt;T&gt; mergeSequential(Publisher&lt;? extends Publisher&lt;? extends T&gt;&gt; sources, boolean delayError, int maxConcurrency, int prefetch) {
+      return onAssembly((Flux)(new FluxMergeSequential(from(sources), identityFunction(), maxConcurrency, prefetch, delayError ? ErrorMode.END : ErrorMode.IMMEDIATE)));
+   }
+
+   static &lt;I&gt; Flux&lt;I&gt; mergeSequential(Iterable&lt;? extends Publisher&lt;? extends I&gt;&gt; sources, boolean delayError, int maxConcurrency, int prefetch) {
+      return onAssembly((Flux)(new FluxMergeSequential(new FluxIterable(sources), identityFunction(), maxConcurrency, prefetch, delayError ? ErrorMode.END : ErrorMode.IMMEDIATE)));
+   }
+
+   static BooleanSupplier countingBooleanSupplier(final BooleanSupplier predicate, final long max) {
+      return max &lt;= 0L ? predicate : new BooleanSupplier() {
+         long n;
+
+         public boolean getAsBoolean() {
+            return this.n++ &lt; max &amp;&amp; predicate.getAsBoolean();
+         }
+      };
+   }
+
+   static &lt;O&gt; Predicate&lt;O&gt; countingPredicate(final Predicate&lt;O&gt; predicate, final long max) {
+      return max == 0L ? predicate : new Predicate&lt;O&gt;() {
+         long n;
+
+         public boolean test(O o) {
+            return this.n++ &lt; max &amp;&amp; predicate.test(o);
+         }
+      };
+   }
+
+   static &lt;O&gt; Supplier&lt;Set&lt;O&gt;&gt; hashSetSupplier() {
+      return SET_SUPPLIER;
+   }
+
+   static &lt;O&gt; Supplier&lt;List&lt;O&gt;&gt; listSupplier() {
+      return LIST_SUPPLIER;
+   }
+
+   static &lt;U, V&gt; BiPredicate&lt;U, V&gt; equalPredicate() {
+      return OBJECT_EQUAL;
+   }
+
+   static &lt;T&gt; Function&lt;T, T&gt; identityFunction() {
+      return IDENTITY_FUNCTION;
+   }
+
+   static &lt;A, B&gt; BiFunction&lt;A, B, Tuple2&lt;A, B&gt;&gt; tuple2Function() {
+      return TUPLE2_BIFUNCTION;
+   }
+
+   static &lt;I&gt; Flux&lt;I&gt; wrap(Publisher&lt;? extends I&gt; source) {
+      if (source instanceof Flux) {
+         return (Flux)source;
+      } else if (source instanceof ScalarCallable) {
+         try {
+            I t = ((ScalarCallable)source).call();
+            return (Flux)(t != null ? new FluxJust(t) : FluxEmpty.instance());
+         } catch (Exception var2) {
+            return new FluxError(Exceptions.unwrap(var2));
+         }
+      } else if (source instanceof Mono) {
+         return (Flux)(source instanceof Fuseable ? new FluxSourceMonoFuseable((Mono)source) : new FluxSourceMono((Mono)source));
+      } else {
+         return (Flux)(source instanceof Fuseable ? new FluxSourceFuseable(source) : new FluxSource(source));
+      }
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:26 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

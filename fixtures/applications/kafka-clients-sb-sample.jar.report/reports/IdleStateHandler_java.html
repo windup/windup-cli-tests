@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for IdleStateHandler.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/netty-handler-4.1.51.Final.jar/io/netty/handler/timeout/IdleStateHandler.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.netty.handler.timeout;
+
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelDuplexHandler;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelOutboundBuffer;
+import io.netty.channel.ChannelPromise;
+import io.netty.channel.Channel.Unsafe;
+import io.netty.util.internal.ObjectUtil;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+
+public class IdleStateHandler extends ChannelDuplexHandler {
+   private static final long MIN_TIMEOUT_NANOS;
+   private final ChannelFutureListener writeListener;
+   private final boolean observeOutput;
+   private final long readerIdleTimeNanos;
+   private final long writerIdleTimeNanos;
+   private final long allIdleTimeNanos;
+   private ScheduledFuture&lt;?&gt; readerIdleTimeout;
+   private long lastReadTime;
+   private boolean firstReaderIdleEvent;
+   private ScheduledFuture&lt;?&gt; writerIdleTimeout;
+   private long lastWriteTime;
+   private boolean firstWriterIdleEvent;
+   private ScheduledFuture&lt;?&gt; allIdleTimeout;
+   private boolean firstAllIdleEvent;
+   private byte state;
+   private boolean reading;
+   private long lastChangeCheckTimeStamp;
+   private int lastMessageHashCode;
+   private long lastPendingWriteBytes;
+   private long lastFlushProgress;
+
+   public IdleStateHandler(int readerIdleTimeSeconds, int writerIdleTimeSeconds, int allIdleTimeSeconds) {
+      this((long)readerIdleTimeSeconds, (long)writerIdleTimeSeconds, (long)allIdleTimeSeconds, TimeUnit.SECONDS);
+   }
+
+   public IdleStateHandler(long readerIdleTime, long writerIdleTime, long allIdleTime, TimeUnit unit) {
+      this(false, readerIdleTime, writerIdleTime, allIdleTime, unit);
+   }
+
+   public IdleStateHandler(boolean observeOutput, long readerIdleTime, long writerIdleTime, long allIdleTime, TimeUnit unit) {
+      this.writeListener = new ChannelFutureListener() {
+         public void operationComplete(ChannelFuture future) throws Exception {
+            IdleStateHandler.this.lastWriteTime = IdleStateHandler.this.ticksInNanos();
+            IdleStateHandler.this.firstWriterIdleEvent = IdleStateHandler.this.firstAllIdleEvent = true;
+         }
+      };
+      this.firstReaderIdleEvent = true;
+      this.firstWriterIdleEvent = true;
+      this.firstAllIdleEvent = true;
+      ObjectUtil.checkNotNull(unit, &quot;unit&quot;);
+      this.observeOutput = observeOutput;
+      if (readerIdleTime &lt;= 0L) {
+         this.readerIdleTimeNanos = 0L;
+      } else {
+         this.readerIdleTimeNanos = Math.max(unit.toNanos(readerIdleTime), MIN_TIMEOUT_NANOS);
+      }
+
+      if (writerIdleTime &lt;= 0L) {
+         this.writerIdleTimeNanos = 0L;
+      } else {
+         this.writerIdleTimeNanos = Math.max(unit.toNanos(writerIdleTime), MIN_TIMEOUT_NANOS);
+      }
+
+      if (allIdleTime &lt;= 0L) {
+         this.allIdleTimeNanos = 0L;
+      } else {
+         this.allIdleTimeNanos = Math.max(unit.toNanos(allIdleTime), MIN_TIMEOUT_NANOS);
+      }
+
+   }
+
+   public long getReaderIdleTimeInMillis() {
+      return TimeUnit.NANOSECONDS.toMillis(this.readerIdleTimeNanos);
+   }
+
+   public long getWriterIdleTimeInMillis() {
+      return TimeUnit.NANOSECONDS.toMillis(this.writerIdleTimeNanos);
+   }
+
+   public long getAllIdleTimeInMillis() {
+      return TimeUnit.NANOSECONDS.toMillis(this.allIdleTimeNanos);
+   }
+
+   public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
+      if (ctx.channel().isActive() &amp;&amp; ctx.channel().isRegistered()) {
+         this.initialize(ctx);
+      }
+
+   }
+
+   public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
+      this.destroy();
+   }
+
+   public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
+      if (ctx.channel().isActive()) {
+         this.initialize(ctx);
+      }
+
+      super.channelRegistered(ctx);
+   }
+
+   public void channelActive(ChannelHandlerContext ctx) throws Exception {
+      this.initialize(ctx);
+      super.channelActive(ctx);
+   }
+
+   public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+      this.destroy();
+      super.channelInactive(ctx);
+   }
+
+   public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+      if (this.readerIdleTimeNanos &gt; 0L || this.allIdleTimeNanos &gt; 0L) {
+         this.reading = true;
+         this.firstReaderIdleEvent = this.firstAllIdleEvent = true;
+      }
+
+      ctx.fireChannelRead(msg);
+   }
+
+   public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+      if ((this.readerIdleTimeNanos &gt; 0L || this.allIdleTimeNanos &gt; 0L) &amp;&amp; this.reading) {
+         this.lastReadTime = this.ticksInNanos();
+         this.reading = false;
+      }
+
+      ctx.fireChannelReadComplete();
+   }
+
+   public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+      if (this.writerIdleTimeNanos &lt;= 0L &amp;&amp; this.allIdleTimeNanos &lt;= 0L) {
+         ctx.write(msg, promise);
+      } else {
+         ctx.write(msg, promise.unvoid()).addListener(this.writeListener);
+      }
+
+   }
+
+   private void initialize(ChannelHandlerContext ctx) {
+      switch(this.state) {
+      case 1:
+      case 2:
+         return;
+      default:
+         this.state = 1;
+         this.initOutputChanged(ctx);
+         this.lastReadTime = this.lastWriteTime = this.ticksInNanos();
+         if (this.readerIdleTimeNanos &gt; 0L) {
+            this.readerIdleTimeout = this.schedule(ctx, new IdleStateHandler.ReaderIdleTimeoutTask(ctx), this.readerIdleTimeNanos, TimeUnit.NANOSECONDS);
+         }
+
+         if (this.writerIdleTimeNanos &gt; 0L) {
+            this.writerIdleTimeout = this.schedule(ctx, new IdleStateHandler.WriterIdleTimeoutTask(ctx), this.writerIdleTimeNanos, TimeUnit.NANOSECONDS);
+         }
+
+         if (this.allIdleTimeNanos &gt; 0L) {
+            this.allIdleTimeout = this.schedule(ctx, new IdleStateHandler.AllIdleTimeoutTask(ctx), this.allIdleTimeNanos, TimeUnit.NANOSECONDS);
+         }
+
+      }
+   }
+
+   long ticksInNanos() {
+      return System.nanoTime();
+   }
+
+   ScheduledFuture&lt;?&gt; schedule(ChannelHandlerContext ctx, Runnable task, long delay, TimeUnit unit) {
+      return ctx.executor().schedule(task, delay, unit);
+   }
+
+   private void destroy() {
+      this.state = 2;
+      if (this.readerIdleTimeout != null) {
+         this.readerIdleTimeout.cancel(false);
+         this.readerIdleTimeout = null;
+      }
+
+      if (this.writerIdleTimeout != null) {
+         this.writerIdleTimeout.cancel(false);
+         this.writerIdleTimeout = null;
+      }
+
+      if (this.allIdleTimeout != null) {
+         this.allIdleTimeout.cancel(false);
+         this.allIdleTimeout = null;
+      }
+
+   }
+
+   protected void channelIdle(ChannelHandlerContext ctx, IdleStateEvent evt) throws Exception {
+      ctx.fireUserEventTriggered(evt);
+   }
+
+   protected IdleStateEvent newIdleStateEvent(IdleState state, boolean first) {
+      switch(state) {
+      case ALL_IDLE:
+         return first ? IdleStateEvent.FIRST_ALL_IDLE_STATE_EVENT : IdleStateEvent.ALL_IDLE_STATE_EVENT;
+      case READER_IDLE:
+         return first ? IdleStateEvent.FIRST_READER_IDLE_STATE_EVENT : IdleStateEvent.READER_IDLE_STATE_EVENT;
+      case WRITER_IDLE:
+         return first ? IdleStateEvent.FIRST_WRITER_IDLE_STATE_EVENT : IdleStateEvent.WRITER_IDLE_STATE_EVENT;
+      default:
+         throw new IllegalArgumentException(&quot;Unhandled: state=&quot; + state + &quot;, first=&quot; + first);
+      }
+   }
+
+   private void initOutputChanged(ChannelHandlerContext ctx) {
+      if (this.observeOutput) {
+         Channel channel = ctx.channel();
+         Unsafe unsafe = channel.unsafe();
+         ChannelOutboundBuffer buf = unsafe.outboundBuffer();
+         if (buf != null) {
+            this.lastMessageHashCode = System.identityHashCode(buf.current());
+            this.lastPendingWriteBytes = buf.totalPendingWriteBytes();
+            this.lastFlushProgress = buf.currentProgress();
+         }
+      }
+
+   }
+
+   private boolean hasOutputChanged(ChannelHandlerContext ctx, boolean first) {
+      if (this.observeOutput) {
+         if (this.lastChangeCheckTimeStamp != this.lastWriteTime) {
+            this.lastChangeCheckTimeStamp = this.lastWriteTime;
+            if (!first) {
+               return true;
+            }
+         }
+
+         Channel channel = ctx.channel();
+         Unsafe unsafe = channel.unsafe();
+         ChannelOutboundBuffer buf = unsafe.outboundBuffer();
+         if (buf != null) {
+            int messageHashCode = System.identityHashCode(buf.current());
+            long pendingWriteBytes = buf.totalPendingWriteBytes();
+            if (messageHashCode != this.lastMessageHashCode || pendingWriteBytes != this.lastPendingWriteBytes) {
+               this.lastMessageHashCode = messageHashCode;
+               this.lastPendingWriteBytes = pendingWriteBytes;
+               if (!first) {
+                  return true;
+               }
+            }
+
+            long flushProgress = buf.currentProgress();
+            if (flushProgress != this.lastFlushProgress) {
+               this.lastFlushProgress = flushProgress;
+               if (!first) {
+                  return true;
+               }
+            }
+         }
+      }
+
+      return false;
+   }
+
+   static {
+      MIN_TIMEOUT_NANOS = TimeUnit.MILLISECONDS.toNanos(1L);
+   }
+
+   private final class AllIdleTimeoutTask extends IdleStateHandler.AbstractIdleTask {
+      AllIdleTimeoutTask(ChannelHandlerContext ctx) {
+         super(ctx);
+      }
+
+      protected void run(ChannelHandlerContext ctx) {
+         long nextDelay = IdleStateHandler.this.allIdleTimeNanos;
+         if (!IdleStateHandler.this.reading) {
+            nextDelay -= IdleStateHandler.this.ticksInNanos() - Math.max(IdleStateHandler.this.lastReadTime, IdleStateHandler.this.lastWriteTime);
+         }
+
+         if (nextDelay &lt;= 0L) {
+            IdleStateHandler.this.allIdleTimeout = IdleStateHandler.this.schedule(ctx, this, IdleStateHandler.this.allIdleTimeNanos, TimeUnit.NANOSECONDS);
+            boolean first = IdleStateHandler.this.firstAllIdleEvent;
+            IdleStateHandler.this.firstAllIdleEvent = false;
+
+            try {
+               if (IdleStateHandler.this.hasOutputChanged(ctx, first)) {
+                  return;
+               }
+
+               IdleStateEvent event = IdleStateHandler.this.newIdleStateEvent(IdleState.ALL_IDLE, first);
+               IdleStateHandler.this.channelIdle(ctx, event);
+            } catch (Throwable var6) {
+               ctx.fireExceptionCaught(var6);
+            }
+         } else {
+            IdleStateHandler.this.allIdleTimeout = IdleStateHandler.this.schedule(ctx, this, nextDelay, TimeUnit.NANOSECONDS);
+         }
+
+      }
+   }
+
+   private final class WriterIdleTimeoutTask extends IdleStateHandler.AbstractIdleTask {
+      WriterIdleTimeoutTask(ChannelHandlerContext ctx) {
+         super(ctx);
+      }
+
+      protected void run(ChannelHandlerContext ctx) {
+         long lastWriteTime = IdleStateHandler.this.lastWriteTime;
+         long nextDelay = IdleStateHandler.this.writerIdleTimeNanos - (IdleStateHandler.this.ticksInNanos() - lastWriteTime);
+         if (nextDelay &lt;= 0L) {
+            IdleStateHandler.this.writerIdleTimeout = IdleStateHandler.this.schedule(ctx, this, IdleStateHandler.this.writerIdleTimeNanos, TimeUnit.NANOSECONDS);
+            boolean first = IdleStateHandler.this.firstWriterIdleEvent;
+            IdleStateHandler.this.firstWriterIdleEvent = false;
+
+            try {
+               if (IdleStateHandler.this.hasOutputChanged(ctx, first)) {
+                  return;
+               }
+
+               IdleStateEvent event = IdleStateHandler.this.newIdleStateEvent(IdleState.WRITER_IDLE, first);
+               IdleStateHandler.this.channelIdle(ctx, event);
+            } catch (Throwable var8) {
+               ctx.fireExceptionCaught(var8);
+            }
+         } else {
+            IdleStateHandler.this.writerIdleTimeout = IdleStateHandler.this.schedule(ctx, this, nextDelay, TimeUnit.NANOSECONDS);
+         }
+
+      }
+   }
+
+   private final class ReaderIdleTimeoutTask extends IdleStateHandler.AbstractIdleTask {
+      ReaderIdleTimeoutTask(ChannelHandlerContext ctx) {
+         super(ctx);
+      }
+
+      protected void run(ChannelHandlerContext ctx) {
+         long nextDelay = IdleStateHandler.this.readerIdleTimeNanos;
+         if (!IdleStateHandler.this.reading) {
+            nextDelay -= IdleStateHandler.this.ticksInNanos() - IdleStateHandler.this.lastReadTime;
+         }
+
+         if (nextDelay &lt;= 0L) {
+            IdleStateHandler.this.readerIdleTimeout = IdleStateHandler.this.schedule(ctx, this, IdleStateHandler.this.readerIdleTimeNanos, TimeUnit.NANOSECONDS);
+            boolean first = IdleStateHandler.this.firstReaderIdleEvent;
+            IdleStateHandler.this.firstReaderIdleEvent = false;
+
+            try {
+               IdleStateEvent event = IdleStateHandler.this.newIdleStateEvent(IdleState.READER_IDLE, first);
+               IdleStateHandler.this.channelIdle(ctx, event);
+            } catch (Throwable var6) {
+               ctx.fireExceptionCaught(var6);
+            }
+         } else {
+            IdleStateHandler.this.readerIdleTimeout = IdleStateHandler.this.schedule(ctx, this, nextDelay, TimeUnit.NANOSECONDS);
+         }
+
+      }
+   }
+
+   private abstract static class AbstractIdleTask implements Runnable {
+      private final ChannelHandlerContext ctx;
+
+      AbstractIdleTask(ChannelHandlerContext ctx) {
+         this.ctx = ctx;
+      }
+
+      public void run() {
+         if (this.ctx.channel().isOpen()) {
+            this.run(this.ctx);
+         }
+      }
+
+      protected abstract void run(ChannelHandlerContext var1);
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:29 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

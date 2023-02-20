@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for Mono.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/reactor-core-3.3.8.RELEASE.jar/reactor/core/publisher/Mono.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package reactor.core.publisher;
+
+import java.time.Duration;
+import java.util.NoSuchElementException;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.concurrent.Callable;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.TimeUnit;
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.BiPredicate;
+import java.util.function.BooleanSupplier;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.LongConsumer;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.logging.Level;
+import org.reactivestreams.Publisher;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+import reactor.core.CorePublisher;
+import reactor.core.CoreSubscriber;
+import reactor.core.Disposable;
+import reactor.core.Exceptions;
+import reactor.core.Fuseable;
+import reactor.core.Fuseable.ScalarCallable;
+import reactor.core.publisher.FluxOnAssembly.AssemblyLightSnapshot;
+import reactor.core.publisher.FluxOnAssembly.AssemblySnapshot;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
+import reactor.util.Logger;
+import reactor.util.Metrics;
+import reactor.util.annotation.Nullable;
+import reactor.util.concurrent.Queues;
+import reactor.util.context.Context;
+import reactor.util.function.Tuple2;
+import reactor.util.function.Tuple3;
+import reactor.util.function.Tuple4;
+import reactor.util.function.Tuple5;
+import reactor.util.function.Tuple6;
+import reactor.util.function.Tuple7;
+import reactor.util.function.Tuple8;
+import reactor.util.function.Tuples;
+import reactor.util.retry.Retry;
+import reactor.util.retry.Retry.RetrySignal;
+
+public abstract class Mono&lt;T&gt; implements CorePublisher&lt;T&gt; {
+   static final BiPredicate EQUALS_BIPREDICATE = Object::equals;
+
+   public static &lt;T&gt; Mono&lt;T&gt; create(Consumer&lt;MonoSink&lt;T&gt;&gt; callback) {
+      return onAssembly(new MonoCreate(callback));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; defer(Supplier&lt;? extends Mono&lt;? extends T&gt;&gt; supplier) {
+      return onAssembly(new MonoDefer(supplier));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; deferWithContext(Function&lt;Context, ? extends Mono&lt;? extends T&gt;&gt; supplier) {
+      return onAssembly(new MonoDeferWithContext(supplier));
+   }
+
+   public static Mono&lt;Long&gt; delay(Duration duration) {
+      return delay(duration, Schedulers.parallel());
+   }
+
+   public static Mono&lt;Long&gt; delay(Duration duration, Scheduler timer) {
+      return onAssembly(new MonoDelay(duration.toMillis(), TimeUnit.MILLISECONDS, timer));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; empty() {
+      return MonoEmpty.instance();
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; error(Throwable error) {
+      return onAssembly(new MonoError(error));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; error(Supplier&lt;? extends Throwable&gt; errorSupplier) {
+      return onAssembly(new MonoErrorSupplied(errorSupplier));
+   }
+
+   @SafeVarargs
+   public static &lt;T&gt; Mono&lt;T&gt; first(Mono... monos) {
+      return onAssembly(new MonoFirst(monos));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; first(Iterable&lt;? extends Mono&lt;? extends T&gt;&gt; monos) {
+      return onAssembly(new MonoFirst(monos));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; from(Publisher&lt;? extends T&gt; source) {
+      if (source instanceof Mono) {
+         Mono&lt;T&gt; casted = (Mono)source;
+         return casted;
+      } else if (!(source instanceof FluxSourceMono) &amp;&amp; !(source instanceof FluxSourceMonoFuseable)) {
+         return onAssembly(wrap(source, true));
+      } else {
+         FluxFromMonoOperator&lt;T, T&gt; wrapper = (FluxFromMonoOperator)source;
+         Mono&lt;T&gt; extracted = wrapper.source;
+         return extracted;
+      }
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; fromCallable(Callable&lt;? extends T&gt; supplier) {
+      return onAssembly(new MonoCallable(supplier));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; fromCompletionStage(CompletionStage&lt;? extends T&gt; completionStage) {
+      return onAssembly(new MonoCompletionStage(completionStage));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; fromCompletionStage(Supplier&lt;? extends CompletionStage&lt;? extends T&gt;&gt; stageSupplier) {
+      return defer(() -&gt; {
+         return onAssembly(new MonoCompletionStage((CompletionStage)stageSupplier.get()));
+      });
+   }
+
+   public static &lt;I&gt; Mono&lt;I&gt; fromDirect(Publisher&lt;? extends I&gt; source) {
+      if (source instanceof Mono) {
+         Mono&lt;I&gt; m = (Mono)source;
+         return m;
+      } else if (!(source instanceof FluxSourceMono) &amp;&amp; !(source instanceof FluxSourceMonoFuseable)) {
+         return onAssembly(wrap(source, false));
+      } else {
+         FluxFromMonoOperator&lt;I, I&gt; wrapper = (FluxFromMonoOperator)source;
+         Mono&lt;I&gt; extracted = wrapper.source;
+         return extracted;
+      }
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; fromFuture(CompletableFuture&lt;? extends T&gt; future) {
+      return onAssembly(new MonoCompletionStage(future));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; fromFuture(Supplier&lt;? extends CompletableFuture&lt;? extends T&gt;&gt; futureSupplier) {
+      return defer(() -&gt; {
+         return onAssembly(new MonoCompletionStage((CompletionStage)futureSupplier.get()));
+      });
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; fromRunnable(Runnable runnable) {
+      return onAssembly(new MonoRunnable(runnable));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; fromSupplier(Supplier&lt;? extends T&gt; supplier) {
+      return onAssembly(new MonoSupplier(supplier));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; ignoreElements(Publisher&lt;T&gt; source) {
+      return onAssembly(new MonoIgnorePublisher(source));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; just(T data) {
+      return onAssembly(new MonoJust(data));
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; justOrEmpty(@Nullable Optional&lt;? extends T&gt; data) {
+      return data != null &amp;&amp; data.isPresent() ? just(data.get()) : empty();
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; justOrEmpty(@Nullable T data) {
+      return data != null ? just(data) : empty();
+   }
+
+   public static &lt;T&gt; Mono&lt;T&gt; never() {
+      return MonoNever.instance();
+   }
+
+   public static &lt;T&gt; Mono&lt;Boolean&gt; sequenceEqual(Publisher&lt;? extends T&gt; source1, Publisher&lt;? extends T&gt; source2) {
+      return sequenceEqual(source1, source2, equalsBiPredicate(), Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public static &lt;T&gt; Mono&lt;Boolean&gt; sequenceEqual(Publisher&lt;? extends T&gt; source1, Publisher&lt;? extends T&gt; source2, BiPredicate&lt;? super T, ? super T&gt; isEqual) {
+      return sequenceEqual(source1, source2, isEqual, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public static &lt;T&gt; Mono&lt;Boolean&gt; sequenceEqual(Publisher&lt;? extends T&gt; source1, Publisher&lt;? extends T&gt; source2, BiPredicate&lt;? super T, ? super T&gt; isEqual, int prefetch) {
+      return onAssembly(new MonoSequenceEqual(source1, source2, isEqual, prefetch));
+   }
+
+   public static Mono&lt;Context&gt; subscriberContext() {
+      return onAssembly(MonoCurrentContext.INSTANCE);
+   }
+
+   public static &lt;T, D&gt; Mono&lt;T&gt; using(Callable&lt;? extends D&gt; resourceSupplier, Function&lt;? super D, ? extends Mono&lt;? extends T&gt;&gt; sourceSupplier, Consumer&lt;? super D&gt; resourceCleanup, boolean eager) {
+      return onAssembly(new MonoUsing(resourceSupplier, sourceSupplier, resourceCleanup, eager));
+   }
+
+   public static &lt;T, D&gt; Mono&lt;T&gt; using(Callable&lt;? extends D&gt; resourceSupplier, Function&lt;? super D, ? extends Mono&lt;? extends T&gt;&gt; sourceSupplier, Consumer&lt;? super D&gt; resourceCleanup) {
+      return using(resourceSupplier, sourceSupplier, resourceCleanup, true);
+   }
+
+   public static &lt;T, D&gt; Mono&lt;T&gt; usingWhen(Publisher&lt;D&gt; resourceSupplier, Function&lt;? super D, ? extends Mono&lt;? extends T&gt;&gt; resourceClosure, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncCleanup) {
+      return usingWhen(resourceSupplier, resourceClosure, asyncCleanup, (res, error) -&gt; {
+         return (Publisher)asyncCleanup.apply(res);
+      }, asyncCleanup);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static &lt;T, D&gt; Mono&lt;T&gt; usingWhen(Publisher&lt;D&gt; resourceSupplier, Function&lt;? super D, ? extends Mono&lt;? extends T&gt;&gt; resourceClosure, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncComplete, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncError) {
+      return onAssembly(new MonoUsingWhen(resourceSupplier, resourceClosure, asyncComplete, (res, err) -&gt; {
+         return (Publisher)asyncError.apply(res);
+      }, (Function)null));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static &lt;T, D&gt; Mono&lt;T&gt; usingWhen(Publisher&lt;D&gt; resourceSupplier, Function&lt;? super D, ? extends Mono&lt;? extends T&gt;&gt; resourceClosure, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncComplete, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncError, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncCancel) {
+      return onAssembly(new MonoUsingWhen(resourceSupplier, resourceClosure, asyncComplete, (res, err) -&gt; {
+         return (Publisher)asyncError.apply(res);
+      }, asyncCancel));
+   }
+
+   public static &lt;T, D&gt; Mono&lt;T&gt; usingWhen(Publisher&lt;D&gt; resourceSupplier, Function&lt;? super D, ? extends Mono&lt;? extends T&gt;&gt; resourceClosure, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncComplete, BiFunction&lt;? super D, ? super Throwable, ? extends Publisher&lt;?&gt;&gt; asyncError, Function&lt;? super D, ? extends Publisher&lt;?&gt;&gt; asyncCancel) {
+      return onAssembly(new MonoUsingWhen(resourceSupplier, resourceClosure, asyncComplete, asyncError, asyncCancel));
+   }
+
+   public static Mono&lt;Void&gt; when(Publisher... sources) {
+      if (sources.length == 0) {
+         return empty();
+      } else {
+         return sources.length == 1 ? empty(sources[0]) : onAssembly(new MonoWhen(false, sources));
+      }
+   }
+
+   public static Mono&lt;Void&gt; when(Iterable&lt;? extends Publisher&lt;?&gt;&gt; sources) {
+      return onAssembly(new MonoWhen(false, sources));
+   }
+
+   public static Mono&lt;Void&gt; whenDelayError(Iterable&lt;? extends Publisher&lt;?&gt;&gt; sources) {
+      return onAssembly(new MonoWhen(true, sources));
+   }
+
+   public static Mono&lt;Void&gt; whenDelayError(Publisher... sources) {
+      if (sources.length == 0) {
+         return empty();
+      } else {
+         return sources.length == 1 ? empty(sources[0]) : onAssembly(new MonoWhen(true, sources));
+      }
+   }
+
+   public static &lt;T1, T2&gt; Mono&lt;Tuple2&lt;T1, T2&gt;&gt; zip(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2) {
+      return zip(p1, p2, Flux.tuple2Function());
+   }
+
+   public static &lt;T1, T2, O&gt; Mono&lt;O&gt; zip(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, BiFunction&lt;? super T1, ? super T2, ? extends O&gt; combinator) {
+      return onAssembly(new MonoZip(false, p1, p2, combinator));
+   }
+
+   public static &lt;T1, T2, T3&gt; Mono&lt;Tuple3&lt;T1, T2, T3&gt;&gt; zip(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3) {
+      return onAssembly(new MonoZip(false, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3}));
+   }
+
+   public static &lt;T1, T2, T3, T4&gt; Mono&lt;Tuple4&lt;T1, T2, T3, T4&gt;&gt; zip(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4) {
+      return onAssembly(new MonoZip(false, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4}));
+   }
+
+   public static &lt;T1, T2, T3, T4, T5&gt; Mono&lt;Tuple5&lt;T1, T2, T3, T4, T5&gt;&gt; zip(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4, Mono&lt;? extends T5&gt; p5) {
+      return onAssembly(new MonoZip(false, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4, p5}));
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6&gt; Mono&lt;Tuple6&lt;T1, T2, T3, T4, T5, T6&gt;&gt; zip(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4, Mono&lt;? extends T5&gt; p5, Mono&lt;? extends T6&gt; p6) {
+      return onAssembly(new MonoZip(false, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4, p5, p6}));
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6, T7&gt; Mono&lt;Tuple7&lt;T1, T2, T3, T4, T5, T6, T7&gt;&gt; zip(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4, Mono&lt;? extends T5&gt; p5, Mono&lt;? extends T6&gt; p6, Mono&lt;? extends T7&gt; p7) {
+      return onAssembly(new MonoZip(false, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4, p5, p6, p7}));
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6, T7, T8&gt; Mono&lt;Tuple8&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;&gt; zip(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4, Mono&lt;? extends T5&gt; p5, Mono&lt;? extends T6&gt; p6, Mono&lt;? extends T7&gt; p7, Mono&lt;? extends T8&gt; p8) {
+      return onAssembly(new MonoZip(false, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4, p5, p6, p7, p8}));
+   }
+
+   public static &lt;R&gt; Mono&lt;R&gt; zip(Iterable&lt;? extends Mono&lt;?&gt;&gt; monos, Function&lt;? super Object[], ? extends R&gt; combinator) {
+      return onAssembly(new MonoZip(false, combinator, monos));
+   }
+
+   public static &lt;R&gt; Mono&lt;R&gt; zip(Function&lt;? super Object[], ? extends R&gt; combinator, Mono... monos) {
+      if (monos.length == 0) {
+         return empty();
+      } else {
+         return monos.length == 1 ? monos[0].map((d) -&gt; {
+            return combinator.apply(new Object[]{d});
+         }) : onAssembly(new MonoZip(false, combinator, monos));
+      }
+   }
+
+   public static &lt;T1, T2&gt; Mono&lt;Tuple2&lt;T1, T2&gt;&gt; zipDelayError(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2) {
+      return onAssembly(new MonoZip(true, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2}));
+   }
+
+   public static &lt;T1, T2, T3&gt; Mono&lt;Tuple3&lt;T1, T2, T3&gt;&gt; zipDelayError(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3) {
+      return onAssembly(new MonoZip(true, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3}));
+   }
+
+   public static &lt;T1, T2, T3, T4&gt; Mono&lt;Tuple4&lt;T1, T2, T3, T4&gt;&gt; zipDelayError(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4) {
+      return onAssembly(new MonoZip(true, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4}));
+   }
+
+   public static &lt;T1, T2, T3, T4, T5&gt; Mono&lt;Tuple5&lt;T1, T2, T3, T4, T5&gt;&gt; zipDelayError(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4, Mono&lt;? extends T5&gt; p5) {
+      return onAssembly(new MonoZip(true, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4, p5}));
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6&gt; Mono&lt;Tuple6&lt;T1, T2, T3, T4, T5, T6&gt;&gt; zipDelayError(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4, Mono&lt;? extends T5&gt; p5, Mono&lt;? extends T6&gt; p6) {
+      return onAssembly(new MonoZip(true, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4, p5, p6}));
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6, T7&gt; Mono&lt;Tuple7&lt;T1, T2, T3, T4, T5, T6, T7&gt;&gt; zipDelayError(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4, Mono&lt;? extends T5&gt; p5, Mono&lt;? extends T6&gt; p6, Mono&lt;? extends T7&gt; p7) {
+      return onAssembly(new MonoZip(true, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4, p5, p6, p7}));
+   }
+
+   public static &lt;T1, T2, T3, T4, T5, T6, T7, T8&gt; Mono&lt;Tuple8&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;&gt; zipDelayError(Mono&lt;? extends T1&gt; p1, Mono&lt;? extends T2&gt; p2, Mono&lt;? extends T3&gt; p3, Mono&lt;? extends T4&gt; p4, Mono&lt;? extends T5&gt; p5, Mono&lt;? extends T6&gt; p6, Mono&lt;? extends T7&gt; p7, Mono&lt;? extends T8&gt; p8) {
+      return onAssembly(new MonoZip(true, (a) -&gt; {
+         return Tuples.fromArray((Object[])((Object[])a));
+      }, new Publisher[]{p1, p2, p3, p4, p5, p6, p7, p8}));
+   }
+
+   public static &lt;R&gt; Mono&lt;R&gt; zipDelayError(Iterable&lt;? extends Mono&lt;?&gt;&gt; monos, Function&lt;? super Object[], ? extends R&gt; combinator) {
+      return onAssembly(new MonoZip(true, combinator, monos));
+   }
+
+   public static &lt;R&gt; Mono&lt;R&gt; zipDelayError(Function&lt;? super Object[], ? extends R&gt; combinator, Mono... monos) {
+      if (monos.length == 0) {
+         return empty();
+      } else {
+         return monos.length == 1 ? monos[0].map((d) -&gt; {
+            return combinator.apply(new Object[]{d});
+         }) : onAssembly(new MonoZip(true, combinator, monos));
+      }
+   }
+
+   public final &lt;P&gt; P as(Function&lt;? super Mono&lt;T&gt;, P&gt; transformer) {
+      return transformer.apply(this);
+   }
+
+   public final Mono&lt;Void&gt; and(Publisher&lt;?&gt; other) {
+      if (this instanceof MonoWhen) {
+         MonoWhen o = (MonoWhen)this;
+         Mono&lt;Void&gt; result = o.whenAdditionalSource(other);
+         if (result != null) {
+            return result;
+         }
+      }
+
+      return when(this, other);
+   }
+
+   @Nullable
+   public T block() {
+      BlockingMonoSubscriber&lt;T&gt; subscriber = new BlockingMonoSubscriber();
+      this.subscribe((Subscriber)subscriber);
+      return subscriber.blockingGet();
+   }
+
+   @Nullable
+   public T block(Duration timeout) {
+      BlockingMonoSubscriber&lt;T&gt; subscriber = new BlockingMonoSubscriber();
+      this.subscribe((Subscriber)subscriber);
+      return subscriber.blockingGet(timeout.toMillis(), TimeUnit.MILLISECONDS);
+   }
+
+   public Optional&lt;T&gt; blockOptional() {
+      BlockingOptionalMonoSubscriber&lt;T&gt; subscriber = new BlockingOptionalMonoSubscriber();
+      this.subscribe((Subscriber)subscriber);
+      return subscriber.blockingGet();
+   }
+
+   public Optional&lt;T&gt; blockOptional(Duration timeout) {
+      BlockingOptionalMonoSubscriber&lt;T&gt; subscriber = new BlockingOptionalMonoSubscriber();
+      this.subscribe((Subscriber)subscriber);
+      return subscriber.blockingGet(timeout.toMillis(), TimeUnit.MILLISECONDS);
+   }
+
+   public final &lt;E&gt; Mono&lt;E&gt; cast(Class&lt;E&gt; clazz) {
+      Objects.requireNonNull(clazz, &quot;clazz&quot;);
+      clazz.getClass();
+      return this.map(clazz::cast);
+   }
+
+   public final Mono&lt;T&gt; cache() {
+      return onAssembly(new MonoCacheTime(this));
+   }
+
+   public final Mono&lt;T&gt; cache(Duration ttl) {
+      return this.cache(ttl, Schedulers.parallel());
+   }
+
+   public final Mono&lt;T&gt; cache(Duration ttl, Scheduler timer) {
+      return onAssembly(new MonoCacheTime(this, ttl, timer));
+   }
+
+   public final Mono&lt;T&gt; cache(Function&lt;? super T, Duration&gt; ttlForValue, Function&lt;Throwable, Duration&gt; ttlForError, Supplier&lt;Duration&gt; ttlForEmpty) {
+      return onAssembly(new MonoCacheTime(this, ttlForValue, ttlForError, ttlForEmpty, Schedulers.parallel()));
+   }
+
+   public final Mono&lt;T&gt; cancelOn(Scheduler scheduler) {
+      return onAssembly(new MonoCancelOn(this, scheduler));
+   }
+
+   public final Mono&lt;T&gt; checkpoint() {
+      return this.checkpoint((String)null, true);
+   }
+
+   public final Mono&lt;T&gt; checkpoint(String description) {
+      return this.checkpoint((String)Objects.requireNonNull(description), false);
+   }
+
+   public final Mono&lt;T&gt; checkpoint(@Nullable String description, boolean forceStackTrace) {
+      Object stacktrace;
+      if (!forceStackTrace) {
+         stacktrace = new AssemblyLightSnapshot(description);
+      } else {
+         stacktrace = new AssemblySnapshot(description, (Supplier)Traces.callSiteSupplierFactory.get());
+      }
+
+      return new MonoOnAssembly(this, (AssemblySnapshot)stacktrace);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final &lt;V&gt; Mono&lt;V&gt; compose(Function&lt;? super Mono&lt;T&gt;, ? extends Publisher&lt;V&gt;&gt; transformer) {
+      return this.transformDeferred(transformer);
+   }
+
+   public final Flux&lt;T&gt; concatWith(Publisher&lt;? extends T&gt; other) {
+      return Flux.concat(new Publisher[]{this, other});
+   }
+
+   public final Mono&lt;T&gt; defaultIfEmpty(T defaultV) {
+      if (this instanceof ScalarCallable) {
+         try {
+            T v = this.block();
+            if (v == null) {
+               return just(defaultV);
+            }
+         } catch (Throwable var3) {
+            ;
+         }
+
+         return this;
+      } else {
+         return onAssembly(new MonoDefaultIfEmpty(this, defaultV));
+      }
+   }
+
+   public final Mono&lt;T&gt; delayElement(Duration delay) {
+      return this.delayElement(delay, Schedulers.parallel());
+   }
+
+   public final Mono&lt;T&gt; delayElement(Duration delay, Scheduler timer) {
+      return onAssembly(new MonoDelayElement(this, delay.toMillis(), TimeUnit.MILLISECONDS, timer));
+   }
+
+   public final Mono&lt;T&gt; delayUntil(Function&lt;? super T, ? extends Publisher&lt;?&gt;&gt; triggerProvider) {
+      Objects.requireNonNull(triggerProvider, &quot;triggerProvider required&quot;);
+      return (Mono)(this instanceof MonoDelayUntil ? ((MonoDelayUntil)this).copyWithNewTriggerGenerator(false, triggerProvider) : onAssembly(new MonoDelayUntil(this, triggerProvider)));
+   }
+
+   public final Mono&lt;T&gt; delaySubscription(Duration delay) {
+      return this.delaySubscription(delay, Schedulers.parallel());
+   }
+
+   public final Mono&lt;T&gt; delaySubscription(Duration delay, Scheduler timer) {
+      return this.delaySubscription((Publisher)delay(delay, timer));
+   }
+
+   public final &lt;U&gt; Mono&lt;T&gt; delaySubscription(Publisher&lt;U&gt; subscriptionDelay) {
+      return onAssembly(new MonoDelaySubscription(this, subscriptionDelay));
+   }
+
+   public final &lt;X&gt; Mono&lt;X&gt; dematerialize() {
+      return onAssembly(new MonoDematerialize(this));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; doAfterSuccessOrError(BiConsumer&lt;? super T, Throwable&gt; afterSuccessOrError) {
+      return doOnTerminalSignal(this, (Consumer)null, (Consumer)null, afterSuccessOrError);
+   }
+
+   public final Mono&lt;T&gt; doAfterTerminate(Runnable afterTerminate) {
+      Objects.requireNonNull(afterTerminate, &quot;afterTerminate&quot;);
+      return onAssembly(new MonoPeekTerminal(this, (Consumer)null, (Consumer)null, (s, e) -&gt; {
+         afterTerminate.run();
+      }));
+   }
+
+   public final Mono&lt;T&gt; doFirst(Runnable onFirst) {
+      Objects.requireNonNull(onFirst, &quot;onFirst&quot;);
+      return this instanceof Fuseable ? onAssembly(new MonoDoFirstFuseable(this, onFirst)) : onAssembly(new MonoDoFirst(this, onFirst));
+   }
+
+   public final Mono&lt;T&gt; doFinally(Consumer&lt;SignalType&gt; onFinally) {
+      Objects.requireNonNull(onFinally, &quot;onFinally&quot;);
+      return this instanceof Fuseable ? onAssembly(new MonoDoFinallyFuseable(this, onFinally)) : onAssembly(new MonoDoFinally(this, onFinally));
+   }
+
+   public final Mono&lt;T&gt; doOnCancel(Runnable onCancel) {
+      Objects.requireNonNull(onCancel, &quot;onCancel&quot;);
+      return doOnSignal(this, (Consumer)null, (Consumer)null, (LongConsumer)null, onCancel);
+   }
+
+   public final &lt;R&gt; Mono&lt;T&gt; doOnDiscard(Class&lt;R&gt; type, Consumer&lt;? super R&gt; discardHook) {
+      return this.subscriberContext(Operators.discardLocalAdapter(type, discardHook));
+   }
+
+   public final Mono&lt;T&gt; doOnNext(Consumer&lt;? super T&gt; onNext) {
+      Objects.requireNonNull(onNext, &quot;onNext&quot;);
+      return doOnSignal(this, (Consumer)null, onNext, (LongConsumer)null, (Runnable)null);
+   }
+
+   public final Mono&lt;T&gt; doOnSuccess(Consumer&lt;? super T&gt; onSuccess) {
+      Objects.requireNonNull(onSuccess, &quot;onSuccess&quot;);
+      return doOnTerminalSignal(this, onSuccess, (Consumer)null, (BiConsumer)null);
+   }
+
+   public final Mono&lt;T&gt; doOnEach(Consumer&lt;? super Signal&lt;T&gt;&gt; signalConsumer) {
+      Objects.requireNonNull(signalConsumer, &quot;signalConsumer&quot;);
+      return this instanceof Fuseable ? onAssembly(new MonoDoOnEachFuseable(this, signalConsumer)) : onAssembly(new MonoDoOnEach(this, signalConsumer));
+   }
+
+   public final Mono&lt;T&gt; doOnError(Consumer&lt;? super Throwable&gt; onError) {
+      Objects.requireNonNull(onError, &quot;onError&quot;);
+      return doOnTerminalSignal(this, (Consumer)null, onError, (BiConsumer)null);
+   }
+
+   public final &lt;E extends Throwable&gt; Mono&lt;T&gt; doOnError(Class&lt;E&gt; exceptionType, Consumer&lt;? super E&gt; onError) {
+      Objects.requireNonNull(exceptionType, &quot;type&quot;);
+      Objects.requireNonNull(onError, &quot;onError&quot;);
+      return doOnTerminalSignal(this, (Consumer)null, (error) -&gt; {
+         if (exceptionType.isInstance(error)) {
+            onError.accept(exceptionType.cast(error));
+         }
+
+      }, (BiConsumer)null);
+   }
+
+   public final Mono&lt;T&gt; doOnError(Predicate&lt;? super Throwable&gt; predicate, Consumer&lt;? super Throwable&gt; onError) {
+      Objects.requireNonNull(predicate, &quot;predicate&quot;);
+      Objects.requireNonNull(onError, &quot;onError&quot;);
+      return doOnTerminalSignal(this, (Consumer)null, (error) -&gt; {
+         if (predicate.test(error)) {
+            onError.accept(error);
+         }
+
+      }, (BiConsumer)null);
+   }
+
+   public final Mono&lt;T&gt; doOnRequest(LongConsumer consumer) {
+      Objects.requireNonNull(consumer, &quot;consumer&quot;);
+      return doOnSignal(this, (Consumer)null, (Consumer)null, consumer, (Runnable)null);
+   }
+
+   public final Mono&lt;T&gt; doOnSubscribe(Consumer&lt;? super Subscription&gt; onSubscribe) {
+      Objects.requireNonNull(onSubscribe, &quot;onSubscribe&quot;);
+      return doOnSignal(this, onSubscribe, (Consumer)null, (LongConsumer)null, (Runnable)null);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; doOnSuccessOrError(BiConsumer&lt;? super T, Throwable&gt; onSuccessOrError) {
+      Objects.requireNonNull(onSuccessOrError, &quot;onSuccessOrError&quot;);
+      return doOnTerminalSignal(this, (v) -&gt; {
+         onSuccessOrError.accept(v, (Object)null);
+      }, (e) -&gt; {
+         onSuccessOrError.accept((Object)null, e);
+      }, (BiConsumer)null);
+   }
+
+   public final Mono&lt;T&gt; doOnTerminate(Runnable onTerminate) {
+      Objects.requireNonNull(onTerminate, &quot;onTerminate&quot;);
+      return doOnTerminalSignal(this, (ignoreValue) -&gt; {
+         onTerminate.run();
+      }, (ignoreError) -&gt; {
+         onTerminate.run();
+      }, (BiConsumer)null);
+   }
+
+   public final Mono&lt;Tuple2&lt;Long, T&gt;&gt; elapsed() {
+      return this.elapsed(Schedulers.parallel());
+   }
+
+   public final Mono&lt;Tuple2&lt;Long, T&gt;&gt; elapsed(Scheduler scheduler) {
+      Objects.requireNonNull(scheduler, &quot;scheduler&quot;);
+      return onAssembly(new MonoElapsed(this, scheduler));
+   }
+
+   public final Flux&lt;T&gt; expandDeep(Function&lt;? super T, ? extends Publisher&lt;? extends T&gt;&gt; expander, int capacityHint) {
+      return Flux.onAssembly(new MonoExpand(this, expander, false, capacityHint));
+   }
+
+   public final Flux&lt;T&gt; expandDeep(Function&lt;? super T, ? extends Publisher&lt;? extends T&gt;&gt; expander) {
+      return this.expandDeep(expander, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Flux&lt;T&gt; expand(Function&lt;? super T, ? extends Publisher&lt;? extends T&gt;&gt; expander, int capacityHint) {
+      return Flux.onAssembly(new MonoExpand(this, expander, true, capacityHint));
+   }
+
+   public final Flux&lt;T&gt; expand(Function&lt;? super T, ? extends Publisher&lt;? extends T&gt;&gt; expander) {
+      return this.expand(expander, Queues.SMALL_BUFFER_SIZE);
+   }
+
+   public final Mono&lt;T&gt; filter(Predicate&lt;? super T&gt; tester) {
+      return this instanceof Fuseable ? onAssembly(new MonoFilterFuseable(this, tester)) : onAssembly(new MonoFilter(this, tester));
+   }
+
+   public final Mono&lt;T&gt; filterWhen(Function&lt;? super T, ? extends Publisher&lt;Boolean&gt;&gt; asyncPredicate) {
+      return onAssembly(new MonoFilterWhen(this, asyncPredicate));
+   }
+
+   public final &lt;R&gt; Mono&lt;R&gt; flatMap(Function&lt;? super T, ? extends Mono&lt;? extends R&gt;&gt; transformer) {
+      return onAssembly(new MonoFlatMap(this, transformer));
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapMany(Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapper) {
+      return Flux.onAssembly(new MonoFlatMapMany(this, mapper));
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapMany(Function&lt;? super T, ? extends Publisher&lt;? extends R&gt;&gt; mapperOnNext, Function&lt;? super Throwable, ? extends Publisher&lt;? extends R&gt;&gt; mapperOnError, Supplier&lt;? extends Publisher&lt;? extends R&gt;&gt; mapperOnComplete) {
+      return this.flux().flatMap(mapperOnNext, mapperOnError, mapperOnComplete);
+   }
+
+   public final &lt;R&gt; Flux&lt;R&gt; flatMapIterable(Function&lt;? super T, ? extends Iterable&lt;? extends R&gt;&gt; mapper) {
+      return Flux.onAssembly(new MonoFlattenIterable(this, mapper, Integer.MAX_VALUE, Queues.one()));
+   }
+
+   public final Flux&lt;T&gt; flux() {
+      if (this instanceof Callable &amp;&amp; !(this instanceof ScalarCallable)) {
+         Callable&lt;T&gt; thiz = (Callable)this;
+         return Flux.onAssembly(new FluxCallable(thiz));
+      } else {
+         return Flux.from(this);
+      }
+   }
+
+   public final Mono&lt;Boolean&gt; hasElement() {
+      return onAssembly(new MonoHasElement(this));
+   }
+
+   public final &lt;R&gt; Mono&lt;R&gt; handle(BiConsumer&lt;? super T, SynchronousSink&lt;R&gt;&gt; handler) {
+      return this instanceof Fuseable ? onAssembly(new MonoHandleFuseable(this, handler)) : onAssembly(new MonoHandle(this, handler));
+   }
+
+   public final Mono&lt;T&gt; hide() {
+      return onAssembly(new MonoHide(this));
+   }
+
+   public final Mono&lt;T&gt; ignoreElement() {
+      return onAssembly(new MonoIgnoreElement(this));
+   }
+
+   public final Mono&lt;T&gt; log() {
+      return this.log((String)null, Level.INFO);
+   }
+
+   public final Mono&lt;T&gt; log(@Nullable String category) {
+      return this.log(category, Level.INFO);
+   }
+
+   public final Mono&lt;T&gt; log(@Nullable String category, Level level, SignalType... options) {
+      return this.log(category, level, false, options);
+   }
+
+   public final Mono&lt;T&gt; log(@Nullable String category, Level level, boolean showOperatorLine, SignalType... options) {
+      SignalLogger&lt;T&gt; log = new SignalLogger(this, category, level, showOperatorLine, options);
+      return this instanceof Fuseable ? onAssembly(new MonoLogFuseable(this, log)) : onAssembly(new MonoLog(this, log));
+   }
+
+   public final Mono&lt;T&gt; log(Logger logger) {
+      return this.log(logger, Level.INFO, false);
+   }
+
+   public final Mono&lt;T&gt; log(Logger logger, Level level, boolean showOperatorLine, SignalType... options) {
+      SignalLogger&lt;T&gt; log = new SignalLogger(this, &quot;IGNORED&quot;, level, showOperatorLine, (s) -&gt; {
+         return logger;
+      }, options);
+      return this instanceof Fuseable ? onAssembly(new MonoLogFuseable(this, log)) : onAssembly(new MonoLog(this, log));
+   }
+
+   public final &lt;R&gt; Mono&lt;R&gt; map(Function&lt;? super T, ? extends R&gt; mapper) {
+      return this instanceof Fuseable ? onAssembly(new MonoMapFuseable(this, mapper)) : onAssembly(new MonoMap(this, mapper));
+   }
+
+   public final Mono&lt;Signal&lt;T&gt;&gt; materialize() {
+      return onAssembly(new MonoMaterialize(this));
+   }
+
+   public final Flux&lt;T&gt; mergeWith(Publisher&lt;? extends T&gt; other) {
+      return Flux.merge(new Publisher[]{this, other});
+   }
+
+   public final Mono&lt;T&gt; metrics() {
+      if (!Metrics.isInstrumentationAvailable()) {
+         return this;
+      } else {
+         return this instanceof Fuseable ? onAssembly(new MonoMetricsFuseable(this)) : onAssembly(new MonoMetrics(this));
+      }
+   }
+
+   public final Mono&lt;T&gt; name(String name) {
+      return MonoName.createOrAppend(this, name);
+   }
+
+   public final Mono&lt;T&gt; or(Mono&lt;? extends T&gt; other) {
+      if (this instanceof MonoFirst) {
+         MonoFirst&lt;T&gt; a = (MonoFirst)this;
+         Mono&lt;T&gt; result = a.orAdditionalSource(other);
+         if (result != null) {
+            return result;
+         }
+      }
+
+      return first(this, other);
+   }
+
+   public final &lt;U&gt; Mono&lt;U&gt; ofType(Class&lt;U&gt; clazz) {
+      Objects.requireNonNull(clazz, &quot;clazz&quot;);
+      return this.filter((o) -&gt; {
+         return clazz.isAssignableFrom(o.getClass());
+      }).cast(clazz);
+   }
+
+   public final Mono&lt;T&gt; onErrorContinue(BiConsumer&lt;Throwable, Object&gt; errorConsumer) {
+      return this.subscriberContext(Context.of(&quot;reactor.onNextError.localStrategy&quot;, OnNextFailureStrategy.resume(errorConsumer)));
+   }
+
+   public final &lt;E extends Throwable&gt; Mono&lt;T&gt; onErrorContinue(Class&lt;E&gt; type, BiConsumer&lt;Throwable, Object&gt; errorConsumer) {
+      return this.onErrorContinue(type::isInstance, errorConsumer);
+   }
+
+   public final &lt;E extends Throwable&gt; Mono&lt;T&gt; onErrorContinue(Predicate&lt;E&gt; errorPredicate, BiConsumer&lt;Throwable, Object&gt; errorConsumer) {
+      return this.subscriberContext(Context.of(&quot;reactor.onNextError.localStrategy&quot;, OnNextFailureStrategy.resumeIf(errorPredicate, errorConsumer)));
+   }
+
+   public final Mono&lt;T&gt; onErrorStop() {
+      return this.subscriberContext(Context.of(&quot;reactor.onNextError.localStrategy&quot;, OnNextFailureStrategy.stop()));
+   }
+
+   public final Mono&lt;T&gt; onErrorMap(Predicate&lt;? super Throwable&gt; predicate, Function&lt;? super Throwable, ? extends Throwable&gt; mapper) {
+      return this.onErrorResume(predicate, (e) -&gt; {
+         return error((Throwable)mapper.apply(e));
+      });
+   }
+
+   public final Mono&lt;T&gt; onErrorMap(Function&lt;? super Throwable, ? extends Throwable&gt; mapper) {
+      return this.onErrorResume((e) -&gt; {
+         return error((Throwable)mapper.apply(e));
+      });
+   }
+
+   public final &lt;E extends Throwable&gt; Mono&lt;T&gt; onErrorMap(Class&lt;E&gt; type, Function&lt;? super E, ? extends Throwable&gt; mapper) {
+      return this.onErrorMap(type::isInstance, mapper);
+   }
+
+   public final Mono&lt;T&gt; onErrorResume(Function&lt;? super Throwable, ? extends Mono&lt;? extends T&gt;&gt; fallback) {
+      return onAssembly(new MonoOnErrorResume(this, fallback));
+   }
+
+   public final &lt;E extends Throwable&gt; Mono&lt;T&gt; onErrorResume(Class&lt;E&gt; type, Function&lt;? super E, ? extends Mono&lt;? extends T&gt;&gt; fallback) {
+      Objects.requireNonNull(type, &quot;type&quot;);
+      return this.onErrorResume(type::isInstance, fallback);
+   }
+
+   public final Mono&lt;T&gt; onErrorResume(Predicate&lt;? super Throwable&gt; predicate, Function&lt;? super Throwable, ? extends Mono&lt;? extends T&gt;&gt; fallback) {
+      Objects.requireNonNull(predicate, &quot;predicate&quot;);
+      return this.onErrorResume((e) -&gt; {
+         return predicate.test(e) ? (Mono)fallback.apply(e) : error(e);
+      });
+   }
+
+   public final Mono&lt;T&gt; onErrorReturn(T fallback) {
+      return this.onErrorResume((throwable) -&gt; {
+         return just(fallback);
+      });
+   }
+
+   public final &lt;E extends Throwable&gt; Mono&lt;T&gt; onErrorReturn(Class&lt;E&gt; type, T fallbackValue) {
+      return this.onErrorResume(type, (throwable) -&gt; {
+         return just(fallbackValue);
+      });
+   }
+
+   public final Mono&lt;T&gt; onErrorReturn(Predicate&lt;? super Throwable&gt; predicate, T fallbackValue) {
+      return this.onErrorResume(predicate, (throwable) -&gt; {
+         return just(fallbackValue);
+      });
+   }
+
+   public final Mono&lt;T&gt; onTerminateDetach() {
+      return new MonoDetach(this);
+   }
+
+   public final &lt;R&gt; Mono&lt;R&gt; publish(Function&lt;? super Mono&lt;T&gt;, ? extends Mono&lt;? extends R&gt;&gt; transform) {
+      return onAssembly(new MonoPublishMulticast(this, transform));
+   }
+
+   public final Mono&lt;T&gt; publishOn(Scheduler scheduler) {
+      if (!(this instanceof Callable)) {
+         return onAssembly(new MonoPublishOn(this, scheduler));
+      } else {
+         if (this instanceof ScalarCallable) {
+            try {
+               T value = this.block();
+               return onAssembly(new MonoSubscribeOnValue(value, scheduler));
+            } catch (Throwable var3) {
+               ;
+            }
+         }
+
+         Callable&lt;T&gt; c = (Callable)this;
+         return onAssembly(new MonoSubscribeOnCallable(c, scheduler));
+      }
+   }
+
+   public final Flux&lt;T&gt; repeat() {
+      return this.repeat(Flux.ALWAYS_BOOLEAN_SUPPLIER);
+   }
+
+   public final Flux&lt;T&gt; repeat(BooleanSupplier predicate) {
+      return Flux.onAssembly(new MonoRepeatPredicate(this, predicate));
+   }
+
+   public final Flux&lt;T&gt; repeat(long numRepeat) {
+      return numRepeat == 0L ? this.flux() : Flux.onAssembly(new MonoRepeat(this, numRepeat));
+   }
+
+   public final Flux&lt;T&gt; repeat(long numRepeat, BooleanSupplier predicate) {
+      if (numRepeat &lt; 0L) {
+         throw new IllegalArgumentException(&quot;numRepeat &gt;= 0 required&quot;);
+      } else {
+         return numRepeat == 0L ? this.flux() : Flux.defer(() -&gt; {
+            return this.repeat(Flux.countingBooleanSupplier(predicate, numRepeat));
+         });
+      }
+   }
+
+   public final Flux&lt;T&gt; repeatWhen(Function&lt;Flux&lt;Long&gt;, ? extends Publisher&lt;?&gt;&gt; repeatFactory) {
+      return Flux.onAssembly(new MonoRepeatWhen(this, repeatFactory));
+   }
+
+   public final Mono&lt;T&gt; repeatWhenEmpty(Function&lt;Flux&lt;Long&gt;, ? extends Publisher&lt;?&gt;&gt; repeatFactory) {
+      return this.repeatWhenEmpty(Integer.MAX_VALUE, repeatFactory);
+   }
+
+   public final Mono&lt;T&gt; repeatWhenEmpty(int maxRepeat, Function&lt;Flux&lt;Long&gt;, ? extends Publisher&lt;?&gt;&gt; repeatFactory) {
+      return defer(() -&gt; {
+         return this.repeatWhen((o) -&gt; {
+            return maxRepeat == Integer.MAX_VALUE ? (Publisher)repeatFactory.apply(o.index().map(Tuple2::getT1)) : (Publisher)repeatFactory.apply(o.index().map(Tuple2::getT1).take((long)maxRepeat).concatWith(Flux.error(new IllegalStateException(&quot;Exceeded maximum number of repeats&quot;), true)));
+         }).next();
+      });
+   }
+
+   public final Mono&lt;T&gt; retry() {
+      return this.retry(Long.MAX_VALUE);
+   }
+
+   public final Mono&lt;T&gt; retry(long numRetries) {
+      return onAssembly(new MonoRetry(this, numRetries));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; retry(Predicate&lt;? super Throwable&gt; retryMatcher) {
+      return onAssembly(new MonoRetryPredicate(this, retryMatcher));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; retry(long numRetries, Predicate&lt;? super Throwable&gt; retryMatcher) {
+      return defer(() -&gt; {
+         return this.retry(Flux.countingPredicate(retryMatcher, numRetries));
+      });
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; retryWhen(Function&lt;Flux&lt;Throwable&gt;, ? extends Publisher&lt;?&gt;&gt; whenFactory) {
+      Objects.requireNonNull(whenFactory, &quot;whenFactory&quot;);
+      return onAssembly(new MonoRetryWhen(this, Retry.from((rws) -&gt; {
+         return (Publisher)whenFactory.apply(rws.map(RetrySignal::failure));
+      })));
+   }
+
+   public final Mono&lt;T&gt; retryWhen(Retry retrySpec) {
+      return onAssembly(new MonoRetryWhen(this, retrySpec));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff) {
+      return this.retryWhen((Retry)Retry.backoff(numRetries, firstBackoff));
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff, Duration maxBackoff) {
+      return this.retryBackoff(numRetries, firstBackoff, maxBackoff, 0.5D);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff, Duration maxBackoff, Scheduler backoffScheduler) {
+      return this.retryBackoff(numRetries, firstBackoff, maxBackoff, 0.5D, backoffScheduler);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff, Duration maxBackoff, double jitterFactor) {
+      return this.retryBackoff(numRetries, firstBackoff, maxBackoff, jitterFactor, Schedulers.parallel());
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public final Mono&lt;T&gt; retryBackoff(long numRetries, Duration firstBackoff, Duration maxBackoff, double jitterFactor, Scheduler backoffScheduler) {
+      return this.retryWhen((Retry)Retry.backoff(numRetries, firstBackoff).maxBackoff(maxBackoff).jitter(jitterFactor).scheduler(backoffScheduler).transientErrors(false));
+   }
+
+   public final Mono&lt;T&gt; single() {
+      if (this instanceof Callable) {
+         if (this instanceof ScalarCallable) {
+            ScalarCallable scalarCallable = (ScalarCallable)this;
+
+            Object v;
+            try {
+               v = scalarCallable.call();
+            } catch (Exception var4) {
+               return error(Exceptions.unwrap(var4));
+            }
+
+            return v == null ? error((Throwable)(new NoSuchElementException(&quot;Source was a (constant) empty&quot;))) : just(v);
+         } else {
+            Callable&lt;T&gt; thiz = (Callable)this;
+            return onAssembly(new MonoCallable(thiz));
+         }
+      } else {
+         return onAssembly(new MonoSingleMono(this));
+      }
+   }
+
+   public final Disposable subscribe() {
+      if (this instanceof MonoProcessor) {
+         MonoProcessor&lt;T&gt; s = (MonoProcessor)this;
+         s.connect();
+         return s;
+      } else {
+         return (Disposable)this.subscribeWith(new LambdaMonoSubscriber((Consumer)null, (Consumer)null, (Runnable)null, (Consumer)null, (Context)null));
+      }
+   }
+
+   public final Disposable subscribe(Consumer&lt;? super T&gt; consumer) {
+      Objects.requireNonNull(consumer, &quot;consumer&quot;);
+      return this.subscribe(consumer, (Consumer)null, (Runnable)null);
+   }
+
+   public final Disposable subscribe(@Nullable Consumer&lt;? super T&gt; consumer, Consumer&lt;? super Throwable&gt; errorConsumer) {
+      Objects.requireNonNull(errorConsumer, &quot;errorConsumer&quot;);
+      return this.subscribe(consumer, errorConsumer, (Runnable)null);
+   }
+
+   public final Disposable subscribe(@Nullable Consumer&lt;? super T&gt; consumer, @Nullable Consumer&lt;? super Throwable&gt; errorConsumer, @Nullable Runnable completeConsumer) {
+      return this.subscribe(consumer, errorConsumer, completeConsumer, (Context)null);
+   }
+
+   public final Disposable subscribe(@Nullable Consumer&lt;? super T&gt; consumer, @Nullable Consumer&lt;? super Throwable&gt; errorConsumer, @Nullable Runnable completeConsumer, @Nullable Consumer&lt;? super Subscription&gt; subscriptionConsumer) {
+      return (Disposable)this.subscribeWith(new LambdaMonoSubscriber(consumer, errorConsumer, completeConsumer, subscriptionConsumer, (Context)null));
+   }
+
+   public final Disposable subscribe(@Nullable Consumer&lt;? super T&gt; consumer, @Nullable Consumer&lt;? super Throwable&gt; errorConsumer, @Nullable Runnable completeConsumer, @Nullable Context initialContext) {
+      return (Disposable)this.subscribeWith(new LambdaMonoSubscriber(consumer, errorConsumer, completeConsumer, (Consumer)null, initialContext));
+   }
+
+   public final void subscribe(Subscriber&lt;? super T&gt; actual) {
+      CorePublisher publisher = Operators.onLastAssembly(this);
+      CoreSubscriber subscriber = Operators.toCoreSubscriber(actual);
+
+      try {
+         if (publisher instanceof OptimizableOperator) {
+            OptimizableOperator operator = (OptimizableOperator)publisher;
+
+            while(true) {
+               subscriber = operator.subscribeOrReturn(subscriber);
+               if (subscriber == null) {
+                  return;
+               }
+
+               OptimizableOperator newSource = operator.nextOptimizableSource();
+               if (newSource == null) {
+                  publisher = operator.source();
+                  break;
+               }
+
+               operator = newSource;
+            }
+         }
+
+         publisher.subscribe(subscriber);
+      } catch (Throwable var6) {
+         Operators.reportThrowInSubscribe(subscriber, var6);
+      }
+   }
+
+   public abstract void subscribe(CoreSubscriber&lt;? super T&gt; var1);
+
+   public final Mono&lt;T&gt; subscriberContext(Context mergeContext) {
+      return this.subscriberContext((c) -&gt; {
+         return c.putAll(mergeContext);
+      });
+   }
+
+   public final Mono&lt;T&gt; subscriberContext(Function&lt;Context, Context&gt; doOnContext) {
+      return new MonoSubscriberContext(this, doOnContext);
+   }
+
+   public final Mono&lt;T&gt; subscribeOn(Scheduler scheduler) {
+      if (!(this instanceof Callable)) {
+         return onAssembly(new MonoSubscribeOn(this, scheduler));
+      } else {
+         if (this instanceof ScalarCallable) {
+            try {
+               T value = this.block();
+               return onAssembly(new MonoSubscribeOnValue(value, scheduler));
+            } catch (Throwable var3) {
+               ;
+            }
+         }
+
+         Callable&lt;T&gt; c = (Callable)this;
+         return onAssembly(new MonoSubscribeOnCallable(c, scheduler));
+      }
+   }
+
+   public final &lt;E extends Subscriber&lt;? super T&gt;&gt; E subscribeWith(E subscriber) {
+      this.subscribe(subscriber);
+      return subscriber;
+   }
+
+   public final Mono&lt;T&gt; switchIfEmpty(Mono&lt;? extends T&gt; alternate) {
+      return onAssembly(new MonoSwitchIfEmpty(this, alternate));
+   }
+
+   public final Mono&lt;T&gt; tag(String key, String value) {
+      return MonoName.createOrAppend(this, key, value);
+   }
+
+   public final Mono&lt;T&gt; take(Duration duration) {
+      return this.take(duration, Schedulers.parallel());
+   }
+
+   public final Mono&lt;T&gt; take(Duration duration, Scheduler timer) {
+      return this.takeUntilOther(delay(duration, timer));
+   }
+
+   public final Mono&lt;T&gt; takeUntilOther(Publisher&lt;?&gt; other) {
+      return onAssembly(new MonoTakeUntilOther(this, other));
+   }
+
+   public final Mono&lt;Void&gt; then() {
+      return empty(this);
+   }
+
+   public final &lt;V&gt; Mono&lt;V&gt; then(Mono&lt;V&gt; other) {
+      if (this instanceof MonoIgnoreThen) {
+         MonoIgnoreThen&lt;T&gt; a = (MonoIgnoreThen)this;
+         return a.shift(other);
+      } else {
+         return onAssembly(new MonoIgnoreThen(new Publisher[]{this}, other));
+      }
+   }
+
+   public final &lt;V&gt; Mono&lt;V&gt; thenReturn(V value) {
+      return this.then(just(value));
+   }
+
+   public final Mono&lt;Void&gt; thenEmpty(Publisher&lt;Void&gt; other) {
+      return this.then(fromDirect(other));
+   }
+
+   public final &lt;V&gt; Flux&lt;V&gt; thenMany(Publisher&lt;V&gt; other) {
+      Flux&lt;V&gt; concat = Flux.concat(new Publisher[]{this.ignoreElement(), other});
+      return Flux.onAssembly(concat);
+   }
+
+   public final Mono&lt;T&gt; timeout(Duration timeout) {
+      return this.timeout(timeout, Schedulers.parallel());
+   }
+
+   public final Mono&lt;T&gt; timeout(Duration timeout, Mono&lt;? extends T&gt; fallback) {
+      return this.timeout(timeout, fallback, Schedulers.parallel());
+   }
+
+   public final Mono&lt;T&gt; timeout(Duration timeout, Scheduler timer) {
+      return this.timeout(timeout, (Mono)null, timer);
+   }
+
+   public final Mono&lt;T&gt; timeout(Duration timeout, @Nullable Mono&lt;? extends T&gt; fallback, Scheduler timer) {
+      Mono&lt;Long&gt; _timer = delay(timeout, timer).onErrorReturn(0L);
+      return fallback == null ? onAssembly(new MonoTimeout(this, _timer, timeout.toMillis() + &quot;ms&quot;)) : onAssembly(new MonoTimeout(this, _timer, fallback));
+   }
+
+   public final &lt;U&gt; Mono&lt;T&gt; timeout(Publisher&lt;U&gt; firstTimeout) {
+      return onAssembly(new MonoTimeout(this, firstTimeout, &quot;first signal from a Publisher&quot;));
+   }
+
+   public final &lt;U&gt; Mono&lt;T&gt; timeout(Publisher&lt;U&gt; firstTimeout, Mono&lt;? extends T&gt; fallback) {
+      return onAssembly(new MonoTimeout(this, firstTimeout, fallback));
+   }
+
+   public final Mono&lt;Tuple2&lt;Long, T&gt;&gt; timestamp() {
+      return this.timestamp(Schedulers.parallel());
+   }
+
+   public final Mono&lt;Tuple2&lt;Long, T&gt;&gt; timestamp(Scheduler scheduler) {
+      Objects.requireNonNull(scheduler, &quot;scheduler&quot;);
+      return this.map((d) -&gt; {
+         return Tuples.of(scheduler.now(TimeUnit.MILLISECONDS), d);
+      });
+   }
+
+   public final CompletableFuture&lt;T&gt; toFuture() {
+      return (CompletableFuture)this.subscribeWith(new MonoToCompletableFuture(false));
+   }
+
+   public final MonoProcessor&lt;T&gt; toProcessor() {
+      MonoProcessor result;
+      if (this instanceof MonoProcessor) {
+         result = (MonoProcessor)this;
+      } else {
+         result = new MonoProcessor(this);
+      }
+
+      result.connect();
+      return result;
+   }
+
+   public final &lt;V&gt; Mono&lt;V&gt; transform(Function&lt;? super Mono&lt;T&gt;, ? extends Publisher&lt;V&gt;&gt; transformer) {
+      if (Hooks.DETECT_CONTEXT_LOSS) {
+         transformer = new ContextTrackingFunctionWrapper((Function)transformer);
+      }
+
+      return onAssembly(from((Publisher)((Function)transformer).apply(this)));
+   }
+
+   public final &lt;V&gt; Mono&lt;V&gt; transformDeferred(Function&lt;? super Mono&lt;T&gt;, ? extends Publisher&lt;V&gt;&gt; transformer) {
+      return defer(() -&gt; {
+         return Hooks.DETECT_CONTEXT_LOSS ? from((new ContextTrackingFunctionWrapper(transformer)).apply(this)) : from((Publisher)transformer.apply(this));
+      });
+   }
+
+   public final &lt;T2&gt; Mono&lt;Tuple2&lt;T, T2&gt;&gt; zipWhen(Function&lt;T, Mono&lt;? extends T2&gt;&gt; rightGenerator) {
+      return this.zipWhen(rightGenerator, Tuples::of);
+   }
+
+   public final &lt;T2, O&gt; Mono&lt;O&gt; zipWhen(Function&lt;T, Mono&lt;? extends T2&gt;&gt; rightGenerator, BiFunction&lt;T, T2, O&gt; combinator) {
+      Objects.requireNonNull(rightGenerator, &quot;rightGenerator function is mandatory to get the right-hand side Mono&quot;);
+      Objects.requireNonNull(combinator, &quot;combinator function is mandatory to combine results from both Monos&quot;);
+      return this.flatMap((t) -&gt; {
+         return ((Mono)rightGenerator.apply(t)).map((t2) -&gt; {
+            return combinator.apply(t, t2);
+         });
+      });
+   }
+
+   public final &lt;T2&gt; Mono&lt;Tuple2&lt;T, T2&gt;&gt; zipWith(Mono&lt;? extends T2&gt; other) {
+      return this.zipWith(other, Flux.tuple2Function());
+   }
+
+   public final &lt;T2, O&gt; Mono&lt;O&gt; zipWith(Mono&lt;? extends T2&gt; other, BiFunction&lt;? super T, ? super T2, ? extends O&gt; combinator) {
+      if (this instanceof MonoZip) {
+         MonoZip&lt;T, O&gt; o = (MonoZip)this;
+         Mono&lt;O&gt; result = o.zipAdditionalSource(other, combinator);
+         if (result != null) {
+            return result;
+         }
+      }
+
+      return zip(this, other, combinator);
+   }
+
+   protected static &lt;T&gt; Mono&lt;T&gt; onAssembly(Mono&lt;T&gt; source) {
+      Function&lt;Publisher, Publisher&gt; hook = Hooks.onEachOperatorHook;
+      if (hook != null) {
+         source = (Mono)hook.apply(source);
+      }
+
+      if (Hooks.GLOBAL_TRACE) {
+         AssemblySnapshot stacktrace = new AssemblySnapshot((String)null, (Supplier)Traces.callSiteSupplierFactory.get());
+         source = (Mono)Hooks.addAssemblyInfo(source, stacktrace);
+      }
+
+      return source;
+   }
+
+   /** @deprecated */
+   @Deprecated
+   protected static &lt;T&gt; Mono&lt;T&gt; onLastAssembly(Mono&lt;T&gt; source) {
+      Function&lt;Publisher, Publisher&gt; hook = Hooks.onLastOperatorHook;
+      return hook == null ? source : (Mono)Objects.requireNonNull(hook.apply(source), &quot;LastOperator hook returned null&quot;);
+   }
+
+   public String toString() {
+      return this.getClass().getSimpleName();
+   }
+
+   static &lt;T&gt; Mono&lt;Void&gt; empty(Publisher&lt;T&gt; source) {
+      Mono&lt;Void&gt; then = ignoreElements(source);
+      return then;
+   }
+
+   static &lt;T&gt; Mono&lt;T&gt; doOnSignal(Mono&lt;T&gt; source, @Nullable Consumer&lt;? super Subscription&gt; onSubscribe, @Nullable Consumer&lt;? super T&gt; onNext, @Nullable LongConsumer onRequest, @Nullable Runnable onCancel) {
+      return source instanceof Fuseable ? onAssembly(new MonoPeekFuseable(source, onSubscribe, onNext, onRequest, onCancel)) : onAssembly(new MonoPeek(source, onSubscribe, onNext, onRequest, onCancel));
+   }
+
+   static &lt;T&gt; Mono&lt;T&gt; doOnTerminalSignal(Mono&lt;T&gt; source, @Nullable Consumer&lt;? super T&gt; onSuccess, @Nullable Consumer&lt;? super Throwable&gt; onError, @Nullable BiConsumer&lt;? super T, Throwable&gt; onAfterTerminate) {
+      return onAssembly(new MonoPeekTerminal(source, onSuccess, onError, onAfterTerminate));
+   }
+
+   static &lt;T&gt; Mono&lt;T&gt; wrap(Publisher&lt;T&gt; source, boolean enforceMonoContract) {
+      if (source instanceof Mono) {
+         return (Mono)source;
+      } else if (!(source instanceof FluxSourceMono) &amp;&amp; !(source instanceof FluxSourceMonoFuseable)) {
+         if (enforceMonoContract) {
+            if (source instanceof Flux &amp;&amp; source instanceof Callable) {
+               Callable&lt;T&gt; m = (Callable)source;
+               return Flux.wrapToMono(m);
+            } else {
+               return (Mono)(source instanceof Flux ? new MonoNext((Flux)source) : new MonoFromPublisher(source));
+            }
+         } else if (source instanceof Flux &amp;&amp; source instanceof Fuseable) {
+            return new MonoSourceFluxFuseable((Flux)source);
+         } else if (source instanceof Flux) {
+            return new MonoSourceFlux((Flux)source);
+         } else {
+            return (Mono)(source instanceof Fuseable ? new MonoSourceFuseable(source) : new MonoSource(source));
+         }
+      } else {
+         FluxFromMonoOperator&lt;T, T&gt; wrapper = (FluxFromMonoOperator)source;
+         Mono&lt;T&gt; extracted = wrapper.source;
+         return extracted;
+      }
+   }
+
+   static &lt;T&gt; BiPredicate&lt;? super T, ? super T&gt; equalsBiPredicate() {
+      return EQUALS_BIPREDICATE;
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:28 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

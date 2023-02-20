@@ -1,0 +1,2181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for ModelResolver.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/swagger-core-2.1.3.jar/io/swagger/v3/core/jackson/ModelResolver.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Bean Validation</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">JAXB</span>
+                                        <span class="label label-info" title="INFORMATIONAL">JAXB</span>
+                                        <span class="label label-info" title="INFORMATIONAL">JAXB</span>
+                                        <span class="label label-info" title="INFORMATIONAL">JAXB</span>
+                                        <span class="label label-info" title="INFORMATIONAL">JAXB</span>
+                                        <span class="label label-info" title="INFORMATIONAL">JAXB</span>
+                                        <span class="label label-info" title="INFORMATIONAL">JAXB</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Bean Validation</em>
+<a title='View Rule: javaee-technology-usage-00110' href='windup_ruleproviders.html#javaee-technology-usage-00110'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Bean Validation</div>
+                                            </li>
+                                            <li>
+                                                <div class="title">
+                                                    <em>JAXB</em>
+<a title='View Rule: javaee-technology-usage-00090' href='windup_ruleproviders.html#javaee-technology-usage-00090'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses JAXB</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.swagger.v3.core.jackson;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
+import com.fasterxml.jackson.annotation.JsonValue;
+import com.fasterxml.jackson.annotation.JsonView;
+import com.fasterxml.jackson.annotation.ObjectIdGenerator;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators.IntSequenceGenerator;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators.None;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators.PropertyGenerator;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators.UUIDGenerator;
+import com.fasterxml.jackson.core.type.ResolvedType;
+import com.fasterxml.jackson.databind.AnnotationIntrospector;
+import com.fasterxml.jackson.databind.BeanDescription;
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.PropertyMetadata;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.introspect.Annotated;
+import com.fasterxml.jackson.databind.introspect.AnnotatedClass;
+import com.fasterxml.jackson.databind.introspect.AnnotatedMember;
+import com.fasterxml.jackson.databind.introspect.AnnotatedMethod;
+import com.fasterxml.jackson.databind.introspect.AnnotationMap;
+import com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition;
+import com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder;
+import com.fasterxml.jackson.databind.jsontype.NamedType;
+import io.swagger.v3.core.converter.AnnotatedType;
+import io.swagger.v3.core.converter.ModelConverter;
+import io.swagger.v3.core.converter.ModelConverterContext;
+import io.swagger.v3.core.jackson.TypeNameResolver.Options;
+import io.swagger.v3.core.util.AnnotationsUtils;
+import io.swagger.v3.core.util.Json;
+import io.swagger.v3.core.util.ObjectMapperFactory;
+import io.swagger.v3.core.util.PrimitiveType;
+import io.swagger.v3.core.util.RefUtils;
+import io.swagger.v3.core.util.ReflectionUtils;
+import io.swagger.v3.oas.annotations.media.ArraySchema;
+import io.swagger.v3.oas.annotations.media.DiscriminatorMapping;
+import io.swagger.v3.oas.annotations.media.Schema.AccessMode;
+import io.swagger.v3.oas.models.ExternalDocumentation;
+import io.swagger.v3.oas.models.media.ComposedSchema;
+import io.swagger.v3.oas.models.media.Discriminator;
+import io.swagger.v3.oas.models.media.IntegerSchema;
+import io.swagger.v3.oas.models.media.MapSchema;
+import io.swagger.v3.oas.models.media.NumberSchema;
+import io.swagger.v3.oas.models.media.ObjectSchema;
+import io.swagger.v3.oas.models.media.Schema;
+import io.swagger.v3.oas.models.media.StringSchema;
+import io.swagger.v3.oas.models.media.UUIDSchema;
+import io.swagger.v3.oas.models.media.XML;
+import java.io.IOException;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Member;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
+import java.util.Map.Entry;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElementRefs;
+import javax.xml.bind.annotation.XmlRootElement;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ModelResolver extends AbstractModelConverter implements ModelConverter {
+   Logger LOGGER = LoggerFactory.getLogger(ModelResolver.class);
+   public static List&lt;String&gt; NOT_NULL_ANNOTATIONS = Arrays.asList(&quot;NotNull&quot;, &quot;NonNull&quot;, &quot;NotBlank&quot;, &quot;NotEmpty&quot;);
+   public static final String SET_PROPERTY_OF_COMPOSED_MODEL_AS_SIBLING = &quot;composed-model-properties-as-sibiling&quot;;
+   public static final String SET_PROPERTY_OF_ENUMS_AS_REF = &quot;enums-as-ref&quot;;
+   public static boolean composedModelPropertiesAsSibling = System.getProperty(&quot;composed-model-properties-as-sibiling&quot;) != null;
+   public static boolean enumsAsRef = System.getProperty(&quot;enums-as-ref&quot;) != null;
+
+   public ModelResolver(ObjectMapper mapper) {
+      super(mapper);
+   }
+
+   public ModelResolver(ObjectMapper mapper, TypeNameResolver typeNameResolver) {
+      super(mapper, typeNameResolver);
+   }
+
+   public ObjectMapper objectMapper() {
+      return this._mapper;
+   }
+
+   public Schema resolve(AnnotatedType annotatedType, ModelConverterContext context, Iterator&lt;ModelConverter&gt; next) {
+      boolean isPrimitive = false;
+      Schema model = null;
+      if (annotatedType == null) {
+         return null;
+      } else if (this.shouldIgnoreClass(annotatedType.getType())) {
+         return null;
+      } else {
+         JavaType type;
+         if (annotatedType.getType() instanceof JavaType) {
+            type = (JavaType)annotatedType.getType();
+         } else {
+            type = this._mapper.constructType(annotatedType.getType());
+         }
+
+         Annotation resolvedSchemaOrArrayAnnotation = AnnotationsUtils.mergeSchemaAnnotations(annotatedType.getCtxAnnotations(), type);
+         io.swagger.v3.oas.annotations.media.Schema resolvedSchemaAnnotation = resolvedSchemaOrArrayAnnotation == null ? null : (resolvedSchemaOrArrayAnnotation instanceof ArraySchema ? ((ArraySchema)resolvedSchemaOrArrayAnnotation).schema() : (io.swagger.v3.oas.annotations.media.Schema)resolvedSchemaOrArrayAnnotation);
+         ArraySchema resolvedArrayAnnotation = resolvedSchemaOrArrayAnnotation == null ? null : (resolvedSchemaOrArrayAnnotation instanceof ArraySchema ? (ArraySchema)resolvedSchemaOrArrayAnnotation : null);
+         BeanDescription recurBeanDesc = this._mapper.getSerializationConfig().introspect(type);
+         HashSet&lt;String&gt; visited = new HashSet();
+
+         JsonSerialize ctxAnnotation;
+         for(ctxAnnotation = (JsonSerialize)recurBeanDesc.getClassAnnotations().get(JsonSerialize.class); ctxAnnotation != null &amp;&amp; !Void.class.equals(ctxAnnotation.as()); ctxAnnotation = (JsonSerialize)recurBeanDesc.getClassAnnotations().get(JsonSerialize.class)) {
+            String asName = ctxAnnotation.as().getName();
+            if (visited.contains(asName)) {
+               break;
+            }
+
+            visited.add(asName);
+            recurBeanDesc = this._mapper.getSerializationConfig().introspect(this._mapper.constructType(ctxAnnotation.as()));
+         }
+
+         String name = annotatedType.getName();
+         if (StringUtils.isBlank(name)) {
+            if (!annotatedType.isSkipSchemaName() &amp;&amp; resolvedSchemaAnnotation != null &amp;&amp; !resolvedSchemaAnnotation.name().isEmpty()) {
+               name = resolvedSchemaAnnotation.name();
+            }
+
+            if (StringUtils.isBlank(name) &amp;&amp; !ReflectionUtils.isSystemType(type)) {
+               name = this._typeName(type, recurBeanDesc);
+            }
+         }
+
+         name = this.decorateModelName(annotatedType, name);
+         if (resolvedSchemaAnnotation != null &amp;&amp; StringUtils.isNotEmpty(resolvedSchemaAnnotation.ref())) {
+            if (resolvedArrayAnnotation == null) {
+               return (new Schema()).$ref(resolvedSchemaAnnotation.ref()).name(name);
+            } else {
+               io.swagger.v3.oas.models.media.ArraySchema schema = new io.swagger.v3.oas.models.media.ArraySchema();
+               this.resolveArraySchema(annotatedType, schema, resolvedArrayAnnotation);
+               return schema.items((new Schema()).$ref(resolvedSchemaAnnotation.ref()).name(name));
+            }
+         } else {
+            JavaType keyType;
+            AnnotatedType aType;
+            if (!annotatedType.isSkipOverride() &amp;&amp; resolvedSchemaAnnotation != null &amp;&amp; !Void.class.equals(resolvedSchemaAnnotation.implementation())) {
+               Class&lt;?&gt; cls = resolvedSchemaAnnotation.implementation();
+               this.LOGGER.debug(&quot;overriding datatype from {} to {}&quot;, type, cls.getName());
+               ctxAnnotation = null;
+               Annotation[] ctxAnnotation;
+               if (resolvedArrayAnnotation != null &amp;&amp; annotatedType.getCtxAnnotations() != null) {
+                  List&lt;Annotation&gt; annList = new ArrayList();
+                  Annotation[] var58 = annotatedType.getCtxAnnotations();
+                  int var64 = var58.length;
+
+                  for(int var66 = 0; var66 &lt; var64; ++var66) {
+                     Annotation a = var58[var66];
+                     if (!(a instanceof io.swagger.v3.oas.models.media.ArraySchema)) {
+                        annList.add(a);
+                     }
+                  }
+
+                  annList.add(resolvedSchemaAnnotation);
+                  ctxAnnotation = (Annotation[])annList.toArray(new Annotation[annList.size()]);
+               } else {
+                  ctxAnnotation = annotatedType.getCtxAnnotations();
+               }
+
+               aType = (new AnnotatedType()).type(cls).ctxAnnotations(ctxAnnotation).parent(annotatedType.getParent()).name(annotatedType.getName()).resolveAsRef(annotatedType.isResolveAsRef()).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()).propertyName(annotatedType.getPropertyName()).skipOverride(true);
+               if (resolvedArrayAnnotation != null) {
+                  io.swagger.v3.oas.models.media.ArraySchema schema = new io.swagger.v3.oas.models.media.ArraySchema();
+                  this.resolveArraySchema(annotatedType, schema, resolvedArrayAnnotation);
+                  keyType = null;
+                  Schema primitive = PrimitiveType.createProperty(cls);
+                  Schema innerSchema;
+                  if (primitive != null) {
+                     innerSchema = primitive;
+                  } else {
+                     innerSchema = context.resolve(aType);
+                     if (innerSchema != null &amp;&amp; &quot;object&quot;.equals(innerSchema.getType()) &amp;&amp; StringUtils.isNotBlank(innerSchema.getName())) {
+                        if (context.getDefinedModels().containsKey(innerSchema.getName())) {
+                           innerSchema = (new Schema()).$ref(RefUtils.constructRef(innerSchema.getName()));
+                        }
+                     } else if (innerSchema != null &amp;&amp; innerSchema.get$ref() != null) {
+                        innerSchema = (new Schema()).$ref(StringUtils.isNotEmpty(innerSchema.get$ref()) ? innerSchema.get$ref() : innerSchema.getName());
+                     }
+                  }
+
+                  schema.setItems(innerSchema);
+                  return schema;
+               } else {
+                  Schema implSchema = context.resolve(aType);
+                  if (implSchema != null &amp;&amp; aType.isResolveAsRef() &amp;&amp; &quot;object&quot;.equals(implSchema.getType()) &amp;&amp; StringUtils.isNotBlank(implSchema.getName())) {
+                     if (context.getDefinedModels().containsKey(implSchema.getName())) {
+                        implSchema = (new Schema()).$ref(RefUtils.constructRef(implSchema.getName()));
+                     }
+                  } else if (implSchema != null &amp;&amp; implSchema.get$ref() != null) {
+                     implSchema = (new Schema()).$ref(StringUtils.isNotEmpty(implSchema.get$ref()) ? implSchema.get$ref() : implSchema.getName());
+                  }
+
+                  return implSchema;
+               }
+            } else {
+               PrimitiveType primitiveType;
+               if (model == null &amp;&amp; !annotatedType.isSkipOverride() &amp;&amp; resolvedSchemaAnnotation != null &amp;&amp; StringUtils.isNotEmpty(resolvedSchemaAnnotation.type()) &amp;&amp; !resolvedSchemaAnnotation.type().equals(&quot;object&quot;)) {
+                  primitiveType = PrimitiveType.fromTypeAndFormat(resolvedSchemaAnnotation.type(), resolvedSchemaAnnotation.format());
+                  if (primitiveType == null) {
+                     primitiveType = PrimitiveType.fromType(type);
+                  }
+
+                  if (primitiveType == null) {
+                     primitiveType = PrimitiveType.fromName(resolvedSchemaAnnotation.type());
+                  }
+
+                  if (primitiveType != null) {
+                     Schema primitive = primitiveType.createProperty();
+                     model = primitive;
+                     isPrimitive = true;
+                  }
+               }
+
+               if (model == null &amp;&amp; type.isEnumType()) {
+                  model = new StringSchema();
+                  this._addEnumProps(type.getRawClass(), (Schema)model);
+                  isPrimitive = true;
+               }
+
+               if (model == null) {
+                  primitiveType = PrimitiveType.fromType(type);
+                  if (primitiveType != null) {
+                     model = PrimitiveType.fromType(type).createProperty();
+                     isPrimitive = true;
+                  }
+               }
+
+               if (!annotatedType.isSkipJsonIdentity()) {
+                  JsonIdentityInfo jsonIdentityInfo = (JsonIdentityInfo)AnnotationsUtils.getAnnotation(JsonIdentityInfo.class, annotatedType.getCtxAnnotations());
+                  if (jsonIdentityInfo == null) {
+                     jsonIdentityInfo = (JsonIdentityInfo)type.getRawClass().getAnnotation(JsonIdentityInfo.class);
+                  }
+
+                  if (model == null &amp;&amp; jsonIdentityInfo != null) {
+                     JsonIdentityReference jsonIdentityReference = (JsonIdentityReference)AnnotationsUtils.getAnnotation(JsonIdentityReference.class, annotatedType.getCtxAnnotations());
+                     if (jsonIdentityReference == null) {
+                        jsonIdentityReference = (JsonIdentityReference)type.getRawClass().getAnnotation(JsonIdentityReference.class);
+                     }
+
+                     model = ModelResolver.GeneratorWrapper.processJsonIdentity(annotatedType, context, this._mapper, jsonIdentityInfo, jsonIdentityReference);
+                     if (model != null) {
+                        return (Schema)model;
+                     }
+                  }
+               }
+
+               if (model == null &amp;&amp; annotatedType.getJsonUnwrappedHandler() != null) {
+                  model = (Schema)annotatedType.getJsonUnwrappedHandler().apply(annotatedType);
+                  if (model == null) {
+                     return null;
+                  }
+               }
+
+               if (&quot;Object&quot;.equals(name)) {
+                  return new Schema();
+               } else if (isPrimitive) {
+                  if (annotatedType.isSchemaProperty()) {
+                     ;
+                  }
+
+                  XML xml = this.resolveXml(recurBeanDesc.getClassInfo(), annotatedType.getCtxAnnotations(), resolvedSchemaAnnotation);
+                  if (xml != null) {
+                     ((Schema)model).xml(xml);
+                  }
+
+                  this.resolveSchemaMembers((Schema)model, annotatedType);
+                  if (resolvedArrayAnnotation != null) {
+                     io.swagger.v3.oas.models.media.ArraySchema schema = new io.swagger.v3.oas.models.media.ArraySchema();
+                     this.resolveArraySchema(annotatedType, schema, resolvedArrayAnnotation);
+                     schema.setItems((Schema)model);
+                     return schema;
+                  } else {
+                     if (type.isEnumType() &amp;&amp; this.shouldResolveEnumAsRef(resolvedSchemaAnnotation)) {
+                        context.defineModel(name, (Schema)model, annotatedType, (String)null);
+                        model = (new Schema()).$ref(name);
+                     }
+
+                     return (Schema)model;
+                  }
+               } else {
+                  Schema resolvedModel = context.resolve(annotatedType);
+                  if (resolvedModel != null &amp;&amp; name != null &amp;&amp; name.equals(resolvedModel.getName())) {
+                     return resolvedModel;
+                  } else {
+                     Type jsonValueType = this.findJsonValueType(recurBeanDesc);
+                     if (jsonValueType != null) {
+                        aType = (new AnnotatedType()).type(jsonValueType).parent(annotatedType.getParent()).name(annotatedType.getName()).schemaProperty(annotatedType.isSchemaProperty()).resolveAsRef(annotatedType.isResolveAsRef()).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()).propertyName(annotatedType.getPropertyName()).skipOverride(true);
+                        return context.resolve(aType);
+                     } else {
+                        List&lt;Class&lt;?&gt;&gt; composedSchemaReferencedClasses = this.getComposedSchemaReferencedClasses(type.getRawClass(), annotatedType.getCtxAnnotations(), resolvedSchemaAnnotation);
+                        boolean isComposedSchema = composedSchemaReferencedClasses != null;
+                        XML xml;
+                        if (type.isContainerType()) {
+                           isComposedSchema = false;
+                           keyType = type.getKeyType();
+                           JavaType valueType = type.getContentType();
+                           String pName = null;
+                           if (valueType != null) {
+                              BeanDescription valueTypeBeanDesc = this._mapper.getSerializationConfig().introspect(valueType);
+                              pName = this._typeName(valueType, valueTypeBeanDesc);
+                           }
+
+                           Annotation[] schemaAnnotations = null;
+                           if (resolvedSchemaAnnotation != null) {
+                              schemaAnnotations = new Annotation[]{resolvedSchemaAnnotation};
+                           }
+
+                           Schema items;
+                           if (keyType != null &amp;&amp; valueType != null) {
+                              if (ReflectionUtils.isSystemType(type) &amp;&amp; !annotatedType.isSchemaProperty() &amp;&amp; !annotatedType.isResolveAsRef()) {
+                                 context.resolve((new AnnotatedType()).type(valueType).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()));
+                                 return null;
+                              }
+
+                              items = context.resolve((new AnnotatedType()).type(valueType).schemaProperty(annotatedType.isSchemaProperty()).ctxAnnotations(schemaAnnotations).skipSchemaName(true).resolveAsRef(annotatedType.isResolveAsRef()).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()).propertyName(annotatedType.getPropertyName()).parent(annotatedType.getParent()));
+                              if (items != null) {
+                                 if (StringUtils.isNotBlank(items.getName())) {
+                                    pName = items.getName();
+                                 }
+
+                                 if (&quot;object&quot;.equals(items.getType()) &amp;&amp; pName != null) {
+                                    if (context.getDefinedModels().containsKey(pName)) {
+                                       items = (new Schema()).$ref(RefUtils.constructRef(pName));
+                                    }
+                                 } else if (items.get$ref() != null) {
+                                    items = (new Schema()).$ref(StringUtils.isNotEmpty(items.get$ref()) ? items.get$ref() : items.getName());
+                                 }
+                              }
+
+                              Schema mapModel = (new MapSchema()).additionalProperties(items);
+                              mapModel.name(name);
+                              model = mapModel;
+                           } else if (valueType != null) {
+                              if (ReflectionUtils.isSystemType(type) &amp;&amp; !annotatedType.isSchemaProperty() &amp;&amp; !annotatedType.isResolveAsRef()) {
+                                 context.resolve((new AnnotatedType()).type(valueType).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()));
+                                 return null;
+                              }
+
+                              items = context.resolve((new AnnotatedType()).type(valueType).schemaProperty(annotatedType.isSchemaProperty()).ctxAnnotations(schemaAnnotations).skipSchemaName(true).resolveAsRef(annotatedType.isResolveAsRef()).propertyName(annotatedType.getPropertyName()).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()).parent(annotatedType.getParent()));
+                              if (items == null) {
+                                 return null;
+                              }
+
+                              if (annotatedType.isSchemaProperty() &amp;&amp; annotatedType.getCtxAnnotations() != null &amp;&amp; annotatedType.getCtxAnnotations().length &gt; 0 &amp;&amp; !&quot;object&quot;.equals(items.getType())) {
+                                 Annotation[] var21 = annotatedType.getCtxAnnotations();
+                                 int var22 = var21.length;
+
+                                 for(int var23 = 0; var23 &lt; var22; ++var23) {
+                                    Annotation annotation = var21[var23];
+                                    if (annotation instanceof XmlElement) {
+                                       XmlElement xmlElement = (XmlElement)annotation;
+                                       if (xmlElement != null &amp;&amp; xmlElement.name() != null &amp;&amp; !&quot;&quot;.equals(xmlElement.name()) &amp;&amp; !&quot;##default&quot;.equals(xmlElement.name())) {
+                                          xml = items.getXml() != null ? items.getXml() : new XML();
+                                          xml.setName(xmlElement.name());
+                                          items.setXml(xml);
+                                       }
+                                    }
+                                 }
+                              }
+
+                              if (StringUtils.isNotBlank(items.getName())) {
+                                 pName = items.getName();
+                              }
+
+                              if (&quot;object&quot;.equals(items.getType()) &amp;&amp; pName != null) {
+                                 if (context.getDefinedModels().containsKey(pName)) {
+                                    items = (new Schema()).$ref(RefUtils.constructRef(pName));
+                                 }
+                              } else if (items.get$ref() != null) {
+                                 items = (new Schema()).$ref(StringUtils.isNotEmpty(items.get$ref()) ? items.get$ref() : items.getName());
+                              }
+
+                              Schema arrayModel = (new io.swagger.v3.oas.models.media.ArraySchema()).items(items);
+                              if (this._isSetType(type.getRawClass())) {
+                                 arrayModel.setUniqueItems(true);
+                              }
+
+                              arrayModel.name(name);
+                              model = arrayModel;
+                           } else if (ReflectionUtils.isSystemType(type) &amp;&amp; !annotatedType.isSchemaProperty() &amp;&amp; !annotatedType.isResolveAsRef()) {
+                              return null;
+                           }
+                        } else if (isComposedSchema) {
+                           model = (new ComposedSchema()).type(&quot;object&quot;).name(name);
+                        } else {
+                           if (this._isOptionalType(type)) {
+                              AnnotatedType aType = (new AnnotatedType()).type(type.containedType(0)).ctxAnnotations(annotatedType.getCtxAnnotations()).parent(annotatedType.getParent()).schemaProperty(annotatedType.isSchemaProperty()).name(annotatedType.getName()).resolveAsRef(annotatedType.isResolveAsRef()).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()).propertyName(annotatedType.getPropertyName()).skipOverride(true);
+                              Schema model = context.resolve(aType);
+                              return model;
+                           }
+
+                           model = (new Schema()).type(&quot;object&quot;).name(name);
+                        }
+
+                        if (!type.isContainerType() &amp;&amp; StringUtils.isNotBlank(name)) {
+                           context.defineModel(name, (Schema)model, annotatedType, (String)null);
+                        }
+
+                        XML xml = this.resolveXml(recurBeanDesc.getClassInfo(), annotatedType.getCtxAnnotations(), resolvedSchemaAnnotation);
+                        if (xml != null) {
+                           ((Schema)model).xml(xml);
+                        }
+
+                        if (!(model instanceof io.swagger.v3.oas.models.media.ArraySchema) || model instanceof io.swagger.v3.oas.models.media.ArraySchema &amp;&amp; resolvedArrayAnnotation == null) {
+                           this.resolveSchemaMembers((Schema)model, annotatedType);
+                        }
+
+                        XmlAccessorType xmlAccessorTypeAnnotation = (XmlAccessorType)recurBeanDesc.getClassAnnotations().get(XmlAccessorType.class);
+                        Set&lt;String&gt; propertiesToIgnore = new HashSet();
+                        JsonIgnoreProperties ignoreProperties = (JsonIgnoreProperties)recurBeanDesc.getClassAnnotations().get(JsonIgnoreProperties.class);
+                        if (ignoreProperties != null) {
+                           propertiesToIgnore.addAll(Arrays.asList(ignoreProperties.value()));
+                        }
+
+                        List&lt;Schema&gt; props = new ArrayList();
+                        Map&lt;String, Schema&gt; modelProps = new LinkedHashMap();
+                        List&lt;BeanPropertyDefinition&gt; properties = recurBeanDesc.findProperties();
+                        List&lt;String&gt; ignoredProps = this.getIgnoredProperties(recurBeanDesc);
+                        properties.removeIf((p) -&gt; {
+                           return ignoredProps.contains(p.getName());
+                        });
+                        Iterator var80 = properties.iterator();
+
+                        while(true) {
+                           String propName;
+                           Annotation[] annotations;
+                           AccessMode accessMode;
+                           BeanPropertyDefinition propDef;
+                           Schema property;
+                           PropertyMetadata md;
+                           JavaType propType;
+                           do {
+                              AnnotatedMember member;
+                              do {
+                                 do {
+                                    do {
+                                       List oneOfFiltered;
+                                       if (!var80.hasNext()) {
+                                          var80 = props.iterator();
+
+                                          while(var80.hasNext()) {
+                                             Schema prop = (Schema)var80.next();
+                                             modelProps.put(prop.getName(), prop);
+                                          }
+
+                                          if (modelProps.size() &gt; 0) {
+                                             ((Schema)model).setProperties(modelProps);
+                                          }
+
+                                          if (!type.isContainerType() &amp;&amp; StringUtils.isNotBlank(name)) {
+                                             context.defineModel(name, (Schema)model, annotatedType, (String)null);
+                                          }
+
+                                          if (!this.resolveSubtypes((Schema)model, recurBeanDesc, context)) {
+                                             ((Schema)model).setDiscriminator((Discriminator)null);
+                                          }
+
+                                          Discriminator discriminator = this.resolveDiscriminator(type, context);
+                                          if (discriminator != null) {
+                                             ((Schema)model).setDiscriminator(discriminator);
+                                          }
+
+                                          if (resolvedSchemaAnnotation != null) {
+                                             String ref = resolvedSchemaAnnotation.ref();
+                                             if (!StringUtils.isBlank(ref)) {
+                                                ((Schema)model).$ref(ref);
+                                             }
+
+                                             Class&lt;?&gt; not = resolvedSchemaAnnotation.not();
+                                             if (!Void.class.equals(not)) {
+                                                ((Schema)model).not((new Schema()).$ref(context.resolve((new AnnotatedType()).type(not).jsonViewAnnotation(annotatedType.getJsonViewAnnotation())).getName()));
+                                             }
+
+                                             if (resolvedSchemaAnnotation.requiredProperties() != null &amp;&amp; resolvedSchemaAnnotation.requiredProperties().length &gt; 0 &amp;&amp; StringUtils.isNotBlank(resolvedSchemaAnnotation.requiredProperties()[0])) {
+                                                String[] var90 = resolvedSchemaAnnotation.requiredProperties();
+                                                int var91 = var90.length;
+
+                                                for(int var95 = 0; var95 &lt; var91; ++var95) {
+                                                   String prop = var90[var95];
+                                                   this.addRequiredItem((Schema)model, prop);
+                                                }
+                                             }
+                                          }
+
+                                          if (isComposedSchema) {
+                                             ComposedSchema composedSchema = (ComposedSchema)model;
+                                             Class&lt;?&gt;[] allOf = resolvedSchemaAnnotation.allOf();
+                                             Class&lt;?&gt;[] anyOf = resolvedSchemaAnnotation.anyOf();
+                                             Class&lt;?&gt;[] oneOf = resolvedSchemaAnnotation.oneOf();
+                                             List&lt;Class&lt;?&gt;&gt; allOfFiltered = (List)Stream.of(allOf).distinct().filter((c) -&gt; {
+                                                return !this.shouldIgnoreClass(c);
+                                             }).filter((c) -&gt; {
+                                                return !c.equals(Void.class);
+                                             }).collect(Collectors.toList());
+                                             allOfFiltered.forEach((c) -&gt; {
+                                                Schema allOfRef = context.resolve((new AnnotatedType()).type(c).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()));
+                                                Schema refSchema = (new Schema()).$ref(allOfRef.getName());
+                                                if (composedSchema.getAllOf() == null || !composedSchema.getAllOf().contains(refSchema)) {
+                                                   composedSchema.addAllOfItem(refSchema);
+                                                }
+
+                                                if (this.isSubtype(recurBeanDesc.getClassInfo(), c)) {
+                                                   this.removeParentProperties(composedSchema, allOfRef);
+                                                }
+
+                                             });
+                                             List&lt;Class&lt;?&gt;&gt; anyOfFiltered = (List)Stream.of(anyOf).distinct().filter((c) -&gt; {
+                                                return !this.shouldIgnoreClass(c);
+                                             }).filter((c) -&gt; {
+                                                return !c.equals(Void.class);
+                                             }).collect(Collectors.toList());
+                                             anyOfFiltered.forEach((c) -&gt; {
+                                                Schema anyOfRef = context.resolve((new AnnotatedType()).type(c).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()));
+                                                composedSchema.addAnyOfItem((new Schema()).$ref(anyOfRef.getName()));
+                                                if (this.isSubtype(recurBeanDesc.getClassInfo(), c)) {
+                                                   this.removeParentProperties(composedSchema, anyOfRef);
+                                                }
+
+                                             });
+                                             oneOfFiltered = (List)Stream.of(oneOf).distinct().filter((c) -&gt; {
+                                                return !this.shouldIgnoreClass(c);
+                                             }).filter((c) -&gt; {
+                                                return !c.equals(Void.class);
+                                             }).collect(Collectors.toList());
+                                             oneOfFiltered.forEach((c) -&gt; {
+                                                Schema oneOfRef = context.resolve((new AnnotatedType()).type(c).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()));
+                                                if (oneOfRef != null) {
+                                                   if (StringUtils.isBlank(oneOfRef.getName())) {
+                                                      composedSchema.addOneOfItem(oneOfRef);
+                                                   } else {
+                                                      composedSchema.addOneOfItem((new Schema()).$ref(oneOfRef.getName()));
+                                                   }
+
+                                                   if (this.isSubtype(recurBeanDesc.getClassInfo(), c)) {
+                                                      this.removeParentProperties(composedSchema, oneOfRef);
+                                                   }
+                                                }
+
+                                             });
+                                             if (!composedModelPropertiesAsSibling &amp;&amp; composedSchema.getAllOf() != null &amp;&amp; !composedSchema.getAllOf().isEmpty() &amp;&amp; composedSchema.getProperties() != null &amp;&amp; !composedSchema.getProperties().isEmpty()) {
+                                                ObjectSchema propSchema = new ObjectSchema();
+                                                propSchema.properties(composedSchema.getProperties());
+                                                composedSchema.setProperties((Map)null);
+                                                composedSchema.addAllOfItem(propSchema);
+                                             }
+                                          }
+
+                                          if (!type.isContainerType() &amp;&amp; StringUtils.isNotBlank(name)) {
+                                             context.defineModel(name, (Schema)model, annotatedType, (String)null);
+                                          }
+
+                                          if (model != null &amp;&amp; annotatedType.isResolveAsRef() &amp;&amp; (isComposedSchema || &quot;object&quot;.equals(((Schema)model).getType())) &amp;&amp; StringUtils.isNotBlank(((Schema)model).getName())) {
+                                             if (context.getDefinedModels().containsKey(((Schema)model).getName())) {
+                                                model = (new Schema()).$ref(RefUtils.constructRef(((Schema)model).getName()));
+                                             }
+                                          } else if (model != null &amp;&amp; ((Schema)model).get$ref() != null) {
+                                             model = (new Schema()).$ref(StringUtils.isNotEmpty(((Schema)model).get$ref()) ? ((Schema)model).get$ref() : ((Schema)model).getName());
+                                          }
+
+                                          if (model != null &amp;&amp; resolvedArrayAnnotation != null) {
+                                             if (!&quot;array&quot;.equals(((Schema)model).getType())) {
+                                                io.swagger.v3.oas.models.media.ArraySchema schema = new io.swagger.v3.oas.models.media.ArraySchema();
+                                                schema.setItems((Schema)model);
+                                                this.resolveArraySchema(annotatedType, schema, resolvedArrayAnnotation);
+                                                return schema;
+                                             }
+
+                                             if (model instanceof io.swagger.v3.oas.models.media.ArraySchema) {
+                                                this.resolveArraySchema(annotatedType, (io.swagger.v3.oas.models.media.ArraySchema)model, resolvedArrayAnnotation);
+                                             }
+                                          }
+
+                                          this.resolveDiscriminatorProperty(type, context, (Schema)model);
+                                          return (Schema)model;
+                                       }
+
+                                       propDef = (BeanPropertyDefinition)var80.next();
+                                       xml = null;
+                                       propName = propDef.getName();
+                                       annotations = null;
+                                       member = propDef.getPrimaryMember();
+                                       if (member == null) {
+                                          BeanDescription deserBeanDesc = this._mapper.getDeserializationConfig().introspect(type);
+                                          oneOfFiltered = deserBeanDesc.findProperties();
+                                          Iterator var32 = oneOfFiltered.iterator();
+
+                                          while(var32.hasNext()) {
+                                             BeanPropertyDefinition prop = (BeanPropertyDefinition)var32.next();
+                                             if (StringUtils.isNotBlank(prop.getInternalName()) &amp;&amp; prop.getInternalName().equals(propDef.getInternalName())) {
+                                                member = prop.getPrimaryMember();
+                                                break;
+                                             }
+                                          }
+                                       }
+
+                                       if (propDef.getPrimaryMember() != null) {
+                                          JsonProperty jsonPropertyAnn = (JsonProperty)propDef.getPrimaryMember().getAnnotation(JsonProperty.class);
+                                          if ((jsonPropertyAnn == null || !jsonPropertyAnn.value().equals(propName)) &amp;&amp; member != null) {
+                                             Member innerMember = member.getMember();
+                                             if (innerMember != null) {
+                                                String altName = innerMember.getName();
+                                                if (altName != null) {
+                                                   int length = altName.length();
+                                                   Iterator var34 = Arrays.asList(&quot;get&quot;, &quot;is&quot;).iterator();
+
+                                                   while(var34.hasNext()) {
+                                                      String prefix = (String)var34.next();
+                                                      int offset = prefix.length();
+                                                      if (altName.startsWith(prefix) &amp;&amp; length &gt; offset &amp;&amp; !Character.isUpperCase(altName.charAt(offset))) {
+                                                         propName = altName;
+                                                         break;
+                                                      }
+                                                   }
+                                                }
+                                             }
+                                          }
+                                       }
+
+                                       md = propDef.getMetadata();
+                                    } while(member == null);
+                                 } while(this.ignore(member, xmlAccessorTypeAnnotation, propName, propertiesToIgnore));
+
+                                 List&lt;Annotation&gt; annotationList = new ArrayList();
+                                 AnnotationMap annotationMap = member.getAllAnnotations();
+                                 if (annotationMap != null) {
+                                    Iterator var106 = annotationMap.annotations().iterator();
+
+                                    while(var106.hasNext()) {
+                                       Annotation a = (Annotation)var106.next();
+                                       annotationList.add(a);
+                                    }
+                                 }
+
+                                 annotations = (Annotation[])annotationList.toArray(new Annotation[annotationList.size()]);
+                              } while(this.hiddenByJsonView(annotations, annotatedType));
+
+                              propType = member.getType();
+                              if (propType != null &amp;&amp; &quot;void&quot;.equals(propType.getRawClass().getName()) &amp;&amp; member instanceof AnnotatedMethod) {
+                                 propType = ((AnnotatedMethod)member).getParameterType(0);
+                              }
+
+                              String propSchemaName = null;
+                              io.swagger.v3.oas.annotations.media.Schema ctxSchema = AnnotationsUtils.getSchemaAnnotation(annotations);
+                              if (AnnotationsUtils.hasSchemaAnnotation(ctxSchema) &amp;&amp; !StringUtils.isBlank(ctxSchema.name())) {
+                                 propSchemaName = ctxSchema.name();
+                              }
+
+                              if (propSchemaName == null) {
+                                 ArraySchema ctxArraySchema = AnnotationsUtils.getArraySchemaAnnotation(annotations);
+                                 if (AnnotationsUtils.hasArrayAnnotation(ctxArraySchema) &amp;&amp; AnnotationsUtils.hasSchemaAnnotation(ctxArraySchema.schema()) &amp;&amp; !StringUtils.isBlank(ctxArraySchema.schema().name())) {
+                                    propSchemaName = ctxArraySchema.schema().name();
+                                 }
+                              }
+
+                              if (StringUtils.isNotBlank(propSchemaName)) {
+                                 propName = propSchemaName;
+                              }
+
+                              Annotation propSchemaOrArray = AnnotationsUtils.mergeSchemaAnnotations(annotations, propType);
+                              io.swagger.v3.oas.annotations.media.Schema propResolvedSchemaAnnotation = propSchemaOrArray == null ? null : (propSchemaOrArray instanceof ArraySchema ? ((ArraySchema)propSchemaOrArray).schema() : (io.swagger.v3.oas.annotations.media.Schema)propSchemaOrArray);
+                              accessMode = this.resolveAccessMode(propDef, type, propResolvedSchemaAnnotation);
+                              AnnotatedType aType = (new AnnotatedType()).type(propType).ctxAnnotations(annotations).parent((Schema)model).resolveAsRef(annotatedType.isResolveAsRef()).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()).skipSchemaName(true).schemaProperty(true).propertyName(propName);
+                              aType.jsonUnwrappedHandler((t) -&gt; {
+                                 JsonUnwrapped uw = (JsonUnwrapped)member.getAnnotation(JsonUnwrapped.class);
+                                 if (uw != null &amp;&amp; uw.enabled()) {
+                                    t.ctxAnnotations((Annotation[])null).jsonUnwrappedHandler((Function)null).resolveAsRef(false);
+                                    this.handleUnwrapped(props, context.resolve(t), uw.prefix(), uw.suffix());
+                                    return null;
+                                 } else {
+                                    return new Schema();
+                                 }
+                              });
+                              property = this.clone(context.resolve(aType));
+                           } while(property == null);
+
+                           Boolean required = md.getRequired();
+                           if (required != null &amp;&amp; !Boolean.FALSE.equals(required)) {
+                              this.addRequiredItem((Schema)model, propName);
+                           } else if (propDef.isRequired()) {
+                              this.addRequiredItem((Schema)model, propName);
+                           }
+
+                           if (property.get$ref() == null &amp;&amp; accessMode != null) {
+                              switch(accessMode) {
+                              case AUTO:
+                              case READ_WRITE:
+                              default:
+                                 break;
+                              case READ_ONLY:
+                                 property.readOnly(true);
+                                 break;
+                              case WRITE_ONLY:
+                                 property.writeOnly(true);
+                              }
+                           }
+
+                           BeanDescription propBeanDesc = this._mapper.getSerializationConfig().introspect(propType);
+                           if (property != null &amp;&amp; !propType.isContainerType()) {
+                              if (&quot;object&quot;.equals(property.getType())) {
+                                 String pName = this._typeName(propType, propBeanDesc);
+                                 if (StringUtils.isNotBlank(property.getName())) {
+                                    pName = property.getName();
+                                 }
+
+                                 if (context.getDefinedModels().containsKey(pName)) {
+                                    property = (new Schema()).$ref(RefUtils.constructRef(pName));
+                                 }
+                              } else if (property.get$ref() != null) {
+                                 property = (new Schema()).$ref(StringUtils.isNotEmpty(property.get$ref()) ? property.get$ref() : property.getName());
+                              }
+                           }
+
+                           property.setName(propName);
+                           JAXBAnnotationsHelper.apply(propBeanDesc.getClassInfo(), annotations, property);
+                           this.applyBeanValidatorAnnotations(property, annotations, (Schema)model);
+                           props.add(property);
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   private boolean shouldResolveEnumAsRef(io.swagger.v3.oas.annotations.media.Schema resolvedSchemaAnnotation) {
+      return resolvedSchemaAnnotation != null &amp;&amp; resolvedSchemaAnnotation.enumAsRef() || enumsAsRef;
+   }
+
+   protected Type findJsonValueType(BeanDescription beanDesc) {
+      try {
+         Method m = BeanDescription.class.getMethod(&quot;findJsonValueAccessor&quot;);
+         AnnotatedMember jsonValueMember = (AnnotatedMember)m.invoke(beanDesc);
+         if (jsonValueMember != null) {
+            return jsonValueMember.getType();
+         }
+      } catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException var4) {
+         this.LOGGER.warn(&quot;jackson BeanDescription.findJsonValueAccessor not found, this could lead to inaccurate result, please update jackson to 2.9+&quot;);
+         AnnotatedMethod jsonValueMethod = beanDesc.findJsonValueMethod();
+         if (jsonValueMethod != null) {
+            return jsonValueMethod.getType();
+         }
+      }
+
+      return null;
+   }
+
+   private Schema clone(Schema property) {
+      if (property == null) {
+         return property;
+      } else {
+         try {
+            String cloneName = property.getName();
+            property = (Schema)Json.mapper().readValue(Json.pretty(property), Schema.class);
+            property.setName(cloneName);
+         } catch (IOException var3) {
+            this.LOGGER.error(&quot;Could not clone property, e&quot;);
+         }
+
+         return property;
+      }
+   }
+
+   private boolean isSubtype(AnnotatedClass childClass, Class&lt;?&gt; parentClass) {
+      BeanDescription parentDesc = this._mapper.getSerializationConfig().introspectClassAnnotations(parentClass);
+      List&lt;NamedType&gt; subTypes = this._intr.findSubtypes(parentDesc.getClassInfo());
+      if (subTypes == null) {
+         return false;
+      } else {
+         Iterator var5 = subTypes.iterator();
+
+         Class subtypeType;
+         do {
+            if (!var5.hasNext()) {
+               return false;
+            }
+
+            NamedType subtype = (NamedType)var5.next();
+            subtypeType = subtype.getType();
+         } while(!childClass.getRawType().isAssignableFrom(subtypeType));
+
+         return true;
+      }
+   }
+
+   protected boolean _isOptionalType(JavaType propType) {
+      return Arrays.asList(&quot;com.google.common.base.Optional&quot;, &quot;java.util.Optional&quot;).contains(propType.getRawClass().getCanonicalName());
+   }
+
+   protected void _addEnumProps(Class&lt;?&gt; propClass, Schema property) {
+      boolean useIndex = this._mapper.isEnabled(SerializationFeature.WRITE_ENUMS_USING_INDEX);
+      boolean useToString = this._mapper.isEnabled(SerializationFeature.WRITE_ENUMS_USING_TO_STRING);
+      Optional&lt;Method&gt; jsonValueMethod = Arrays.stream(propClass.getMethods()).filter((m) -&gt; {
+         return m.isAnnotationPresent(JsonValue.class);
+      }).filter((m) -&gt; {
+         return ((JsonValue)m.getAnnotation(JsonValue.class)).value();
+      }).findFirst();
+      Enum&lt;?&gt;[] enumConstants = (Enum[])propClass.getEnumConstants();
+      String[] enumValues = this._intr.findEnumValues(propClass, enumConstants, new String[enumConstants.length]);
+      Enum[] var9 = enumConstants;
+      int var10 = enumConstants.length;
+
+      for(int var11 = 0; var11 &lt; var10; ++var11) {
+         Enum&lt;?&gt; en = var9[var11];
+         String enumValue = enumValues[en.ordinal()];
+         String s = (String)jsonValueMethod.flatMap((m) -&gt; {
+            return ReflectionUtils.safeInvoke(m, en, new Object[0]);
+         }).map(Object::toString).orElse((Object)null);
+         String n;
+         if (s != null) {
+            n = s;
+         } else if (enumValue != null) {
+            n = enumValue;
+         } else if (useIndex) {
+            n = String.valueOf(en.ordinal());
+         } else if (useToString) {
+            n = en.toString();
+         } else {
+            n = this._intr.findEnumValue(en);
+         }
+
+         if (property instanceof StringSchema) {
+            StringSchema sp = (StringSchema)property;
+            sp.addEnumItem(n);
+         }
+      }
+
+   }
+
+   protected boolean ignore(Annotated member, XmlAccessorType xmlAccessorTypeAnnotation, String propName, Set&lt;String&gt; propertiesToIgnore) {
+      if (propertiesToIgnore.contains(propName)) {
+         return true;
+      } else if (member.hasAnnotation(JsonIgnore.class)) {
+         return true;
+      } else if (xmlAccessorTypeAnnotation == null) {
+         return false;
+      } else {
+         return xmlAccessorTypeAnnotation.value().equals(XmlAccessType.NONE) &amp;&amp; !member.hasAnnotation(XmlElement.class) &amp;&amp; !member.hasAnnotation(XmlAttribute.class) &amp;&amp; !member.hasAnnotation(XmlElementRef.class) &amp;&amp; !member.hasAnnotation(XmlElementRefs.class) &amp;&amp; !member.hasAnnotation(JsonProperty.class);
+      }
+   }
+
+   private void handleUnwrapped(List&lt;Schema&gt; props, Schema innerModel, String prefix, String suffix) {
+      if (StringUtils.isBlank(suffix) &amp;&amp; StringUtils.isBlank(prefix)) {
+         if (innerModel.getProperties() != null) {
+            props.addAll(innerModel.getProperties().values());
+         }
+      } else {
+         if (prefix == null) {
+            prefix = &quot;&quot;;
+         }
+
+         if (suffix == null) {
+            suffix = &quot;&quot;;
+         }
+
+         if (innerModel.getProperties() != null) {
+            Iterator var5 = innerModel.getProperties().values().iterator();
+
+            while(var5.hasNext()) {
+               Schema prop = (Schema)var5.next();
+
+               try {
+                  Schema clonedProp = (Schema)Json.mapper().readValue(Json.pretty(prop), Schema.class);
+                  clonedProp.setName(prefix + prop.getName() + suffix);
+                  props.add(clonedProp);
+               } catch (IOException var8) {
+                  this.LOGGER.error(&quot;Exception cloning property&quot;, var8);
+                  return;
+               }
+            }
+         }
+      }
+
+   }
+
+   protected void applyBeanValidatorAnnotations(Schema property, Annotation[] annotations, Schema parent) {
+      Map&lt;String, Annotation&gt; annos = new HashMap();
+      if (annotations != null) {
+         Annotation[] var5 = annotations;
+         int var6 = annotations.length;
+
+         for(int var7 = 0; var7 &lt; var6; ++var7) {
+            Annotation anno = var5[var7];
+            annos.put(anno.annotationType().getName(), anno);
+         }
+      }
+
+      if (parent != null &amp;&amp; annotations != null) {
+         boolean requiredItem = Arrays.stream(annotations).anyMatch((annotation) -&gt; {
+            return NOT_NULL_ANNOTATIONS.contains(annotation.annotationType().getSimpleName());
+         });
+         if (requiredItem) {
+            this.addRequiredItem(parent, property.getName());
+         }
+      }
+
+      if (annos.containsKey(&quot;javax.validation.constraints.Min&quot;) &amp;&amp; (&quot;integer&quot;.equals(property.getType()) || &quot;number&quot;.equals(property.getType()))) {
+         Min min = (Min)annos.get(&quot;javax.validation.constraints.Min&quot;);
+         property.setMinimum(new BigDecimal(min.value()));
+      }
+
+      if (annos.containsKey(&quot;javax.validation.constraints.Max&quot;) &amp;&amp; (&quot;integer&quot;.equals(property.getType()) || &quot;number&quot;.equals(property.getType()))) {
+         Max max = (Max)annos.get(&quot;javax.validation.constraints.Max&quot;);
+         property.setMaximum(new BigDecimal(max.value()));
+      }
+
+      if (annos.containsKey(&quot;javax.validation.constraints.Size&quot;)) {
+         Size size = (Size)annos.get(&quot;javax.validation.constraints.Size&quot;);
+         if (!&quot;integer&quot;.equals(property.getType()) &amp;&amp; !&quot;number&quot;.equals(property.getType())) {
+            if (property instanceof StringSchema) {
+               StringSchema sp = (StringSchema)property;
+               sp.minLength(size.min());
+               sp.maxLength(size.max());
+            } else if (property instanceof io.swagger.v3.oas.models.media.ArraySchema) {
+               io.swagger.v3.oas.models.media.ArraySchema sp = (io.swagger.v3.oas.models.media.ArraySchema)property;
+               sp.setMinItems(size.min());
+               sp.setMaxItems(size.max());
+            }
+         } else {
+            property.setMinimum(new BigDecimal(size.min()));
+            property.setMaximum(new BigDecimal(size.max()));
+         }
+      }
+
+      NumberSchema ap;
+      if (annos.containsKey(&quot;javax.validation.constraints.DecimalMin&quot;)) {
+         DecimalMin min = (DecimalMin)annos.get(&quot;javax.validation.constraints.DecimalMin&quot;);
+         if (property instanceof NumberSchema) {
+            ap = (NumberSchema)property;
+            ap.setMinimum(new BigDecimal(min.value()));
+            ap.setExclusiveMinimum(!min.inclusive());
+         }
+      }
+
+      if (annos.containsKey(&quot;javax.validation.constraints.DecimalMax&quot;)) {
+         DecimalMax max = (DecimalMax)annos.get(&quot;javax.validation.constraints.DecimalMax&quot;);
+         if (property instanceof NumberSchema) {
+            ap = (NumberSchema)property;
+            ap.setMaximum(new BigDecimal(max.value()));
+            ap.setExclusiveMaximum(!max.inclusive());
+         }
+      }
+
+      if (annos.containsKey(&quot;javax.validation.constraints.Pattern&quot;)) {
+         Pattern pattern = (Pattern)annos.get(&quot;javax.validation.constraints.Pattern&quot;);
+         if (property instanceof StringSchema) {
+            property.setPattern(pattern.regexp());
+         }
+      }
+
+   }
+
+   private boolean resolveSubtypes(Schema model, BeanDescription bean, ModelConverterContext context) {
+      List&lt;NamedType&gt; types = this._intr.findSubtypes(bean.getClassInfo());
+      if (types == null) {
+         return false;
+      } else {
+         this.removeSelfFromSubTypes(types, bean);
+         this.removeSuperClassAndInterfaceSubTypes(types, bean);
+         int count = false;
+         Class&lt;?&gt; beanClass = bean.getClassInfo().getAnnotated();
+         Iterator var7 = types.iterator();
+
+         while(true) {
+            NamedType subtype;
+            Class subtypeType;
+            do {
+               if (!var7.hasNext()) {
+                  return count;
+               }
+
+               subtype = (NamedType)var7.next();
+               subtypeType = subtype.getType();
+            } while(!beanClass.isAssignableFrom(subtypeType));
+
+            Schema subtypeModel = context.resolve((new AnnotatedType()).type(subtypeType));
+            if (StringUtils.isBlank(subtypeModel.getName()) || subtypeModel.getName().equals(model.getName())) {
+               subtypeModel.setName(this._typeNameResolver.nameForType(this._mapper.constructType(subtypeType), new Options[]{Options.SKIP_API_MODEL}));
+            }
+
+            ComposedSchema composedSchema = null;
+            if (!(subtypeModel instanceof ComposedSchema)) {
+               composedSchema = (ComposedSchema)(new ComposedSchema()).title(subtypeModel.getTitle()).name(subtypeModel.getName()).deprecated(subtypeModel.getDeprecated()).additionalProperties(subtypeModel.getAdditionalProperties()).description(subtypeModel.getDescription()).discriminator(subtypeModel.getDiscriminator()).example(subtypeModel.getExample()).exclusiveMaximum(subtypeModel.getExclusiveMaximum()).exclusiveMinimum(subtypeModel.getExclusiveMinimum()).externalDocs(subtypeModel.getExternalDocs()).format(subtypeModel.getFormat()).maximum(subtypeModel.getMaximum()).maxItems(subtypeModel.getMaxItems()).maxLength(subtypeModel.getMaxLength()).maxProperties(subtypeModel.getMaxProperties()).minimum(subtypeModel.getMinimum()).minItems(subtypeModel.getMinItems()).minLength(subtypeModel.getMinLength()).minProperties(subtypeModel.getMinProperties()).multipleOf(subtypeModel.getMultipleOf()).not(subtypeModel.getNot()).nullable(subtypeModel.getNullable()).pattern(subtypeModel.getPattern()).properties(subtypeModel.getProperties()).readOnly(subtypeModel.getReadOnly()).required(subtypeModel.getRequired()).type(subtypeModel.getType()).uniqueItems(subtypeModel.getUniqueItems()).writeOnly(subtypeModel.getWriteOnly()).xml(subtypeModel.getXml()).extensions(subtypeModel.getExtensions());
+               composedSchema.setEnum(subtypeModel.getEnum());
+            } else {
+               composedSchema = (ComposedSchema)subtypeModel;
+            }
+
+            Schema refSchema = (new Schema()).$ref(model.getName());
+            if (composedSchema.getAllOf() == null || !composedSchema.getAllOf().contains(refSchema)) {
+               composedSchema.addAllOfItem(refSchema);
+            }
+
+            this.removeParentProperties(composedSchema, model);
+            if (!composedModelPropertiesAsSibling &amp;&amp; composedSchema.getAllOf() != null &amp;&amp; !composedSchema.getAllOf().isEmpty() &amp;&amp; composedSchema.getProperties() != null &amp;&amp; !composedSchema.getProperties().isEmpty()) {
+               ObjectSchema propSchema = new ObjectSchema();
+               propSchema.properties(composedSchema.getProperties());
+               composedSchema.setProperties((Map)null);
+               composedSchema.addAllOfItem(propSchema);
+            }
+
+            Class&lt;?&gt; currentType = subtype.getType();
+            if (StringUtils.isNotBlank(composedSchema.getName())) {
+               context.defineModel(composedSchema.getName(), composedSchema, (new AnnotatedType()).type(currentType), (String)null);
+            }
+         }
+      }
+   }
+
+   private void removeSelfFromSubTypes(List&lt;NamedType&gt; types, BeanDescription bean) {
+      Class&lt;?&gt; beanClass = bean.getType().getRawClass();
+      types.removeIf((type) -&gt; {
+         return beanClass.equals(type.getType());
+      });
+   }
+
+   private void removeSuperClassAndInterfaceSubTypes(List&lt;NamedType&gt; types, BeanDescription bean) {
+      Class&lt;?&gt; beanClass = bean.getType().getRawClass();
+      Class&lt;?&gt; superClass = beanClass.getSuperclass();
+      if (superClass != null &amp;&amp; !superClass.equals(Object.class)) {
+         this.removeSuperSubTypes(types, superClass);
+      }
+
+      if (!types.isEmpty()) {
+         Class&lt;?&gt;[] superInterfaces = beanClass.getInterfaces();
+         Class[] var6 = superInterfaces;
+         int var7 = superInterfaces.length;
+
+         for(int var8 = 0; var8 &lt; var7; ++var8) {
+            Class&lt;?&gt; superInterface = var6[var8];
+            this.removeSuperSubTypes(types, superInterface);
+            if (types.isEmpty()) {
+               break;
+            }
+         }
+      }
+
+   }
+
+   private void removeSuperSubTypes(List&lt;NamedType&gt; resultTypes, Class&lt;?&gt; superClass) {
+      JavaType superType = this._mapper.constructType(superClass);
+      BeanDescription superBean = this._mapper.getSerializationConfig().introspect(superType);
+      List&lt;NamedType&gt; superTypes = this._intr.findSubtypes(superBean.getClassInfo());
+      if (superTypes != null) {
+         resultTypes.removeAll(superTypes);
+      }
+
+   }
+
+   private void removeParentProperties(Schema child, Schema parent) {
+      Map&lt;String, Schema&gt; baseProps = parent.getProperties();
+      Map&lt;String, Schema&gt; subtypeProps = child.getProperties();
+      if (baseProps != null &amp;&amp; subtypeProps != null) {
+         Iterator var5 = baseProps.entrySet().iterator();
+
+         while(var5.hasNext()) {
+            Entry&lt;String, Schema&gt; entry = (Entry)var5.next();
+            if (((Schema)entry.getValue()).equals(subtypeProps.get(entry.getKey()))) {
+               subtypeProps.remove(entry.getKey());
+            }
+         }
+      }
+
+      if (subtypeProps == null || subtypeProps.isEmpty()) {
+         child.setProperties((Map)null);
+      }
+
+   }
+
+   protected List&lt;Class&lt;?&gt;&gt; getComposedSchemaReferencedClasses(Class&lt;?&gt; clazz, Annotation[] ctxAnnotations, io.swagger.v3.oas.annotations.media.Schema schemaAnnotation) {
+      if (schemaAnnotation != null) {
+         Class&lt;?&gt;[] allOf = schemaAnnotation.allOf();
+         Class&lt;?&gt;[] anyOf = schemaAnnotation.anyOf();
+         Class&lt;?&gt;[] oneOf = schemaAnnotation.oneOf();
+         List&lt;Class&lt;?&gt;&gt; parentClasses = (List)Stream.of(allOf, anyOf, oneOf).flatMap(Stream::of).distinct().filter((c) -&gt; {
+            return !this.shouldIgnoreClass(c);
+         }).filter((c) -&gt; {
+            return !c.equals(Void.class);
+         }).collect(Collectors.toList());
+         if (!parentClasses.isEmpty()) {
+            return parentClasses;
+         }
+      }
+
+      return null;
+   }
+
+   protected String resolveDescription(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; !&quot;&quot;.equals(schema.description()) ? schema.description() : null;
+   }
+
+   protected String resolveTitle(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; StringUtils.isNotBlank(schema.title()) ? schema.title() : null;
+   }
+
+   protected String resolveFormat(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; StringUtils.isNotBlank(schema.format()) ? schema.format() : null;
+   }
+
+   protected String resolveDefaultValue(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      if (schema != null &amp;&amp; !schema.defaultValue().isEmpty()) {
+         return schema.defaultValue();
+      } else if (a == null) {
+         return null;
+      } else {
+         XmlElement elem = (XmlElement)a.getAnnotation(XmlElement.class);
+         if (elem == null &amp;&amp; annotations != null) {
+            Annotation[] var5 = annotations;
+            int var6 = annotations.length;
+
+            for(int var7 = 0; var7 &lt; var6; ++var7) {
+               Annotation ann = var5[var7];
+               if (ann instanceof XmlElement) {
+                  elem = (XmlElement)ann;
+                  break;
+               }
+            }
+         }
+
+         return elem != null &amp;&amp; !elem.defaultValue().isEmpty() &amp;&amp; !&quot;\u0000&quot;.equals(elem.defaultValue()) ? elem.defaultValue() : null;
+      }
+   }
+
+   protected Object resolveExample(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      if (schema != null &amp;&amp; !schema.example().isEmpty()) {
+         try {
+            ObjectMapper mapper = ObjectMapperFactory.buildStrictGenericObjectMapper();
+            return mapper.readTree(schema.example());
+         } catch (IOException var5) {
+            return schema.example();
+         }
+      } else {
+         return null;
+      }
+   }
+
+   protected AccessMode resolveAccessMode(BeanPropertyDefinition propDef, JavaType type, io.swagger.v3.oas.annotations.media.Schema schema) {
+      if (schema != null &amp;&amp; !schema.accessMode().equals(AccessMode.AUTO)) {
+         return schema.accessMode();
+      } else if (schema != null &amp;&amp; schema.readOnly()) {
+         return AccessMode.READ_ONLY;
+      } else if (schema != null &amp;&amp; schema.writeOnly()) {
+         return AccessMode.WRITE_ONLY;
+      } else if (propDef == null) {
+         return null;
+      } else {
+         Access access = null;
+         if (propDef instanceof POJOPropertyBuilder) {
+            access = ((POJOPropertyBuilder)propDef).findAccess();
+         }
+
+         boolean hasGetter = propDef.hasGetter();
+         boolean hasSetter = propDef.hasSetter();
+         boolean hasConstructorParameter = propDef.hasConstructorParameter();
+         boolean hasField = propDef.hasField();
+         if (access == null) {
+            BeanDescription beanDesc = this._mapper.getDeserializationConfig().introspect(type);
+            List&lt;BeanPropertyDefinition&gt; properties = beanDesc.findProperties();
+            Iterator var11 = properties.iterator();
+
+            while(var11.hasNext()) {
+               BeanPropertyDefinition prop = (BeanPropertyDefinition)var11.next();
+               if (StringUtils.isNotBlank(prop.getInternalName()) &amp;&amp; prop.getInternalName().equals(propDef.getInternalName())) {
+                  if (prop instanceof POJOPropertyBuilder) {
+                     access = ((POJOPropertyBuilder)prop).findAccess();
+                  }
+
+                  hasGetter = hasGetter || prop.hasGetter();
+                  hasSetter = hasSetter || prop.hasSetter();
+                  hasConstructorParameter = hasConstructorParameter || prop.hasConstructorParameter();
+                  hasField = hasField || prop.hasField();
+                  break;
+               }
+            }
+         }
+
+         if (access != null) {
+            switch(access) {
+            case AUTO:
+               return AccessMode.AUTO;
+            case READ_ONLY:
+               return AccessMode.READ_ONLY;
+            case READ_WRITE:
+               return AccessMode.READ_WRITE;
+            case WRITE_ONLY:
+               return AccessMode.WRITE_ONLY;
+            default:
+               return AccessMode.AUTO;
+            }
+         } else {
+            return hasGetter || hasField || !hasConstructorParameter &amp;&amp; !hasSetter ? null : AccessMode.WRITE_ONLY;
+         }
+      }
+   }
+
+   protected Boolean resolveReadOnly(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      if (schema != null &amp;&amp; schema.accessMode().equals(AccessMode.READ_ONLY)) {
+         return true;
+      } else if (schema != null &amp;&amp; schema.accessMode().equals(AccessMode.WRITE_ONLY)) {
+         return null;
+      } else if (schema != null &amp;&amp; schema.accessMode().equals(AccessMode.READ_WRITE)) {
+         return null;
+      } else {
+         return schema != null &amp;&amp; schema.readOnly() ? schema.readOnly() : null;
+      }
+   }
+
+   protected Boolean resolveNullable(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.nullable() ? schema.nullable() : null;
+   }
+
+   protected BigDecimal resolveMultipleOf(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.multipleOf() != 0.0D ? new BigDecimal(schema.multipleOf()) : null;
+   }
+
+   protected Integer resolveMaxLength(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.maxLength() != Integer.MAX_VALUE &amp;&amp; schema.maxLength() &gt; 0 ? schema.maxLength() : null;
+   }
+
+   protected Integer resolveMinLength(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.minLength() &gt; 0 ? schema.minLength() : null;
+   }
+
+   protected BigDecimal resolveMinimum(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      if (schema != null &amp;&amp; NumberUtils.isCreatable(schema.minimum())) {
+         String filteredMinimum = schema.minimum().replace(&quot;,&quot;, &quot;&quot;);
+         return new BigDecimal(filteredMinimum);
+      } else {
+         return null;
+      }
+   }
+
+   protected BigDecimal resolveMaximum(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      if (schema != null &amp;&amp; NumberUtils.isCreatable(schema.maximum())) {
+         String filteredMaximum = schema.maximum().replace(&quot;,&quot;, &quot;&quot;);
+         return new BigDecimal(filteredMaximum);
+      } else {
+         return null;
+      }
+   }
+
+   protected Boolean resolveExclusiveMinimum(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.exclusiveMinimum() ? schema.exclusiveMinimum() : null;
+   }
+
+   protected Boolean resolveExclusiveMaximum(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.exclusiveMaximum() ? schema.exclusiveMaximum() : null;
+   }
+
+   protected String resolvePattern(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; StringUtils.isNotBlank(schema.pattern()) ? schema.pattern() : null;
+   }
+
+   protected Integer resolveMinProperties(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.minProperties() &gt; 0 ? schema.minProperties() : null;
+   }
+
+   protected Integer resolveMaxProperties(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.maxProperties() &gt; 0 ? schema.maxProperties() : null;
+   }
+
+   protected List&lt;String&gt; resolveRequiredProperties(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.requiredProperties() != null &amp;&amp; schema.requiredProperties().length &gt; 0 &amp;&amp; StringUtils.isNotBlank(schema.requiredProperties()[0]) ? Arrays.asList(schema.requiredProperties()) : null;
+   }
+
+   protected Boolean resolveWriteOnly(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      if (schema != null &amp;&amp; schema.accessMode().equals(AccessMode.READ_ONLY)) {
+         return null;
+      } else if (schema != null &amp;&amp; schema.accessMode().equals(AccessMode.WRITE_ONLY)) {
+         return true;
+      } else if (schema != null &amp;&amp; schema.accessMode().equals(AccessMode.READ_WRITE)) {
+         return null;
+      } else {
+         return schema != null &amp;&amp; schema.writeOnly() ? schema.writeOnly() : null;
+      }
+   }
+
+   protected ExternalDocumentation resolveExternalDocumentation(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      ExternalDocumentation external = null;
+      if (a != null) {
+         io.swagger.v3.oas.annotations.ExternalDocumentation externalDocumentation = (io.swagger.v3.oas.annotations.ExternalDocumentation)a.getAnnotation(io.swagger.v3.oas.annotations.ExternalDocumentation.class);
+         external = this.resolveExternalDocumentation(externalDocumentation);
+      }
+
+      if (external == null &amp;&amp; schema != null) {
+         external = this.resolveExternalDocumentation(schema.externalDocs());
+      }
+
+      return external;
+   }
+
+   protected ExternalDocumentation resolveExternalDocumentation(io.swagger.v3.oas.annotations.ExternalDocumentation externalDocumentation) {
+      if (externalDocumentation == null) {
+         return null;
+      } else {
+         boolean isEmpty = true;
+         ExternalDocumentation external = new ExternalDocumentation();
+         if (StringUtils.isNotBlank(externalDocumentation.description())) {
+            isEmpty = false;
+            external.setDescription(externalDocumentation.description());
+         }
+
+         if (StringUtils.isNotBlank(externalDocumentation.url())) {
+            isEmpty = false;
+            external.setUrl(externalDocumentation.url());
+         }
+
+         return isEmpty ? null : external;
+      }
+   }
+
+   protected Boolean resolveDeprecated(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.deprecated() ? schema.deprecated() : null;
+   }
+
+   protected List&lt;String&gt; resolveAllowableValues(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.allowableValues() != null &amp;&amp; schema.allowableValues().length &gt; 0 ? Arrays.asList(schema.allowableValues()) : null;
+   }
+
+   protected Map&lt;String, Object&gt; resolveExtensions(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      return schema != null &amp;&amp; schema.extensions() != null &amp;&amp; schema.extensions().length &gt; 0 ? AnnotationsUtils.getExtensions(schema.extensions()) : null;
+   }
+
+   protected void resolveDiscriminatorProperty(JavaType type, ModelConverterContext context, Schema model) {
+      JsonTypeInfo typeInfo = (JsonTypeInfo)type.getRawClass().getDeclaredAnnotation(JsonTypeInfo.class);
+      if (typeInfo != null) {
+         String typeInfoProp = typeInfo.property();
+         if (StringUtils.isNotBlank(typeInfoProp)) {
+            Schema modelToUpdate = model;
+            if (StringUtils.isNotBlank(model.get$ref())) {
+               modelToUpdate = (Schema)context.getDefinedModels().get(model.get$ref().substring(21));
+            }
+
+            if (modelToUpdate.getProperties() == null || !modelToUpdate.getProperties().keySet().contains(typeInfoProp)) {
+               Schema discriminatorSchema = (new StringSchema()).name(typeInfoProp);
+               modelToUpdate.addProperties(typeInfoProp, discriminatorSchema);
+               if (modelToUpdate.getRequired() == null || !modelToUpdate.getRequired().contains(typeInfoProp)) {
+                  modelToUpdate.addRequiredItem(typeInfoProp);
+               }
+            }
+         }
+      }
+
+   }
+
+   protected Discriminator resolveDiscriminator(JavaType type, ModelConverterContext context) {
+      io.swagger.v3.oas.annotations.media.Schema declaredSchemaAnnotation = AnnotationsUtils.getSchemaDeclaredAnnotation(type.getRawClass());
+      String disc = declaredSchemaAnnotation == null ? &quot;&quot; : declaredSchemaAnnotation.discriminatorProperty();
+      if (disc.isEmpty()) {
+         JsonTypeInfo typeInfo = (JsonTypeInfo)type.getRawClass().getDeclaredAnnotation(JsonTypeInfo.class);
+         if (typeInfo != null) {
+            disc = typeInfo.property();
+         }
+      }
+
+      if (disc.isEmpty()) {
+         return null;
+      } else {
+         Discriminator discriminator = (new Discriminator()).propertyName(disc);
+         if (declaredSchemaAnnotation != null) {
+            DiscriminatorMapping[] mappings = declaredSchemaAnnotation.discriminatorMapping();
+            if (mappings != null &amp;&amp; mappings.length &gt; 0) {
+               DiscriminatorMapping[] var7 = mappings;
+               int var8 = mappings.length;
+
+               for(int var9 = 0; var9 &lt; var8; ++var9) {
+                  DiscriminatorMapping mapping = var7[var9];
+                  if (!mapping.value().isEmpty() &amp;&amp; !mapping.schema().equals(Void.class)) {
+                     discriminator.mapping(mapping.value(), RefUtils.constructRef(context.resolve((new AnnotatedType()).type(mapping.schema())).getName()));
+                  }
+               }
+            }
+         }
+
+         return discriminator;
+      }
+   }
+
+   protected XML resolveXml(Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schema) {
+      XmlRootElement rootAnnotation = null;
+      if (a != null) {
+         rootAnnotation = (XmlRootElement)a.getAnnotation(XmlRootElement.class);
+      }
+
+      if (rootAnnotation == null &amp;&amp; annotations != null) {
+         Annotation[] var5 = annotations;
+         int var6 = annotations.length;
+
+         for(int var7 = 0; var7 &lt; var6; ++var7) {
+            Annotation ann = var5[var7];
+            if (ann instanceof XmlRootElement) {
+               rootAnnotation = (XmlRootElement)ann;
+               break;
+            }
+         }
+      }
+
+      if (rootAnnotation != null &amp;&amp; !&quot;&quot;.equals(rootAnnotation.name()) &amp;&amp; !&quot;##default&quot;.equals(rootAnnotation.name())) {
+         XML xml = (new XML()).name(rootAnnotation.name());
+         if (rootAnnotation.namespace() != null &amp;&amp; !&quot;&quot;.equals(rootAnnotation.namespace()) &amp;&amp; !&quot;##default&quot;.equals(rootAnnotation.namespace())) {
+            xml.namespace(rootAnnotation.namespace());
+         }
+
+         return xml;
+      } else {
+         return null;
+      }
+   }
+
+   protected Integer resolveMinItems(AnnotatedType a, ArraySchema arraySchema) {
+      return arraySchema != null &amp;&amp; arraySchema.minItems() &lt; Integer.MAX_VALUE ? arraySchema.minItems() : null;
+   }
+
+   protected Integer resolveMaxItems(AnnotatedType a, ArraySchema arraySchema) {
+      return arraySchema != null &amp;&amp; arraySchema.maxItems() &gt; 0 ? arraySchema.maxItems() : null;
+   }
+
+   protected Boolean resolveUniqueItems(AnnotatedType a, ArraySchema arraySchema) {
+      return arraySchema != null &amp;&amp; arraySchema.uniqueItems() ? arraySchema.uniqueItems() : null;
+   }
+
+   protected Map&lt;String, Object&gt; resolveExtensions(AnnotatedType a, ArraySchema arraySchema) {
+      return arraySchema != null &amp;&amp; arraySchema.extensions() != null &amp;&amp; arraySchema.extensions().length &gt; 0 ? AnnotationsUtils.getExtensions(arraySchema.extensions()) : null;
+   }
+
+   protected void resolveSchemaMembers(Schema schema, AnnotatedType annotatedType) {
+      JavaType type;
+      if (annotatedType.getType() instanceof JavaType) {
+         type = (JavaType)annotatedType.getType();
+      } else {
+         type = this._mapper.constructType(annotatedType.getType());
+      }
+
+      Annotation resolvedSchemaOrArrayAnnotation = AnnotationsUtils.mergeSchemaAnnotations(annotatedType.getCtxAnnotations(), type);
+      io.swagger.v3.oas.annotations.media.Schema schemaAnnotation = resolvedSchemaOrArrayAnnotation == null ? null : (resolvedSchemaOrArrayAnnotation instanceof ArraySchema ? ((ArraySchema)resolvedSchemaOrArrayAnnotation).schema() : (io.swagger.v3.oas.annotations.media.Schema)resolvedSchemaOrArrayAnnotation);
+      BeanDescription beanDesc = this._mapper.getSerializationConfig().introspect(type);
+      Annotated a = beanDesc.getClassInfo();
+      Annotation[] annotations = annotatedType.getCtxAnnotations();
+      this.resolveSchemaMembers(schema, a, annotations, schemaAnnotation);
+   }
+
+   protected void resolveSchemaMembers(Schema schema, Annotated a, Annotation[] annotations, io.swagger.v3.oas.annotations.media.Schema schemaAnnotation) {
+      String description = this.resolveDescription(a, annotations, schemaAnnotation);
+      if (StringUtils.isNotBlank(description)) {
+         schema.description(description);
+      }
+
+      String title = this.resolveTitle(a, annotations, schemaAnnotation);
+      if (StringUtils.isNotBlank(title)) {
+         schema.title(title);
+      }
+
+      String format = this.resolveFormat(a, annotations, schemaAnnotation);
+      if (StringUtils.isNotBlank(format) &amp;&amp; StringUtils.isBlank(schema.getFormat())) {
+         schema.format(format);
+      }
+
+      String defaultValue = this.resolveDefaultValue(a, annotations, schemaAnnotation);
+      if (StringUtils.isNotBlank(defaultValue)) {
+         schema.setDefault(defaultValue);
+      }
+
+      Object example = this.resolveExample(a, annotations, schemaAnnotation);
+      if (example != null) {
+         schema.example(example);
+      }
+
+      Boolean readOnly = this.resolveReadOnly(a, annotations, schemaAnnotation);
+      if (readOnly != null) {
+         schema.readOnly(readOnly);
+      }
+
+      Boolean nullable = this.resolveNullable(a, annotations, schemaAnnotation);
+      if (nullable != null) {
+         schema.nullable(nullable);
+      }
+
+      BigDecimal multipleOf = this.resolveMultipleOf(a, annotations, schemaAnnotation);
+      if (multipleOf != null) {
+         schema.multipleOf(multipleOf);
+      }
+
+      Integer maxLength = this.resolveMaxLength(a, annotations, schemaAnnotation);
+      if (maxLength != null) {
+         schema.maxLength(maxLength);
+      }
+
+      Integer minLength = this.resolveMinLength(a, annotations, schemaAnnotation);
+      if (minLength != null) {
+         schema.minLength(minLength);
+      }
+
+      BigDecimal minimum = this.resolveMinimum(a, annotations, schemaAnnotation);
+      if (minimum != null) {
+         schema.minimum(minimum);
+      }
+
+      BigDecimal maximum = this.resolveMaximum(a, annotations, schemaAnnotation);
+      if (maximum != null) {
+         schema.maximum(maximum);
+      }
+
+      Boolean exclusiveMinimum = this.resolveExclusiveMinimum(a, annotations, schemaAnnotation);
+      if (exclusiveMinimum != null) {
+         schema.exclusiveMinimum(exclusiveMinimum);
+      }
+
+      Boolean exclusiveMaximum = this.resolveExclusiveMaximum(a, annotations, schemaAnnotation);
+      if (exclusiveMaximum != null) {
+         schema.exclusiveMaximum(exclusiveMaximum);
+      }
+
+      String pattern = this.resolvePattern(a, annotations, schemaAnnotation);
+      if (StringUtils.isNotBlank(pattern)) {
+         schema.pattern(pattern);
+      }
+
+      Integer minProperties = this.resolveMinProperties(a, annotations, schemaAnnotation);
+      if (minProperties != null) {
+         schema.minProperties(minProperties);
+      }
+
+      Integer maxProperties = this.resolveMaxProperties(a, annotations, schemaAnnotation);
+      if (maxProperties != null) {
+         schema.maxProperties(maxProperties);
+      }
+
+      List&lt;String&gt; requiredProperties = this.resolveRequiredProperties(a, annotations, schemaAnnotation);
+      if (requiredProperties != null) {
+         Iterator var23 = requiredProperties.iterator();
+
+         while(var23.hasNext()) {
+            String prop = (String)var23.next();
+            this.addRequiredItem(schema, prop);
+         }
+      }
+
+      Boolean writeOnly = this.resolveWriteOnly(a, annotations, schemaAnnotation);
+      if (writeOnly != null) {
+         schema.writeOnly(writeOnly);
+      }
+
+      ExternalDocumentation externalDocs = this.resolveExternalDocumentation(a, annotations, schemaAnnotation);
+      if (externalDocs != null) {
+         schema.externalDocs(externalDocs);
+      }
+
+      Boolean deprecated = this.resolveDeprecated(a, annotations, schemaAnnotation);
+      if (deprecated != null) {
+         schema.deprecated(deprecated);
+      }
+
+      List&lt;String&gt; allowableValues = this.resolveAllowableValues(a, annotations, schemaAnnotation);
+      if (allowableValues != null) {
+         Iterator var27 = allowableValues.iterator();
+
+         while(var27.hasNext()) {
+            String prop = (String)var27.next();
+            schema.addEnumItemObject(prop);
+         }
+      }
+
+      Map&lt;String, Object&gt; extensions = this.resolveExtensions(a, annotations, schemaAnnotation);
+      if (extensions != null) {
+         extensions.forEach(schema::addExtension);
+      }
+
+   }
+
+   protected void addRequiredItem(Schema model, String propName) {
+      if (model != null &amp;&amp; propName != null &amp;&amp; !StringUtils.isBlank(propName)) {
+         if (model.getRequired() == null || model.getRequired().isEmpty()) {
+            model.addRequiredItem(propName);
+         }
+
+         Stream var10000 = model.getRequired().stream();
+         propName.getClass();
+         if (var10000.noneMatch(propName::equals)) {
+            model.addRequiredItem(propName);
+         }
+
+      }
+   }
+
+   protected boolean shouldIgnoreClass(Type type) {
+      if (type instanceof Class) {
+         Class&lt;?&gt; cls = (Class)type;
+         if (cls.getName().equals(&quot;javax.ws.rs.Response&quot;)) {
+            return true;
+         }
+      } else if (type instanceof ResolvedType) {
+         ResolvedType rt = (ResolvedType)type;
+         this.LOGGER.trace(&quot;Can&#39;t check class {}, {}&quot;, type, rt.getRawClass().getName());
+         if (rt.getRawClass().equals(Class.class)) {
+            return true;
+         }
+      }
+
+      return false;
+   }
+
+   private List&lt;String&gt; getIgnoredProperties(BeanDescription beanDescription) {
+      AnnotationIntrospector introspector = this._mapper.getSerializationConfig().getAnnotationIntrospector();
+      Set&lt;String&gt; ignored = introspector.findPropertyIgnorals(beanDescription.getClassInfo()).findIgnoredForSerialization();
+      return (List)(ignored == null ? Collections.emptyList() : new ArrayList(ignored));
+   }
+
+   protected String decorateModelName(AnnotatedType type, String originalName) {
+      if (StringUtils.isBlank(originalName)) {
+         return originalName;
+      } else {
+         String name = originalName;
+         if (type.getJsonViewAnnotation() != null &amp;&amp; type.getJsonViewAnnotation().value().length &gt; 0) {
+            String COMBINER = &quot;-or-&quot;;
+            StringBuilder sb = new StringBuilder();
+            Class[] var6 = type.getJsonViewAnnotation().value();
+            int var7 = var6.length;
+
+            for(int var8 = 0; var8 &lt; var7; ++var8) {
+               Class&lt;?&gt; view = var6[var8];
+               sb.append(view.getSimpleName()).append(COMBINER);
+            }
+
+            String suffix = sb.substring(0, sb.length() - COMBINER.length());
+            name = originalName + &quot;_&quot; + suffix;
+         }
+
+         return name;
+      }
+   }
+
+   protected boolean hiddenByJsonView(Annotation[] annotations, AnnotatedType type) {
+      JsonView jsonView = type.getJsonViewAnnotation();
+      if (jsonView == null) {
+         return false;
+      } else {
+         Class&lt;?&gt;[] filters = jsonView.value();
+         boolean containsJsonViewAnnotation = false;
+         Annotation[] var6 = annotations;
+         int var7 = annotations.length;
+
+         for(int var8 = 0; var8 &lt; var7; ++var8) {
+            Annotation ant = var6[var8];
+            if (ant instanceof JsonView) {
+               containsJsonViewAnnotation = true;
+               Class&lt;?&gt;[] views = ((JsonView)ant).value();
+               Class[] var11 = filters;
+               int var12 = filters.length;
+
+               for(int var13 = 0; var13 &lt; var12; ++var13) {
+                  Class&lt;?&gt; f = var11[var13];
+                  Class[] var15 = views;
+                  int var16 = views.length;
+
+                  for(int var17 = 0; var17 &lt; var16; ++var17) {
+                     Class&lt;?&gt; v = var15[var17];
+                     if (v == f || v.isAssignableFrom(f)) {
+                        return false;
+                     }
+                  }
+               }
+            }
+         }
+
+         return containsJsonViewAnnotation;
+      }
+   }
+
+   private void resolveArraySchema(AnnotatedType annotatedType, io.swagger.v3.oas.models.media.ArraySchema schema, ArraySchema resolvedArrayAnnotation) {
+      Integer minItems = this.resolveMinItems(annotatedType, resolvedArrayAnnotation);
+      if (minItems != null) {
+         schema.minItems(minItems);
+      }
+
+      Integer maxItems = this.resolveMaxItems(annotatedType, resolvedArrayAnnotation);
+      if (maxItems != null) {
+         schema.maxItems(maxItems);
+      }
+
+      Boolean uniqueItems = this.resolveUniqueItems(annotatedType, resolvedArrayAnnotation);
+      if (uniqueItems != null) {
+         schema.uniqueItems(uniqueItems);
+      }
+
+      Map&lt;String, Object&gt; extensions = this.resolveExtensions(annotatedType, resolvedArrayAnnotation);
+      if (extensions != null) {
+         schema.extensions(extensions);
+      }
+
+      if (resolvedArrayAnnotation != null &amp;&amp; AnnotationsUtils.hasSchemaAnnotation(resolvedArrayAnnotation.arraySchema())) {
+         this.resolveSchemaMembers(schema, (Annotated)null, (Annotation[])null, resolvedArrayAnnotation.arraySchema());
+      }
+
+   }
+
+   private static enum GeneratorWrapper {
+      PROPERTY(PropertyGenerator.class) {
+         protected Schema processAsProperty(String propertyName, AnnotatedType type, ModelConverterContext context, ObjectMapper mapper) {
+            return null;
+         }
+
+         protected Schema processAsId(String propertyName, AnnotatedType type, ModelConverterContext context, ObjectMapper mapper) {
+            JavaType javaType;
+            if (type.getType() instanceof JavaType) {
+               javaType = (JavaType)type.getType();
+            } else {
+               javaType = mapper.constructType(type.getType());
+            }
+
+            BeanDescription beanDesc = mapper.getSerializationConfig().introspect(javaType);
+            Iterator var7 = beanDesc.findProperties().iterator();
+
+            BeanPropertyDefinition def;
+            String name;
+            do {
+               if (!var7.hasNext()) {
+                  return null;
+               }
+
+               def = (BeanPropertyDefinition)var7.next();
+               name = def.getName();
+            } while(name == null || !name.equals(propertyName));
+
+            AnnotatedMember propMember = def.getPrimaryMember();
+            JavaType propType = propMember.getType();
+            if (PrimitiveType.fromType(propType) != null) {
+               return PrimitiveType.createProperty(propType);
+            } else {
+               List&lt;Annotation&gt; list = new ArrayList();
+               AnnotationMap annotationMap = propMember.getAllAnnotations();
+               if (annotationMap != null) {
+                  Iterator var14 = annotationMap.annotations().iterator();
+
+                  while(var14.hasNext()) {
+                     Annotation a = (Annotation)var14.next();
+                     list.add(a);
+                  }
+               }
+
+               Annotation[] annotations = (Annotation[])list.toArray(new Annotation[list.size()]);
+               AnnotatedType aType = (new AnnotatedType()).type(propType).ctxAnnotations(annotations).jsonViewAnnotation(type.getJsonViewAnnotation()).schemaProperty(true).propertyName(type.getPropertyName());
+               return context.resolve(aType);
+            }
+         }
+      },
+      INT(IntSequenceGenerator.class) {
+         protected Schema processAsProperty(String propertyName, AnnotatedType type, ModelConverterContext context, ObjectMapper mapper) {
+            Schema id = new IntegerSchema();
+            return ModelResolver.GeneratorWrapper.process(id, propertyName, type, context);
+         }
+
+         protected Schema processAsId(String propertyName, AnnotatedType type, ModelConverterContext context, ObjectMapper mapper) {
+            return new IntegerSchema();
+         }
+      },
+      UUID(UUIDGenerator.class) {
+         protected Schema processAsProperty(String propertyName, AnnotatedType type, ModelConverterContext context, ObjectMapper mapper) {
+            Schema id = new UUIDSchema();
+            return ModelResolver.GeneratorWrapper.process(id, propertyName, type, context);
+         }
+
+         protected Schema processAsId(String propertyName, AnnotatedType type, ModelConverterContext context, ObjectMapper mapper) {
+            return new UUIDSchema();
+         }
+      },
+      NONE(None.class) {
+         protected Schema processAsProperty(String propertyName, AnnotatedType type, ModelConverterContext context, ObjectMapper mapper) {
+            return null;
+         }
+
+         protected Schema processAsId(String propertyName, AnnotatedType type, ModelConverterContext context, ObjectMapper mapper) {
+            return null;
+         }
+      };
+
+      private final Class&lt;? extends ObjectIdGenerator&gt; generator;
+
+      private GeneratorWrapper(Class&lt;? extends ObjectIdGenerator&gt; generator) {
+         this.generator = generator;
+      }
+
+      protected abstract Schema processAsProperty(String var1, AnnotatedType var2, ModelConverterContext var3, ObjectMapper var4);
+
+      protected abstract Schema processAsId(String var1, AnnotatedType var2, ModelConverterContext var3, ObjectMapper var4);
+
+      public static Schema processJsonIdentity(AnnotatedType type, ModelConverterContext context, ObjectMapper mapper, JsonIdentityInfo identityInfo, JsonIdentityReference identityReference) {
+         ModelResolver.GeneratorWrapper wrapper = identityInfo != null ? getWrapper(identityInfo.generator()) : null;
+         if (wrapper == null) {
+            return null;
+         } else {
+            return identityReference != null &amp;&amp; identityReference.alwaysAsId() ? wrapper.processAsId(identityInfo.property(), type, context, mapper) : wrapper.processAsProperty(identityInfo.property(), type, context, mapper);
+         }
+      }
+
+      private static ModelResolver.GeneratorWrapper getWrapper(Class&lt;?&gt; generator) {
+         ModelResolver.GeneratorWrapper[] var1 = values();
+         int var2 = var1.length;
+
+         for(int var3 = 0; var3 &lt; var2; ++var3) {
+            ModelResolver.GeneratorWrapper value = var1[var3];
+            if (value.generator.isAssignableFrom(generator)) {
+               return value;
+            }
+         }
+
+         return null;
+      }
+
+      private static Schema process(Schema id, String propertyName, AnnotatedType type, ModelConverterContext context) {
+         Schema model = context.resolve(removeJsonIdentityAnnotations(type));
+         model.addProperties(propertyName, id);
+         return (new Schema()).$ref(StringUtils.isNotEmpty(model.get$ref()) ? model.get$ref() : model.getName());
+      }
+
+      private static AnnotatedType removeJsonIdentityAnnotations(AnnotatedType type) {
+         return (new AnnotatedType()).jsonUnwrappedHandler(type.getJsonUnwrappedHandler()).jsonViewAnnotation(type.getJsonViewAnnotation()).name(type.getName()).parent(type.getParent()).resolveAsRef(false).schemaProperty(type.isSchemaProperty()).skipOverride(type.isSkipOverride()).skipSchemaName(type.isSkipSchemaName()).type(type.getType()).skipJsonIdentity(true).propertyName(type.getPropertyName()).ctxAnnotations(AnnotationsUtils.removeAnnotations(type.getCtxAnnotations(), new Class[]{JsonIdentityInfo.class, JsonIdentityReference.class}));
+      }
+
+      // $FF: synthetic method
+      GeneratorWrapper(Class x2, Object x3) {
+         this(x2);
+      }
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:27 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

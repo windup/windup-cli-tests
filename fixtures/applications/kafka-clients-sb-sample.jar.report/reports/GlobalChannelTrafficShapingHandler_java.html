@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for GlobalChannelTrafficShapingHandler.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/netty-handler-4.1.51.Final.jar/io/netty/handler/traffic/GlobalChannelTrafficShapingHandler.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.netty.handler.traffic;
+
+import io.netty.buffer.ByteBuf;
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelConfig;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelPromise;
+import io.netty.channel.ChannelHandler.Sharable;
+import io.netty.handler.traffic.AbstractTrafficShapingHandler.ReopenReadTimerTask;
+import io.netty.util.Attribute;
+import io.netty.util.internal.PlatformDependent;
+import io.netty.util.internal.logging.InternalLogger;
+import io.netty.util.internal.logging.InternalLoggerFactory;
+import java.util.AbstractCollection;
+import java.util.ArrayDeque;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicLong;
+
+@Sharable
+public class GlobalChannelTrafficShapingHandler extends AbstractTrafficShapingHandler {
+   private static final InternalLogger logger = InternalLoggerFactory.getInstance(GlobalChannelTrafficShapingHandler.class);
+   final ConcurrentMap&lt;Integer, GlobalChannelTrafficShapingHandler.PerChannel&gt; channelQueues = PlatformDependent.newConcurrentHashMap();
+   private final AtomicLong queuesSize = new AtomicLong();
+   private final AtomicLong cumulativeWrittenBytes = new AtomicLong();
+   private final AtomicLong cumulativeReadBytes = new AtomicLong();
+   volatile long maxGlobalWriteSize = 419430400L;
+   private volatile long writeChannelLimit;
+   private volatile long readChannelLimit;
+   private static final float DEFAULT_DEVIATION = 0.1F;
+   private static final float MAX_DEVIATION = 0.4F;
+   private static final float DEFAULT_SLOWDOWN = 0.4F;
+   private static final float DEFAULT_ACCELERATION = -0.1F;
+   private volatile float maxDeviation;
+   private volatile float accelerationFactor;
+   private volatile float slowDownFactor;
+   private volatile boolean readDeviationActive;
+   private volatile boolean writeDeviationActive;
+
+   void createGlobalTrafficCounter(ScheduledExecutorService executor) {
+      this.setMaxDeviation(0.1F, 0.4F, -0.1F);
+      if (executor == null) {
+         throw new IllegalArgumentException(&quot;Executor must not be null&quot;);
+      } else {
+         TrafficCounter tc = new GlobalChannelTrafficCounter(this, executor, &quot;GlobalChannelTC&quot;, this.checkInterval);
+         this.setTrafficCounter(tc);
+         tc.start();
+      }
+   }
+
+   protected int userDefinedWritabilityIndex() {
+      return 3;
+   }
+
+   public GlobalChannelTrafficShapingHandler(ScheduledExecutorService executor, long writeGlobalLimit, long readGlobalLimit, long writeChannelLimit, long readChannelLimit, long checkInterval, long maxTime) {
+      super(writeGlobalLimit, readGlobalLimit, checkInterval, maxTime);
+      this.createGlobalTrafficCounter(executor);
+      this.writeChannelLimit = writeChannelLimit;
+      this.readChannelLimit = readChannelLimit;
+   }
+
+   public GlobalChannelTrafficShapingHandler(ScheduledExecutorService executor, long writeGlobalLimit, long readGlobalLimit, long writeChannelLimit, long readChannelLimit, long checkInterval) {
+      super(writeGlobalLimit, readGlobalLimit, checkInterval);
+      this.writeChannelLimit = writeChannelLimit;
+      this.readChannelLimit = readChannelLimit;
+      this.createGlobalTrafficCounter(executor);
+   }
+
+   public GlobalChannelTrafficShapingHandler(ScheduledExecutorService executor, long writeGlobalLimit, long readGlobalLimit, long writeChannelLimit, long readChannelLimit) {
+      super(writeGlobalLimit, readGlobalLimit);
+      this.writeChannelLimit = writeChannelLimit;
+      this.readChannelLimit = readChannelLimit;
+      this.createGlobalTrafficCounter(executor);
+   }
+
+   public GlobalChannelTrafficShapingHandler(ScheduledExecutorService executor, long checkInterval) {
+      super(checkInterval);
+      this.createGlobalTrafficCounter(executor);
+   }
+
+   public GlobalChannelTrafficShapingHandler(ScheduledExecutorService executor) {
+      this.createGlobalTrafficCounter(executor);
+   }
+
+   public float maxDeviation() {
+      return this.maxDeviation;
+   }
+
+   public float accelerationFactor() {
+      return this.accelerationFactor;
+   }
+
+   public float slowDownFactor() {
+      return this.slowDownFactor;
+   }
+
+   public void setMaxDeviation(float maxDeviation, float slowDownFactor, float accelerationFactor) {
+      if (maxDeviation &gt; 0.4F) {
+         throw new IllegalArgumentException(&quot;maxDeviation must be &lt;= 0.4&quot;);
+      } else if (slowDownFactor &lt; 0.0F) {
+         throw new IllegalArgumentException(&quot;slowDownFactor must be &gt;= 0&quot;);
+      } else if (accelerationFactor &gt; 0.0F) {
+         throw new IllegalArgumentException(&quot;accelerationFactor must be &lt;= 0&quot;);
+      } else {
+         this.maxDeviation = maxDeviation;
+         this.accelerationFactor = 1.0F + accelerationFactor;
+         this.slowDownFactor = 1.0F + slowDownFactor;
+      }
+   }
+
+   private void computeDeviationCumulativeBytes() {
+      long maxWrittenBytes = 0L;
+      long maxReadBytes = 0L;
+      long minWrittenBytes = Long.MAX_VALUE;
+      long minReadBytes = Long.MAX_VALUE;
+      Iterator var9 = this.channelQueues.values().iterator();
+
+      while(var9.hasNext()) {
+         GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)var9.next();
+         long value = perChannel.channelTrafficCounter.cumulativeWrittenBytes();
+         if (maxWrittenBytes &lt; value) {
+            maxWrittenBytes = value;
+         }
+
+         if (minWrittenBytes &gt; value) {
+            minWrittenBytes = value;
+         }
+
+         value = perChannel.channelTrafficCounter.cumulativeReadBytes();
+         if (maxReadBytes &lt; value) {
+            maxReadBytes = value;
+         }
+
+         if (minReadBytes &gt; value) {
+            minReadBytes = value;
+         }
+      }
+
+      boolean multiple = this.channelQueues.size() &gt; 1;
+      this.readDeviationActive = multiple &amp;&amp; minReadBytes &lt; maxReadBytes / 2L;
+      this.writeDeviationActive = multiple &amp;&amp; minWrittenBytes &lt; maxWrittenBytes / 2L;
+      this.cumulativeWrittenBytes.set(maxWrittenBytes);
+      this.cumulativeReadBytes.set(maxReadBytes);
+   }
+
+   protected void doAccounting(TrafficCounter counter) {
+      this.computeDeviationCumulativeBytes();
+      super.doAccounting(counter);
+   }
+
+   private long computeBalancedWait(float maxLocal, float maxGlobal, long wait) {
+      if (maxGlobal == 0.0F) {
+         return wait;
+      } else {
+         float ratio = maxLocal / maxGlobal;
+         if (ratio &gt; this.maxDeviation) {
+            if (ratio &lt; 1.0F - this.maxDeviation) {
+               return wait;
+            }
+
+            ratio = this.slowDownFactor;
+            if (wait &lt; 10L) {
+               wait = 10L;
+            }
+         } else {
+            ratio = this.accelerationFactor;
+         }
+
+         return (long)((float)wait * ratio);
+      }
+   }
+
+   public long getMaxGlobalWriteSize() {
+      return this.maxGlobalWriteSize;
+   }
+
+   public void setMaxGlobalWriteSize(long maxGlobalWriteSize) {
+      if (maxGlobalWriteSize &lt;= 0L) {
+         throw new IllegalArgumentException(&quot;maxGlobalWriteSize must be positive&quot;);
+      } else {
+         this.maxGlobalWriteSize = maxGlobalWriteSize;
+      }
+   }
+
+   public long queuesSize() {
+      return this.queuesSize.get();
+   }
+
+   public void configureChannel(long newWriteLimit, long newReadLimit) {
+      this.writeChannelLimit = newWriteLimit;
+      this.readChannelLimit = newReadLimit;
+      long now = TrafficCounter.milliSecondFromNano();
+      Iterator var7 = this.channelQueues.values().iterator();
+
+      while(var7.hasNext()) {
+         GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)var7.next();
+         perChannel.channelTrafficCounter.resetAccounting(now);
+      }
+
+   }
+
+   public long getWriteChannelLimit() {
+      return this.writeChannelLimit;
+   }
+
+   public void setWriteChannelLimit(long writeLimit) {
+      this.writeChannelLimit = writeLimit;
+      long now = TrafficCounter.milliSecondFromNano();
+      Iterator var5 = this.channelQueues.values().iterator();
+
+      while(var5.hasNext()) {
+         GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)var5.next();
+         perChannel.channelTrafficCounter.resetAccounting(now);
+      }
+
+   }
+
+   public long getReadChannelLimit() {
+      return this.readChannelLimit;
+   }
+
+   public void setReadChannelLimit(long readLimit) {
+      this.readChannelLimit = readLimit;
+      long now = TrafficCounter.milliSecondFromNano();
+      Iterator var5 = this.channelQueues.values().iterator();
+
+      while(var5.hasNext()) {
+         GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)var5.next();
+         perChannel.channelTrafficCounter.resetAccounting(now);
+      }
+
+   }
+
+   public final void release() {
+      this.trafficCounter.stop();
+   }
+
+   private GlobalChannelTrafficShapingHandler.PerChannel getOrSetPerChannel(ChannelHandlerContext ctx) {
+      Channel channel = ctx.channel();
+      Integer key = channel.hashCode();
+      GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)this.channelQueues.get(key);
+      if (perChannel == null) {
+         perChannel = new GlobalChannelTrafficShapingHandler.PerChannel();
+         perChannel.messagesQueue = new ArrayDeque();
+         perChannel.channelTrafficCounter = new TrafficCounter(this, (ScheduledExecutorService)null, &quot;ChannelTC&quot; + ctx.channel().hashCode(), this.checkInterval);
+         perChannel.queueSize = 0L;
+         perChannel.lastReadTimestamp = TrafficCounter.milliSecondFromNano();
+         perChannel.lastWriteTimestamp = perChannel.lastReadTimestamp;
+         this.channelQueues.put(key, perChannel);
+      }
+
+      return perChannel;
+   }
+
+   public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
+      this.getOrSetPerChannel(ctx);
+      this.trafficCounter.resetCumulativeTime();
+      super.handlerAdded(ctx);
+   }
+
+   public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
+      this.trafficCounter.resetCumulativeTime();
+      Channel channel = ctx.channel();
+      Integer key = channel.hashCode();
+      GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)this.channelQueues.remove(key);
+      if (perChannel != null) {
+         synchronized(perChannel) {
+            Iterator var6;
+            GlobalChannelTrafficShapingHandler.ToSend toSend;
+            if (channel.isActive()) {
+               var6 = perChannel.messagesQueue.iterator();
+
+               while(var6.hasNext()) {
+                  toSend = (GlobalChannelTrafficShapingHandler.ToSend)var6.next();
+                  long size = this.calculateSize(toSend.toSend);
+                  this.trafficCounter.bytesRealWriteFlowControl(size);
+                  perChannel.channelTrafficCounter.bytesRealWriteFlowControl(size);
+                  perChannel.queueSize -= size;
+                  this.queuesSize.addAndGet(-size);
+                  ctx.write(toSend.toSend, toSend.promise);
+               }
+            } else {
+               this.queuesSize.addAndGet(-perChannel.queueSize);
+               var6 = perChannel.messagesQueue.iterator();
+
+               while(var6.hasNext()) {
+                  toSend = (GlobalChannelTrafficShapingHandler.ToSend)var6.next();
+                  if (toSend.toSend instanceof ByteBuf) {
+                     ((ByteBuf)toSend.toSend).release();
+                  }
+               }
+            }
+
+            perChannel.messagesQueue.clear();
+         }
+      }
+
+      this.releaseWriteSuspended(ctx);
+      this.releaseReadSuspended(ctx);
+      super.handlerRemoved(ctx);
+   }
+
+   public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+      long size = this.calculateSize(msg);
+      long now = TrafficCounter.milliSecondFromNano();
+      if (size &gt; 0L) {
+         long waitGlobal = this.trafficCounter.readTimeToWait(size, this.getReadLimit(), this.maxTime, now);
+         Integer key = ctx.channel().hashCode();
+         GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)this.channelQueues.get(key);
+         long wait = 0L;
+         if (perChannel != null) {
+            wait = perChannel.channelTrafficCounter.readTimeToWait(size, this.readChannelLimit, this.maxTime, now);
+            if (this.readDeviationActive) {
+               long maxLocalRead = perChannel.channelTrafficCounter.cumulativeReadBytes();
+               long maxGlobalRead = this.cumulativeReadBytes.get();
+               if (maxLocalRead &lt;= 0L) {
+                  maxLocalRead = 0L;
+               }
+
+               if (maxGlobalRead &lt; maxLocalRead) {
+                  maxGlobalRead = maxLocalRead;
+               }
+
+               wait = this.computeBalancedWait((float)maxLocalRead, (float)maxGlobalRead, wait);
+            }
+         }
+
+         if (wait &lt; waitGlobal) {
+            wait = waitGlobal;
+         }
+
+         wait = this.checkWaitReadTime(ctx, wait, now);
+         if (wait &gt;= 10L) {
+            Channel channel = ctx.channel();
+            ChannelConfig config = channel.config();
+            if (logger.isDebugEnabled()) {
+               logger.debug(&quot;Read Suspend: &quot; + wait + &#39;:&#39; + config.isAutoRead() + &#39;:&#39; + isHandlerActive(ctx));
+            }
+
+            if (config.isAutoRead() &amp;&amp; isHandlerActive(ctx)) {
+               config.setAutoRead(false);
+               channel.attr(READ_SUSPENDED).set(true);
+               Attribute&lt;Runnable&gt; attr = channel.attr(REOPEN_TASK);
+               Runnable reopenTask = (Runnable)attr.get();
+               if (reopenTask == null) {
+                  reopenTask = new ReopenReadTimerTask(ctx);
+                  attr.set(reopenTask);
+               }
+
+               ctx.executor().schedule((Runnable)reopenTask, wait, TimeUnit.MILLISECONDS);
+               if (logger.isDebugEnabled()) {
+                  logger.debug(&quot;Suspend final status =&gt; &quot; + config.isAutoRead() + &#39;:&#39; + isHandlerActive(ctx) + &quot; will reopened at: &quot; + wait);
+               }
+            }
+         }
+      }
+
+      this.informReadOperation(ctx, now);
+      ctx.fireChannelRead(msg);
+   }
+
+   protected long checkWaitReadTime(ChannelHandlerContext ctx, long wait, long now) {
+      Integer key = ctx.channel().hashCode();
+      GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)this.channelQueues.get(key);
+      if (perChannel != null &amp;&amp; wait &gt; this.maxTime &amp;&amp; now + wait - perChannel.lastReadTimestamp &gt; this.maxTime) {
+         wait = this.maxTime;
+      }
+
+      return wait;
+   }
+
+   protected void informReadOperation(ChannelHandlerContext ctx, long now) {
+      Integer key = ctx.channel().hashCode();
+      GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)this.channelQueues.get(key);
+      if (perChannel != null) {
+         perChannel.lastReadTimestamp = now;
+      }
+
+   }
+
+   protected long maximumCumulativeWrittenBytes() {
+      return this.cumulativeWrittenBytes.get();
+   }
+
+   protected long maximumCumulativeReadBytes() {
+      return this.cumulativeReadBytes.get();
+   }
+
+   public Collection&lt;TrafficCounter&gt; channelTrafficCounters() {
+      return new AbstractCollection&lt;TrafficCounter&gt;() {
+         public Iterator&lt;TrafficCounter&gt; iterator() {
+            return new Iterator&lt;TrafficCounter&gt;() {
+               final Iterator&lt;GlobalChannelTrafficShapingHandler.PerChannel&gt; iter;
+
+               {
+                  this.iter = GlobalChannelTrafficShapingHandler.this.channelQueues.values().iterator();
+               }
+
+               public boolean hasNext() {
+                  return this.iter.hasNext();
+               }
+
+               public TrafficCounter next() {
+                  return ((GlobalChannelTrafficShapingHandler.PerChannel)this.iter.next()).channelTrafficCounter;
+               }
+
+               public void remove() {
+                  throw new UnsupportedOperationException();
+               }
+            };
+         }
+
+         public int size() {
+            return GlobalChannelTrafficShapingHandler.this.channelQueues.size();
+         }
+      };
+   }
+
+   public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+      long size = this.calculateSize(msg);
+      long now = TrafficCounter.milliSecondFromNano();
+      if (size &gt; 0L) {
+         long waitGlobal = this.trafficCounter.writeTimeToWait(size, this.getWriteLimit(), this.maxTime, now);
+         Integer key = ctx.channel().hashCode();
+         GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)this.channelQueues.get(key);
+         long wait = 0L;
+         if (perChannel != null) {
+            wait = perChannel.channelTrafficCounter.writeTimeToWait(size, this.writeChannelLimit, this.maxTime, now);
+            if (this.writeDeviationActive) {
+               long maxLocalWrite = perChannel.channelTrafficCounter.cumulativeWrittenBytes();
+               long maxGlobalWrite = this.cumulativeWrittenBytes.get();
+               if (maxLocalWrite &lt;= 0L) {
+                  maxLocalWrite = 0L;
+               }
+
+               if (maxGlobalWrite &lt; maxLocalWrite) {
+                  maxGlobalWrite = maxLocalWrite;
+               }
+
+               wait = this.computeBalancedWait((float)maxLocalWrite, (float)maxGlobalWrite, wait);
+            }
+         }
+
+         if (wait &lt; waitGlobal) {
+            wait = waitGlobal;
+         }
+
+         if (wait &gt;= 10L) {
+            if (logger.isDebugEnabled()) {
+               logger.debug(&quot;Write suspend: &quot; + wait + &#39;:&#39; + ctx.channel().config().isAutoRead() + &#39;:&#39; + isHandlerActive(ctx));
+            }
+
+            this.submitWrite(ctx, msg, size, wait, now, promise);
+            return;
+         }
+      }
+
+      this.submitWrite(ctx, msg, size, 0L, now, promise);
+   }
+
+   protected void submitWrite(final ChannelHandlerContext ctx, Object msg, long size, long writedelay, long now, ChannelPromise promise) {
+      Channel channel = ctx.channel();
+      Integer key = channel.hashCode();
+      final GlobalChannelTrafficShapingHandler.PerChannel perChannel = (GlobalChannelTrafficShapingHandler.PerChannel)this.channelQueues.get(key);
+      if (perChannel == null) {
+         perChannel = this.getOrSetPerChannel(ctx);
+      }
+
+      long delay = writedelay;
+      boolean globalSizeExceeded = false;
+      GlobalChannelTrafficShapingHandler.ToSend newToSend;
+      synchronized(perChannel) {
+         if (writedelay == 0L &amp;&amp; perChannel.messagesQueue.isEmpty()) {
+            this.trafficCounter.bytesRealWriteFlowControl(size);
+            perChannel.channelTrafficCounter.bytesRealWriteFlowControl(size);
+            ctx.write(msg, promise);
+            perChannel.lastWriteTimestamp = now;
+            return;
+         }
+
+         if (delay &gt; this.maxTime &amp;&amp; now + delay - perChannel.lastWriteTimestamp &gt; this.maxTime) {
+            delay = this.maxTime;
+         }
+
+         newToSend = new GlobalChannelTrafficShapingHandler.ToSend(delay + now, msg, size, promise, null);
+         perChannel.messagesQueue.addLast(newToSend);
+         perChannel.queueSize += size;
+         this.queuesSize.addAndGet(size);
+         this.checkWriteSuspend(ctx, delay, perChannel.queueSize);
+         if (this.queuesSize.get() &gt; this.maxGlobalWriteSize) {
+            globalSizeExceeded = true;
+         }
+      }
+
+      if (globalSizeExceeded) {
+         this.setUserDefinedWritability(ctx, false);
+      }
+
+      final long futureNow = newToSend.relativeTimeAction;
+      ctx.executor().schedule(new Runnable() {
+         public void run() {
+            GlobalChannelTrafficShapingHandler.this.sendAllValid(ctx, perChannel, futureNow);
+         }
+      }, delay, TimeUnit.MILLISECONDS);
+   }
+
+   private void sendAllValid(ChannelHandlerContext ctx, GlobalChannelTrafficShapingHandler.PerChannel perChannel, long now) {
+      synchronized(perChannel) {
+         GlobalChannelTrafficShapingHandler.ToSend newToSend = (GlobalChannelTrafficShapingHandler.ToSend)perChannel.messagesQueue.pollFirst();
+
+         while(true) {
+            if (newToSend != null) {
+               if (newToSend.relativeTimeAction &lt;= now) {
+                  long size = newToSend.size;
+                  this.trafficCounter.bytesRealWriteFlowControl(size);
+                  perChannel.channelTrafficCounter.bytesRealWriteFlowControl(size);
+                  perChannel.queueSize -= size;
+                  this.queuesSize.addAndGet(-size);
+                  ctx.write(newToSend.toSend, newToSend.promise);
+                  perChannel.lastWriteTimestamp = now;
+                  newToSend = (GlobalChannelTrafficShapingHandler.ToSend)perChannel.messagesQueue.pollFirst();
+                  continue;
+               }
+
+               perChannel.messagesQueue.addFirst(newToSend);
+            }
+
+            if (perChannel.messagesQueue.isEmpty()) {
+               this.releaseWriteSuspended(ctx);
+            }
+            break;
+         }
+      }
+
+      ctx.flush();
+   }
+
+   public String toString() {
+      return (new StringBuilder(340)).append(super.toString()).append(&quot; Write Channel Limit: &quot;).append(this.writeChannelLimit).append(&quot; Read Channel Limit: &quot;).append(this.readChannelLimit).toString();
+   }
+
+   private static final class ToSend {
+      final long relativeTimeAction;
+      final Object toSend;
+      final ChannelPromise promise;
+      final long size;
+
+      private ToSend(long delay, Object toSend, long size, ChannelPromise promise) {
+         this.relativeTimeAction = delay;
+         this.toSend = toSend;
+         this.size = size;
+         this.promise = promise;
+      }
+
+      // $FF: synthetic method
+      ToSend(long x0, Object x1, long x2, ChannelPromise x3, Object x4) {
+         this(x0, x1, x2, x3);
+      }
+   }
+
+   static final class PerChannel {
+      ArrayDeque&lt;GlobalChannelTrafficShapingHandler.ToSend&gt; messagesQueue;
+      TrafficCounter channelTrafficCounter;
+      long queueSize;
+      long lastWriteTimestamp;
+      long lastReadTimestamp;
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:25 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

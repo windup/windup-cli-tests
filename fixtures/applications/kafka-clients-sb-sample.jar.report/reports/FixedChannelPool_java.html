@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for FixedChannelPool.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/netty-transport-4.1.51.Final.jar/io/netty/channel/pool/FixedChannelPool.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.netty.channel.pool;
+
+import io.netty.bootstrap.Bootstrap;
+import io.netty.channel.Channel;
+import io.netty.util.concurrent.EventExecutor;
+import io.netty.util.concurrent.Future;
+import io.netty.util.concurrent.FutureListener;
+import io.netty.util.concurrent.GlobalEventExecutor;
+import io.netty.util.concurrent.Promise;
+import io.netty.util.internal.ObjectUtil;
+import java.nio.channels.ClosedChannelException;
+import java.util.ArrayDeque;
+import java.util.Queue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class FixedChannelPool extends SimpleChannelPool {
+   private final EventExecutor executor;
+   private final long acquireTimeoutNanos;
+   private final Runnable timeoutTask;
+   private final Queue&lt;FixedChannelPool.AcquireTask&gt; pendingAcquireQueue;
+   private final int maxConnections;
+   private final int maxPendingAcquires;
+   private final AtomicInteger acquiredChannelCount;
+   private int pendingAcquireCount;
+   private boolean closed;
+
+   public FixedChannelPool(Bootstrap bootstrap, ChannelPoolHandler handler, int maxConnections) {
+      this(bootstrap, handler, maxConnections, Integer.MAX_VALUE);
+   }
+
+   public FixedChannelPool(Bootstrap bootstrap, ChannelPoolHandler handler, int maxConnections, int maxPendingAcquires) {
+      this(bootstrap, handler, ChannelHealthChecker.ACTIVE, (FixedChannelPool.AcquireTimeoutAction)null, -1L, maxConnections, maxPendingAcquires);
+   }
+
+   public FixedChannelPool(Bootstrap bootstrap, ChannelPoolHandler handler, ChannelHealthChecker healthCheck, FixedChannelPool.AcquireTimeoutAction action, long acquireTimeoutMillis, int maxConnections, int maxPendingAcquires) {
+      this(bootstrap, handler, healthCheck, action, acquireTimeoutMillis, maxConnections, maxPendingAcquires, true);
+   }
+
+   public FixedChannelPool(Bootstrap bootstrap, ChannelPoolHandler handler, ChannelHealthChecker healthCheck, FixedChannelPool.AcquireTimeoutAction action, long acquireTimeoutMillis, int maxConnections, int maxPendingAcquires, boolean releaseHealthCheck) {
+      this(bootstrap, handler, healthCheck, action, acquireTimeoutMillis, maxConnections, maxPendingAcquires, releaseHealthCheck, true);
+   }
+
+   public FixedChannelPool(Bootstrap bootstrap, ChannelPoolHandler handler, ChannelHealthChecker healthCheck, FixedChannelPool.AcquireTimeoutAction action, long acquireTimeoutMillis, int maxConnections, int maxPendingAcquires, boolean releaseHealthCheck, boolean lastRecentUsed) {
+      super(bootstrap, handler, healthCheck, releaseHealthCheck, lastRecentUsed);
+      this.pendingAcquireQueue = new ArrayDeque();
+      this.acquiredChannelCount = new AtomicInteger();
+      if (maxConnections &lt; 1) {
+         throw new IllegalArgumentException(&quot;maxConnections: &quot; + maxConnections + &quot; (expected: &gt;= 1)&quot;);
+      } else if (maxPendingAcquires &lt; 1) {
+         throw new IllegalArgumentException(&quot;maxPendingAcquires: &quot; + maxPendingAcquires + &quot; (expected: &gt;= 1)&quot;);
+      } else {
+         if (action == null &amp;&amp; acquireTimeoutMillis == -1L) {
+            this.timeoutTask = null;
+            this.acquireTimeoutNanos = -1L;
+         } else {
+            if (action == null &amp;&amp; acquireTimeoutMillis != -1L) {
+               throw new NullPointerException(&quot;action&quot;);
+            }
+
+            if (action != null &amp;&amp; acquireTimeoutMillis &lt; 0L) {
+               throw new IllegalArgumentException(&quot;acquireTimeoutMillis: &quot; + acquireTimeoutMillis + &quot; (expected: &gt;= 0)&quot;);
+            }
+
+            this.acquireTimeoutNanos = TimeUnit.MILLISECONDS.toNanos(acquireTimeoutMillis);
+            switch(action) {
+            case FAIL:
+               this.timeoutTask = new FixedChannelPool.TimeoutTask() {
+                  public void onTimeout(FixedChannelPool.AcquireTask task) {
+                     task.promise.setFailure(new TimeoutException(&quot;Acquire operation took longer then configured maximum time&quot;) {
+                        public Throwable fillInStackTrace() {
+                           return this;
+                        }
+                     });
+                  }
+               };
+               break;
+            case NEW:
+               this.timeoutTask = new FixedChannelPool.TimeoutTask() {
+                  public void onTimeout(FixedChannelPool.AcquireTask task) {
+                     task.acquired();
+                     FixedChannelPool.super.acquire(task.promise);
+                  }
+               };
+               break;
+            default:
+               throw new Error();
+            }
+         }
+
+         this.executor = bootstrap.config().group().next();
+         this.maxConnections = maxConnections;
+         this.maxPendingAcquires = maxPendingAcquires;
+      }
+   }
+
+   public int acquiredChannelCount() {
+      return this.acquiredChannelCount.get();
+   }
+
+   public Future&lt;Channel&gt; acquire(final Promise&lt;Channel&gt; promise) {
+      try {
+         if (this.executor.inEventLoop()) {
+            this.acquire0(promise);
+         } else {
+            this.executor.execute(new Runnable() {
+               public void run() {
+                  FixedChannelPool.this.acquire0(promise);
+               }
+            });
+         }
+      } catch (Throwable var3) {
+         promise.setFailure(var3);
+      }
+
+      return promise;
+   }
+
+   private void acquire0(Promise&lt;Channel&gt; promise) {
+      assert this.executor.inEventLoop();
+
+      if (this.closed) {
+         promise.setFailure(new IllegalStateException(&quot;FixedChannelPool was closed&quot;));
+      } else {
+         if (this.acquiredChannelCount.get() &lt; this.maxConnections) {
+            assert this.acquiredChannelCount.get() &gt;= 0;
+
+            Promise&lt;Channel&gt; p = this.executor.newPromise();
+            FixedChannelPool.AcquireListener l = new FixedChannelPool.AcquireListener(promise);
+            l.acquired();
+            p.addListener(l);
+            super.acquire(p);
+         } else {
+            if (this.pendingAcquireCount &gt;= this.maxPendingAcquires) {
+               this.tooManyOutstanding(promise);
+            } else {
+               FixedChannelPool.AcquireTask task = new FixedChannelPool.AcquireTask(promise);
+               if (this.pendingAcquireQueue.offer(task)) {
+                  ++this.pendingAcquireCount;
+                  if (this.timeoutTask != null) {
+                     task.timeoutFuture = this.executor.schedule(this.timeoutTask, this.acquireTimeoutNanos, TimeUnit.NANOSECONDS);
+                  }
+               } else {
+                  this.tooManyOutstanding(promise);
+               }
+            }
+
+            assert this.pendingAcquireCount &gt; 0;
+         }
+
+      }
+   }
+
+   private void tooManyOutstanding(Promise&lt;?&gt; promise) {
+      promise.setFailure(new IllegalStateException(&quot;Too many outstanding acquire operations&quot;));
+   }
+
+   public Future&lt;Void&gt; release(final Channel channel, final Promise&lt;Void&gt; promise) {
+      ObjectUtil.checkNotNull(promise, &quot;promise&quot;);
+      Promise&lt;Void&gt; p = this.executor.newPromise();
+      super.release(channel, p.addListener(new FutureListener&lt;Void&gt;() {
+         public void operationComplete(Future&lt;Void&gt; future) throws Exception {
+            assert FixedChannelPool.this.executor.inEventLoop();
+
+            if (FixedChannelPool.this.closed) {
+               channel.close();
+               promise.setFailure(new IllegalStateException(&quot;FixedChannelPool was closed&quot;));
+            } else {
+               if (future.isSuccess()) {
+                  FixedChannelPool.this.decrementAndRunTaskQueue();
+                  promise.setSuccess((Object)null);
+               } else {
+                  Throwable cause = future.cause();
+                  if (!(cause instanceof IllegalArgumentException)) {
+                     FixedChannelPool.this.decrementAndRunTaskQueue();
+                  }
+
+                  promise.setFailure(future.cause());
+               }
+
+            }
+         }
+      }));
+      return promise;
+   }
+
+   private void decrementAndRunTaskQueue() {
+      int currentCount = this.acquiredChannelCount.decrementAndGet();
+
+      assert currentCount &gt;= 0;
+
+      this.runTaskQueue();
+   }
+
+   private void runTaskQueue() {
+      while(true) {
+         if (this.acquiredChannelCount.get() &lt; this.maxConnections) {
+            FixedChannelPool.AcquireTask task = (FixedChannelPool.AcquireTask)this.pendingAcquireQueue.poll();
+            if (task != null) {
+               ScheduledFuture&lt;?&gt; timeoutFuture = task.timeoutFuture;
+               if (timeoutFuture != null) {
+                  timeoutFuture.cancel(false);
+               }
+
+               --this.pendingAcquireCount;
+               task.acquired();
+               super.acquire(task.promise);
+               continue;
+            }
+         }
+
+         assert this.pendingAcquireCount &gt;= 0;
+
+         assert this.acquiredChannelCount.get() &gt;= 0;
+
+         return;
+      }
+   }
+
+   public void close() {
+      try {
+         this.closeAsync().await();
+      } catch (InterruptedException var2) {
+         Thread.currentThread().interrupt();
+         throw new RuntimeException(var2);
+      }
+   }
+
+   public Future&lt;Void&gt; closeAsync() {
+      if (this.executor.inEventLoop()) {
+         return this.close0();
+      } else {
+         final Promise&lt;Void&gt; closeComplete = this.executor.newPromise();
+         this.executor.execute(new Runnable() {
+            public void run() {
+               FixedChannelPool.this.close0().addListener(new FutureListener&lt;Void&gt;() {
+                  public void operationComplete(Future&lt;Void&gt; f) throws Exception {
+                     if (f.isSuccess()) {
+                        closeComplete.setSuccess((Object)null);
+                     } else {
+                        closeComplete.setFailure(f.cause());
+                     }
+
+                  }
+               });
+            }
+         });
+         return closeComplete;
+      }
+   }
+
+   private Future&lt;Void&gt; close0() {
+      assert this.executor.inEventLoop();
+
+      if (!this.closed) {
+         this.closed = true;
+
+         while(true) {
+            FixedChannelPool.AcquireTask task = (FixedChannelPool.AcquireTask)this.pendingAcquireQueue.poll();
+            if (task == null) {
+               this.acquiredChannelCount.set(0);
+               this.pendingAcquireCount = 0;
+               return GlobalEventExecutor.INSTANCE.submit(new Callable&lt;Void&gt;() {
+                  public Void call() throws Exception {
+                     FixedChannelPool.super.close();
+                     return null;
+                  }
+               });
+            }
+
+            ScheduledFuture&lt;?&gt; f = task.timeoutFuture;
+            if (f != null) {
+               f.cancel(false);
+            }
+
+            task.promise.setFailure(new ClosedChannelException());
+         }
+      } else {
+         return GlobalEventExecutor.INSTANCE.newSucceededFuture((Object)null);
+      }
+   }
+
+   private class AcquireListener implements FutureListener&lt;Channel&gt; {
+      private final Promise&lt;Channel&gt; originalPromise;
+      protected boolean acquired;
+
+      AcquireListener(Promise&lt;Channel&gt; var1) {
+         this.originalPromise = originalPromise;
+      }
+
+      public void operationComplete(Future&lt;Channel&gt; future) throws Exception {
+         assert FixedChannelPool.this.executor.inEventLoop();
+
+         if (FixedChannelPool.this.closed) {
+            if (future.isSuccess()) {
+               ((Channel)future.getNow()).close();
+            }
+
+            this.originalPromise.setFailure(new IllegalStateException(&quot;FixedChannelPool was closed&quot;));
+         } else {
+            if (future.isSuccess()) {
+               this.originalPromise.setSuccess(future.getNow());
+            } else {
+               if (this.acquired) {
+                  FixedChannelPool.this.decrementAndRunTaskQueue();
+               } else {
+                  FixedChannelPool.this.runTaskQueue();
+               }
+
+               this.originalPromise.setFailure(future.cause());
+            }
+
+         }
+      }
+
+      public void acquired() {
+         if (!this.acquired) {
+            FixedChannelPool.this.acquiredChannelCount.incrementAndGet();
+            this.acquired = true;
+         }
+      }
+   }
+
+   private abstract class TimeoutTask implements Runnable {
+      private TimeoutTask() {
+      }
+
+      public final void run() {
+         assert FixedChannelPool.this.executor.inEventLoop();
+
+         long nanoTime = System.nanoTime();
+
+         while(true) {
+            FixedChannelPool.AcquireTask task = (FixedChannelPool.AcquireTask)FixedChannelPool.this.pendingAcquireQueue.peek();
+            if (task == null || nanoTime - task.expireNanoTime &lt; 0L) {
+               return;
+            }
+
+            FixedChannelPool.this.pendingAcquireQueue.remove();
+            --FixedChannelPool.this.pendingAcquireCount;
+            this.onTimeout(task);
+         }
+      }
+
+      public abstract void onTimeout(FixedChannelPool.AcquireTask var1);
+
+      // $FF: synthetic method
+      TimeoutTask(Object x1) {
+         this();
+      }
+   }
+
+   private final class AcquireTask extends FixedChannelPool.AcquireListener {
+      final Promise&lt;Channel&gt; promise;
+      final long expireNanoTime;
+      ScheduledFuture&lt;?&gt; timeoutFuture;
+
+      AcquireTask(Promise&lt;Channel&gt; var1) {
+         super(promise);
+         this.expireNanoTime = System.nanoTime() + FixedChannelPool.this.acquireTimeoutNanos;
+         this.promise = FixedChannelPool.this.executor.newPromise().addListener(this);
+      }
+   }
+
+   public static enum AcquireTimeoutAction {
+      NEW,
+      FAIL;
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:25 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

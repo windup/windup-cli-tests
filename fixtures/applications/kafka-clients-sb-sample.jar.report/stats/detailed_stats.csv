@@ -1,0 +1,1073 @@
+Number Of Executions, Total Milliseconds,  Milliseconds per execution, Type
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Scheduled).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Derby Driver).as(default)"
+     1,     85,    85.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ConfigurationDelegate_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Akka Testkit).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,iLog).as(default)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SimpleSocketServer_java.html)"
+     1,    127,   127.00, sortDependencyGroupArchivesByPathAscending
+     1,     88,    88.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RemoteReceiverStreamClient_java.html)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.63.html)"
+     1,     96,    96.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EpollEventLoopGroup_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,PrimeFaces).as(default)"
+     1,     79,    79.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.89.html)"
+     1,      1,     1.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[IMPORT]).as(5ca5b08d-651c-493f-a212-3af139a3277c)"
+     1,      4,     4.00, Query.fromType(org.jboss.windup.graph.model.WindupConfigurationModel).gremlin()org.jboss.windup.rules.apps.java.scan.provider.DiscoverFilesAndTypesRuleProvider$$Lambda$341/0x0000000840757840@4a122bda.as(default)
+     1,      0,     0.00, Query.as(03db74ab-b969-4570-bd15-b0cc44c7323a)
+ 14761,  34309,     2.32, "TypeReferenceService.createTypeReference(fileModel,location,lineNumber,columnNumber,length,source)"
+     1,     81,    81.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, micrometer_core_properties.html)"
+     1,      0,     0.00, Query.as(a06b0b32-7b4a-4a98-bfb9-3631b76628ee)
+     1,      0,     0.00, Query.as(e2248ad6-9cab-4e1c-8c8a-b58999d7bb82)
+     1,      1,     1.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[ANNOTATION]).as(e2b75d73-73ba-4dc8-86e3-81fa5d775813)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Test Interface).as(default)"
+     1,     52,    52.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoPeek_java.html)"
+     1,    164,   164.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, swagger_ui_standalone_preset_js_map.html)"
+     2,    797,   398.50, sortTechUsageStats
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Orion Web XML).as(default)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ShutdownHookAction_java.html)"
+     1,      0,     0.00, Query.as(22922937-ef39-4f51-ab9d-11f673a85098)
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.74.html)"
+     1,      0,     0.00, Query.as(ba5be22a-fab6-4e6d-b9a6-1e05b262ae48)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,tinylog).as(default)"
+     1,    131,   131.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Schedulers_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Resource Adapter).as(default)"
+     1,    178,   178.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/apache/kafka/clients/admin$).as(default)"
+     1,     99,    99.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.50.html)"
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.82.html)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractOioChannel_java.html)"
+     1,   1107,  1107.00, "FreeMarkerIterationOperation.render(/reports/templates/migration-issues.ftl, migration_issues.html)"
+     1,     88,    88.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DelegateServiceScheduler_java.html)"
+     1,      7,     7.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JaxRSWebServiceModel).as(default)
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.134.html)"
+     1,    101,   101.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, HistogramLogProcessor_java.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.graph.model.DuplicateArchiveModel).as(default)
+     1,  70592, 70592.00, FernflowerDecompilationOperation.perform
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.118.html)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractEventLoopGroup_java.html)"
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultHttpServletRequestTagsProvider_java.html)"
+     1,     49,    49.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SocketAcceptor_java.html)"
+  9332,  16981,     1.82, ClassFilePreDecompilationScan.perform()
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/unparsable_files.ftl, Unparsable_kafka_clients_sb_sample.html)"
+     2,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JspSourceFileModel).as(default)
+     1,     46,    46.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, io_netty_versions_properties.83.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JsfSourceFileModel).as(default)
+     1,     46,    46.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.109.html)"
+     1,    108,   108.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, OnCompletionAsyncListener_java.html)"
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.79.html)"
+     1,     37,    37.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.15.html)"
+     1,     72,    72.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.100.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,EJB XML).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,LevelDB Client).as(default)"
+     1,      0,     0.00, Query.as(e85c72db-742d-4d39-8145-8d480a6b7a06)
+ 54610,   6241,     0.11, GraphService.findAllByProperty(filePath)
+     1,      0,     0.00, Query.as(6a1af3e0-6e49-44e1-9fe1-6d3539cec813)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Nuxeo JTA/JCA).as(default)"
+     1,     45,    45.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractEpollStreamChannel_java.html)"
+     1,      0,     0.00, Query.as(0b37d89d-f70f-43e2-839b-21392c12160f)
+     1,    109,   109.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractChannelHandlerContext_java.html)"
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.95.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Servlet).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JMockit).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OCPsoft Logging Utils).as(default)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/dependency_graph.ftl, dependency_graph_report.html)"
+     1,      0,     0.00, Query.as(2b8ed0bf-cd68-4c49-8c90-16aa105bc06c)
+     1,     77,    77.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Hidden_java.html)"
+     1,      0,     0.00, Query.as(0f03a956-ee18-4948-b6ae-4dd13bcb582d)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Data).as(default)"
+     1,    173,   173.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/mariadb/jdbc$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OWASP CSRF Guard).as(default)"
+     1,     44,    44.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractEventLoop_java.html)"
+     1,      0,     0.00, Query.as(7b756c87-1561-4f8b-90b7-7e94a56d1f20)
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.36.html)"
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractEventExecutorGroup_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Oracle DB Driver).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WebSphere WS Extension).as(default)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.45.html)"
+     1,     94,    94.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SignalLogger_java.html)"
+     1,     76,    76.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.53.html)"
+     1,     85,    85.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractRequestBuilder_java.html)"
+     1,     85,    85.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EpollEventLoop_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Vlad).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Easy Rules).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MinLog).as(default)"
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.125.html)"
+     1,     46,    46.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.103.html)"
+     1,      0,     0.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[ANNOTATION]).as(95e0a670-b4a1-4f0c-8da8-7c129c08f7b2)"
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.90.html)"
+     1,      0,     0.00, Query.as(c8efb723-4a31-4c54-80ca-5c95778b8895)
+     1,     46,    46.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SwaggerUiOAuthProperties_java.html)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ServerSocketReceiver_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Ka DI).as(default)"
+     1,      0,     0.00, Query.as(d5cd446c-8df7-4b69-9a54-373ff71f43a7)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,EtlUnit).as(default)"
+     1,     79,    79.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AsyncTimeout_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Axion Driver).as(default)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.124.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JmsDestinationModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Infinispan).as(default)"
+     1,     69,    69.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxSubscribeOnValue_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Camunda).as(default)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RemoteAppenderStreamClient_java.html)"
+     1,     39,    39.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ServerBootstrap_java.html)"
+     1,     74,    74.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LambdaMonoSubscriber_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,NLOG4J).as(default)"
+   125,    146,     1.17, "TypeReferenceService.getPackageUseFrequencies(projectModel,nameDepth,recursive)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(fileName,EQUALS,ibm-ejb-jar-ext.xmi).has(rootTagName,EQUALS,EJBJarExtension).as(default)"
+     1,     68,    68.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MultipleOpenApiResource_java.html)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.147.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MongoDB Client).as(default)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, IdleStateHandler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OpenSAML).as(default)"
+   124,      3,     0.02, sortDependencyArchivesByPathAscending
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Ignite).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JAXR).as(default)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TimeServices_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,BabbageFaces).as(default)"
+     1,      1,     1.00, Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Jetty).as(default)"
+     2,      1,     0.50, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,CDI).as(default)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.55.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JMock).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Java Transaction API).as(default)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AsyncAppenderBase_java.html)"
+     1,     83,    83.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.87.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Talend ESB).as(default)"
+     1,     77,    77.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TimedScheduledExecutorService_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Specsy).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.CssFileModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Sirona JTA).as(default)"
+     1,      3,     3.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(fileName,EQUALS,pom.xml).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,LiferayFaces).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Cloudera).as(default)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, NoopTimer_java.html)"
+     1,      0,     0.00, Query.as(bdd3faf2-53da-4655-a3f4-e776d82b5680)
+     1,      1,     1.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.RemoteServiceModel).as(default)
+     1,     72,    72.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MultithreadEventExecutorGroup_java.html)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ReactorThreadFactory_java.html)"
+     1,      0,     0.00, Query.as(6379053e-2720-483b-ba5b-cd109fb28c54)
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,datasources).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,ICEfaces).as(default)"
+     1,     70,    70.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractNioChannel_java.html)"
+     1,     90,    90.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, PeriodicSchedulerTask_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Scaldi).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Quartz).as(default)"
+     1,    219,   219.00, Query.fromType(org.jboss.windup.graph.model.resource.FileModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,HavaRunner).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,KumuluzEE JTA).as(default)"
+     1,     63,    63.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FastThreadLocalThread_java.html)"
+     1,     79,    79.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SearchResource_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Cloud Config).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,EasyMock).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,XACML).as(default)"
+     1,    104,   104.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EventLoop_java.html)"
+     1,     91,    91.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SignalPeek_java.html)"
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultEventExecutorGroup_java.html)"
+     1,      0,     0.00, Query.as(296186d6-88ad-4a8b-8b3f-7fc950d6282e)
+402057,    191,     0.00, TypeInterestFactory.matchesAny(text)
+     1,     98,    98.00, "FreeMarkerIterationOperation.render(/reports/templates/remote.ftl, remotereport_kafka_clients_sb_sample.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,orion-ejb-jar).as(default)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.113.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Blitz4j).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MEJB).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Ehcache).as(default)"
+   419,      8,     0.02, fileModelToSourceReport
+    92,      1,     0.01, getEffortDescriptionForPoints
+     1,      0,     0.00, sortApplicationsList
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Camel Messaging Client).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Blaze).as(default)"
+     1,      0,     0.00, Query.as(5c493108-83c1-4a5d-b4ad-c33e50651b3a)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Tornado Inject).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,SwarmCache).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Feign).as(default)"
+     1,     43,    43.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AutoCloseableExecutorService_java.html)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SSLSocketReceiver_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MultithreadedTC).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Commons Logging).as(default)"
+     1,      0,     0.00, Query.as(86e4b77d-74da-4e32-8a70-b1a31e5c85a7)
+     1,     49,    49.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Relay_java.html)"
+     1,    174,   174.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/io/fabric8/kubernetes/client$).as(default)"
+     1,     14,    14.00, Query.as(9d194396-06a7-4cbd-b35f-ccc2579e3ec2)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OWASP ESAPI).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Evo JTA).as(default)"
+     1,     32,    32.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LogbackMetrics_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Winter).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MySQL Driver).as(default)"
+     1,      0,     0.00, Query.as(a417a990-b369-49bf-9bb2-fd5a30f6c1c8)
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.16.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Memcached client).as(default)"
+     1,     50,    50.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SwaggerAnnotationIntrospector_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OpenPojo).as(default)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, application_properties.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,ejb-jar).has(fileName,EQUALS,jboss-ejb3.xml).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Trimou).as(default)"
+     1,     76,    76.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.120.html)"
+     1,     79,    79.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.128.html)"
+     1,     15,    15.00, getNumberOfLibraries
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Wicket).as(default)"
+     1,    349,   349.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/io/agroal/api$).as(default)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SocketNode_java.html)"
+     1,      0,     0.00, Query.as(1b76269a-a9b6-4851-ab78-b504f5ab917f)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Oracle ADF).as(default)"
+     1,      0,     0.00, Query.as(29d9331e-9976-4ff9-8adc-68c1dc1fac6a)
+     1,    171,   171.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/apache/avro$).as(default)"
+     1,    112,   112.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, NonStickyEventExecutorGroup_java.html)"
+  1283,    954,     0.74, Classification.performParameterized
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SingleProducerSequencerPad_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,TestNG).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JBPM).as(default)"
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AsyncExecutionAspectSupport_java.html)"
+     1,     68,    68.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractScheduledEventExecutor_java.html)"
+     1,     47,    47.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.23.html)"
+     1,     69,    69.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, JdkSslEngine_java.html)"
+     1,     95,    95.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ReconfigureOnChangeTask_java.html)"
+     1,     91,    91.00, "FreeMarkerIterationOperation.render(/reports/templates/windupfreemarkerfunctions.ftl, windup_freemarkerfunctions.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Lumberjack).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OW2 Log Util).as(default)"
+     1,     94,    94.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, IdsResource_java.html)"
+     1,     63,    63.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.105.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Log4s).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Micro DI).as(default)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.42.html)"
+     1,    114,   114.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, io_netty_versions_properties.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,SSL).as(default)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ImmediateEventExecutor_java.html)"
+     1,     45,    45.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.10.html)"
+     1,      0,     0.00, Query.as(843cdba0-f30d-45a3-bacb-887f098ae31e)
+     1,      0,     0.00, Query.as(a516bf5d-a042-48fb-850d-e895932a98d9)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Vaadin).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Integration).as(default)"
+     1,    173,   173.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/liquibase/ext/mongodb/change$).as(default)"
+     1,      0,     0.00, Query.as(7968e4f4-dec3-4a0e-a483-0bdb7cd1d71a)
+     1,      0,     0.00, Query.as(36930476-ba01-469b-9880-5fe6c89cef20)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JayWire).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Common Annotations).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JFunk).as(default)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, native_image_properties.81.html)"
+     1,      0,     0.00, Query.as(3f288d33-328e-4cbb-bb77-c18486c46f2d)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Java EE Batch).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Polyforms DI).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JBoss Transactions).as(default)"
+     1,    710,   710.00, org.jboss.windup.graph.GraphContextFactory.create(Path)
+   125,      5,     0.04, getClassificationForFile
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Iroh).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Boot Actuator).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Boot Cache).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Cucumber).as(default)"
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.62.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Swagger).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Hibernate Cfg).as(default)"
+     2,      1,     0.50, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spark).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.HibernateConfigurationFileModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,ANTLR StringTemplate).as(default)"
+     1,    273,   273.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.8.html)"
+     1,     95,    95.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.39.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.reporting.model.ApplicationReportModel).as(default)
+     1,    487,   487.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, swagger_ui_bundle_js_map.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JBoss Cache).as(default)"
+     1,     92,    92.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RejectedExecutionHandler_java.html)"
+     1,      0,     0.00, Query.as(2f94919c-ba2d-4b80-9c8c-7a07c3f21251)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,HighFaces).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MyFaces).as(default)"
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ParallelScheduler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JSilver).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,HornetQ Client).as(default)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultCallAdapterFactory_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Water Template Engine).as(default)"
+     1,      0,     0.00, Query.as(006679b8-af4b-4dd1-b18f-89c6796bf15b)
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TimedHandler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Acegi Security).as(default)"
+     1,    222,   222.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/software/amazon/awssdk/services/sns$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OmniFaces).as(default)"
+     1,     50,    50.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ParallelFlux_java.html)"
+     1,      0,     0.00, Query.as(cb645591-91c6-4bb3-9763-bb1785242cf9)
+     1,    107,   107.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.67.html)"
+     1,     95,    95.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ExecutorServiceWorker_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Transactions).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Portlet).as(default)"
+     1,     90,    90.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SwaggerIndexPageTransformer_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Santuario).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Messaging Client).as(default)"
+  1353,    882,     0.65, TechnologyTag.performParameterized
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,SQLite Driver).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Mule).as(default)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.29.html)"
+     1,     63,    63.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.3.html)"
+     1,    108,   108.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, swagger_ui_js_map.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OAUTH).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Jamon).as(default)"
+     1,      0,     0.00, Query.as(3eb3e15e-6e5b-4a70-8610-96b6f949d5dc)
+     1,     51,    51.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.19.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring MVC).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Test).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Peaberry).as(default)"
+     1,     41,    41.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LocalChannel_java.html)"
+     1,     53,    53.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, GlobalTrafficShapingHandler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,KLogger).as(default)"
+     1,      0,     0.00, Query.as(98ced6cd-7ad4-45bb-9c00-d049a4921e17)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OPS4J Pax Logging Service).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Webmacro).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Mycontainer JTA).as(default)"
+     1,     79,    79.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SingleWorkerScheduler_java.html)"
+     1,    175,   175.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/jboss/resteasy/annotations/providers/multipart$).as(default)"
+     1,    107,   107.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ThreadExecutorMap_java.html)"
+     1,    174,   174.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/apache/kafka/streams$).as(default)"
+     1,     41,    41.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, NamedRunnable_java.html)"
+     1,      0,     0.00, Query.as(bb044346-70e4-4337-809a-aca8a11803c0)
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.91.html)"
+     1,      9,     9.00, Query.as(53ef7843-f326-4cb9-b9eb-8f647492cd9f)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,GlassFish JTA).as(default)"
+ 22696,  12406,     0.55, "FileService.createByFilePath(parentFile, filePath)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,ButterFaces).as(default)"
+     1,      0,     0.00, Query.as(5a20008c-a356-4fa6-98a8-211339b826bf)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Cfg Engine).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Rythm Template Engine).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Javax Inject).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Sticky Configured).as(default)"
+     1,    174,   174.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/io/smallrye/config/source/yaml$).as(default)"
+     1,   1116,  1116.00, "FreeMarkerIterationOperation.render(/reports/templates/techReport-boxes.ftl, techReport_kafka_clients_sb_sample.html)"
+     1,     63,    63.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RemoteAppenderClient_java.html)"
+     1,     69,    69.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Mono_java.html)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.75.html)"
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, CompatibleClient_java.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.RMIServiceModel).as(default)
+     1,    126,   126.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.27.html)"
+     1,      0,     0.00, Query.as(80aebc99-119b-4356-ab3a-c1594ca40085)
+     1,     70,    70.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.2.html)"
+     1,     51,    51.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.143.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Orion EJB XML).as(default)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(fileName,EQUALS,ibm-webservices-bnd.xmi).has(rootTagName,EQUALS,WSBinding).as(default)"
+     1,     53,    53.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LogbackServletContextListener_java.html)"
+  1283,    110,     0.09, GraphService.findAllByProperty(ClassificationModel-classification)
+   432,      0,     0.00, iterableHasContent
+     1,      0,     0.00, Query.as(74e9a582-27ec-4b7d-8834-dfcc8148ee01)
+     1,    352,   352.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/springframework/web$).as(default)"
+     1,      0,     0.00, Query.as(0ebabf80-8d61-485c-ab84-5d9d4a69bf48)
+     1,      0,     0.00, Query.as(a1d6321c-cccb-4c82-ac1d-b95b979e2dc5)
+     1,     89,    89.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.122.html)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ViewStatusMessagesServletBase_java.html)"
+   125,      9,     0.07, projectModelToOrganizations
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Stripes).as(default)"
+     1,    119,   119.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.43.html)"
+   549,    255,     0.46, GraphService.findAllByPropertyMatchingRegex(filePath)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,HTTP Client).as(default)"
+     1,      0,     0.00, Query.as(801432ca-b79d-4df8-bec5-7d5cf670d25e)
+     1,     70,    70.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoPublishOn_java.html)"
+     1,     35,    35.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxCancelOn_java.html)"
+     1,     69,    69.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.77.html)"
+     1,     79,    79.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Dispatcher_java.html)"
+     1,    180,   180.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/com/amazonaws/xray/interceptors$).as(default)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.145.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Redis).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,BootsFaces).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Camel).as(default)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,jboss).has(fileName,EQUALS,jboss.xml).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,AKKA JTA).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,SLF4J).as(default)"
+     1,      0,     0.00, Query.as(59a1e9ed-d8cc-43f7-b877-9cfc4610fff7)
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JsFileModel).as(default)
+     1,    276,   276.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.7.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,GWT).as(default)"
+     1,      1,     1.00, Query.as(52dd06c2-64cc-4f67-a657-9f7d60c87c52)
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.HtmlFileModel).as(default)
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SwaggerWelcome_java.html)"
+     1,     92,    92.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.65.html)"
+     1,     74,    74.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxPeekFuseable_java.html)"
+     2,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.SpringBeanModel).as(default)
+     1,      0,     0.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[ANNOTATION]).as(f7af9e90-9f1b-40e9-a3a1-7d38d8c3633b)"
+     1,      0,     0.00, Query.as(222818fa-5985-4113-bc43-bf78e3b1d194)
+     1,     77,    77.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultThreadFactory_java.html)"
+     1,     53,    53.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ExecutorScheduler_java.html)"
+    33,     19,     0.58, getUniqueByName(qualifiedName)
+     1,     63,    63.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SingleProducerSequencer_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Jasypt).as(default)"
+   951,     38,     0.04, getTechnologyTagsForFile
+     1,      0,     0.00, Query.as(dde239eb-f6df-4248-9394-d75282638f5f)
+130926,    358,     0.00, FilePathComparator
+     1,      0,     0.00, Query.as(ec327ac6-c634-4493-a80a-e5d6037154e6)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,EJB Timer).as(default)"
+     2,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.EjbMessageDrivenModel).as(default)
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.64.html)"
+     1,      0,     0.00, Query.as(ced3bdf7-bd87-4c85-9952-87c58e943cc3)
+     1,    239,   239.00, "Query.fromType(org.jboss.windup.rules.apps.java.model.JavaClassFileModel).gremlin().has(parseError,NOT_DEFINED,null).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,PicketLink).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Struts).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Macros).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Syringe).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,FreeMarker).as(default)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RemoteReceiverClient_java.html)"
+     1,      0,     0.00, Query.as(218a46a8-659e-43b5-8b12-9aaf5150be26)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Log.io).as(default)"
+     1,     97,    97.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.146.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,weblogic-ejb-jar).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Silk DI).as(default)"
+     1,     50,    50.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.84.html)"
+     1,      0,     0.00, Query.as(061cafe2-73f3-4ec5-9cd9-f3109579ecff)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,AngularFaces).as(default)"
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EventExecutor_java.html)"
+     1,     38,    38.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.26.html)"
+     1,     63,    63.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.37.html)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Platform_java.html)"
+     1,     88,    88.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.59.html)"
+     1,     74,    74.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.102.html)"
+     1,      0,     0.00, Query.as(4b14e19a-def4-4c22-a278-7bc67ef77d44)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Amazon SQS Client).as(default)"
+     1,    221,   221.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Application_java.html)"
+     1,      0,     0.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[IMPORT]).as(b9be5a93-6759-4948-9663-dbd22962c237)"
+    18,    204,    11.33, XmlFile.evaluate
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Accumulo Client).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OW2 JTA).as(default)"
+     1,      0,     0.00, Query.as(b0800c73-76b7-4d2f-9cd7-82b59766d768)
+     1,     52,    52.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.1.html)"
+     1,    716,   716.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.html)"
+     1,  53586, 53586.00, AnalyzeJavaFilesRuleProvider.analyzeFile
+     1,      0,     0.00, Query.as(1011d971-a0b2-416c-a358-00873e3aa5e7)
+     1,      0,     0.00, Query.as(b4685128-2200-4b23-aa85-ac25f3ca5080)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,DVSL).as(default)"
+     3,      3,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(filePath,EQUALS,/home/abrugaro/PyCharmProjects/windup_cli_tests/fixtures/applications/kafka-clients-sb-sample.jar.report/archives/kafka-clients-sb-sample.jar/BOOT-INF/lib/springdoc-openapi-common-1.4.3.jar/pom.xml).as(pom-files-kafka-clients-sb-sample.jar/BOOT-INF/lib/springdoc-openapi-common-1.4.3.jar)"
+     1,    173,   173.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/software/amazon/awssdk/services/s3$).as(default)"
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.97.html)"
+     1,     87,    87.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoDelay_java.html)"
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DiskLruCache_java.html)"
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, CompositeMeterRegistry_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Atomikos JTA).as(default)"
+     1,     87,    87.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, PeriodicWorkerTask_java.html)"
+     1,     57,    57.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,RocketMQ Client).as(default)"
+     1,     69,    69.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.58.html)"
+     1,     89,    89.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, NioSocketChannel_java.html)"
+     1,    108,   108.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, GlobalEventExecutor_java.html)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EventLoopProcessor_java.html)"
+     1,     53,    53.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.121.html)"
+     1,      9,     9.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[IMPLEMENTS_TYPE]).as(d5807a3d-f649-42ec-b91c-202e576a31cc)"
+     1,      0,     0.00, Query.as(bbb6e11b-c779-4570-ad40-f346d187f4f6)
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultEventExecutor_java.html)"
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Util_java.html)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, InstantPeriodicWorkerTask_java.html)"
+     1,     44,    44.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxPeek_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache CXF).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Keyczar).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Grails).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,REST Assured).as(default)"
+     1,     84,    84.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ImmediateExecutor_java.html)"
+   375,   4516,    12.04, sortProjectTraversalsByPathAscending
+     1,      2,     2.00, Query.fromType(org.jboss.windup.reporting.model.TechnologyUsageStatisticsModel).as(default)
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, HttpServletRequestTagsProvider_java.html)"
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ThreadPerTaskExecutor_java.html)"
+     1,      0,     0.00, Query.as(d696caa1-9842-41c3-94a0-ff950b4081dd)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,XMLUnit).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Hdiv).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Lift JTA).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Dagger).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OpenWS).as(default)"
+     1,    106,   106.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.129.html)"
+     1,      0,     0.00, Query.as(f18bd573-d51d-4ea7-adec-d548f633035a)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WebLogic Web XML).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WebSphere EJB Ext).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Weld).as(default)"
+     1,    280,   280.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LoggerContextFilter_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,PicketBox).as(default)"
+     1,     49,    49.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LocalServerChannel_java.html)"
+     1,     39,    39.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, JarFileEntries_java.html)"
+     1,    102,   102.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FlushConsolidationHandler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Restito).as(default)"
+     1,     96,    96.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxDoFirst_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Cache API).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JBehave).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.rules.apps.javaee.model.JmsDestinationModel).gremlin().has(destinationType,EQUALS,TOPIC).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Meecrowave JTA).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Jcabi Log).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Airlift Log Manager).as(default)"
+   129,    107,     0.83, getEffortDetailsForProjectTraversal
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Aries).as(default)"
+385077,     85,     0.00, TypeInterestFactory.matchesAny(text).cacheCheck
+     1,     76,    76.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.46.html)"
+     1,     97,    97.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, io_netty_versions_properties.68.html)"
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, native_image_properties.47.html)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.142.html)"
+     1,      2,     2.00, Query.as(c69225da-c3fd-4e74-87ac-1c81a1c8d2d5)
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.49.html)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.88.html)"
+     1,    102,   102.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, io_netty_versions_properties.104.html)"
+     1,      0,     0.00, Query.as(1e34e19c-2d53-4ab0-b4c7-710039883d50)
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, CompositeTimer_java.html)"
+     1,     48,    48.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EventExecutorGroup_java.html)"
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ReferenceCountedOpenSslEngine_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Micrometer).as(default)"
+     1,    104,   104.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DelegatingScheduledExecutorService_java.html)"
+     1,     91,    91.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.141.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WebSphere WS Binding).as(default)"
+     1,      0,     0.00, isFileADirectory
+     1,     49,    49.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.71.html)"
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SwaggerUiConfigProperties_java.html)"
+     1,    103,   103.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.21.html)"
+     1,     40,    40.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Scheduler_java.html)"
+     1,    181,   181.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/com/amazonaws/serverless/exceptions$).as(default)"
+     1,    186,   186.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/software/amazon/awssdk/services/sqs$).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.EjbEntityBeanModel).as(default)
+     1,     80,    80.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, OpenApiResource_java.html)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FixedChannelPool_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Oracle Forms).as(default)"
+     1,      0,     0.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[METHOD_CALL]).as(8c361e09-17a0-42b6-94c9-6677207e8979)"
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.140.html)"
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxDelaySequence_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Batch).as(default)"
+   125,   1132,     9.06, sortFilesByPathAscending
+     1,     77,    77.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ImmediateScheduler_java.html)"
+     1,     47,    47.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.86.html)"
+     1,    798,   798.00, "FreeMarkerIterationOperation.render(/reports/templates/report_index.ftl, report_index_kafka_clients_sb_sample.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Java Threads).as(default)"
+     1,    120,   120.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LogbackServletContainerInitializer_java.html)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EpollSocketChannel_java.html)"
+     1,     80,    80.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.108.html)"
+ 48420,   1880,     0.04, GraphService.create
+     1,     72,    72.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.126.html)"
+   189,      7,     0.04, projectModelToSha1
+     1,     74,    74.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Flux_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Seam).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.rules.apps.javaee.model.DataSourceModel).gremlin().has(isXA,EQUALS,false).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Istio).as(default)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, OioEventLoopGroup_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,RabbitMQ Client).as(default)"
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, io_netty_versions_properties.69.html)"
+     1,     72,    72.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.136.html)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.34.html)"
+     2,      0,     0.00, "Query.fromType(org.jboss.windup.rules.apps.javaee.model.DataSourceModel).gremlin().has(isXA,EQUALS,true).as(default)"
+     1,      0,     0.00, Query.as(b6703fc1-b1eb-4751-b420-7fef19dcce21)
+     1,     41,    41.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ContextBase_java.html)"
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ReconfigureOnChangeFilter_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Clustering Web Session).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,DbUnit).as(default)"
+     1,     90,    90.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoDoFirst_java.html)"
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Scanner_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.rules.apps.java.model.WindupJavaConfigurationModel).gremlin().has(classNotFoundAnalysisEnabled,EQUALS,true).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Cactus).as(default)"
+     1,    175,   175.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/liquibase$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,SubCut).as(default)"
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SingleThreadValue_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,TieFaces).as(default)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SimplePauseDetector_java.html)"
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DelegatingSslContext_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,SNMP4J).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JSON-B).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Shiro).as(default)"
+     1,     70,    70.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractEpollChannel_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Zbus Client).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Geronimo).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Unitils).as(default)"
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/about_windup.ftl, about_kafka_clients_sb_sample.html)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoDoFirstFuseable_java.html)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, PooledByteBufAllocator_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,H2 Driver).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Hibernate OGM).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Logback).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Trunk JGuard).as(default)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ThreadDeathWatcher_java.html)"
+     1,      0,     0.00, Query.as(05b4a0f2-b664-46ce-9025-b3ccd7473263)
+     1,     53,    53.00, "FreeMarkerIterationOperation.render(/reports/templates/about_windup.ftl, about_global.html)"
+     1,     76,    76.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.9.html)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RealCall_java.html)"
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxWindowTimeout_java.html)"
+   415,     63,     0.15, abstractGetPrettyPathForFile
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Handlebars).as(default)"
+     1,    174,   174.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/com/arjuna/ats/arjuna$).as(default)"
+     1,     76,    76.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.131.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Kodein).as(default)"
+     1,     80,    80.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TopicProcessor_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Mixer).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Kibana).as(default)"
+     1,     87,    87.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, HttpRequestTags_java.html)"
+     1,      0,     0.00, Query.as(f943f35e-8354-4853-88d2-95d187938af6)
+     1,     75,    75.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.144.html)"
+     1,      0,     0.00, Query.as(c5d10ccc-21f4-4f14-bdf5-14865c61a8ac)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.rules.apps.javaee.model.EjbSessionBeanModel).gremlin().has(sessionType,EQUALS,Stateful).as(default)"
+     1,    233,   233.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/software/amazon/awssdk/services/dynamodb$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JBoss Web XML).as(default)"
+ 22434,     19,     0.00, GraphService.findAllByProperty(qualifiedName)
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractTimer_java.html)"
+     1,      0,     0.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[IMPLEMENTS_TYPE]).as(d8484417-23e9-4e00-8da4-2c9b90a59712)"
+     1,     96,    96.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, HashedWheelTimer_java.html)"
+     1,    281,   281.00, getArchiveSHA1ToPathMapper
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Jukito).as(default)"
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ObjectCleaner_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,UberFire).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Google Guice).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JSTL).as(default)"
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ShutdownHookBase_java.html)"
+     1,      2,     2.00, "Query.fromType(org.jboss.windup.rules.apps.java.model.JarArchiveModel).gremlin().has(fileName,REGEX,.*teiid.*\.jar$).as(default)"
+     1,      0,     0.00, Query.as(043a17bd-1e41-4506-a456-2df72302398e)
+     1,    508,   508.00, getTechnologyTagsForProjectTraversal
+     1,      0,     0.00, Query.as(b181af48-2091-4f28-bf1a-f777b995bf8a)
+     1,    122,   122.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TimedRunnable_java.html)"
+     1,     69,    69.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.93.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Karaf).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JFreeChart).as(default)"
+     1,      0,     0.00, Query.as(528d5132-0b8a-414b-ada3-a5589717b25b)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Web).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring JMX).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,RichFaces).as(default)"
+     1,     84,    84.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, GlobalChannelTrafficCounter_java.html)"
+     1,      6,     6.00, Query.fromType(org.jboss.windup.rules.apps.java.model.project.MavenProjectModel).as(default)
+     1,      0,     0.00, Query.as(28488e21-49ae-48e2-aa0c-f6eca97d76c5)
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Compressor_java.html)"
+     1,    106,   106.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.13.html)"
+     1,      0,     0.00, Query.as(3c661f4f-8145-42df-ac32-5dad01eae10b)
+     1,     85,    85.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RemoteReceiverServerRunner_java.html)"
+     1,    186,   186.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/io/fabric8/openshift/client$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JCunit).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.EjbSessionBeanModel).as(default)
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.java.model.JavaSourceFileModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spock).as(default)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SingleThreadEventLoop_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.rules.apps.javaee.model.EjbSessionBeanModel).gremlin().has(sessionType,EQUALS,Stateless).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Boot).as(default)"
+     1,    115,   115.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.107.html)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ScheduledFutureTask_java.html)"
+     1,    172,   172.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/hibernate/reactive/adaptor/impl$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Axis).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Pega).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,SAML).as(default)"
+     1,     84,    84.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, WriteTimeoutHandler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Commons Validator).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Logging Utils).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OpenFaces).as(default)"
+     1,    104,   104.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoSubscribeOn_java.html)"
+     1,     68,    68.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Timer_java.html)"
+     1,    104,   104.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RealConnectionPool_java.html)"
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxOnBackpressureBufferTimeout_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WF Core JTA).as(default)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/ignored_files.ftl, ignoredfiles_kafka_clients_sb_sample.html)"
+     1,    102,   102.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.61.html)"
+     1,      0,     0.00, Query.as(a04ed607-650b-4e10-9ed1-b0630dccd192)
+     1,      0,     0.00, Query.as(acb9240b-0aab-476b-a3ab-56abdf555660)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.graph.model.WindupConfigurationModel).gremlin().has(csv,EQUALS,true).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,AMQP Client).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Ignite JTA).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,EAR).as(default)"
+     1,     80,    80.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.28.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Mockito).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Injekt for Kotlin).as(default)"
+     1,     72,    72.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RemoteAppenderServerRunner_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache HBase Client).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,3scale).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Neo4j).as(default)"
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.31.html)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ReceiverBase_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Monolog).as(default)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MDCInsertingServletFilter_java.html)"
+     1,    108,   108.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.98.html)"
+     1,      1,     1.00, Query.fromType(org.jboss.windup.rules.apps.java.archives.model.IdentifiedArchiveModel).as(default)
+     1,      0,     0.00, Query.as(aa0c4ec5-3765-4dba-9b9f-ce115db6d06a)
+     1,     93,    93.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.60.html)"
+     1,      0,     0.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[ANNOTATION]).as(55d5e963-8b74-4348-890b-55b38863be37)"
+     1,    114,   114.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TimeBasedArchiveRemover_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Logstash).as(default)"
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ServerRunner_java.html)"
+     1,      0,     0.00, Query.as(7c979eb4-6c05-44b8-93de-3c576847a893)
+     1,    177,   177.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/eclipse/yasson$).as(default)"
+     1,      0,     0.00, Query.as(12dba238-6647-4926-9a4a-6fb1fa83e250)
+    16,      1,     0.06, org.jboss.windup.reporting.config.HasHint
+     1,     73,    73.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.123.html)"
+     1,     52,    52.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ConcurrentServerRunner_java.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.NamespaceMetaModel).gremlin().has(namespaceURI,EQUALS,http://java.sun.com/xml/ns/persistence).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Twitter Util Logging).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Axis2).as(default)"
+     1,     93,    93.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, BlockingIterable_java.html)"
+     1,     50,    50.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.17.html)"
+     1,      0,     0.00, Query.as(4d4d9515-35da-4e6e-82ef-172d785bbc4a)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Cloud Function).as(default)"
+     1,     79,    79.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TrafficCounter_java.html)"
+     1,      0,     0.00, Query.as(e9855055-7b0c-49e1-9805-ab669e4e9760)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JBoss EJB XML).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Synapse).as(default)"
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.99.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.java.model.WindupJavaConfigurationModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JAXB).as(default)"
+     1,    284,   284.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.6.html)"
+     1,    180,   180.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/software/amazon/awssdk/services/ssm$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WSS4J).as(default)"
+     1,     95,    95.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TimedExecutor_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Properties).as(default)"
+     2,      1,     0.50, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Liferay).as(default)"
+     1,    101,   101.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SpringDocConfigProperties_java.html)"
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.html)"
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, TimedExecutorService_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Geronimo JTA).as(default)"
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ReferenceCountedOpenSslContext_java.html)"
+     1,     73,    73.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, KotlinExtensions$suspendAndThrow$$inlined$suspendCoroutineUninterceptedOrReturn$lambda$1_java.html)"
+ 85512,     33,     0.00, TypeInterestFactory.matchesAny(text).manualSearch
+     1,    117,   117.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultChannelPipeline_java.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(fileName,EQUALS,ibm-ejb-jar-bnd.xmi).has(rootTagName,EQUALS,EJBJarBinding).as(default)"
+     1,     73,    73.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SslContext_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Jersey).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Needle).as(default)"
+     1,      0,     0.00, Query.as(b29defe4-09cc-404b-be0c-f51979752810)
+     1,     57,    57.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SingleScheduler_java.html)"
+  3528,    137,     0.04, GraphService.findAllByProperty(name)
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.xml.model.DoctypeMetaModel).gremlin()org.jboss.windup.rules.apps.javaee.rules.DiscoverHibernateMappingRuleProvider$1@3ebe510b.as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Eureka).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.java.ip.HardcodedIPLocationModel).as(default)
+     1,    174,   174.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/software/amazon/awssdk/services/ses$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring DI).as(default)"
+     1,      0,     0.00, Query.as(766ec63a-157a-47d5-846c-106033c2afa1)
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JPAPersistenceUnitModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Dynacache).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Narayana Arjuna).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Java EE Batch API).as(default)"
+     1,     87,    87.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, UnorderedThreadPoolEventExecutor_java.html)"
+     1,     83,    83.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxInterval_java.html)"
+     1,     99,    99.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RealWebSocket_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Tomcat).as(default)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.72.html)"
+     1,     71,    71.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.127.html)"
+     1,      0,     0.00, Query.as(ef965471-cf65-4c76-98d2-2c13d54baa53)
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MultiProducerRingBuffer_java.html)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxIterable_java.html)"
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EventLoopGroup_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JMustache).as(default)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.52.html)"
+     1,    271,   271.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FastThreadLocalRunnable_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.rules.apps.javaee.model.JmsDestinationModel).gremlin().has(destinationType,EQUALS,QUEUE).as(default)"
+     1,      0,     0.00, Query.as(b4124e44-4bd2-429e-be83-3e690538a318)
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Pageable_java.html)"
+     1,      0,     0.00, Query.as(17658aa6-18c8-4e69-a406-7e42a7b40727)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Play Test).as(default)"
+     1,    104,   104.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, JAXBAnnotationsHelper_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JCache).as(default)"
+     1,     80,    80.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, WaitStrategy_java.html)"
+     1,      0,     0.00, Query.as(507bfb30-472b-48e9-8f7d-9be876cb8720)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,ShiftOne).as(default)"
+     1,    289,   289.00, "FreeMarkerIterationOperation.render(/reports/templates/dependency_report.ftl, dependency_report_kafka_clients_sb_sample.html)"
+     1,     81,    81.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, log4j2_properties.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Twirl).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Concordion).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Coherence).as(default)"
+     1,    177,   177.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/io/opentelemetry/exporter/jaeger$).as(default)"
+     6,     27,     4.50, Query.fromType(org.jboss.windup.graph.model.ArchiveModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,BeanInject).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JBossMQ Client).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Log4J).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Logging to Socket Handler).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,KouInject).as(default)"
+     1,     45,    45.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ChannelOutboundBuffer_java.html)"
+     1,     96,    96.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxBufferTimeout_java.html)"
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RequestBuilder_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Petals EIP).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.HibernateEntityModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JACC).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,TensorFlow).as(default)"
+     1,     74,    74.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.5.html)"
+   228,     41,     0.18, GraphService.findAllByProperty(stats.name)
+     1,      0,     0.00, Query.as(88f06f39-a8d0-4914-aba4-138550229ec2)
+     1,      0,     0.00, Query.as(69281021-747e-4e43-b5b3-737110b2941b)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WSDL).as(default)"
+     1,     70,    70.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxSubscribeOn_java.html)"
+     1,      0,     0.00, Query.as(0a5883f6-678a-4893-9cc5-13edb2d81da8)
+     1,    104,   104.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SchedulerMetricDecorator_java.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,weblogic-web-app).as(default)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,web-app).has(fileName,NOT_EQUALS,geronimo-web.xml).as(default)"
+     1,      0,     0.00, Query.as(95744f51-a59f-4dd8-ae1f-c0a6664c0466)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JSF).as(default)"
+     1,     30,    30.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ThreadsKt_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Snippetory Template Engine).as(default)"
+     1,     93,    93.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, KafkaMetrics_java.html)"
+     1,      0,     0.00, Query.as(58f3b9e5-0622-48e9-9d91-23ddf69bc245)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Bouncy Castle).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Demoiselle JTA).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MapR).as(default)"
+     1,      0,     0.00, Query.as(fdb02215-85b3-431e-b911-144f3a73d5b8)
+     1,    173,   173.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/flywaydb/core$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Hamcrest).as(default)"
+     1,     85,    85.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.56.html)"
+     1,    125,   125.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, OrderedEventExecutor_java.html)"
+     1,     87,    87.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ElasticScheduler_java.html)"
+    55,     39,     0.71, DiscoverPropertiesFilesRuleProvider.perform
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultEventLoopGroup_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,RandomizedTesting Runner).as(default)"
+     1,     57,    57.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.111.html)"
+     1,     12,    12.00, Query.fromType(org.jboss.windup.graph.model.ArchiveModel).gremlin()org.jboss.windup.config.query.Query$1@53e7479f.as(default)
+     1,      0,     0.00, Query.as(28e5c015-384f-4669-987f-ea83b00bbbe9)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Weka).as(default)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractServerSocketAppender_java.html)"
+     1,      0,     0.00, Query.as(93d9178b-95d9-4f0a-b357-a770456af393)
+     1,   8196,  8196.00, "FreeMarkerIterationOperation.render(/reports/templates/java_application.ftl, ApplicationDetails_kafka_clients_sb_sample.html)"
+     1,    187,   187.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/io/opentelemetry/exporter/otlp/trace$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apiman).as(default)"
+     1,     53,    53.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.44.html)"
+     1,     63,    63.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.94.html)"
+   481,     85,     0.18, GraphService.findAllByProperty(mavenIdentifier)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,XFire).as(default)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RingBufferProducer_java.html)"
+     1,    129,   129.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.12.html)"
+     1,     75,    75.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MessageService_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,SwitchYard).as(default)"
+     1,     68,    68.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoPeekFuseable_java.html)"
+     1,     84,    84.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MultithreadEventLoopGroup_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Play).as(default)"
+     1,     87,    87.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, io_netty_versions_properties.51.html)"
+     1,    171,   171.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/jboss/stm$).as(default)"
+     1,     85,    85.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoCacheTime_java.html)"
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, InternalThreadLocalMap_java.html)"
+     1,     63,    63.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.106.html)"
+   830,     11,     0.01, getMigrationEffortPointsForFile
+     1,    104,   104.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.4.html)"
+     1,     85,    85.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SchedulerTask_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Airframe).as(default)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ThreadPerChannelEventLoopGroup_java.html)"
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SingleThreadEventExecutor_java.html)"
+    25,    116,     4.64, Hint.performParameterized
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,GFC Logging).as(default)"
+     1,     95,    95.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, NioEventLoop_java.html)"
+     1,   1355,  1355.00, "FreeMarkerIterationOperation.render(/reports/templates/techReport-punchCard.ftl, techReport_punch.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WS Metadata).as(default)"
+     2,     96,    48.00, getEffortCountForProjectByIssueCategory
+     1,      1,     1.00, Query.fromType(org.jboss.windup.graph.model.ArchiveModel).gremlin()org.jboss.windup.config.query.Query$1@3adad445.as(default)
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ParallelPeek_java.html)"
+     1,     85,    85.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ParallelDoOnEach_java.html)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LoginAuthenticator_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Grapht DI).as(default)"
+     1,     48,    48.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FormatToDecimalsKt_java.html)"
+     1,     52,    52.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ExecutorServiceUtil_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Elasticsearch).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.EjbDeploymentDescriptorModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Mahout).as(default)"
+     1,    174,   174.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/hibernate/search/backend/elasticsearch/aws/cfg$).as(default)"
+     1,     39,    39.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, swagger_ui_css_map.html)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.130.html)"
+     1,     90,    90.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RejectedExecutionHandlers_java.html)"
+     1,     95,    95.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, WorkQueueProcessor_java.html)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, io_netty_versions_properties.76.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MckoiSQLDB Driver).as(default)"
+     1,      0,     0.00, Query.as(c10d5704-aa4a-47c9-b05e-3ed4cf8fa28d)
+     1,     53,    53.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.54.html)"
+     1,    123,   123.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.41.html)"
+     1,     53,    53.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.116.html)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.30.html)"
+     1,     76,    76.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.119.html)"
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RulesResource_java.html)"
+     1,    176,   176.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/apache/activemq/artemis/api/jms$).as(default)"
+     1,      0,     0.00, Query.as(07fcf197-9ec4-4a35-93b6-ac6eabe6cfa7)
+     1,      0,     0.00, Query.as(47d0e5b9-d035-4da6-83e0-517a8a08f4fe)
+     1,      0,     0.00, Query.as(9b674f54-be6e-4577-ab09-9d6d9b8b0633)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Kotlin Logging).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Plexus Container).as(default)"
+     1,      0,     0.00, Query.as(14274058-a4a7-4124-966d-cbf4d7d2d282)
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractNioByteChannel_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Teiid).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Qpid Client).as(default)"
+     1,      0,     0.00, Query.as(0d21f728-cafd-4455-be54-0dbdc62d0bd2)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Hibernate Mapping).as(default)"
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxPublishOn_java.html)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, JSONDeserializer_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Ikasan).as(default)"
+     1,     68,    68.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.11.html)"
+     1,     61,    61.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.117.html)"
+     1,      0,     0.00, Query.as(e194bd65-7f42-42c1-b7f3-f708bd645fe5)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,EclipseLink).as(default)"
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ClassGraph_java.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JPANamedQueryModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JPA Matchers).as(default)"
+     1,      0,     0.00, Query.as(a37277ef-aadf-4f81-92b3-98647b96d732)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Composite Logging JCL).as(default)"
+     1,     57,    57.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LambdaSubscriber_java.html)"
+     1,    124,   124.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.35.html)"
+     1,    287,   287.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, native_image_properties.html)"
+     1,      0,     0.00, Query.as(3dd681af-7ea0-4a34-b7e9-81aa6f959170)
+     1,     58,    58.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SingleProducerSequencerFields_java.html)"
+     1,      0,     0.00, Query.as(3185ca94-3fe9-4478-88b1-aae0621cbfe3)
+     1,     72,    72.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.133.html)"
+     1,    202,   202.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/software/amazon/awssdk/services/iam$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Zipkin).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Commons JCS).as(default)"
+     1,      0,     0.00, Query.as(e958d6a4-bb2c-45c4-9fcb-d6edf49ca7f4)
+     1,     56,    56.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxRefCountGrace_java.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,process-definition).as(default)"
+     1,      0,     0.00, Query.as(b7475327-f305-4d30-a333-751c4bbf781b)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Avalon Logkit).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Drools).as(default)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,ejb-jar).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Microsoft SQL Driver).as(default)"
+     1,     80,    80.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractTrafficShapingHandler_java.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,orion-web-app).as(default)"
+     1,    187,   187.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/com/amazonaws/services/lambda/runtime$).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JNDIResourceModel).as(default)
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.112.html)"
+     1,    106,   106.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MonoRunnable_java.html)"
+     1,     84,    84.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.33.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OTR4J).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Thymeleaf).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Morphia).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Tapestry).as(default)"
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Client_java.html)"
+     1,     57,    57.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SslHandler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Clustering EJB).as(default)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, PushMeterRegistry_java.html)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultPromise_java.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(fileName,EQUALS,ibm-web-bnd.xmi).as(default)"
+     1,     73,    73.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.73.html)"
+     1,    115,   115.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.25.html)"
+     1,     73,    73.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ThreadPerChannelEventLoop_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Flume).as(default)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ModelResolver_java.html)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, NioEventLoopGroup_java.html)"
+   124,     15,     0.12, GraphService.findAllByProperty(sha1Hash)
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.yaml.model.YamlFileModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Apache Hadoop).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,PostgreSQL Driver).as(default)"
+     1,     74,    74.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.48.html)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.70.html)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ConfigurationAction_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Scalate).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Hazelcast).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,GIN).as(default)"
+     1,     57,    57.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxDoFirstFuseable_java.html)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.85.html)"
+     1,    114,   114.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.96.html)"
+     1,     65,    65.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractChannel_java.html)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ExecutorServiceMetrics_java.html)"
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SimpleSSLSocketServer_java.html)"
+     1,      0,     0.00, Query.as(1e34e096-a7e5-438d-8d8a-ee3d9fc70ad1)
+     1,     73,    73.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.114.html)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, PauseDetector_java.html)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.101.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WebSphere EJB).as(default)"
+     5,     22,     4.40, Query.fromType(org.jboss.windup.graph.model.WindupConfigurationModel).as(default)
+     1,      2,     2.00, "Query.fromType(org.jboss.windup.rules.apps.java.model.JarArchiveModel).gremlin().has(fileName,REGEX,.*camel.*\.jar$).as(default)"
+     1,     77,    77.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, LongTaskTimer_java.html)"
+     1,     75,    75.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, NamedThreadFactory_java.html)"
+     1,    271,   271.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SocketReceiver_java.html)"
+ 15900,    387,     0.02, isReportableFile
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Oscache).as(default)"
+     1,     33,    33.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, native_image_properties.20.html)"
+     1,     80,    80.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.32.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Mule Functional Test Framework).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WSO2).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring).as(default)"
+     1,     41,    41.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AbstractEventExecutor_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JUnit).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,MRules).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JDBC).as(default)"
+   220,    400,     1.82, JavaClass.evaluate
+     1,      0,     0.00, Query.as(d6ac88db-e669-4300-9366-64951561dd3e)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Hibernate).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Properties).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JaxWSWebServiceModel).as(default)
+     1,     77,    77.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.24.html)"
+     1,      0,     0.00, Query.as(b6f83851-466c-4e33-bc56-fe9be87e3ff4)
+     2,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JmsConnectionFactoryModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Jetbrick Template).as(default)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ThreadLocalRandom_java.html)"
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.66.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,ServiceMix).as(default)"
+  6175,    471,     0.08, GraphService.addTypeToModel
+     1,      0,     0.00, Query.as(27938d26-6470-4a89-86e4-307c8a3d5714)
+     1,     67,    67.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.139.html)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.115.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,HSQLDB Driver).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JBoss logging).as(default)"
+     1,      0,     0.00, Query.as(58104bc2-3f62-4959-ab6a-e707070d6a38)
+     1,     78,    78.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.57.html)"
+     1,    196,   196.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/software/amazon/awssdk/services/kms$).as(default)"
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, WorkerTask_java.html)"
+     1,     47,    47.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Context_java.html)"
+     1,     68,    68.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.138.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.xml.model.DoctypeMetaModel).gremlin()org.jboss.windup.rules.apps.javaee.rules.DiscoverHibernateConfigurationRuleProvider$1@7c158335.as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Cassandra Client).as(default)"
+     1,      0,     0.00, Query.as(8331eb0e-1568-4894-8493-080af80c06bc)
+     1,    182,   182.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/picocli$).as(default)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,beans).as(default)"
+     1,     90,    90.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, GlobalChannelTrafficShapingHandler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Scribe).as(default)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.18.html)"
+   830,     40,     0.05, getTagsFromFileClassificationsAndHints
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Everit JTA).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,AcrIS Security).as(default)"
+     1,     83,    83.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.38.html)"
+     1,     60,    60.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ArtifactsResource_java.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.ThreadPoolModel).as(default)
+     1,    737,   737.00, "FreeMarkerIterationOperation.render(/reports/templates/application_list.ftl, ../index.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,OACC).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Logging to file system).as(default)"
+   415,      3,     0.01, projectModelToApplicationIndex
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_properties.110.html)"
+     1,     68,    68.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.80.html)"
+     1,    439,   439.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,false).has(filePath,REGEX,.*\.properties$).as(default)"
+     1,    172,   172.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/io/sentry/jul$).as(default)"
+     1,     96,    96.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.132.html)"
+     1,     74,    74.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.78.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(rootTagName,EQUALS,jboss-web).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JPA XML).as(default)"
+     1,     54,    54.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, RingBuffer_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Arquillian).as(default)"
+ 13102,     19,     0.00, JavaClassService.resolveByQualifiedName(qualifiedClassName)
+     1,    413,   413.00, GraphService.findAllWithoutProperty(skipDecompilation)
+     1,    106,   106.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, WorkQueue_java.html)"
+     1,     64,    64.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ContextDetachingSCL_java.html)"
+     1,      0,     0.00, Query.as(b4fafa3a-de77-423d-8e53-3c749731e136)
+     1,      0,     0.00, Query.as(2407153f-2e80-4230-be63-212b42c28d1e)
+   444,      2,     0.00, iterableToList
+     1,      0,     0.00, Query.as(ca4bdbdf-d124-4c54-a0e0-feb18d0c44eb)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Unirest).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Chunk Templates).as(default)"
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, EmbeddedEventLoop_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Java EE JSON-P).as(default)"
+     1,      0,     0.00, "Query.gremlin().has(referenceType,CONTAINS_ANY_TOKEN,[IMPORT]).as(2382510f-d492-4a99-86a4-6f9b8e85cbe5)"
+     1,     73,    73.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Exceptions_java.html)"
+     1,      1,     1.00, "Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel).gremlin().has(fileName,EQUALS,ibm-webservices-ext.xmi).has(rootTagName,EQUALS,WsExtension).as(default)"
+     1,    100,   100.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, io_netty_versions_properties.22.html)"
+     1,      0,     0.00, Query.as(e57bca97-2247-4264-afaa-cc6daa5f574c)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,PowerMock).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Shell).as(default)"
+     1,      0,     0.00, Query.as(ae53cea3-6822-435b-a064-9713e1bbc5ae)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,WebSphere Web XML).as(default)"
+     1,     57,    57.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ShutdownHook_java.html)"
+     1,     68,    68.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SimpleThreadFactory_java.html)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.JPAEntityModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Bean Validation).as(default)"
+     1,     30,    30.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.137.html)"
+     1,     62,    62.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, SMTPAppenderBase_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Data JPA).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,PicoContainer).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.Jbpm3ProcessModel).as(default)
+     1,  51332, 51332.00, AnalyzeJavaFilesRuleProvider.parseFiles
+     1,     32,    32.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.14.html)"
+     1,      0,     0.00, Query.as(87287f84-638e-4555-8a08-08a69a73839d)
+     1,    126,   126.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Utils_java.html)"
+     9,      0,     0.00, getProjectTraversal
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,0MQ Client).as(default)"
+     1,      0,     0.00, Query.as(984f7d58-aa38-4b70-a9ef-9ee2390ae03a)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,HttpUnit).as(default)"
+     1,     74,    74.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, FluxSubscribeOnCallable_java.html)"
+     1,    171,   171.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/oracle/jdbc$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Security).as(default)"
+     1,     66,    66.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.92.html)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, AsyncExecutionInterceptor_java.html)"
+     1,    174,   174.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/biz/paluch/logging$).as(default)"
+     1,      3,     3.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,false).has(filePath,REGEX,.+\.\b(|zip|rar|sar|ear|war|jar)\b$).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,AspectJ).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Velocity).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Guava Testing).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Ickenham).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,AOP Alliance).as(default)"
+     1,      0,     0.00, Query.fromType(org.jboss.windup.graph.model.resource.ReportResourceFileModel).as(default)
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Anakia).as(default)"
+     2,      0,     0.00, Query.fromType(org.jboss.windup.rules.apps.javaee.model.WebXmlModel).as(default)
+   156,     30,     0.19, isTagUnderTag
+     1,     59,    59.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Retrofit_java.html)"
+     1,     43,    43.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, PromiseTask_java.html)"
+     1,     38,    38.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Recycler_java.html)"
+     1,     47,    47.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ReferenceCountUtil_java.html)"
+   375,    702,     1.87, "TypeReferenceService.getPackageUseFrequencies(data,projectModel,nameDepth,recursive)"
+     1,    174,   174.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/hibernate/envers$).as(default)"
+     1,    122,   122.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, pom_xml.40.html)"
+     1,     72,    72.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, BoundedElasticScheduler_java.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,Spring Boot Flo).as(default)"
+     1,     86,    86.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MANIFEST_MF.135.html)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,JSecurity).as(default)"
+     1,     30,    30.00, "Query.fromType(org.jboss.windup.reporting.model.ReportModel).gremlin().has(templateType,EQUALS,FREEMARKER).as(default)"
+     1,      0,     0.00, "Query.fromType(org.jboss.windup.reporting.model.TechnologyTagModel).gremlin().has(name,EQUALS,ActiveMQ).as(default)"
+     1,     73,    73.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, MetricsDSLContext_java.html)"
+     1,      0,     0.00, Query.as(1245fb2d-783e-454b-9063-188fa7b8c9a5)
+     1,     44,    44.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, DefaultEventLoop_java.html)"
+     1,    119,   119.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, Http2Connection_java.html)"
+     1,    177,   177.00, "Query.fromType(org.jboss.windup.graph.model.resource.FileModel).gremlin().has(isDirectory,EQUALS,true).has(filePath,REGEX,.*/org/postgresql$).as(default)"
+     1,     55,    55.00, "FreeMarkerIterationOperation.render(/reports/templates/source.ftl, ViewStatusMessagesServlet_java.html)"

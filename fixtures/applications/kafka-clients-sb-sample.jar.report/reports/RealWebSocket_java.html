@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for RealWebSocket.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/okhttp-3.14.9.jar/okhttp3/internal/ws/RealWebSocket.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package okhttp3.internal.ws;
+
+import java.io.Closeable;
+import java.io.IOException;
+import java.net.ProtocolException;
+import java.net.SocketTimeoutException;
+import java.util.ArrayDeque;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import javax.annotation.Nullable;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.EventListener;
+import okhttp3.OkHttpClient;
+import okhttp3.Protocol;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.WebSocket;
+import okhttp3.WebSocketListener;
+import okhttp3.internal.Internal;
+import okhttp3.internal.Util;
+import okhttp3.internal.connection.Exchange;
+import okhttp3.internal.ws.WebSocketReader.FrameCallback;
+import okio.BufferedSink;
+import okio.BufferedSource;
+import okio.ByteString;
+import okio.Okio;
+
+public final class RealWebSocket implements WebSocket, FrameCallback {
+   private static final List&lt;Protocol&gt; ONLY_HTTP1;
+   private static final long MAX_QUEUE_SIZE = 16777216L;
+   private static final long CANCEL_AFTER_CLOSE_MILLIS = 60000L;
+   private final Request originalRequest;
+   final WebSocketListener listener;
+   private final Random random;
+   private final long pingIntervalMillis;
+   private final String key;
+   private Call call;
+   private final Runnable writerRunnable;
+   private WebSocketReader reader;
+   private WebSocketWriter writer;
+   private ScheduledExecutorService executor;
+   private RealWebSocket.Streams streams;
+   private final ArrayDeque&lt;ByteString&gt; pongQueue = new ArrayDeque();
+   private final ArrayDeque&lt;Object&gt; messageAndCloseQueue = new ArrayDeque();
+   private long queueSize;
+   private boolean enqueuedClose;
+   private ScheduledFuture&lt;?&gt; cancelFuture;
+   private int receivedCloseCode = -1;
+   private String receivedCloseReason;
+   private boolean failed;
+   private int sentPingCount;
+   private int receivedPingCount;
+   private int receivedPongCount;
+   private boolean awaitingPong;
+
+   public RealWebSocket(Request request, WebSocketListener listener, Random random, long pingIntervalMillis) {
+      if (!&quot;GET&quot;.equals(request.method())) {
+         throw new IllegalArgumentException(&quot;Request must be GET: &quot; + request.method());
+      } else {
+         this.originalRequest = request;
+         this.listener = listener;
+         this.random = random;
+         this.pingIntervalMillis = pingIntervalMillis;
+         byte[] nonce = new byte[16];
+         random.nextBytes(nonce);
+         this.key = ByteString.of(nonce).base64();
+         this.writerRunnable = () -&gt; {
+            while(true) {
+               try {
+                  if (this.writeOneFrame()) {
+                     continue;
+                  }
+               } catch (IOException var2) {
+                  this.failWebSocket(var2, (Response)null);
+               }
+
+               return;
+            }
+         };
+      }
+   }
+
+   public Request request() {
+      return this.originalRequest;
+   }
+
+   public synchronized long queueSize() {
+      return this.queueSize;
+   }
+
+   public void cancel() {
+      this.call.cancel();
+   }
+
+   public void connect(OkHttpClient client) {
+      client = client.newBuilder().eventListener(EventListener.NONE).protocols(ONLY_HTTP1).build();
+      final Request request = this.originalRequest.newBuilder().header(&quot;Upgrade&quot;, &quot;websocket&quot;).header(&quot;Connection&quot;, &quot;Upgrade&quot;).header(&quot;Sec-WebSocket-Key&quot;, this.key).header(&quot;Sec-WebSocket-Version&quot;, &quot;13&quot;).build();
+      this.call = Internal.instance.newWebSocketCall(client, request);
+      this.call.enqueue(new Callback() {
+         public void onResponse(Call call, Response response) {
+            Exchange exchange = Internal.instance.exchange(response);
+
+            RealWebSocket.Streams streams;
+            try {
+               RealWebSocket.this.checkUpgradeSuccess(response, exchange);
+               streams = exchange.newWebSocketStreams();
+            } catch (IOException var7) {
+               if (exchange != null) {
+                  exchange.webSocketUpgradeFailed();
+               }
+
+               RealWebSocket.this.failWebSocket(var7, response);
+               Util.closeQuietly(response);
+               return;
+            }
+
+            try {
+               String name = &quot;OkHttp WebSocket &quot; + request.url().redact();
+               RealWebSocket.this.initReaderAndWriter(name, streams);
+               RealWebSocket.this.listener.onOpen(RealWebSocket.this, response);
+               RealWebSocket.this.loopReader();
+            } catch (Exception var6) {
+               RealWebSocket.this.failWebSocket(var6, (Response)null);
+            }
+
+         }
+
+         public void onFailure(Call call, IOException e) {
+            RealWebSocket.this.failWebSocket(e, (Response)null);
+         }
+      });
+   }
+
+   void checkUpgradeSuccess(Response response, @Nullable Exchange exchange) throws IOException {
+      if (response.code() != 101) {
+         throw new ProtocolException(&quot;Expected HTTP 101 response but was &#39;&quot; + response.code() + &quot; &quot; + response.message() + &quot;&#39;&quot;);
+      } else {
+         String headerConnection = response.header(&quot;Connection&quot;);
+         if (!&quot;Upgrade&quot;.equalsIgnoreCase(headerConnection)) {
+            throw new ProtocolException(&quot;Expected &#39;Connection&#39; header value &#39;Upgrade&#39; but was &#39;&quot; + headerConnection + &quot;&#39;&quot;);
+         } else {
+            String headerUpgrade = response.header(&quot;Upgrade&quot;);
+            if (!&quot;websocket&quot;.equalsIgnoreCase(headerUpgrade)) {
+               throw new ProtocolException(&quot;Expected &#39;Upgrade&#39; header value &#39;websocket&#39; but was &#39;&quot; + headerUpgrade + &quot;&#39;&quot;);
+            } else {
+               String headerAccept = response.header(&quot;Sec-WebSocket-Accept&quot;);
+               String acceptExpected = ByteString.encodeUtf8(this.key + &quot;258EAFA5-E914-47DA-95CA-C5AB0DC85B11&quot;).sha1().base64();
+               if (!acceptExpected.equals(headerAccept)) {
+                  throw new ProtocolException(&quot;Expected &#39;Sec-WebSocket-Accept&#39; header value &#39;&quot; + acceptExpected + &quot;&#39; but was &#39;&quot; + headerAccept + &quot;&#39;&quot;);
+               } else if (exchange == null) {
+                  throw new ProtocolException(&quot;Web Socket exchange missing: bad interceptor?&quot;);
+               }
+            }
+         }
+      }
+   }
+
+   public void initReaderAndWriter(String name, RealWebSocket.Streams streams) throws IOException {
+      synchronized(this) {
+         this.streams = streams;
+         this.writer = new WebSocketWriter(streams.client, streams.sink, this.random);
+         this.executor = new ScheduledThreadPoolExecutor(1, Util.threadFactory(name, false));
+         if (this.pingIntervalMillis != 0L) {
+            this.executor.scheduleAtFixedRate(new RealWebSocket.PingRunnable(), this.pingIntervalMillis, this.pingIntervalMillis, TimeUnit.MILLISECONDS);
+         }
+
+         if (!this.messageAndCloseQueue.isEmpty()) {
+            this.runWriter();
+         }
+      }
+
+      this.reader = new WebSocketReader(streams.client, streams.source, this);
+   }
+
+   public void loopReader() throws IOException {
+      while(this.receivedCloseCode == -1) {
+         this.reader.processNextFrame();
+      }
+
+   }
+
+   boolean processNextFrame() throws IOException {
+      try {
+         this.reader.processNextFrame();
+         return this.receivedCloseCode == -1;
+      } catch (Exception var2) {
+         this.failWebSocket(var2, (Response)null);
+         return false;
+      }
+   }
+
+   void awaitTermination(int timeout, TimeUnit timeUnit) throws InterruptedException {
+      this.executor.awaitTermination((long)timeout, timeUnit);
+   }
+
+   void tearDown() throws InterruptedException {
+      if (this.cancelFuture != null) {
+         this.cancelFuture.cancel(false);
+      }
+
+      this.executor.shutdown();
+      this.executor.awaitTermination(10L, TimeUnit.SECONDS);
+   }
+
+   synchronized int sentPingCount() {
+      return this.sentPingCount;
+   }
+
+   synchronized int receivedPingCount() {
+      return this.receivedPingCount;
+   }
+
+   synchronized int receivedPongCount() {
+      return this.receivedPongCount;
+   }
+
+   public void onReadMessage(String text) throws IOException {
+      this.listener.onMessage(this, text);
+   }
+
+   public void onReadMessage(ByteString bytes) throws IOException {
+      this.listener.onMessage(this, bytes);
+   }
+
+   public synchronized void onReadPing(ByteString payload) {
+      if (!this.failed &amp;&amp; (!this.enqueuedClose || !this.messageAndCloseQueue.isEmpty())) {
+         this.pongQueue.add(payload);
+         this.runWriter();
+         ++this.receivedPingCount;
+      }
+   }
+
+   public synchronized void onReadPong(ByteString buffer) {
+      ++this.receivedPongCount;
+      this.awaitingPong = false;
+   }
+
+   public void onReadClose(int code, String reason) {
+      if (code == -1) {
+         throw new IllegalArgumentException();
+      } else {
+         RealWebSocket.Streams toClose = null;
+         synchronized(this) {
+            if (this.receivedCloseCode != -1) {
+               throw new IllegalStateException(&quot;already closed&quot;);
+            }
+
+            this.receivedCloseCode = code;
+            this.receivedCloseReason = reason;
+            if (this.enqueuedClose &amp;&amp; this.messageAndCloseQueue.isEmpty()) {
+               toClose = this.streams;
+               this.streams = null;
+               if (this.cancelFuture != null) {
+                  this.cancelFuture.cancel(false);
+               }
+
+               this.executor.shutdown();
+            }
+         }
+
+         try {
+            this.listener.onClosing(this, code, reason);
+            if (toClose != null) {
+               this.listener.onClosed(this, code, reason);
+            }
+         } finally {
+            Util.closeQuietly(toClose);
+         }
+
+      }
+   }
+
+   public boolean send(String text) {
+      if (text == null) {
+         throw new NullPointerException(&quot;text == null&quot;);
+      } else {
+         return this.send(ByteString.encodeUtf8(text), 1);
+      }
+   }
+
+   public boolean send(ByteString bytes) {
+      if (bytes == null) {
+         throw new NullPointerException(&quot;bytes == null&quot;);
+      } else {
+         return this.send(bytes, 2);
+      }
+   }
+
+   private synchronized boolean send(ByteString data, int formatOpcode) {
+      if (!this.failed &amp;&amp; !this.enqueuedClose) {
+         if (this.queueSize + (long)data.size() &gt; 16777216L) {
+            this.close(1001, (String)null);
+            return false;
+         } else {
+            this.queueSize += (long)data.size();
+            this.messageAndCloseQueue.add(new RealWebSocket.Message(formatOpcode, data));
+            this.runWriter();
+            return true;
+         }
+      } else {
+         return false;
+      }
+   }
+
+   synchronized boolean pong(ByteString payload) {
+      if (!this.failed &amp;&amp; (!this.enqueuedClose || !this.messageAndCloseQueue.isEmpty())) {
+         this.pongQueue.add(payload);
+         this.runWriter();
+         return true;
+      } else {
+         return false;
+      }
+   }
+
+   public boolean close(int code, String reason) {
+      return this.close(code, reason, 60000L);
+   }
+
+   synchronized boolean close(int code, String reason, long cancelAfterCloseMillis) {
+      WebSocketProtocol.validateCloseCode(code);
+      ByteString reasonBytes = null;
+      if (reason != null) {
+         reasonBytes = ByteString.encodeUtf8(reason);
+         if ((long)reasonBytes.size() &gt; 123L) {
+            throw new IllegalArgumentException(&quot;reason.size() &gt; 123: &quot; + reason);
+         }
+      }
+
+      if (!this.failed &amp;&amp; !this.enqueuedClose) {
+         this.enqueuedClose = true;
+         this.messageAndCloseQueue.add(new RealWebSocket.Close(code, reasonBytes, cancelAfterCloseMillis));
+         this.runWriter();
+         return true;
+      } else {
+         return false;
+      }
+   }
+
+   private void runWriter() {
+      assert Thread.holdsLock(this);
+
+      if (this.executor != null) {
+         this.executor.execute(this.writerRunnable);
+      }
+
+   }
+
+   boolean writeOneFrame() throws IOException {
+      Object messageOrClose = null;
+      int receivedCloseCode = -1;
+      String receivedCloseReason = null;
+      RealWebSocket.Streams streamsToClose = null;
+      WebSocketWriter writer;
+      ByteString pong;
+      synchronized(this) {
+         if (this.failed) {
+            return false;
+         }
+
+         writer = this.writer;
+         pong = (ByteString)this.pongQueue.poll();
+         if (pong == null) {
+            messageOrClose = this.messageAndCloseQueue.poll();
+            if (messageOrClose instanceof RealWebSocket.Close) {
+               receivedCloseCode = this.receivedCloseCode;
+               receivedCloseReason = this.receivedCloseReason;
+               if (receivedCloseCode != -1) {
+                  streamsToClose = this.streams;
+                  this.streams = null;
+                  this.executor.shutdown();
+               } else {
+                  this.cancelFuture = this.executor.schedule(new RealWebSocket.CancelRunnable(), ((RealWebSocket.Close)messageOrClose).cancelAfterCloseMillis, TimeUnit.MILLISECONDS);
+               }
+            } else if (messageOrClose == null) {
+               return false;
+            }
+         }
+      }
+
+      boolean var19;
+      try {
+         if (pong != null) {
+            writer.writePong(pong);
+         } else if (messageOrClose instanceof RealWebSocket.Message) {
+            ByteString data = ((RealWebSocket.Message)messageOrClose).data;
+            BufferedSink sink = Okio.buffer(writer.newMessageSink(((RealWebSocket.Message)messageOrClose).formatOpcode, (long)data.size()));
+            sink.write(data);
+            sink.close();
+            synchronized(this) {
+               this.queueSize -= (long)data.size();
+            }
+         } else {
+            if (!(messageOrClose instanceof RealWebSocket.Close)) {
+               throw new AssertionError();
+            }
+
+            RealWebSocket.Close close = (RealWebSocket.Close)messageOrClose;
+            writer.writeClose(close.code, close.reason);
+            if (streamsToClose != null) {
+               this.listener.onClosed(this, receivedCloseCode, receivedCloseReason);
+            }
+         }
+
+         var19 = true;
+      } finally {
+         Util.closeQuietly(streamsToClose);
+      }
+
+      return var19;
+   }
+
+   void writePingFrame() {
+      WebSocketWriter writer;
+      int failedPing;
+      synchronized(this) {
+         if (this.failed) {
+            return;
+         }
+
+         writer = this.writer;
+         failedPing = this.awaitingPong ? this.sentPingCount : -1;
+         ++this.sentPingCount;
+         this.awaitingPong = true;
+      }
+
+      if (failedPing != -1) {
+         this.failWebSocket(new SocketTimeoutException(&quot;sent ping but didn&#39;t receive pong within &quot; + this.pingIntervalMillis + &quot;ms (after &quot; + (failedPing - 1) + &quot; successful ping/pongs)&quot;), (Response)null);
+      } else {
+         try {
+            writer.writePing(ByteString.EMPTY);
+         } catch (IOException var5) {
+            this.failWebSocket(var5, (Response)null);
+         }
+
+      }
+   }
+
+   public void failWebSocket(Exception e, @Nullable Response response) {
+      RealWebSocket.Streams streamsToClose;
+      synchronized(this) {
+         if (this.failed) {
+            return;
+         }
+
+         this.failed = true;
+         streamsToClose = this.streams;
+         this.streams = null;
+         if (this.cancelFuture != null) {
+            this.cancelFuture.cancel(false);
+         }
+
+         if (this.executor != null) {
+            this.executor.shutdown();
+         }
+      }
+
+      try {
+         this.listener.onFailure(this, e, response);
+      } finally {
+         Util.closeQuietly(streamsToClose);
+      }
+
+   }
+
+   static {
+      ONLY_HTTP1 = Collections.singletonList(Protocol.HTTP_1_1);
+   }
+
+   final class CancelRunnable implements Runnable {
+      public void run() {
+         RealWebSocket.this.cancel();
+      }
+   }
+
+   public abstract static class Streams implements Closeable {
+      public final boolean client;
+      public final BufferedSource source;
+      public final BufferedSink sink;
+
+      public Streams(boolean client, BufferedSource source, BufferedSink sink) {
+         this.client = client;
+         this.source = source;
+         this.sink = sink;
+      }
+   }
+
+   static final class Close {
+      final int code;
+      final ByteString reason;
+      final long cancelAfterCloseMillis;
+
+      Close(int code, ByteString reason, long cancelAfterCloseMillis) {
+         this.code = code;
+         this.reason = reason;
+         this.cancelAfterCloseMillis = cancelAfterCloseMillis;
+      }
+   }
+
+   static final class Message {
+      final int formatOpcode;
+      final ByteString data;
+
+      Message(int formatOpcode, ByteString data) {
+         this.formatOpcode = formatOpcode;
+         this.data = data;
+      }
+   }
+
+   private final class PingRunnable implements Runnable {
+      public void run() {
+         RealWebSocket.this.writePingFrame();
+      }
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:26 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

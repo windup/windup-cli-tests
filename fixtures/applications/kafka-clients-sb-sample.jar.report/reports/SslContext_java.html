@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for SslContext.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/netty-handler-4.1.51.Final.jar/io/netty/handler/ssl/SslContext.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.netty.handler.ssl;
+
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBufAllocator;
+import io.netty.buffer.ByteBufInputStream;
+import io.netty.handler.ssl.ApplicationProtocolConfig.Protocol;
+import io.netty.handler.ssl.ApplicationProtocolConfig.SelectedListenerFailureBehavior;
+import io.netty.handler.ssl.ApplicationProtocolConfig.SelectorFailureBehavior;
+import io.netty.util.AttributeMap;
+import io.netty.util.DefaultAttributeMap;
+import io.netty.util.internal.EmptyArrays;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.KeyException;
+import java.security.KeyFactory;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.PrivateKey;
+import java.security.Provider;
+import java.security.UnrecoverableKeyException;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.util.List;
+import java.util.concurrent.Executor;
+import javax.crypto.Cipher;
+import javax.crypto.EncryptedPrivateKeyInfo;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLEngine;
+import javax.net.ssl.SSLException;
+import javax.net.ssl.SSLSessionContext;
+import javax.net.ssl.TrustManagerFactory;
+
+public abstract class SslContext {
+   static final String ALIAS = &quot;key&quot;;
+   static final CertificateFactory X509_CERT_FACTORY;
+   private final boolean startTls;
+   private final AttributeMap attributes;
+
+   public static SslProvider defaultServerProvider() {
+      return defaultProvider();
+   }
+
+   public static SslProvider defaultClientProvider() {
+      return defaultProvider();
+   }
+
+   private static SslProvider defaultProvider() {
+      return OpenSsl.isAvailable() ? SslProvider.OPENSSL : SslProvider.JDK;
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(File certChainFile, File keyFile) throws SSLException {
+      return newServerContext((File)certChainFile, keyFile, (String)null);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(File certChainFile, File keyFile, String keyPassword) throws SSLException {
+      return newServerContext((SslProvider)null, certChainFile, keyFile, keyPassword);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(File certChainFile, File keyFile, String keyPassword, Iterable&lt;String&gt; ciphers, Iterable&lt;String&gt; nextProtocols, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newServerContext((SslProvider)null, certChainFile, (File)keyFile, (String)keyPassword, (Iterable)ciphers, (Iterable)nextProtocols, sessionCacheSize, sessionTimeout);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(File certChainFile, File keyFile, String keyPassword, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newServerContext((SslProvider)null, certChainFile, keyFile, keyPassword, (Iterable)ciphers, (CipherSuiteFilter)cipherFilter, (ApplicationProtocolConfig)apn, sessionCacheSize, sessionTimeout);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(SslProvider provider, File certChainFile, File keyFile) throws SSLException {
+      return newServerContext(provider, certChainFile, keyFile, (String)null);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(SslProvider provider, File certChainFile, File keyFile, String keyPassword) throws SSLException {
+      return newServerContext(provider, certChainFile, keyFile, keyPassword, (Iterable)null, (CipherSuiteFilter)IdentityCipherSuiteFilter.INSTANCE, (ApplicationProtocolConfig)null, 0L, 0L);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(SslProvider provider, File certChainFile, File keyFile, String keyPassword, Iterable&lt;String&gt; ciphers, Iterable&lt;String&gt; nextProtocols, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newServerContext(provider, certChainFile, keyFile, keyPassword, (Iterable)ciphers, (CipherSuiteFilter)IdentityCipherSuiteFilter.INSTANCE, (ApplicationProtocolConfig)toApplicationProtocolConfig(nextProtocols), sessionCacheSize, sessionTimeout);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(SslProvider provider, File certChainFile, File keyFile, String keyPassword, TrustManagerFactory trustManagerFactory, Iterable&lt;String&gt; ciphers, Iterable&lt;String&gt; nextProtocols, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newServerContext(provider, (File)null, trustManagerFactory, certChainFile, keyFile, keyPassword, (KeyManagerFactory)null, ciphers, IdentityCipherSuiteFilter.INSTANCE, toApplicationProtocolConfig(nextProtocols), sessionCacheSize, sessionTimeout);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(SslProvider provider, File certChainFile, File keyFile, String keyPassword, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newServerContext(provider, (File)null, (TrustManagerFactory)null, certChainFile, keyFile, keyPassword, (KeyManagerFactory)null, ciphers, cipherFilter, apn, sessionCacheSize, sessionTimeout, KeyStore.getDefaultType());
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newServerContext(SslProvider provider, File trustCertCollectionFile, TrustManagerFactory trustManagerFactory, File keyCertChainFile, File keyFile, String keyPassword, KeyManagerFactory keyManagerFactory, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newServerContext(provider, trustCertCollectionFile, trustManagerFactory, keyCertChainFile, keyFile, keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, sessionCacheSize, sessionTimeout, KeyStore.getDefaultType());
+   }
+
+   static SslContext newServerContext(SslProvider provider, File trustCertCollectionFile, TrustManagerFactory trustManagerFactory, File keyCertChainFile, File keyFile, String keyPassword, KeyManagerFactory keyManagerFactory, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, long sessionCacheSize, long sessionTimeout, String keyStore) throws SSLException {
+      try {
+         return newServerContextInternal(provider, (Provider)null, toX509Certificates(trustCertCollectionFile), trustManagerFactory, toX509Certificates(keyCertChainFile), toPrivateKey(keyFile, keyPassword), keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, sessionCacheSize, sessionTimeout, ClientAuth.NONE, (String[])null, false, false, keyStore);
+      } catch (Exception var16) {
+         if (var16 instanceof SSLException) {
+            throw (SSLException)var16;
+         } else {
+            throw new SSLException(&quot;failed to initialize the server-side SSL context&quot;, var16);
+         }
+      }
+   }
+
+   static SslContext newServerContextInternal(SslProvider provider, Provider sslContextProvider, X509Certificate[] trustCertCollection, TrustManagerFactory trustManagerFactory, X509Certificate[] keyCertChain, PrivateKey key, String keyPassword, KeyManagerFactory keyManagerFactory, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, long sessionCacheSize, long sessionTimeout, ClientAuth clientAuth, String[] protocols, boolean startTls, boolean enableOcsp, String keyStoreType) throws SSLException {
+      if (provider == null) {
+         provider = defaultServerProvider();
+      }
+
+      switch(provider) {
+      case JDK:
+         if (enableOcsp) {
+            throw new IllegalArgumentException(&quot;OCSP is not supported with this SslProvider: &quot; + provider);
+         }
+
+         return new JdkSslServerContext(sslContextProvider, trustCertCollection, trustManagerFactory, keyCertChain, key, keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, sessionCacheSize, sessionTimeout, clientAuth, protocols, startTls, keyStoreType);
+      case OPENSSL:
+         verifyNullSslContextProvider(provider, sslContextProvider);
+         return new OpenSslServerContext(trustCertCollection, trustManagerFactory, keyCertChain, key, keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, sessionCacheSize, sessionTimeout, clientAuth, protocols, startTls, enableOcsp, keyStoreType);
+      case OPENSSL_REFCNT:
+         verifyNullSslContextProvider(provider, sslContextProvider);
+         return new ReferenceCountedOpenSslServerContext(trustCertCollection, trustManagerFactory, keyCertChain, key, keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, sessionCacheSize, sessionTimeout, clientAuth, protocols, startTls, enableOcsp, keyStoreType);
+      default:
+         throw new Error(provider.toString());
+      }
+   }
+
+   private static void verifyNullSslContextProvider(SslProvider provider, Provider sslContextProvider) {
+      if (sslContextProvider != null) {
+         throw new IllegalArgumentException(&quot;Java Security Provider unsupported for SslProvider: &quot; + provider);
+      }
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext() throws SSLException {
+      return newClientContext((SslProvider)null, (File)null, (TrustManagerFactory)null);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(File certChainFile) throws SSLException {
+      return newClientContext((SslProvider)null, (File)certChainFile);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(TrustManagerFactory trustManagerFactory) throws SSLException {
+      return newClientContext((SslProvider)null, (File)null, trustManagerFactory);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(File certChainFile, TrustManagerFactory trustManagerFactory) throws SSLException {
+      return newClientContext((SslProvider)null, certChainFile, trustManagerFactory);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(File certChainFile, TrustManagerFactory trustManagerFactory, Iterable&lt;String&gt; ciphers, Iterable&lt;String&gt; nextProtocols, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newClientContext((SslProvider)null, (File)certChainFile, (TrustManagerFactory)trustManagerFactory, (Iterable)ciphers, (Iterable)nextProtocols, sessionCacheSize, sessionTimeout);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(File certChainFile, TrustManagerFactory trustManagerFactory, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newClientContext((SslProvider)null, certChainFile, trustManagerFactory, ciphers, cipherFilter, apn, sessionCacheSize, sessionTimeout);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(SslProvider provider) throws SSLException {
+      return newClientContext(provider, (File)null, (TrustManagerFactory)null);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(SslProvider provider, File certChainFile) throws SSLException {
+      return newClientContext(provider, certChainFile, (TrustManagerFactory)null);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(SslProvider provider, TrustManagerFactory trustManagerFactory) throws SSLException {
+      return newClientContext(provider, (File)null, trustManagerFactory);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(SslProvider provider, File certChainFile, TrustManagerFactory trustManagerFactory) throws SSLException {
+      return newClientContext(provider, certChainFile, trustManagerFactory, (Iterable)null, IdentityCipherSuiteFilter.INSTANCE, (ApplicationProtocolConfig)null, 0L, 0L);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(SslProvider provider, File certChainFile, TrustManagerFactory trustManagerFactory, Iterable&lt;String&gt; ciphers, Iterable&lt;String&gt; nextProtocols, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newClientContext(provider, certChainFile, trustManagerFactory, (File)null, (File)null, (String)null, (KeyManagerFactory)null, ciphers, IdentityCipherSuiteFilter.INSTANCE, toApplicationProtocolConfig(nextProtocols), sessionCacheSize, sessionTimeout);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(SslProvider provider, File certChainFile, TrustManagerFactory trustManagerFactory, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      return newClientContext(provider, certChainFile, trustManagerFactory, (File)null, (File)null, (String)null, (KeyManagerFactory)null, ciphers, cipherFilter, apn, sessionCacheSize, sessionTimeout);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public static SslContext newClientContext(SslProvider provider, File trustCertCollectionFile, TrustManagerFactory trustManagerFactory, File keyCertChainFile, File keyFile, String keyPassword, KeyManagerFactory keyManagerFactory, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, long sessionCacheSize, long sessionTimeout) throws SSLException {
+      try {
+         return newClientContextInternal(provider, (Provider)null, toX509Certificates(trustCertCollectionFile), trustManagerFactory, toX509Certificates(keyCertChainFile), toPrivateKey(keyFile, keyPassword), keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, (String[])null, sessionCacheSize, sessionTimeout, false, KeyStore.getDefaultType());
+      } catch (Exception var15) {
+         if (var15 instanceof SSLException) {
+            throw (SSLException)var15;
+         } else {
+            throw new SSLException(&quot;failed to initialize the client-side SSL context&quot;, var15);
+         }
+      }
+   }
+
+   static SslContext newClientContextInternal(SslProvider provider, Provider sslContextProvider, X509Certificate[] trustCert, TrustManagerFactory trustManagerFactory, X509Certificate[] keyCertChain, PrivateKey key, String keyPassword, KeyManagerFactory keyManagerFactory, Iterable&lt;String&gt; ciphers, CipherSuiteFilter cipherFilter, ApplicationProtocolConfig apn, String[] protocols, long sessionCacheSize, long sessionTimeout, boolean enableOcsp, String keyStoreType) throws SSLException {
+      if (provider == null) {
+         provider = defaultClientProvider();
+      }
+
+      switch(provider) {
+      case JDK:
+         if (enableOcsp) {
+            throw new IllegalArgumentException(&quot;OCSP is not supported with this SslProvider: &quot; + provider);
+         }
+
+         return new JdkSslClientContext(sslContextProvider, trustCert, trustManagerFactory, keyCertChain, key, keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, protocols, sessionCacheSize, sessionTimeout, keyStoreType);
+      case OPENSSL:
+         verifyNullSslContextProvider(provider, sslContextProvider);
+         return new OpenSslClientContext(trustCert, trustManagerFactory, keyCertChain, key, keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, protocols, sessionCacheSize, sessionTimeout, enableOcsp, keyStoreType);
+      case OPENSSL_REFCNT:
+         verifyNullSslContextProvider(provider, sslContextProvider);
+         return new ReferenceCountedOpenSslClientContext(trustCert, trustManagerFactory, keyCertChain, key, keyPassword, keyManagerFactory, ciphers, cipherFilter, apn, protocols, sessionCacheSize, sessionTimeout, enableOcsp, keyStoreType);
+      default:
+         throw new Error(provider.toString());
+      }
+   }
+
+   static ApplicationProtocolConfig toApplicationProtocolConfig(Iterable&lt;String&gt; nextProtocols) {
+      ApplicationProtocolConfig apn;
+      if (nextProtocols == null) {
+         apn = ApplicationProtocolConfig.DISABLED;
+      } else {
+         apn = new ApplicationProtocolConfig(Protocol.NPN_AND_ALPN, SelectorFailureBehavior.CHOOSE_MY_LAST_PROTOCOL, SelectedListenerFailureBehavior.ACCEPT, nextProtocols);
+      }
+
+      return apn;
+   }
+
+   protected SslContext() {
+      this(false);
+   }
+
+   protected SslContext(boolean startTls) {
+      this.attributes = new DefaultAttributeMap();
+      this.startTls = startTls;
+   }
+
+   public final AttributeMap attributes() {
+      return this.attributes;
+   }
+
+   public final boolean isServer() {
+      return !this.isClient();
+   }
+
+   public abstract boolean isClient();
+
+   public abstract List&lt;String&gt; cipherSuites();
+
+   public abstract long sessionCacheSize();
+
+   public abstract long sessionTimeout();
+
+   /** @deprecated */
+   @Deprecated
+   public final List&lt;String&gt; nextProtocols() {
+      return this.applicationProtocolNegotiator().protocols();
+   }
+
+   public abstract ApplicationProtocolNegotiator applicationProtocolNegotiator();
+
+   public abstract SSLEngine newEngine(ByteBufAllocator var1);
+
+   public abstract SSLEngine newEngine(ByteBufAllocator var1, String var2, int var3);
+
+   public abstract SSLSessionContext sessionContext();
+
+   public final SslHandler newHandler(ByteBufAllocator alloc) {
+      return this.newHandler(alloc, this.startTls);
+   }
+
+   protected SslHandler newHandler(ByteBufAllocator alloc, boolean startTls) {
+      return new SslHandler(this.newEngine(alloc), startTls);
+   }
+
+   public SslHandler newHandler(ByteBufAllocator alloc, Executor delegatedTaskExecutor) {
+      return this.newHandler(alloc, this.startTls, delegatedTaskExecutor);
+   }
+
+   protected SslHandler newHandler(ByteBufAllocator alloc, boolean startTls, Executor executor) {
+      return new SslHandler(this.newEngine(alloc), startTls, executor);
+   }
+
+   public final SslHandler newHandler(ByteBufAllocator alloc, String peerHost, int peerPort) {
+      return this.newHandler(alloc, peerHost, peerPort, this.startTls);
+   }
+
+   protected SslHandler newHandler(ByteBufAllocator alloc, String peerHost, int peerPort, boolean startTls) {
+      return new SslHandler(this.newEngine(alloc, peerHost, peerPort), startTls);
+   }
+
+   public SslHandler newHandler(ByteBufAllocator alloc, String peerHost, int peerPort, Executor delegatedTaskExecutor) {
+      return this.newHandler(alloc, peerHost, peerPort, this.startTls, delegatedTaskExecutor);
+   }
+
+   protected SslHandler newHandler(ByteBufAllocator alloc, String peerHost, int peerPort, boolean startTls, Executor delegatedTaskExecutor) {
+      return new SslHandler(this.newEngine(alloc, peerHost, peerPort), startTls, delegatedTaskExecutor);
+   }
+
+   protected static PKCS8EncodedKeySpec generateKeySpec(char[] password, byte[] key) throws IOException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeySpecException, InvalidKeyException, InvalidAlgorithmParameterException {
+      if (password == null) {
+         return new PKCS8EncodedKeySpec(key);
+      } else {
+         EncryptedPrivateKeyInfo encryptedPrivateKeyInfo = new EncryptedPrivateKeyInfo(key);
+         SecretKeyFactory keyFactory = SecretKeyFactory.getInstance(encryptedPrivateKeyInfo.getAlgName());
+         PBEKeySpec pbeKeySpec = new PBEKeySpec(password);
+         SecretKey pbeKey = keyFactory.generateSecret(pbeKeySpec);
+         Cipher cipher = Cipher.getInstance(encryptedPrivateKeyInfo.getAlgName());
+         cipher.init(2, pbeKey, encryptedPrivateKeyInfo.getAlgParameters());
+         return encryptedPrivateKeyInfo.getKeySpec(cipher);
+      }
+   }
+
+   static KeyStore buildKeyStore(X509Certificate[] certChain, PrivateKey key, char[] keyPasswordChars, String keyStoreType) throws KeyStoreException, NoSuchAlgorithmException, CertificateException, IOException {
+      if (keyStoreType == null) {
+         keyStoreType = KeyStore.getDefaultType();
+      }
+
+      KeyStore ks = KeyStore.getInstance(keyStoreType);
+      ks.load((InputStream)null, (char[])null);
+      ks.setKeyEntry(&quot;key&quot;, key, keyPasswordChars, certChain);
+      return ks;
+   }
+
+   static PrivateKey toPrivateKey(File keyFile, String keyPassword) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeySpecException, InvalidAlgorithmParameterException, KeyException, IOException {
+      return keyFile == null ? null : getPrivateKeyFromByteBuffer(PemReader.readPrivateKey(keyFile), keyPassword);
+   }
+
+   static PrivateKey toPrivateKey(InputStream keyInputStream, String keyPassword) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeySpecException, InvalidAlgorithmParameterException, KeyException, IOException {
+      return keyInputStream == null ? null : getPrivateKeyFromByteBuffer(PemReader.readPrivateKey(keyInputStream), keyPassword);
+   }
+
+   private static PrivateKey getPrivateKeyFromByteBuffer(ByteBuf encodedKeyBuf, String keyPassword) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeySpecException, InvalidAlgorithmParameterException, KeyException, IOException {
+      byte[] encodedKey = new byte[encodedKeyBuf.readableBytes()];
+      encodedKeyBuf.readBytes(encodedKey).release();
+      PKCS8EncodedKeySpec encodedKeySpec = generateKeySpec(keyPassword == null ? null : keyPassword.toCharArray(), encodedKey);
+
+      try {
+         return KeyFactory.getInstance(&quot;RSA&quot;).generatePrivate(encodedKeySpec);
+      } catch (InvalidKeySpecException var9) {
+         try {
+            return KeyFactory.getInstance(&quot;DSA&quot;).generatePrivate(encodedKeySpec);
+         } catch (InvalidKeySpecException var8) {
+            try {
+               return KeyFactory.getInstance(&quot;EC&quot;).generatePrivate(encodedKeySpec);
+            } catch (InvalidKeySpecException var7) {
+               throw new InvalidKeySpecException(&quot;Neither RSA, DSA nor EC worked&quot;, var7);
+            }
+         }
+      }
+   }
+
+   /** @deprecated */
+   @Deprecated
+   protected static TrustManagerFactory buildTrustManagerFactory(File certChainFile, TrustManagerFactory trustManagerFactory) throws NoSuchAlgorithmException, CertificateException, KeyStoreException, IOException {
+      return buildTrustManagerFactory(certChainFile, trustManagerFactory, KeyStore.getDefaultType());
+   }
+
+   static TrustManagerFactory buildTrustManagerFactory(File certChainFile, TrustManagerFactory trustManagerFactory, String keyType) throws NoSuchAlgorithmException, CertificateException, KeyStoreException, IOException {
+      X509Certificate[] x509Certs = toX509Certificates(certChainFile);
+      return buildTrustManagerFactory(x509Certs, trustManagerFactory, keyType);
+   }
+
+   static X509Certificate[] toX509Certificates(File file) throws CertificateException {
+      return file == null ? null : getCertificatesFromBuffers(PemReader.readCertificates(file));
+   }
+
+   static X509Certificate[] toX509Certificates(InputStream in) throws CertificateException {
+      return in == null ? null : getCertificatesFromBuffers(PemReader.readCertificates(in));
+   }
+
+   private static X509Certificate[] getCertificatesFromBuffers(ByteBuf[] certs) throws CertificateException {
+      CertificateFactory cf = CertificateFactory.getInstance(&quot;X.509&quot;);
+      X509Certificate[] x509Certs = new X509Certificate[certs.length];
+      boolean var17 = false;
+
+      try {
+         var17 = true;
+         int i = 0;
+
+         while(true) {
+            if (i &gt;= certs.length) {
+               var17 = false;
+               break;
+            }
+
+            ByteBufInputStream is = new ByteBufInputStream(certs[i], false);
+
+            try {
+               x509Certs[i] = (X509Certificate)cf.generateCertificate(is);
+            } finally {
+               try {
+                  is.close();
+               } catch (IOException var22) {
+                  throw new RuntimeException(var22);
+               }
+            }
+
+            ++i;
+         }
+      } finally {
+         if (var17) {
+            ByteBuf[] var9 = certs;
+            int var10 = certs.length;
+
+            for(int var11 = 0; var11 &lt; var10; ++var11) {
+               ByteBuf buf = var9[var11];
+               buf.release();
+            }
+
+         }
+      }
+
+      ByteBuf[] var25 = certs;
+      int var26 = certs.length;
+
+      for(int var5 = 0; var5 &lt; var26; ++var5) {
+         ByteBuf buf = var25[var5];
+         buf.release();
+      }
+
+      return x509Certs;
+   }
+
+   static TrustManagerFactory buildTrustManagerFactory(X509Certificate[] certCollection, TrustManagerFactory trustManagerFactory, String keyStoreType) throws NoSuchAlgorithmException, CertificateException, KeyStoreException, IOException {
+      if (keyStoreType == null) {
+         keyStoreType = KeyStore.getDefaultType();
+      }
+
+      KeyStore ks = KeyStore.getInstance(keyStoreType);
+      ks.load((InputStream)null, (char[])null);
+      int i = 1;
+      X509Certificate[] var5 = certCollection;
+      int var6 = certCollection.length;
+
+      for(int var7 = 0; var7 &lt; var6; ++var7) {
+         X509Certificate cert = var5[var7];
+         String alias = Integer.toString(i);
+         ks.setCertificateEntry(alias, cert);
+         ++i;
+      }
+
+      if (trustManagerFactory == null) {
+         trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
+      }
+
+      trustManagerFactory.init(ks);
+      return trustManagerFactory;
+   }
+
+   static PrivateKey toPrivateKeyInternal(File keyFile, String keyPassword) throws SSLException {
+      try {
+         return toPrivateKey(keyFile, keyPassword);
+      } catch (Exception var3) {
+         throw new SSLException(var3);
+      }
+   }
+
+   static X509Certificate[] toX509CertificatesInternal(File file) throws SSLException {
+      try {
+         return toX509Certificates(file);
+      } catch (CertificateException var2) {
+         throw new SSLException(var2);
+      }
+   }
+
+   static KeyManagerFactory buildKeyManagerFactory(X509Certificate[] certChain, PrivateKey key, String keyPassword, KeyManagerFactory kmf, String keyStoreType) throws UnrecoverableKeyException, KeyStoreException, NoSuchAlgorithmException, CertificateException, IOException {
+      return buildKeyManagerFactory(certChain, KeyManagerFactory.getDefaultAlgorithm(), key, keyPassword, kmf, keyStoreType);
+   }
+
+   static KeyManagerFactory buildKeyManagerFactory(X509Certificate[] certChainFile, String keyAlgorithm, PrivateKey key, String keyPassword, KeyManagerFactory kmf, String keyStore) throws KeyStoreException, NoSuchAlgorithmException, IOException, CertificateException, UnrecoverableKeyException {
+      char[] keyPasswordChars = keyStorePassword(keyPassword);
+      KeyStore ks = buildKeyStore(certChainFile, key, keyPasswordChars, keyStore);
+      return buildKeyManagerFactory(ks, keyAlgorithm, keyPasswordChars, kmf);
+   }
+
+   static KeyManagerFactory buildKeyManagerFactory(X509Certificate[] certChainFile, String keyAlgorithm, PrivateKey key, String keyPassword, KeyManagerFactory kmf) throws KeyStoreException, NoSuchAlgorithmException, IOException, CertificateException, UnrecoverableKeyException {
+      char[] keyPasswordChars = keyStorePassword(keyPassword);
+      KeyStore ks = buildKeyStore(certChainFile, key, keyPasswordChars, KeyStore.getDefaultType());
+      return buildKeyManagerFactory(ks, keyAlgorithm, keyPasswordChars, kmf);
+   }
+
+   static KeyManagerFactory buildKeyManagerFactory(KeyStore ks, String keyAlgorithm, char[] keyPasswordChars, KeyManagerFactory kmf) throws KeyStoreException, NoSuchAlgorithmException, UnrecoverableKeyException {
+      if (kmf == null) {
+         kmf = KeyManagerFactory.getInstance(keyAlgorithm);
+      }
+
+      kmf.init(ks, keyPasswordChars);
+      return kmf;
+   }
+
+   static char[] keyStorePassword(String keyPassword) {
+      return keyPassword == null ? EmptyArrays.EMPTY_CHARS : keyPassword.toCharArray();
+   }
+
+   static {
+      try {
+         X509_CERT_FACTORY = CertificateFactory.getInstance(&quot;X.509&quot;);
+      } catch (CertificateException var1) {
+         throw new IllegalStateException(&quot;unable to instance X.509 CertificateFactory&quot;, var1);
+      }
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:25 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

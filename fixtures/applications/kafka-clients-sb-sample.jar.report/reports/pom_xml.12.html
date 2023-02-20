@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for pom.xml</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/classgraph-4.8.69.jar/META-INF/maven/io.github.classgraph/classgraph/pom.xml
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Maven XML</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Maven POM (pom.xml)</em>
+<a title='View Rule: DiscoverMavenProjectsRuleProvider_1' href='windup_ruleproviders.html#DiscoverMavenProjectsRuleProvider_1'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">Maven Project Object Model (POM) File</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;io.github.classgraph&lt;/groupId&gt;
+    &lt;artifactId&gt;classgraph&lt;/artifactId&gt;
+    &lt;version&gt;4.8.69&lt;/version&gt;
+    &lt;name&gt;ClassGraph&lt;/name&gt;
+
+    &lt;description&gt;The uber-fast, ultra-lightweight classpath and module scanner for JVM languages.&lt;/description&gt;
+
+    &lt;url&gt;https://github.com/classgraph/classgraph&lt;/url&gt;
+
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;The MIT License (MIT)&lt;/name&gt;
+            &lt;url&gt;http://opensource.org/licenses/MIT&lt;/url&gt;
+            &lt;distribution&gt;repo&lt;/distribution&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;name&gt;Luke Hutchison&lt;/name&gt;
+            &lt;email&gt;luke.hutch@gmail.com&lt;/email&gt;
+            &lt;organization&gt;ClassGraph&lt;/organization&gt;
+            &lt;organizationUrl&gt;https://github.com/classgraph&lt;/organizationUrl&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+
+    &lt;scm&gt;
+        &lt;connection&gt;scm:git:git@github.com:classgraph/classgraph.git&lt;/connection&gt;
+        &lt;developerConnection&gt;scm:git:git@github.com:classgraph/classgraph.git&lt;/developerConnection&gt;
+        &lt;url&gt;https://github.com/classgraph/classgraph&lt;/url&gt;
+        &lt;tag&gt;classgraph-4.8.69&lt;/tag&gt;
+    &lt;/scm&gt;
+
+    &lt;issueManagement&gt;
+        &lt;url&gt;https://github.com/classgraph/classgraph/issues&lt;/url&gt;
+    &lt;/issueManagement&gt;
+
+    &lt;distributionManagement&gt;
+        &lt;snapshotRepository&gt;
+            &lt;id&gt;ossrh&lt;/id&gt;
+            &lt;url&gt;https://oss.sonatype.org/content/repositories/snapshots&lt;/url&gt;
+        &lt;/snapshotRepository&gt;
+        &lt;repository&gt;
+            &lt;id&gt;ossrh&lt;/id&gt;
+            &lt;url&gt;https://oss.sonatype.org/service/local/staging/deploy/maven2/&lt;/url&gt;
+        &lt;/repository&gt;
+    &lt;/distributionManagement&gt;
+
+    &lt;properties&gt;
+        &lt;!-- Set UTF-8 encoding for Maven plugins and output --&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;project.reporting.outputEncoding&gt;UTF-8&lt;/project.reporting.outputEncoding&gt;
+
+        &lt;!-- Default to generating Javadoc in HTML 4.01 format --&gt;
+        &lt;javadoc.html.version /&gt;
+
+        &lt;!-- Warnings are disabled, in order to suppress warning about bootstrap classpath not being set --&gt;
+        &lt;!-- (which arises as a result of building for JDK 7 on JDK8+, allowing for use of @FunctionalInterface) --&gt;
+        &lt;!-- &lt;maven.compiler.showWarnings&gt;true&lt;/maven.compiler.showWarnings&gt; --&gt;
+        &lt;!-- &lt;maven.compiler.showDeprecation&gt;true&lt;/maven.compiler.showDeprecation&gt; --&gt;
+    &lt;/properties&gt;
+
+    &lt;!-- Test dependencies (main has no dependencies). --&gt;
+    &lt;!-- Find dependency updates with: ./mvnw versions:display-dependency-updates --&gt;
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+            &lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt;
+            &lt;version&gt;5.6.0&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.openjdk.jmh&lt;/groupId&gt;
+            &lt;artifactId&gt;jmh-core&lt;/artifactId&gt;
+            &lt;version&gt;1.23&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.openjdk.jmh&lt;/groupId&gt;
+            &lt;artifactId&gt;jmh-generator-annprocess&lt;/artifactId&gt;
+            &lt;version&gt;1.23&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.assertj&lt;/groupId&gt;
+            &lt;artifactId&gt;assertj-core&lt;/artifactId&gt;
+            &lt;version&gt;3.15.0&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;javax.enterprise&lt;/groupId&gt;
+            &lt;artifactId&gt;cdi-api&lt;/artifactId&gt;
+            &lt;version&gt;2.0.SP1&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.ops4j.pax.url&lt;/groupId&gt;
+            &lt;artifactId&gt;pax-url-aether&lt;/artifactId&gt;
+            &lt;version&gt;2.6.1&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+            &lt;artifactId&gt;slf4j-api&lt;/artifactId&gt;
+            &lt;version&gt;2.0.0-alpha1&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
+            &lt;artifactId&gt;slf4j-jdk14&lt;/artifactId&gt;
+            &lt;version&gt;2.0.0-alpha1&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.hibernate.javax.persistence&lt;/groupId&gt;
+            &lt;artifactId&gt;hibernate-jpa-2.1-api&lt;/artifactId&gt;
+            &lt;version&gt;1.0.2.Final&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+
+        &lt;!-- &quot;provided&quot; dependencies (soft compile-time dependencies that do not create a runtime dependency): --&gt;
+
+        &lt;dependency&gt;
+            &lt;!-- Needed for Eclipse nullability analysis to work, but use &quot;provided&quot; as the scope so that we --&gt;
+            &lt;!-- don&#39;t add a hard dependency on the JDT annotations, because we don&#39;t use the annotations in --&gt;
+            &lt;!-- any of the ClassGraph code, so these annotations are not needed at runtime. --&gt;
+            &lt;!-- See: https://bugs.eclipse.org/bugs/show_bug.cgi?id=552198 --&gt;
+            &lt;groupId&gt;org.eclipse.jdt&lt;/groupId&gt;
+            &lt;artifactId&gt;org.eclipse.jdt.annotation&lt;/artifactId&gt;
+            &lt;version&gt;2.2.400&lt;/version&gt;
+            &lt;scope&gt;provided&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;!-- Plugins are listed here, but configured in pluginManagement, for compatibility with Eclipse. --&gt;
+            &lt;!-- See: https://stackoverflow.com/a/10483284/3950982 --&gt;
+            &lt;!-- Find updates with: ./mvnw versions:display-plugin-updates --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-enforcer-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.0.0-M3&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-resources-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.1.0&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.8.1&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.0.0-M4&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                &lt;artifactId&gt;build-helper-maven-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.0.0&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.2.0&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-antrun-plugin&lt;/artifactId&gt;
+                &lt;version&gt;1.8&lt;/version&gt;&lt;!--$NO-MVN-MAN-VER$ --&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.2.1&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.1.1&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                &lt;version&gt;1.6&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.sonatype.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;nexus-staging-maven-plugin&lt;/artifactId&gt;
+                &lt;version&gt;1.6.8&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-release-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.0.0-M1&lt;/version&gt;
+            &lt;/plugin&gt;
+
+            &lt;!-- Override versions of the following plugins, inherited from the super-pom, with latest versions --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-clean-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.1.0&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-deploy-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.0.0-M1&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-install-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.0.0-M1&lt;/version&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-site-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.8.2&lt;/version&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+
+        &lt;pluginManagement&gt;
+            &lt;plugins&gt;
+                &lt;!-- Enforce minimum Maven version, and JDK 7 API --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-enforcer-plugin&lt;/artifactId&gt;
+                    &lt;dependencies&gt;
+                        &lt;dependency&gt;
+                            &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                            &lt;artifactId&gt;animal-sniffer-enforcer-rule&lt;/artifactId&gt;
+                            &lt;version&gt;1.18&lt;/version&gt;
+                        &lt;/dependency&gt;
+                    &lt;/dependencies&gt;
+                    &lt;executions&gt;
+                        &lt;!-- Require Maven version. --&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;enforce-versions&lt;/id&gt;
+                            &lt;phase&gt;validate&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;enforce&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;rules&gt;
+                                    &lt;requireMavenVersion&gt;
+                                        &lt;version&gt;[3.6.3,)&lt;/version&gt;
+                                    &lt;/requireMavenVersion&gt;
+                                &lt;/rules&gt;
+                                &lt;!-- This is disabled currently because of a bug in maven-enforcer-plugin-3.0.0-M3: --&gt;
+                                &lt;!-- https://issues.apache.org/jira/browse/MENFORCER-351 --&gt;
+                                &lt;skip&gt;true&lt;/skip&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                        &lt;!-- Display environment info --&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;display-info&lt;/id&gt;
+                            &lt;phase&gt;compile&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;display-info&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                        &lt;!-- Check main project for compatibility with JDK 7 API --&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;check-signatures&lt;/id&gt;
+                            &lt;phase&gt;compile&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;enforce&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;rules&gt;
+                                    &lt;checkSignatureRule implementation=&quot;org.codehaus.mojo.animal_sniffer.enforcer.CheckSignatureRule&quot;&gt;
+                                        &lt;signature&gt;
+                                            &lt;groupId&gt;org.codehaus.mojo.signature&lt;/groupId&gt;
+                                            &lt;!-- Check against JDK 7 API --&gt;
+                                            &lt;artifactId&gt;java17&lt;/artifactId&gt;
+                                            &lt;version&gt;1.0&lt;/version&gt;
+                                        &lt;/signature&gt;
+                                    &lt;/checkSignatureRule&gt;
+                                &lt;/rules&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-resources-plugin&lt;/artifactId&gt;
+                    &lt;executions&gt;
+                        &lt;!-- Copy LICENSE-ClassGraph.txt to build root --&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;copy-license-to-target&lt;/id&gt;
+                            &lt;phase&gt;process-resources&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;copy-resources&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;outputDirectory&gt;${project.build.outputDirectory}&lt;/outputDirectory&gt;
+                                &lt;resources&gt;
+                                    &lt;resource&gt;
+                                        &lt;directory&gt;${basedir}&lt;/directory&gt;
+                                        &lt;filtering&gt;false&lt;/filtering&gt;
+                                        &lt;includes&gt;
+                                            &lt;include&gt;LICENSE-ClassGraph.txt&lt;/include&gt;
+                                        &lt;/includes&gt;
+                                    &lt;/resource&gt;
+                                &lt;/resources&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;copy-license-to-javadocs&lt;/id&gt;
+                            &lt;phase&gt;process-resources&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;copy-resources&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;outputDirectory&gt;${project.build.directory}/apidocs&lt;/outputDirectory&gt;
+                                &lt;resources&gt;
+                                    &lt;resource&gt;
+                                        &lt;directory&gt;${basedir}&lt;/directory&gt;
+                                        &lt;filtering&gt;false&lt;/filtering&gt;
+                                        &lt;includes&gt;
+                                            &lt;include&gt;LICENSE-ClassGraph.txt&lt;/include&gt;
+                                        &lt;/includes&gt;
+                                    &lt;/resource&gt;
+                                &lt;/resources&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-antrun-plugin&lt;/artifactId&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;!-- Put module-info.class in META-INF/versions/9 to maximize backwards --&gt;
+                            &lt;!-- compatibility. This has to be done after the jar is created, since --&gt;
+                            &lt;!-- module-info.class cannot be copied to the target directory, otherwise --&gt;
+                            &lt;!-- this build or the following incremental build will cause Animal Sniffer --&gt;
+                            &lt;!-- to fail, since it depends upon ASM 5, which balks when it hits --&gt;
+                            &lt;!-- module-info.class with: &quot;Execution check-signatures of goal --&gt;
+                            &lt;!-- org.apache.maven.plugins:maven-enforcer-plugin:3.0.0-M3:enforce failed: --&gt;
+                            &lt;!-- This feature requires ASM6&quot;. --&gt;
+                            &lt;id&gt;add-module-info-to-jar&lt;/id&gt;
+                            &lt;phase&gt;package&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;run&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;target&gt;
+                                    &lt;jar update=&quot;true&quot; destfile=&quot;${project.build.directory}/${project.build.finalName}.jar&quot;&gt;
+                                        &lt;zipfileset prefix=&quot;META-INF/versions/9&quot; dir=&quot;${project.basedir}/src/module-info/io.github.classgraph&quot; includes=&quot;module-info.class&quot; /&gt;
+                                    &lt;/jar&gt;
+                                &lt;/target&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+
+                        &lt;execution&gt;
+                            &lt;!-- Strip out m2e directives from pom.xml, since Sonatype can&#39;t handle them. --&gt;
+                            &lt;!-- This has to be done after the jar is built, since Maven adds the pom.xml file --&gt;
+                            &lt;!-- to the jarfile directly, rather than first creating it in the target directory. --&gt;
+                            &lt;id&gt;strip-m2e-directives&lt;/id&gt;
+                            &lt;phase&gt;package&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;run&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;tasks&gt;
+                                    &lt;!-- Unzip pom.xml, and replace m2e directives with comments --&gt;
+                                    &lt;copy todir=&quot;${project.build.directory}/tmp&quot;&gt;
+                                        &lt;zipfileset src=&quot;${project.build.directory}/${project.build.finalName}.jar&quot;&gt;
+                                            &lt;patternset&gt;
+                                                &lt;include name=&quot;META-INF/maven/io.github.classgraph/classgraph/pom.xml&quot; /&gt;
+                                            &lt;/patternset&gt;
+                                        &lt;/zipfileset&gt;
+                                        &lt;filterchain&gt;
+                                            &lt;tokenfilter&gt;
+                                                &lt;replacestring from=&quot;&amp;lt;?&quot; to=&quot;&amp;lt;-- &quot; /&gt;
+                                            &lt;/tokenfilter&gt;
+                                            &lt;tokenfilter&gt;
+                                                &lt;replacestring from=&quot;?&amp;gt;&quot; to=&quot; --&amp;gt;&quot; /&gt;
+                                            &lt;/tokenfilter&gt;
+                                        &lt;/filterchain&gt;
+                                    &lt;/copy&gt;
+                                    &lt;!-- Update jarfile with modified pom.xml --&gt;
+                                    &lt;zip basedir=&quot;${project.build.directory}/tmp&quot; destfile=&quot;${project.build.directory}/${project.build.finalName}.jar&quot; update=&quot;true&quot; /&gt;
+                                &lt;/tasks&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- Compile sources (main for JDK 7, test for JDK 8) --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                    &lt;configuration&gt;
+                        &lt;encoding&gt;UTF-8&lt;/encoding&gt;
+                        &lt;!-- Can&#39;t use &quot;release&quot; option, because ClassGraph needs to be built in JDK 7 --&gt;
+                        &lt;!-- compatibility mode, and the @FunctionalInterface annotation was not available --&gt;
+                        &lt;!-- in JDK 7. If building with &quot;source&quot; and &quot;target&quot; switches, unknown annotations --&gt;
+                        &lt;!-- compile fine as long as they exist in the compiling JDK (in this case, JDK 8+). --&gt;
+                        &lt;!-- Missing annotations don&#39;t trigger a linkage error or ClassNotFoundException --&gt;
+                        &lt;!-- unless the annotation is actually read. --&gt;
+                        &lt;!-- However, note that not explicitly specifying a JDK 7 rt.jar as the bootstrap --&gt;
+                        &lt;!-- classpath (in order to build on a newer JDK, which does have @FunctionalInterface) --&gt;
+                        &lt;!-- will lead to the following build-time warning, if maven.compiler.showWarnings --&gt;
+                        &lt;!-- is set to true: --&gt;
+                        &lt;!-- &quot;[WARNING] bootstrap class path not set in conjunction with -source 7&quot; --&gt;
+                        &lt;source&gt;7&lt;/source&gt;
+                        &lt;target&gt;7&lt;/target&gt;
+                    &lt;/configuration&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;default-testCompile&lt;/id&gt;
+                            &lt;phase&gt;test-compile&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;testCompile&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;encoding&gt;UTF-8&lt;/encoding&gt;
+                                &lt;!-- Tests use some JDK 8 features, such as lambdas --&gt;
+                                &lt;source&gt;8&lt;/source&gt;
+                                &lt;target&gt;8&lt;/target&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- Execute unit tests --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- Add src/test/perf to test sources --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+                    &lt;artifactId&gt;build-helper-maven-plugin&lt;/artifactId&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;add-test-source&lt;/id&gt;
+                            &lt;phase&gt;generate-test-sources&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;add-test-source&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;sources&gt;
+                                    &lt;source&gt;src/test/perf&lt;/source&gt;
+                                &lt;/sources&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- Create binary jar --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+                    &lt;configuration&gt;
+                        &lt;forceCreation&gt;true&lt;/forceCreation&gt;
+                        &lt;archive&gt;
+                            &lt;forced&gt;true&lt;/forced&gt;
+                            &lt;manifest&gt;
+                                &lt;addDefaultImplementationEntries&gt;true&lt;/addDefaultImplementationEntries&gt;
+                                &lt;addDefaultSpecificationEntries&gt;true&lt;/addDefaultSpecificationEntries&gt;
+                            &lt;/manifest&gt;
+                            &lt;manifestEntries&gt;
+                                &lt;!-- Add OSGi bundle attributes to manifest --&gt;
+                                &lt;Bundle-Category&gt;Utilities&lt;/Bundle-Category&gt;
+                                &lt;Bundle-License&gt;http://opensource.org/licenses/MIT&lt;/Bundle-License&gt;
+                                &lt;Bundle-ManifestVersion&gt;2&lt;/Bundle-ManifestVersion&gt;
+                                &lt;Bundle-Name&gt;ClassGraph&lt;/Bundle-Name&gt;
+                                &lt;Bundle-SymbolicName&gt;${project.groupId}.${project.artifactId}&lt;/Bundle-SymbolicName&gt;
+                                &lt;Bundle-Vendor&gt;Luke Hutchison&lt;/Bundle-Vendor&gt;
+                                &lt;Bundle-Description&gt;${project.description}&lt;/Bundle-Description&gt;
+                                &lt;Bundle-Version&gt;${project.version}&lt;/Bundle-Version&gt;
+                                &lt;Require-Capability&gt;osgi.ee;filter:=&quot;(&amp;amp;(osgi.ee=JavaSE)(version=1.7))&quot;&lt;/Require-Capability&gt;
+                                &lt;Export-Package&gt;io.github.classgraph;version=&quot;${project.version}&quot;&lt;/Export-Package&gt;
+                                &lt;!-- Make sure &quot;requires&quot; entries in the module descriptor match these imports: --&gt;
+                                &lt;!-- src/main/module-info/io.github.classgraph/module-info.java --&gt;
+                                &lt;Import-Package&gt;javax.xml.xpath,javax.xml.namespace,javax.xml.parsers,org.w3c.dom,jdk.internal.misc;resolution:=&quot;optional&quot;,sun.misc;resolution:=&quot;optional&quot;,sun.nio.ch;resolution:=&quot;optional&quot;&lt;/Import-Package&gt;
+                                &lt;!-- This is a multi-release jar, since module-info.class will be added to --&gt;
+                                &lt;!-- META-INF/versions/9 , so we need to set the Multi-Release entry to true --&gt;
+                                &lt;Multi-Release&gt;true&lt;/Multi-Release&gt;
+                            &lt;/manifestEntries&gt;
+                        &lt;/archive&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- Create source jar --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-sources&lt;/id&gt;
+                            &lt;phase&gt;package&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar-no-fork&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- Create Javadoc jar --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-javadocs&lt;/id&gt;
+                            &lt;phase&gt;package&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;source&gt;8&lt;/source&gt;
+                                &lt;additionalOptions&gt;${javadoc.html.version}&lt;/additionalOptions&gt;
+                                &lt;doclint&gt;all&lt;/doclint&gt;
+                                &lt;excludePackageNames&gt;nonapi.*&lt;/excludePackageNames&gt;
+                                &lt;show&gt;public&lt;/show&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- Stage jars on Sonatype Nexus --&gt;
+                &lt;!-- See: http://java.dzone.com/articles/deploy-maven-central --&gt;
+                &lt;!-- and: http://central.sonatype.org/pages/apache-maven.html --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.sonatype.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;nexus-staging-maven-plugin&lt;/artifactId&gt;
+                    &lt;extensions&gt;true&lt;/extensions&gt;
+                    &lt;configuration&gt;
+                        &lt;serverId&gt;ossrh&lt;/serverId&gt;
+                        &lt;nexusUrl&gt;https://oss.sonatype.org/&lt;/nexusUrl&gt;
+                        &lt;autoReleaseAfterClose&gt;true&lt;/autoReleaseAfterClose&gt;
+                        &lt;stagingProgressTimeoutMinutes&gt;10&lt;/stagingProgressTimeoutMinutes&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+
+                &lt;!-- Deploy jars --&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-release-plugin&lt;/artifactId&gt;
+                    &lt;configuration&gt;
+                        &lt;phase&gt;deploy&lt;/phase&gt;
+                        &lt;goals&gt;deploy&lt;/goals&gt;
+                        &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;
+                        &lt;!-- Activate release profile --&gt;
+                        &lt;releaseProfiles&gt;release&lt;/releaseProfiles&gt;
+                        &lt;!-- Work around bug where releaseProfiles tag doesn&#39;t actually work yet --&gt;
+                        &lt;arguments&gt;-Prelease&lt;/arguments&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+            &lt;/plugins&gt;
+        &lt;/pluginManagement&gt;
+    &lt;/build&gt;
+
+    &lt;profiles&gt;
+        &lt;!-- Compile Javadoc to HTML5 if building with JDK 9+ --&gt;
+        &lt;profile&gt;
+            &lt;id&gt;jdk9plus&lt;/id&gt;
+            &lt;properties&gt;
+                &lt;javadoc.html.version&gt;-html5&lt;/javadoc.html.version&gt;
+                &lt;!-- coverall version 4.3.0 does not work with java 9. --&gt;
+                &lt;!-- See: https://github.com/trautonen/coveralls-maven-plugin/issues/112 --&gt;
+                &lt;coveralls.skip&gt;true&lt;/coveralls.skip&gt;
+            &lt;/properties&gt;
+            &lt;activation&gt;
+                &lt;jdk&gt;[9,)&lt;/jdk&gt;
+            &lt;/activation&gt;
+        &lt;/profile&gt;
+
+        &lt;!-- Sign jars for release (./mvnw clean release:prepare release:perform) --&gt;
+        &lt;profile&gt;
+            &lt;id&gt;release&lt;/id&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                        &lt;configuration&gt;
+                            &lt;gpgArguments&gt;
+                                &lt;arg&gt;--pinentry-mode&lt;/arg&gt;
+                                &lt;arg&gt;loopback&lt;/arg&gt;
+                            &lt;/gpgArguments&gt;
+                            &lt;keyname&gt;${gpg.keyname}&lt;/keyname&gt;
+                            &lt;passphraseServerId&gt;${gpg.keyname}&lt;/passphraseServerId&gt;
+                        &lt;/configuration&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;sign-artifacts&lt;/id&gt;
+                                &lt;phase&gt;verify&lt;/phase&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;sign&lt;/goal&gt;
+                                &lt;/goals&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+&lt;/project&gt;
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:26 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("xml",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

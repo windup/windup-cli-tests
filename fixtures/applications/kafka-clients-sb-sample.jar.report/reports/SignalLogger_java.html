@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for SignalLogger.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/reactor-core-3.3.8.RELEASE.jar/reactor/core/publisher/SignalLogger.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package reactor.core.publisher;
+
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.LongConsumer;
+import java.util.function.Supplier;
+import java.util.logging.Level;
+import org.reactivestreams.Subscription;
+import reactor.core.CorePublisher;
+import reactor.core.Fuseable;
+import reactor.core.Fuseable.QueueSubscription;
+import reactor.core.Fuseable.SynchronousSubscription;
+import reactor.core.Scannable.Attr;
+import reactor.util.Logger;
+import reactor.util.Loggers;
+import reactor.util.annotation.Nullable;
+import reactor.util.context.Context;
+
+final class SignalLogger&lt;IN&gt; implements SignalPeek&lt;IN&gt; {
+   static final int CONTEXT_PARENT = 256;
+   static final int SUBSCRIBE = 128;
+   static final int ON_SUBSCRIBE = 64;
+   static final int ON_NEXT = 32;
+   static final int ON_ERROR = 16;
+   static final int ON_COMPLETE = 8;
+   static final int REQUEST = 4;
+   static final int CANCEL = 2;
+   static final int AFTER_TERMINATE = 1;
+   static final int ALL = 510;
+   static final AtomicLong IDS = new AtomicLong(1L);
+   final CorePublisher&lt;IN&gt; source;
+   final Logger log;
+   final boolean fuseable;
+   final int options;
+   final Level level;
+   final String operatorLine;
+   final long id;
+   static final String LOG_TEMPLATE = &quot;{}({})&quot;;
+   static final String LOG_TEMPLATE_FUSEABLE = &quot;| {}({})&quot;;
+
+   SignalLogger(CorePublisher&lt;IN&gt; source, @Nullable String category, Level level, boolean correlateStack, SignalType... options) {
+      this(source, category, level, correlateStack, Loggers::getLogger, options);
+   }
+
+   SignalLogger(CorePublisher&lt;IN&gt; source, @Nullable String category, Level level, boolean correlateStack, Function&lt;String, Logger&gt; loggerSupplier, @Nullable SignalType... options) {
+      this.source = (CorePublisher)Objects.requireNonNull(source, &quot;source&quot;);
+      this.id = IDS.getAndIncrement();
+      this.fuseable = source instanceof Fuseable;
+      if (correlateStack) {
+         this.operatorLine = Traces.extractOperatorAssemblyInformation((String)((Supplier)Traces.callSiteSupplierFactory.get()).get());
+      } else {
+         this.operatorLine = null;
+      }
+
+      boolean generated = category == null || category.isEmpty() || category.endsWith(&quot;.&quot;);
+      category = generated &amp;&amp; category == null ? &quot;reactor.&quot; : category;
+      if (generated) {
+         if (source instanceof Mono) {
+            category = category + &quot;Mono.&quot; + source.getClass().getSimpleName().replace(&quot;Mono&quot;, &quot;&quot;);
+         } else if (source instanceof ParallelFlux) {
+            category = category + &quot;Parallel.&quot; + source.getClass().getSimpleName().replace(&quot;Parallel&quot;, &quot;&quot;);
+         } else {
+            category = category + &quot;Flux.&quot; + source.getClass().getSimpleName().replace(&quot;Flux&quot;, &quot;&quot;);
+         }
+
+         category = category + &quot;.&quot; + this.id;
+      }
+
+      this.log = (Logger)loggerSupplier.apply(category);
+      this.level = level;
+      if (options != null &amp;&amp; options.length != 0) {
+         int opts = 0;
+         SignalType[] var9 = options;
+         int var10 = options.length;
+
+         for(int var11 = 0; var11 &lt; var10; ++var11) {
+            SignalType option = var9[var11];
+            if (option == SignalType.CANCEL) {
+               opts |= 2;
+            } else if (option == SignalType.CURRENT_CONTEXT) {
+               opts |= 256;
+            } else if (option == SignalType.ON_SUBSCRIBE) {
+               opts |= 64;
+            } else if (option == SignalType.REQUEST) {
+               opts |= 4;
+            } else if (option == SignalType.ON_NEXT) {
+               opts |= 32;
+            } else if (option == SignalType.ON_ERROR) {
+               opts |= 16;
+            } else if (option == SignalType.ON_COMPLETE) {
+               opts |= 8;
+            } else if (option == SignalType.SUBSCRIBE) {
+               opts |= 128;
+            } else if (option == SignalType.AFTER_TERMINATE) {
+               opts |= 1;
+            }
+         }
+
+         this.options = opts;
+      } else {
+         this.options = 510;
+      }
+
+   }
+
+   @Nullable
+   public Object scanUnsafe(Attr key) {
+      return key == Attr.PARENT ? this.source : null;
+   }
+
+   void log(SignalType signalType, Object signalValue) {
+      String line = this.fuseable ? &quot;| {}({})&quot; : &quot;{}({})&quot;;
+      if (this.operatorLine != null) {
+         line = line + &quot; &quot; + this.operatorLine;
+      }
+
+      if (this.level == Level.FINEST) {
+         this.log.trace(line, new Object[]{signalType, signalValue});
+      } else if (this.level == Level.FINE) {
+         this.log.debug(line, new Object[]{signalType, signalValue});
+      } else if (this.level == Level.INFO) {
+         this.log.info(line, new Object[]{signalType, signalValue});
+      } else if (this.level == Level.WARNING) {
+         this.log.warn(line, new Object[]{signalType, signalValue});
+      } else if (this.level == Level.SEVERE) {
+         this.log.error(line, new Object[]{signalType, signalValue});
+      }
+
+   }
+
+   void safeLog(SignalType signalType, Object signalValue) {
+      if (signalValue instanceof QueueSubscription) {
+         signalValue = String.valueOf(signalValue);
+         if (this.log.isDebugEnabled()) {
+            this.log.debug(&quot;A Fuseable Subscription has been passed to the logging framework, this is generally a sign of a misplaced log(), eg. &#39;window(2).log()&#39; instead of &#39;window(2).flatMap(w -&gt; w.log())&#39;&quot;);
+         }
+      }
+
+      try {
+         this.log(signalType, signalValue);
+      } catch (UnsupportedOperationException var4) {
+         this.log(signalType, String.valueOf(signalValue));
+         if (this.log.isDebugEnabled()) {
+            this.log.debug(&quot;UnsupportedOperationException has been raised by the logging framework, does your log() placement make sense? eg. &#39;window(2).log()&#39; instead of &#39;window(2).flatMap(w -&gt; w.log())&#39;&quot;, var4);
+         }
+      }
+
+   }
+
+   static String subscriptionAsString(@Nullable Subscription s) {
+      if (s == null) {
+         return &quot;null subscription&quot;;
+      } else {
+         StringBuilder asString = new StringBuilder();
+         if (s instanceof SynchronousSubscription) {
+            asString.append(&quot;[Synchronous Fuseable] &quot;);
+         } else if (s instanceof QueueSubscription) {
+            asString.append(&quot;[Fuseable] &quot;);
+         }
+
+         Class&lt;? extends Subscription&gt; clazz = s.getClass();
+         String name = clazz.getCanonicalName();
+         if (name == null) {
+            name = clazz.getName();
+         }
+
+         name = name.replaceFirst(clazz.getPackage().getName() + &quot;.&quot;, &quot;&quot;);
+         asString.append(name);
+         return asString.toString();
+      }
+   }
+
+   @Nullable
+   public Consumer&lt;? super Subscription&gt; onSubscribeCall() {
+      return (this.options &amp; 64) != 64 || this.level == Level.INFO &amp;&amp; !this.log.isInfoEnabled() ? null : (s) -&gt; {
+         this.log(SignalType.ON_SUBSCRIBE, subscriptionAsString(s));
+      };
+   }
+
+   @Nullable
+   public Consumer&lt;? super Context&gt; onCurrentContextCall() {
+      return (this.options &amp; 256) != 256 || this.level == Level.INFO &amp;&amp; !this.log.isInfoEnabled() ? null : (c) -&gt; {
+         this.log(SignalType.ON_CONTEXT, c);
+      };
+   }
+
+   @Nullable
+   public Consumer&lt;? super IN&gt; onNextCall() {
+      return (this.options &amp; 32) != 32 || this.level == Level.INFO &amp;&amp; !this.log.isInfoEnabled() ? null : (d) -&gt; {
+         this.safeLog(SignalType.ON_NEXT, d);
+      };
+   }
+
+   @Nullable
+   public Consumer&lt;? super Throwable&gt; onErrorCall() {
+      boolean shouldLogAsDebug = this.level == Level.FINE &amp;&amp; this.log.isDebugEnabled();
+      boolean shouldLogAsTrace = this.level == Level.FINEST &amp;&amp; this.log.isTraceEnabled();
+      boolean shouldLogAsError = this.level != Level.FINE &amp;&amp; this.level != Level.FINEST &amp;&amp; this.log.isErrorEnabled();
+      if ((this.options &amp; 16) != 16 || !shouldLogAsError &amp;&amp; !shouldLogAsDebug &amp;&amp; !shouldLogAsTrace) {
+         return null;
+      } else {
+         String line = this.fuseable ? &quot;| {}({})&quot; : &quot;{}({})&quot;;
+         if (this.operatorLine != null) {
+            line = line + &quot; &quot; + this.operatorLine;
+         }
+
+         if (shouldLogAsTrace) {
+            return (e) -&gt; {
+               this.log.trace(line, new Object[]{SignalType.ON_ERROR, e, this.source});
+               this.log.trace(&quot;&quot;, e);
+            };
+         } else {
+            return shouldLogAsDebug ? (e) -&gt; {
+               this.log.debug(line, new Object[]{SignalType.ON_ERROR, e, this.source});
+               this.log.debug(&quot;&quot;, e);
+            } : (e) -&gt; {
+               this.log.error(line, new Object[]{SignalType.ON_ERROR, e, this.source});
+               this.log.error(&quot;&quot;, e);
+            };
+         }
+      }
+   }
+
+   @Nullable
+   public Runnable onCompleteCall() {
+      return (this.options &amp; 8) != 8 || this.level == Level.INFO &amp;&amp; !this.log.isInfoEnabled() ? null : () -&gt; {
+         this.log(SignalType.ON_COMPLETE, &quot;&quot;);
+      };
+   }
+
+   @Nullable
+   public Runnable onAfterTerminateCall() {
+      return (this.options &amp; 1) != 1 || this.level == Level.INFO &amp;&amp; !this.log.isInfoEnabled() ? null : () -&gt; {
+         this.log(SignalType.AFTER_TERMINATE, &quot;&quot;);
+      };
+   }
+
+   @Nullable
+   public LongConsumer onRequestCall() {
+      return (this.options &amp; 4) != 4 || this.level == Level.INFO &amp;&amp; !this.log.isInfoEnabled() ? null : (n) -&gt; {
+         this.log(SignalType.REQUEST, Long.MAX_VALUE == n ? &quot;unbounded&quot; : n);
+      };
+   }
+
+   @Nullable
+   public Runnable onCancelCall() {
+      return (this.options &amp; 2) != 2 || this.level == Level.INFO &amp;&amp; !this.log.isInfoEnabled() ? null : () -&gt; {
+         this.log(SignalType.CANCEL, &quot;&quot;);
+      };
+   }
+
+   public String toString() {
+      return &quot;/loggers/&quot; + this.log.getName() + &quot;/&quot; + this.id;
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:25 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

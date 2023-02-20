@@ -1,5 +1,5 @@
-[
-  {
+{
+  "jee_example_app": {
     "app_name": "jee_example_app",
     "file_name": "jee-example-app-1.0.0.ear",
     "target": "eap7",
@@ -12,5 +12,61 @@
       "informational": 11,
       "total": 102
     }
+  },
+  "complete_duke": {
+    "app_name": "complete_duke",
+    "file_name": "complete-duke.zip",
+    "target": "jakarta-ee",
+    "source": "weblogic",
+    "story_points": 29,
+    "incidents": {
+        "mandatory": 29,
+        "optional": 0,
+        "potential": 0,
+        "informational": 1,
+        "total": 30
+    }
+  },
+  "kafka_clients_sb_sample": {
+    "app_name": "kafka_clients_sb_sample",
+    "file_name": "kafka-clients-sb-sample.jar",
+    "target": "quarkus",
+    "source": "",
+    "story_points": 178,
+    "incidents": {
+        "mandatory": 14,
+        "optional": 0,
+        "potential": 31,
+        "informational": 58,
+        "total": 103
+    }
+  },
+  "spring_petclinic": {
+    "app_name": "spring_petclinic",
+    "file_name": "spring-petclinic-2.4.0.BUILD-SNAPSHOT.jar",
+    "target": "quarkus",
+    "source": "",
+    "story_points": 140,
+    "incidents": {
+        "mandatory": 26,
+        "optional": 0,
+        "potential": 147,
+        "informational": 59,
+        "total": 232
+    }
+  },
+  "camunda_bpm_spring_boot_starter_example": {
+    "app_name": "camunda_bpm_spring_boot_starter_example",
+    "file_name": "camunda-bpm-spring-boot-starter-example-war-2.0.0.war",
+    "target": "quarkus",
+    "source": "",
+    "story_points": 132,
+    "incidents": {
+        "mandatory": 5,
+        "optional": 9,
+        "potential": 26,
+        "informational": 105,
+        "total": 145
+    }
   }
-]
+}

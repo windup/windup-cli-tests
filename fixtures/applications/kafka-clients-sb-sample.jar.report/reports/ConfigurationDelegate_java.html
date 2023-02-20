@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for ConfigurationDelegate.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/logback-classic-1.2.3.jar/ch/qos/logback/classic/gaffer/ConfigurationDelegate.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package ch.qos.logback.classic.gaffer;
+
+import ch.qos.logback.classic.Level;
+import ch.qos.logback.classic.LoggerContext;
+import ch.qos.logback.classic.jmx.JMXConfigurator;
+import ch.qos.logback.classic.jmx.MBeanUtil;
+import ch.qos.logback.classic.joran.ReconfigureOnChangeTask;
+import ch.qos.logback.classic.net.ReceiverBase;
+import ch.qos.logback.classic.turbo.TurboFilter;
+import ch.qos.logback.core.Appender;
+import ch.qos.logback.core.CoreConstants;
+import ch.qos.logback.core.spi.ContextAware;
+import ch.qos.logback.core.spi.ContextAwareBase;
+import ch.qos.logback.core.spi.LifeCycle;
+import ch.qos.logback.core.status.StatusListener;
+import ch.qos.logback.core.util.CachingDateFormatter;
+import ch.qos.logback.core.util.Duration;
+import groovy.lang.Closure;
+import groovy.lang.GroovyObject;
+import groovy.lang.MetaClass;
+import groovy.lang.Reference;
+import java.lang.management.ManagementFactory;
+import java.lang.ref.SoftReference;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+import javax.management.MalformedObjectNameException;
+import javax.management.ObjectName;
+import org.codehaus.groovy.reflection.ClassInfo;
+import org.codehaus.groovy.runtime.BytecodeInterface8;
+import org.codehaus.groovy.runtime.GStringImpl;
+import org.codehaus.groovy.runtime.GeneratedClosure;
+import org.codehaus.groovy.runtime.ScriptBytecodeAdapter;
+import org.codehaus.groovy.runtime.callsite.CallSite;
+import org.codehaus.groovy.runtime.callsite.CallSiteArray;
+import org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation;
+import org.codehaus.groovy.runtime.typehandling.ShortTypeHandling;
+import org.slf4j.Logger;
+
+public class ConfigurationDelegate extends ContextAwareBase implements GroovyObject {
+   private List&lt;Appender&gt; appenderList;
+   // $FF: synthetic field
+   private static ClassInfo $staticClassInfo;
+   // $FF: synthetic field
+   public static transient boolean __$stMC;
+   // $FF: synthetic field
+   private transient MetaClass metaClass;
+   // $FF: synthetic field
+   private static SoftReference $callSiteArray;
+
+   public ConfigurationDelegate() {
+      CallSite[] var1 = $getCallSiteArray();
+      List var2 = ScriptBytecodeAdapter.createList(new Object[0]);
+      this.appenderList = var2;
+      MetaClass var3 = this.$getStaticMetaClass();
+      this.metaClass = var3;
+   }
+
+   public Object getDeclaredOrigin() {
+      CallSite[] var1 = $getCallSiteArray();
+      return this;
+   }
+
+   public void scan(String scanPeriodStr) {
+      CallSite[] var2 = $getCallSiteArray();
+      if (DefaultTypeTransformation.booleanUnbox(scanPeriodStr)) {
+         ReconfigureOnChangeTask rocTask = (ReconfigureOnChangeTask)ScriptBytecodeAdapter.castToType(var2[0].callConstructor(ReconfigureOnChangeTask.class), ReconfigureOnChangeTask.class);
+         var2[1].call(rocTask, var2[2].callGroovyObjectGetProperty(this));
+         var2[3].call(var2[4].callGroovyObjectGetProperty(this), var2[5].callGetProperty(CoreConstants.class), rocTask);
+
+         try {
+            Duration duration = (Duration)ScriptBytecodeAdapter.castToType(var2[6].call(Duration.class, scanPeriodStr), Duration.class);
+            ScheduledExecutorService scheduledExecutorService = (ScheduledExecutorService)ScriptBytecodeAdapter.castToType(var2[7].call(var2[8].callGroovyObjectGetProperty(this)), ScheduledExecutorService.class);
+            ScheduledFuture scheduledFuture = (ScheduledFuture)ScriptBytecodeAdapter.castToType(var2[9].call(scheduledExecutorService, rocTask, var2[10].call(duration), var2[11].call(duration), var2[12].callGetProperty(TimeUnit.class)), ScheduledFuture.class);
+            var2[13].call(var2[14].callGroovyObjectGetProperty(this), scheduledFuture);
+            var2[15].callCurrent(this, var2[16].call(&quot;Setting ReconfigureOnChangeTask scanning period to &quot;, duration));
+         } catch (NumberFormatException var11) {
+            var2[17].callCurrent(this, var2[18].call(var2[19].call(&quot;Error while converting [&quot;, scanPeriodStr), &quot;] to long&quot;), var11);
+         } finally {
+            ;
+         }
+      }
+
+   }
+
+   public void statusListener(Class listenerClass) {
+      CallSite[] var2 = $getCallSiteArray();
+      StatusListener statusListener = (StatusListener)ScriptBytecodeAdapter.castToType(var2[20].call(listenerClass), StatusListener.class);
+      var2[21].call(var2[22].callGetProperty(var2[23].callGroovyObjectGetProperty(this)), statusListener);
+      if (statusListener instanceof ContextAware) {
+         var2[24].call((ContextAware)ScriptBytecodeAdapter.castToType(statusListener, ContextAware.class), var2[25].callGroovyObjectGetProperty(this));
+      }
+
+      if (statusListener instanceof LifeCycle) {
+         var2[26].call((LifeCycle)ScriptBytecodeAdapter.castToType(statusListener, LifeCycle.class));
+      }
+
+      var2[27].callCurrent(this, new GStringImpl(new Object[]{var2[28].callGetProperty(listenerClass)}, new String[]{&quot;Added status listener of type [&quot;, &quot;]&quot;}));
+   }
+
+   public void conversionRule(String conversionWord, Class converterClass) {
+      CallSite[] var3 = $getCallSiteArray();
+      String converterClassName = (String)ShortTypeHandling.castToString(var3[29].call(converterClass));
+      Map ruleRegistry = (Map)ScriptBytecodeAdapter.castToType(var3[30].call(var3[31].callGroovyObjectGetProperty(this), var3[32].callGetProperty(CoreConstants.class)), Map.class);
+      if (ScriptBytecodeAdapter.compareEqual(ruleRegistry, (Object)null)) {
+         Object var6 = var3[33].callConstructor(HashMap.class);
+         ruleRegistry = (Map)ScriptBytecodeAdapter.castToType(var6, Map.class);
+         var3[34].call(var3[35].callGroovyObjectGetProperty(this), var3[36].callGetProperty(CoreConstants.class), ruleRegistry);
+      }
+
+      var3[37].callCurrent(this, var3[38].call(var3[39].call(var3[40].call(var3[41].call(&quot;registering conversion word &quot;, conversionWord), &quot; with class [&quot;), converterClassName), &quot;]&quot;));
+      var3[42].call(ruleRegistry, conversionWord, converterClassName);
+   }
+
+   public void root(Level level, List&lt;String&gt; appenderNames) {
+      CallSite[] var3 = $getCallSiteArray();
+      if (ScriptBytecodeAdapter.compareEqual(level, (Object)null)) {
+         var3[43].callCurrent(this, &quot;Root logger cannot be set to level null&quot;);
+      } else {
+         var3[44].callCurrent(this, var3[45].callGetProperty(Logger.class), level, appenderNames);
+      }
+
+   }
+
+   public void logger(String name, Level level, List&lt;String&gt; appenderNames, Boolean additivity) {
+      CallSite[] var5 = $getCallSiteArray();
+      if (DefaultTypeTransformation.booleanUnbox(name)) {
+         ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger)ScriptBytecodeAdapter.castToType(var5[46].call((LoggerContext)ScriptBytecodeAdapter.castToType(var5[47].callGroovyObjectGetProperty(this), LoggerContext.class), name), ch.qos.logback.classic.Logger.class);
+         var5[48].callCurrent(this, var5[49].call(new GStringImpl(new Object[]{name}, new String[]{&quot;Setting level of logger [&quot;, &quot;] to &quot;}), level));
+         ScriptBytecodeAdapter.setProperty(level, (Class)null, logger, &quot;level&quot;);
+         Reference aName = new Reference((Object)null);
+         Iterator var9 = (Iterator)ScriptBytecodeAdapter.castToType(var5[50].call(appenderNames), Iterator.class);
+
+         while(var9.hasNext()) {
+            ((Reference)aName).set(var9.next());
+            Appender appender = (Appender)ScriptBytecodeAdapter.castToType(var5[51].call(this.appenderList, new GeneratedClosure(this, this, aName) {
+               // $FF: synthetic field
+               private Reference aName;
+               // $FF: synthetic field
+               private static ClassInfo $staticClassInfo;
+               // $FF: synthetic field
+               public static transient boolean __$stMC;
+               // $FF: synthetic field
+               private static SoftReference $callSiteArray;
+
+               public {
+                  CallSite[] var4 = $getCallSiteArray();
+                  this.aName = aName;
+               }
+
+               public Object doCall(Object it) {
+                  CallSite[] var2 = $getCallSiteArray();
+                  return ScriptBytecodeAdapter.compareEqual(var2[0].callGetProperty(it), this.aName.get());
+               }
+
+               public Object getaName() {
+                  CallSite[] var1 = $getCallSiteArray();
+                  return this.aName.get();
+               }
+
+               // $FF: synthetic method
+               protected MetaClass $getStaticMetaClass() {
+                  if (this.getClass() != &lt;undefinedtype&gt;.class) {
+                     return ScriptBytecodeAdapter.initMetaClass(this);
+                  } else {
+                     ClassInfo var1 = $staticClassInfo;
+                     if (var1 == null) {
+                        $staticClassInfo = var1 = ClassInfo.getClassInfo(this.getClass());
+                     }
+
+                     return var1.getMetaClass();
+                  }
+               }
+
+               // $FF: synthetic method
+               private static void $createCallSiteArray_1(String[] var0) {
+                  var0[0] = &quot;name&quot;;
+               }
+
+               // $FF: synthetic method
+               private static CallSiteArray $createCallSiteArray() {
+                  String[] var0 = new String[1];
+                  $createCallSiteArray_1(var0);
+                  return new CallSiteArray(&lt;undefinedtype&gt;.class, var0);
+               }
+
+               // $FF: synthetic method
+               private static CallSite[] $getCallSiteArray() {
+                  CallSiteArray var0;
+                  if ($callSiteArray == null || (var0 = (CallSiteArray)$callSiteArray.get()) == null) {
+                     var0 = $createCallSiteArray();
+                     $callSiteArray = new SoftReference(var0);
+                  }
+
+                  return var0.array;
+               }
+            }), Appender.class);
+            if (ScriptBytecodeAdapter.compareNotEqual(appender, (Object)null)) {
+               var5[52].callCurrent(this, var5[53].call(new GStringImpl(new Object[]{aName.get()}, new String[]{&quot;Attaching appender named [&quot;, &quot;] to &quot;}), logger));
+               var5[54].call(logger, appender);
+            } else {
+               var5[55].callCurrent(this, new GStringImpl(new Object[]{aName.get()}, new String[]{&quot;Failed to find appender named [&quot;, &quot;]&quot;}));
+            }
+         }
+
+         if (ScriptBytecodeAdapter.compareNotEqual(additivity, (Object)null)) {
+            ScriptBytecodeAdapter.setProperty(additivity, (Class)null, logger, &quot;additive&quot;);
+         }
+      } else {
+         var5[56].callCurrent(this, &quot;No name attribute for logger&quot;);
+      }
+
+   }
+
+   public void appender(String name, Class clazz, Closure closure) {
+      CallSite[] var4 = $getCallSiteArray();
+      var4[57].callCurrent(this, var4[58].call(var4[59].call(&quot;About to instantiate appender of type [&quot;, var4[60].callGetProperty(clazz)), &quot;]&quot;));
+      Appender appender = (Appender)ScriptBytecodeAdapter.castToType(var4[61].call(clazz), Appender.class);
+      var4[62].callCurrent(this, var4[63].call(var4[64].call(&quot;Naming appender as [&quot;, name), &quot;]&quot;));
+      ScriptBytecodeAdapter.setProperty(name, (Class)null, appender, &quot;name&quot;);
+      Object var7 = var4[65].callGroovyObjectGetProperty(this);
+      ScriptBytecodeAdapter.setProperty(var7, (Class)null, appender, &quot;context&quot;);
+      var4[66].call(this.appenderList, appender);
+      if (ScriptBytecodeAdapter.compareNotEqual(closure, (Object)null)) {
+         AppenderDelegate ad = (AppenderDelegate)ScriptBytecodeAdapter.castToType(var4[67].callConstructor(AppenderDelegate.class, appender, this.appenderList), AppenderDelegate.class);
+         var4[68].callCurrent(this, ad, appender);
+         Object var9 = var4[69].callGroovyObjectGetProperty(this);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(var9, ConfigurationDelegate.class, ad, &quot;context&quot;);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(ad, ConfigurationDelegate.class, closure, &quot;delegate&quot;);
+         Object var11 = var4[70].callGetProperty(Closure.class);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(var11, ConfigurationDelegate.class, closure, &quot;resolveStrategy&quot;);
+         var4[71].call(closure);
+      }
+
+      try {
+         var4[72].call(appender);
+      } catch (RuntimeException var16) {
+         var4[73].callCurrent(this, var4[74].call(var4[75].call(&quot;Failed to start apppender named [&quot;, name), &quot;]&quot;), var16);
+      } finally {
+         ;
+      }
+
+   }
+
+   public void receiver(String name, Class aClass, Closure closure) {
+      CallSite[] var4 = $getCallSiteArray();
+      var4[76].callCurrent(this, var4[77].call(var4[78].call(&quot;About to instantiate receiver of type [&quot;, var4[79].callGetProperty(var4[80].callGroovyObjectGetProperty(this))), &quot;]&quot;));
+      ReceiverBase receiver = (ReceiverBase)ScriptBytecodeAdapter.castToType(var4[81].call(aClass), ReceiverBase.class);
+      Object var6 = var4[82].callGroovyObjectGetProperty(this);
+      ScriptBytecodeAdapter.setProperty(var6, (Class)null, receiver, &quot;context&quot;);
+      if (ScriptBytecodeAdapter.compareNotEqual(closure, (Object)null)) {
+         ComponentDelegate componentDelegate = (ComponentDelegate)ScriptBytecodeAdapter.castToType(var4[83].callConstructor(ComponentDelegate.class, receiver), ComponentDelegate.class);
+         Object var8 = var4[84].callGroovyObjectGetProperty(this);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(var8, ConfigurationDelegate.class, componentDelegate, &quot;context&quot;);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(componentDelegate, ConfigurationDelegate.class, closure, &quot;delegate&quot;);
+         Object var10 = var4[85].callGetProperty(Closure.class);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(var10, ConfigurationDelegate.class, closure, &quot;resolveStrategy&quot;);
+         var4[86].call(closure);
+      }
+
+      try {
+         var4[87].call(receiver);
+      } catch (RuntimeException var15) {
+         var4[88].callCurrent(this, var4[89].call(var4[90].call(&quot;Failed to start receiver of type [&quot;, var4[91].call(aClass)), &quot;]&quot;), var15);
+      } finally {
+         ;
+      }
+
+   }
+
+   private void copyContributions(AppenderDelegate appenderDelegate, Appender appender) {
+      Reference appenderDelegate = new Reference(appenderDelegate);
+      Reference appender = new Reference(appender);
+      CallSite[] var5 = $getCallSiteArray();
+      if ((Appender)appender.get() instanceof ConfigurationContributor) {
+         ConfigurationContributor cc = (ConfigurationContributor)ScriptBytecodeAdapter.castToType((Appender)appender.get(), ConfigurationContributor.class);
+         var5[92].call(var5[93].call(cc), new GeneratedClosure(this, this, appenderDelegate, appender) {
+            // $FF: synthetic field
+            private Reference appenderDelegate;
+            // $FF: synthetic field
+            private Reference appender;
+            // $FF: synthetic field
+            private static ClassInfo $staticClassInfo;
+            // $FF: synthetic field
+            public static transient boolean __$stMC;
+            // $FF: synthetic field
+            private static SoftReference $callSiteArray;
+
+            public {
+               CallSite[] var5 = $getCallSiteArray();
+               this.appenderDelegate = appenderDelegate;
+               this.appender = appender;
+            }
+
+            public Object doCall(Object oldName, Object newName) {
+               CallSite[] var3 = $getCallSiteArray();
+               Closure var4 = ScriptBytecodeAdapter.getMethodPointer(this.appender.get(), (String)ShortTypeHandling.castToString(new GStringImpl(new Object[]{oldName}, new String[]{&quot;&quot;, &quot;&quot;})));
+               ScriptBytecodeAdapter.setProperty(var4, (Class)null, var3[0].callGroovyObjectGetProperty(this.appenderDelegate.get()), (String)ShortTypeHandling.castToString(new GStringImpl(new Object[]{newName}, new String[]{&quot;&quot;, &quot;&quot;})));
+               return var4;
+            }
+
+            public Object call(Object oldName, Object newName) {
+               CallSite[] var3 = $getCallSiteArray();
+               return var3[1].callCurrent(this, oldName, newName);
+            }
+
+            public AppenderDelegate getAppenderDelegate() {
+               CallSite[] var1 = $getCallSiteArray();
+               return (AppenderDelegate)ScriptBytecodeAdapter.castToType(this.appenderDelegate.get(), AppenderDelegate.class);
+            }
+
+            public Appender getAppender() {
+               CallSite[] var1 = $getCallSiteArray();
+               return (Appender)ScriptBytecodeAdapter.castToType(this.appender.get(), Appender.class);
+            }
+
+            // $FF: synthetic method
+            protected MetaClass $getStaticMetaClass() {
+               if (this.getClass() != &lt;undefinedtype&gt;.class) {
+                  return ScriptBytecodeAdapter.initMetaClass(this);
+               } else {
+                  ClassInfo var1 = $staticClassInfo;
+                  if (var1 == null) {
+                     $staticClassInfo = var1 = ClassInfo.getClassInfo(this.getClass());
+                  }
+
+                  return var1.getMetaClass();
+               }
+            }
+
+            // $FF: synthetic method
+            private static void $createCallSiteArray_1(String[] var0) {
+               var0[0] = &quot;metaClass&quot;;
+               var0[1] = &quot;doCall&quot;;
+            }
+
+            // $FF: synthetic method
+            private static CallSiteArray $createCallSiteArray() {
+               String[] var0 = new String[2];
+               $createCallSiteArray_1(var0);
+               return new CallSiteArray(&lt;undefinedtype&gt;.class, var0);
+            }
+
+            // $FF: synthetic method
+            private static CallSite[] $getCallSiteArray() {
+               CallSiteArray var0;
+               if ($callSiteArray == null || (var0 = (CallSiteArray)$callSiteArray.get()) == null) {
+                  var0 = $createCallSiteArray();
+                  $callSiteArray = new SoftReference(var0);
+               }
+
+               return var0.array;
+            }
+         });
+      }
+
+   }
+
+   public void turboFilter(Class clazz, Closure closure) {
+      CallSite[] var3 = $getCallSiteArray();
+      var3[94].callCurrent(this, var3[95].call(var3[96].call(&quot;About to instantiate turboFilter of type [&quot;, var3[97].callGetProperty(clazz)), &quot;]&quot;));
+      TurboFilter turboFilter = (TurboFilter)ScriptBytecodeAdapter.castToType(var3[98].call(clazz), TurboFilter.class);
+      Object var5 = var3[99].callGroovyObjectGetProperty(this);
+      ScriptBytecodeAdapter.setProperty(var5, (Class)null, turboFilter, &quot;context&quot;);
+      if (ScriptBytecodeAdapter.compareNotEqual(closure, (Object)null)) {
+         ComponentDelegate componentDelegate = (ComponentDelegate)ScriptBytecodeAdapter.castToType(var3[100].callConstructor(ComponentDelegate.class, turboFilter), ComponentDelegate.class);
+         Object var7 = var3[101].callGroovyObjectGetProperty(this);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(var7, ConfigurationDelegate.class, componentDelegate, &quot;context&quot;);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(componentDelegate, ConfigurationDelegate.class, closure, &quot;delegate&quot;);
+         Object var9 = var3[102].callGetProperty(Closure.class);
+         ScriptBytecodeAdapter.setGroovyObjectProperty(var9, ConfigurationDelegate.class, closure, &quot;resolveStrategy&quot;);
+         var3[103].call(closure);
+      }
+
+      var3[104].call(turboFilter);
+      var3[105].callCurrent(this, &quot;Adding aforementioned turbo filter to context&quot;);
+      var3[106].call(var3[107].callGroovyObjectGetProperty(this), turboFilter);
+   }
+
+   public String timestamp(String datePattern, long timeReference) {
+      CallSite[] var4 = $getCallSiteArray();
+      long now = DefaultTypeTransformation.longUnbox(Integer.valueOf(-1));
+      if (ScriptBytecodeAdapter.compareEqual(timeReference, Integer.valueOf(-1))) {
+         var4[108].callCurrent(this, &quot;Using current interpretation time, i.e. now, as time reference.&quot;);
+         Object var7 = var4[109].call(System.class);
+         now = DefaultTypeTransformation.longUnbox(var7);
+      } else {
+         now = timeReference;
+         var4[110].callCurrent(this, var4[111].call(var4[112].call(&quot;Using &quot;, timeReference), &quot; as time reference.&quot;));
+      }
+
+      CachingDateFormatter sdf = (CachingDateFormatter)ScriptBytecodeAdapter.castToType(var4[113].callConstructor(CachingDateFormatter.class, datePattern), CachingDateFormatter.class);
+      return (String)ShortTypeHandling.castToString(var4[114].call(sdf, now));
+   }
+
+   public void jmxConfigurator(String name) {
+      CallSite[] var2 = $getCallSiteArray();
+      Object objectName = null;
+      Object contextName = var2[115].callGetProperty(var2[116].callGroovyObjectGetProperty(this));
+      if (ScriptBytecodeAdapter.compareNotEqual(name, (Object)null)) {
+         try {
+            Object var5 = var2[117].callConstructor(ObjectName.class, name);
+            objectName = var5;
+         } catch (MalformedObjectNameException var25) {
+            contextName = name;
+         } finally {
+            ;
+         }
+      }
+
+      if (ScriptBytecodeAdapter.compareEqual(objectName, (Object)null)) {
+         Object objectNameAsStr = var2[118].call(MBeanUtil.class, contextName, JMXConfigurator.class);
+         Object var10 = var2[119].call(MBeanUtil.class, var2[120].callGroovyObjectGetProperty(this), this, objectNameAsStr);
+         objectName = var10;
+         if (ScriptBytecodeAdapter.compareEqual(var10, (Object)null)) {
+            var2[121].callCurrent(this, new GStringImpl(new Object[]{objectNameAsStr}, new String[]{&quot;Failed to construct ObjectName for [&quot;, &quot;]&quot;}));
+            return;
+         }
+      }
+
+      Object platformMBeanServer = var2[122].callGetProperty(ManagementFactory.class);
+      if (!DefaultTypeTransformation.booleanUnbox(var2[123].call(MBeanUtil.class, platformMBeanServer, objectName))) {
+         JMXConfigurator jmxConfigurator = (JMXConfigurator)ScriptBytecodeAdapter.castToType(var2[124].callConstructor(JMXConfigurator.class, ScriptBytecodeAdapter.createPojoWrapper((LoggerContext)ScriptBytecodeAdapter.castToType(var2[125].callGroovyObjectGetProperty(this), LoggerContext.class), LoggerContext.class), platformMBeanServer, objectName), JMXConfigurator.class);
+
+         try {
+            var2[126].call(platformMBeanServer, jmxConfigurator, objectName);
+         } catch (Exception var23) {
+            var2[127].callCurrent(this, &quot;Failed to create mbean&quot;, var23);
+         } finally {
+            ;
+         }
+      }
+
+   }
+
+   public void scan() {
+      CallSite[] var1 = $getCallSiteArray();
+      Object var10000;
+      if (!__$stMC &amp;&amp; !BytecodeInterface8.disabledStandardMetaClass()) {
+         this.scan((String)null);
+         var10000 = null;
+      } else {
+         this.scan((String)null);
+         var10000 = null;
+      }
+
+   }
+
+   public void root(Level level) {
+      CallSite[] var2 = $getCallSiteArray();
+      this.root(level, ScriptBytecodeAdapter.createList(new Object[0]));
+      Object var10000 = null;
+   }
+
+   public void logger(String name, Level level, List&lt;String&gt; appenderNames) {
+      CallSite[] var4 = $getCallSiteArray();
+      this.logger(name, level, appenderNames, (Boolean)null);
+      Object var10000 = null;
+   }
+
+   public void logger(String name, Level level) {
+      CallSite[] var3 = $getCallSiteArray();
+      this.logger(name, level, ScriptBytecodeAdapter.createList(new Object[0]), (Boolean)null);
+      Object var10000 = null;
+   }
+
+   public void appender(String name, Class clazz) {
+      CallSite[] var3 = $getCallSiteArray();
+      this.appender(name, clazz, (Closure)null);
+      Object var10000 = null;
+   }
+
+   public void receiver(String name, Class aClass) {
+      CallSite[] var3 = $getCallSiteArray();
+      this.receiver(name, aClass, (Closure)null);
+      Object var10000 = null;
+   }
+
+   public void turboFilter(Class clazz) {
+      CallSite[] var2 = $getCallSiteArray();
+      this.turboFilter(clazz, (Closure)null);
+      Object var10000 = null;
+   }
+
+   public String timestamp(String datePattern) {
+      CallSite[] var2 = $getCallSiteArray();
+      return !__$stMC &amp;&amp; !BytecodeInterface8.disabledStandardMetaClass() ? this.timestamp(datePattern, DefaultTypeTransformation.longUnbox(Integer.valueOf(-1))) : this.timestamp(datePattern, DefaultTypeTransformation.longUnbox(Integer.valueOf(-1)));
+   }
+
+   public void jmxConfigurator() {
+      CallSite[] var1 = $getCallSiteArray();
+      Object var10000;
+      if (!__$stMC &amp;&amp; !BytecodeInterface8.disabledStandardMetaClass()) {
+         this.jmxConfigurator((String)null);
+         var10000 = null;
+      } else {
+         this.jmxConfigurator((String)null);
+         var10000 = null;
+      }
+
+   }
+
+   // $FF: synthetic method
+   protected MetaClass $getStaticMetaClass() {
+      if (this.getClass() != ConfigurationDelegate.class) {
+         return ScriptBytecodeAdapter.initMetaClass(this);
+      } else {
+         ClassInfo var1 = $staticClassInfo;
+         if (var1 == null) {
+            $staticClassInfo = var1 = ClassInfo.getClassInfo(this.getClass());
+         }
+
+         return var1.getMetaClass();
+      }
+   }
+
+   // $FF: synthetic method
+   public MetaClass getMetaClass() {
+      MetaClass var10000 = this.metaClass;
+      if (this.metaClass != null) {
+         return var10000;
+      } else {
+         this.metaClass = this.$getStaticMetaClass();
+         return this.metaClass;
+      }
+   }
+
+   // $FF: synthetic method
+   public void setMetaClass(MetaClass var1) {
+      this.metaClass = var1;
+   }
+
+   // $FF: synthetic method
+   public Object invokeMethod(String var1, Object var2) {
+      return this.getMetaClass().invokeMethod(this, var1, var2);
+   }
+
+   // $FF: synthetic method
+   public Object getProperty(String var1) {
+      return this.getMetaClass().getProperty(this, var1);
+   }
+
+   // $FF: synthetic method
+   public void setProperty(String var1, Object var2) {
+      this.getMetaClass().setProperty(this, var1, var2);
+   }
+
+   public List&lt;Appender&gt; getAppenderList() {
+      return this.appenderList;
+   }
+
+   public void setAppenderList(List&lt;Appender&gt; var1) {
+      this.appenderList = var1;
+   }
+
+   // $FF: synthetic method
+   public Object super$2$getDeclaredOrigin() {
+      return super.getDeclaredOrigin();
+   }
+
+   // $FF: synthetic method
+   private static void $createCallSiteArray_1(String[] var0) {
+      var0[0] = &quot;&lt;$constructor$&gt;&quot;;
+      var0[1] = &quot;setContext&quot;;
+      var0[2] = &quot;context&quot;;
+      var0[3] = &quot;putObject&quot;;
+      var0[4] = &quot;context&quot;;
+      var0[5] = &quot;RECONFIGURE_ON_CHANGE_TASK&quot;;
+      var0[6] = &quot;valueOf&quot;;
+      var0[7] = &quot;getScheduledExecutorService&quot;;
+      var0[8] = &quot;context&quot;;
+      var0[9] = &quot;scheduleAtFixedRate&quot;;
+      var0[10] = &quot;getMilliseconds&quot;;
+      var0[11] = &quot;getMilliseconds&quot;;
+      var0[12] = &quot;MILLISECONDS&quot;;
+      var0[13] = &quot;addScheduledFuture&quot;;
+      var0[14] = &quot;context&quot;;
+      var0[15] = &quot;addInfo&quot;;
+      var0[16] = &quot;plus&quot;;
+      var0[17] = &quot;addError&quot;;
+      var0[18] = &quot;plus&quot;;
+      var0[19] = &quot;plus&quot;;
+      var0[20] = &quot;newInstance&quot;;
+      var0[21] = &quot;add&quot;;
+      var0[22] = &quot;statusManager&quot;;
+      var0[23] = &quot;context&quot;;
+      var0[24] = &quot;setContext&quot;;
+      var0[25] = &quot;context&quot;;
+      var0[26] = &quot;start&quot;;
+      var0[27] = &quot;addInfo&quot;;
+      var0[28] = &quot;canonicalName&quot;;
+      var0[29] = &quot;getName&quot;;
+      var0[30] = &quot;getObject&quot;;
+      var0[31] = &quot;context&quot;;
+      var0[32] = &quot;PATTERN_RULE_REGISTRY&quot;;
+      var0[33] = &quot;&lt;$constructor$&gt;&quot;;
+      var0[34] = &quot;putObject&quot;;
+      var0[35] = &quot;context&quot;;
+      var0[36] = &quot;PATTERN_RULE_REGISTRY&quot;;
+      var0[37] = &quot;addInfo&quot;;
+      var0[38] = &quot;plus&quot;;
+      var0[39] = &quot;plus&quot;;
+      var0[40] = &quot;plus&quot;;
+      var0[41] = &quot;plus&quot;;
+      var0[42] = &quot;put&quot;;
+      var0[43] = &quot;addError&quot;;
+      var0[44] = &quot;logger&quot;;
+      var0[45] = &quot;ROOT_LOGGER_NAME&quot;;
+      var0[46] = &quot;getLogger&quot;;
+      var0[47] = &quot;context&quot;;
+      var0[48] = &quot;addInfo&quot;;
+      var0[49] = &quot;plus&quot;;
+      var0[50] = &quot;iterator&quot;;
+      var0[51] = &quot;find&quot;;
+      var0[52] = &quot;addInfo&quot;;
+      var0[53] = &quot;plus&quot;;
+      var0[54] = &quot;addAppender&quot;;
+      var0[55] = &quot;addError&quot;;
+      var0[56] = &quot;addInfo&quot;;
+      var0[57] = &quot;addInfo&quot;;
+      var0[58] = &quot;plus&quot;;
+      var0[59] = &quot;plus&quot;;
+      var0[60] = &quot;name&quot;;
+      var0[61] = &quot;newInstance&quot;;
+      var0[62] = &quot;addInfo&quot;;
+      var0[63] = &quot;plus&quot;;
+      var0[64] = &quot;plus&quot;;
+      var0[65] = &quot;context&quot;;
+      var0[66] = &quot;add&quot;;
+      var0[67] = &quot;&lt;$constructor$&gt;&quot;;
+      var0[68] = &quot;copyContributions&quot;;
+      var0[69] = &quot;context&quot;;
+      var0[70] = &quot;DELEGATE_FIRST&quot;;
+      var0[71] = &quot;call&quot;;
+      var0[72] = &quot;start&quot;;
+      var0[73] = &quot;addError&quot;;
+      var0[74] = &quot;plus&quot;;
+      var0[75] = &quot;plus&quot;;
+      var0[76] = &quot;addInfo&quot;;
+      var0[77] = &quot;plus&quot;;
+      var0[78] = &quot;plus&quot;;
+      var0[79] = &quot;name&quot;;
+      var0[80] = &quot;clazz&quot;;
+      var0[81] = &quot;newInstance&quot;;
+      var0[82] = &quot;context&quot;;
+      var0[83] = &quot;&lt;$constructor$&gt;&quot;;
+      var0[84] = &quot;context&quot;;
+      var0[85] = &quot;DELEGATE_FIRST&quot;;
+      var0[86] = &quot;call&quot;;
+      var0[87] = &quot;start&quot;;
+      var0[88] = &quot;addError&quot;;
+      var0[89] = &quot;plus&quot;;
+      var0[90] = &quot;plus&quot;;
+      var0[91] = &quot;getName&quot;;
+      var0[92] = &quot;each&quot;;
+      var0[93] = &quot;getMappings&quot;;
+      var0[94] = &quot;addInfo&quot;;
+      var0[95] = &quot;plus&quot;;
+      var0[96] = &quot;plus&quot;;
+      var0[97] = &quot;name&quot;;
+      var0[98] = &quot;newInstance&quot;;
+      var0[99] = &quot;context&quot;;
+      var0[100] = &quot;&lt;$constructor$&gt;&quot;;
+      var0[101] = &quot;context&quot;;
+      var0[102] = &quot;DELEGATE_FIRST&quot;;
+      var0[103] = &quot;call&quot;;
+      var0[104] = &quot;start&quot;;
+      var0[105] = &quot;addInfo&quot;;
+      var0[106] = &quot;addTurboFilter&quot;;
+      var0[107] = &quot;context&quot;;
+      var0[108] = &quot;addInfo&quot;;
+      var0[109] = &quot;currentTimeMillis&quot;;
+      var0[110] = &quot;addInfo&quot;;
+      var0[111] = &quot;plus&quot;;
+      var0[112] = &quot;plus&quot;;
+      var0[113] = &quot;&lt;$constructor$&gt;&quot;;
+      var0[114] = &quot;format&quot;;
+      var0[115] = &quot;name&quot;;
+      var0[116] = &quot;context&quot;;
+      var0[117] = &quot;&lt;$constructor$&gt;&quot;;
+      var0[118] = &quot;getObjectNameFor&quot;;
+      var0[119] = &quot;string2ObjectName&quot;;
+      var0[120] = &quot;context&quot;;
+      var0[121] = &quot;addError&quot;;
+      var0[122] = &quot;platformMBeanServer&quot;;
+      var0[123] = &quot;isRegistered&quot;;
+      var0[124] = &quot;&lt;$constructor$&gt;&quot;;
+      var0[125] = &quot;context&quot;;
+      var0[126] = &quot;registerMBean&quot;;
+      var0[127] = &quot;addError&quot;;
+   }
+
+   // $FF: synthetic method
+   private static CallSiteArray $createCallSiteArray() {
+      String[] var0 = new String[128];
+      $createCallSiteArray_1(var0);
+      return new CallSiteArray(ConfigurationDelegate.class, var0);
+   }
+
+   // $FF: synthetic method
+   private static CallSite[] $getCallSiteArray() {
+      CallSiteArray var0;
+      if ($callSiteArray == null || (var0 = (CallSiteArray)$callSiteArray.get()) == null) {
+         var0 = $createCallSiteArray();
+         $callSiteArray = new SoftReference(var0);
+      }
+
+      return var0.array;
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:26 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

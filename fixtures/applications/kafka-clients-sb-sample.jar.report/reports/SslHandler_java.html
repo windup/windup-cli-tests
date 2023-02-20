@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for SslHandler.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/netty-handler-4.1.51.Final.jar/io/netty/handler/ssl/SslHandler.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.netty.handler.ssl;
+
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBufAllocator;
+import io.netty.buffer.ByteBufUtil;
+import io.netty.buffer.CompositeByteBuf;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.AbstractCoalescingBufferQueue;
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelException;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelOutboundHandler;
+import io.netty.channel.ChannelPromise;
+import io.netty.channel.ChannelPromiseNotifier;
+import io.netty.handler.codec.ByteToMessageDecoder;
+import io.netty.handler.codec.DecoderException;
+import io.netty.handler.codec.UnsupportedMessageTypeException;
+import io.netty.handler.codec.ByteToMessageDecoder.Cumulator;
+import io.netty.util.ReferenceCountUtil;
+import io.netty.util.ReferenceCounted;
+import io.netty.util.concurrent.DefaultPromise;
+import io.netty.util.concurrent.EventExecutor;
+import io.netty.util.concurrent.Future;
+import io.netty.util.concurrent.FutureListener;
+import io.netty.util.concurrent.ImmediateExecutor;
+import io.netty.util.concurrent.Promise;
+import io.netty.util.concurrent.PromiseNotifier;
+import io.netty.util.internal.ObjectUtil;
+import io.netty.util.internal.PlatformDependent;
+import io.netty.util.internal.logging.InternalLogger;
+import io.netty.util.internal.logging.InternalLoggerFactory;
+import java.io.IOException;
+import java.net.SocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.ClosedChannelException;
+import java.nio.channels.DatagramChannel;
+import java.nio.channels.SocketChannel;
+import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.RejectedExecutionException;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
+import javax.net.ssl.SSLEngine;
+import javax.net.ssl.SSLEngineResult;
+import javax.net.ssl.SSLException;
+import javax.net.ssl.SSLHandshakeException;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.SSLEngineResult.HandshakeStatus;
+import javax.net.ssl.SSLEngineResult.Status;
+
+public class SslHandler extends ByteToMessageDecoder implements ChannelOutboundHandler {
+   private static final InternalLogger logger = InternalLoggerFactory.getInstance(SslHandler.class);
+   private static final Pattern IGNORABLE_CLASS_IN_STACK = Pattern.compile(&quot;^.*(?:Socket|Datagram|Sctp|Udt)Channel.*$&quot;);
+   private static final Pattern IGNORABLE_ERROR_MESSAGE = Pattern.compile(&quot;^.*(?:connection.*(?:reset|closed|abort|broken)|broken.*pipe).*$&quot;, 2);
+   private static final int MAX_PLAINTEXT_LENGTH = 16384;
+   private volatile ChannelHandlerContext ctx;
+   private final SSLEngine engine;
+   private final SslHandler.SslEngineType engineType;
+   private final Executor delegatedTaskExecutor;
+   private final boolean jdkCompatibilityMode;
+   private final ByteBuffer[] singleBuffer;
+   private final boolean startTls;
+   private boolean sentFirstMessage;
+   private boolean flushedBeforeHandshake;
+   private boolean readDuringHandshake;
+   private boolean handshakeStarted;
+   private SslHandler.SslHandlerCoalescingBufferQueue pendingUnencryptedWrites;
+   private Promise&lt;Channel&gt; handshakePromise;
+   private final SslHandler.LazyChannelPromise sslClosePromise;
+   private boolean needsFlush;
+   private boolean outboundClosed;
+   private boolean closeNotify;
+   private boolean processTask;
+   private int packetLength;
+   private boolean firedChannelRead;
+   private volatile long handshakeTimeoutMillis;
+   private volatile long closeNotifyFlushTimeoutMillis;
+   private volatile long closeNotifyReadTimeoutMillis;
+   volatile int wrapDataSize;
+
+   public SslHandler(SSLEngine engine) {
+      this(engine, false);
+   }
+
+   public SslHandler(SSLEngine engine, boolean startTls) {
+      this(engine, startTls, ImmediateExecutor.INSTANCE);
+   }
+
+   public SslHandler(SSLEngine engine, Executor delegatedTaskExecutor) {
+      this(engine, false, delegatedTaskExecutor);
+   }
+
+   public SslHandler(SSLEngine engine, boolean startTls, Executor delegatedTaskExecutor) {
+      this.singleBuffer = new ByteBuffer[1];
+      this.handshakePromise = new SslHandler.LazyChannelPromise(null);
+      this.sslClosePromise = new SslHandler.LazyChannelPromise(null);
+      this.handshakeTimeoutMillis = 10000L;
+      this.closeNotifyFlushTimeoutMillis = 3000L;
+      this.wrapDataSize = 16384;
+      this.engine = (SSLEngine)ObjectUtil.checkNotNull(engine, &quot;engine&quot;);
+      this.delegatedTaskExecutor = (Executor)ObjectUtil.checkNotNull(delegatedTaskExecutor, &quot;delegatedTaskExecutor&quot;);
+      this.engineType = SslHandler.SslEngineType.forEngine(engine);
+      this.startTls = startTls;
+      this.jdkCompatibilityMode = this.engineType.jdkCompatibilityMode(engine);
+      this.setCumulator(this.engineType.cumulator);
+   }
+
+   public long getHandshakeTimeoutMillis() {
+      return this.handshakeTimeoutMillis;
+   }
+
+   public void setHandshakeTimeout(long handshakeTimeout, TimeUnit unit) {
+      ObjectUtil.checkNotNull(unit, &quot;unit&quot;);
+      this.setHandshakeTimeoutMillis(unit.toMillis(handshakeTimeout));
+   }
+
+   public void setHandshakeTimeoutMillis(long handshakeTimeoutMillis) {
+      if (handshakeTimeoutMillis &lt; 0L) {
+         throw new IllegalArgumentException(&quot;handshakeTimeoutMillis: &quot; + handshakeTimeoutMillis + &quot; (expected: &gt;= 0)&quot;);
+      } else {
+         this.handshakeTimeoutMillis = handshakeTimeoutMillis;
+      }
+   }
+
+   public final void setWrapDataSize(int wrapDataSize) {
+      this.wrapDataSize = wrapDataSize;
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public long getCloseNotifyTimeoutMillis() {
+      return this.getCloseNotifyFlushTimeoutMillis();
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public void setCloseNotifyTimeout(long closeNotifyTimeout, TimeUnit unit) {
+      this.setCloseNotifyFlushTimeout(closeNotifyTimeout, unit);
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public void setCloseNotifyTimeoutMillis(long closeNotifyFlushTimeoutMillis) {
+      this.setCloseNotifyFlushTimeoutMillis(closeNotifyFlushTimeoutMillis);
+   }
+
+   public final long getCloseNotifyFlushTimeoutMillis() {
+      return this.closeNotifyFlushTimeoutMillis;
+   }
+
+   public final void setCloseNotifyFlushTimeout(long closeNotifyFlushTimeout, TimeUnit unit) {
+      this.setCloseNotifyFlushTimeoutMillis(unit.toMillis(closeNotifyFlushTimeout));
+   }
+
+   public final void setCloseNotifyFlushTimeoutMillis(long closeNotifyFlushTimeoutMillis) {
+      if (closeNotifyFlushTimeoutMillis &lt; 0L) {
+         throw new IllegalArgumentException(&quot;closeNotifyFlushTimeoutMillis: &quot; + closeNotifyFlushTimeoutMillis + &quot; (expected: &gt;= 0)&quot;);
+      } else {
+         this.closeNotifyFlushTimeoutMillis = closeNotifyFlushTimeoutMillis;
+      }
+   }
+
+   public final long getCloseNotifyReadTimeoutMillis() {
+      return this.closeNotifyReadTimeoutMillis;
+   }
+
+   public final void setCloseNotifyReadTimeout(long closeNotifyReadTimeout, TimeUnit unit) {
+      this.setCloseNotifyReadTimeoutMillis(unit.toMillis(closeNotifyReadTimeout));
+   }
+
+   public final void setCloseNotifyReadTimeoutMillis(long closeNotifyReadTimeoutMillis) {
+      if (closeNotifyReadTimeoutMillis &lt; 0L) {
+         throw new IllegalArgumentException(&quot;closeNotifyReadTimeoutMillis: &quot; + closeNotifyReadTimeoutMillis + &quot; (expected: &gt;= 0)&quot;);
+      } else {
+         this.closeNotifyReadTimeoutMillis = closeNotifyReadTimeoutMillis;
+      }
+   }
+
+   public SSLEngine engine() {
+      return this.engine;
+   }
+
+   public String applicationProtocol() {
+      SSLEngine engine = this.engine();
+      return !(engine instanceof ApplicationProtocolAccessor) ? null : ((ApplicationProtocolAccessor)engine).getNegotiatedApplicationProtocol();
+   }
+
+   public Future&lt;Channel&gt; handshakeFuture() {
+      return this.handshakePromise;
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public ChannelFuture close() {
+      return this.closeOutbound();
+   }
+
+   /** @deprecated */
+   @Deprecated
+   public ChannelFuture close(ChannelPromise promise) {
+      return this.closeOutbound(promise);
+   }
+
+   public ChannelFuture closeOutbound() {
+      return this.closeOutbound(this.ctx.newPromise());
+   }
+
+   public ChannelFuture closeOutbound(final ChannelPromise promise) {
+      ChannelHandlerContext ctx = this.ctx;
+      if (ctx.executor().inEventLoop()) {
+         this.closeOutbound0(promise);
+      } else {
+         ctx.executor().execute(new Runnable() {
+            public void run() {
+               SslHandler.this.closeOutbound0(promise);
+            }
+         });
+      }
+
+      return promise;
+   }
+
+   private void closeOutbound0(ChannelPromise promise) {
+      this.outboundClosed = true;
+      this.engine.closeOutbound();
+
+      try {
+         this.flush(this.ctx, promise);
+      } catch (Exception var3) {
+         if (!promise.tryFailure(var3)) {
+            logger.warn(&quot;{} flush() raised a masked exception.&quot;, this.ctx.channel(), var3);
+         }
+      }
+
+   }
+
+   public Future&lt;Channel&gt; sslCloseFuture() {
+      return this.sslClosePromise;
+   }
+
+   public void handlerRemoved0(ChannelHandlerContext ctx) throws Exception {
+      if (!this.pendingUnencryptedWrites.isEmpty()) {
+         this.pendingUnencryptedWrites.releaseAndFailAll(ctx, new ChannelException(&quot;Pending write on removal of SslHandler&quot;));
+      }
+
+      this.pendingUnencryptedWrites = null;
+      SSLHandshakeException cause = null;
+      if (!this.handshakePromise.isDone()) {
+         cause = new SSLHandshakeException(&quot;SslHandler removed before handshake completed&quot;);
+         if (this.handshakePromise.tryFailure(cause)) {
+            ctx.fireUserEventTriggered(new SslHandshakeCompletionEvent(cause));
+         }
+      }
+
+      if (!this.sslClosePromise.isDone()) {
+         if (cause == null) {
+            cause = new SSLHandshakeException(&quot;SslHandler removed before handshake completed&quot;);
+         }
+
+         this.notifyClosePromise(cause);
+      }
+
+      if (this.engine instanceof ReferenceCounted) {
+         ((ReferenceCounted)this.engine).release();
+      }
+
+   }
+
+   public void bind(ChannelHandlerContext ctx, SocketAddress localAddress, ChannelPromise promise) throws Exception {
+      ctx.bind(localAddress, promise);
+   }
+
+   public void connect(ChannelHandlerContext ctx, SocketAddress remoteAddress, SocketAddress localAddress, ChannelPromise promise) throws Exception {
+      ctx.connect(remoteAddress, localAddress, promise);
+   }
+
+   public void deregister(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
+      ctx.deregister(promise);
+   }
+
+   public void disconnect(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
+      this.closeOutboundAndChannel(ctx, promise, true);
+   }
+
+   public void close(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
+      this.closeOutboundAndChannel(ctx, promise, false);
+   }
+
+   public void read(ChannelHandlerContext ctx) throws Exception {
+      if (!this.handshakePromise.isDone()) {
+         this.readDuringHandshake = true;
+      }
+
+      ctx.read();
+   }
+
+   private static IllegalStateException newPendingWritesNullException() {
+      return new IllegalStateException(&quot;pendingUnencryptedWrites is null, handlerRemoved0 called?&quot;);
+   }
+
+   public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+      if (!(msg instanceof ByteBuf)) {
+         UnsupportedMessageTypeException exception = new UnsupportedMessageTypeException(msg, new Class[]{ByteBuf.class});
+         ReferenceCountUtil.safeRelease(msg);
+         promise.setFailure(exception);
+      } else if (this.pendingUnencryptedWrites == null) {
+         ReferenceCountUtil.safeRelease(msg);
+         promise.setFailure(newPendingWritesNullException());
+      } else {
+         this.pendingUnencryptedWrites.add((ByteBuf)msg, promise);
+      }
+
+   }
+
+   public void flush(ChannelHandlerContext ctx) throws Exception {
+      if (this.startTls &amp;&amp; !this.sentFirstMessage) {
+         this.sentFirstMessage = true;
+         this.pendingUnencryptedWrites.writeAndRemoveAll(ctx);
+         this.forceFlush(ctx);
+         this.startHandshakeProcessing();
+      } else if (!this.processTask) {
+         try {
+            this.wrapAndFlush(ctx);
+         } catch (Throwable var3) {
+            this.setHandshakeFailure(ctx, var3);
+            PlatformDependent.throwException(var3);
+         }
+
+      }
+   }
+
+   private void wrapAndFlush(ChannelHandlerContext ctx) throws SSLException {
+      if (this.pendingUnencryptedWrites.isEmpty()) {
+         this.pendingUnencryptedWrites.add(Unpooled.EMPTY_BUFFER, ctx.newPromise());
+      }
+
+      if (!this.handshakePromise.isDone()) {
+         this.flushedBeforeHandshake = true;
+      }
+
+      try {
+         this.wrap(ctx, false);
+      } finally {
+         this.forceFlush(ctx);
+      }
+
+   }
+
+   private void wrap(ChannelHandlerContext ctx, boolean inUnwrap) throws SSLException {
+      ByteBuf out = null;
+      ChannelPromise promise = null;
+      ByteBufAllocator alloc = ctx.alloc();
+      boolean needUnwrap = false;
+      ByteBuf buf = null;
+
+      try {
+         int wrapDataSize = this.wrapDataSize;
+
+         while(!ctx.isRemoved()) {
+            promise = ctx.newPromise();
+            buf = wrapDataSize &gt; 0 ? this.pendingUnencryptedWrites.remove(alloc, wrapDataSize, promise) : this.pendingUnencryptedWrites.removeFirst(promise);
+            if (buf == null) {
+               return;
+            }
+
+            if (out == null) {
+               out = this.allocateOutNetBuf(ctx, buf.readableBytes(), buf.nioBufferCount());
+            }
+
+            SSLEngineResult result = this.wrap(alloc, this.engine, buf, out);
+            if (result.getStatus() == Status.CLOSED) {
+               buf.release();
+               buf = null;
+               Throwable exception = this.handshakePromise.cause();
+               if (exception == null) {
+                  exception = this.sslClosePromise.cause();
+                  if (exception == null) {
+                     exception = new SSLException(&quot;SSLEngine closed already&quot;);
+                  }
+               }
+
+               promise.tryFailure((Throwable)exception);
+               promise = null;
+               this.pendingUnencryptedWrites.releaseAndFailAll(ctx, (Throwable)exception);
+               return;
+            }
+
+            if (buf.isReadable()) {
+               this.pendingUnencryptedWrites.addFirst(buf, promise);
+               promise = null;
+            } else {
+               buf.release();
+            }
+
+            buf = null;
+            switch(result.getHandshakeStatus()) {
+            case NEED_TASK:
+               if (!this.runDelegatedTasks(inUnwrap)) {
+                  return;
+               }
+               break;
+            case FINISHED:
+               this.setHandshakeSuccess();
+            case NOT_HANDSHAKING:
+               this.setHandshakeSuccessIfStillHandshaking();
+            case NEED_WRAP:
+               ChannelPromise p = promise;
+               promise = null;
+               ByteBuf b;
+               if (out.isReadable()) {
+                  b = out;
+                  out = null;
+               } else {
+                  b = null;
+               }
+
+               this.finishWrap(ctx, b, p, inUnwrap, false);
+               break;
+            case NEED_UNWRAP:
+               needUnwrap = true;
+               return;
+            default:
+               throw new IllegalStateException(&quot;Unknown handshake status: &quot; + result.getHandshakeStatus());
+            }
+         }
+
+      } finally {
+         if (buf != null) {
+            buf.release();
+         }
+
+         this.finishWrap(ctx, out, promise, inUnwrap, needUnwrap);
+      }
+   }
+
+   private void finishWrap(ChannelHandlerContext ctx, ByteBuf out, ChannelPromise promise, boolean inUnwrap, boolean needUnwrap) {
+      if (out == null) {
+         out = Unpooled.EMPTY_BUFFER;
+      } else if (!out.isReadable()) {
+         out.release();
+         out = Unpooled.EMPTY_BUFFER;
+      }
+
+      if (promise != null) {
+         ctx.write(out, promise);
+      } else {
+         ctx.write(out);
+      }
+
+      if (inUnwrap) {
+         this.needsFlush = true;
+      }
+
+      if (needUnwrap) {
+         this.readIfNeeded(ctx);
+      }
+
+   }
+
+   private boolean wrapNonAppData(final ChannelHandlerContext ctx, boolean inUnwrap) throws SSLException {
+      ByteBuf out = null;
+      ByteBufAllocator alloc = ctx.alloc();
+
+      try {
+         SSLEngineResult result;
+         HandshakeStatus status;
+         do {
+            if (ctx.isRemoved()) {
+               return false;
+            }
+
+            if (out == null) {
+               out = this.allocateOutNetBuf(ctx, 2048, 1);
+            }
+
+            result = this.wrap(alloc, this.engine, Unpooled.EMPTY_BUFFER, out);
+            if (result.bytesProduced() &gt; 0) {
+               ctx.write(out).addListener(new ChannelFutureListener() {
+                  public void operationComplete(ChannelFuture future) {
+                     Throwable cause = future.cause();
+                     if (cause != null) {
+                        SslHandler.this.setHandshakeFailureTransportFailure(ctx, cause);
+                     }
+
+                  }
+               });
+               if (inUnwrap) {
+                  this.needsFlush = true;
+               }
+
+               out = null;
+            }
+
+            status = result.getHandshakeStatus();
+            boolean var7;
+            switch(status) {
+            case NEED_TASK:
+               if (!this.runDelegatedTasks(inUnwrap)) {
+                  return false;
+               }
+               break;
+            case FINISHED:
+               this.setHandshakeSuccess();
+               var7 = false;
+               return var7;
+            case NOT_HANDSHAKING:
+               this.setHandshakeSuccessIfStillHandshaking();
+               if (!inUnwrap) {
+                  this.unwrapNonAppData(ctx);
+               }
+
+               var7 = true;
+               return var7;
+            case NEED_WRAP:
+               break;
+            case NEED_UNWRAP:
+               if (inUnwrap) {
+                  var7 = false;
+                  return var7;
+               }
+
+               this.unwrapNonAppData(ctx);
+               break;
+            default:
+               throw new IllegalStateException(&quot;Unknown handshake status: &quot; + result.getHandshakeStatus());
+            }
+         } while((result.bytesProduced() != 0 || status == HandshakeStatus.NEED_TASK) &amp;&amp; (result.bytesConsumed() != 0 || result.getHandshakeStatus() != HandshakeStatus.NOT_HANDSHAKING));
+
+         return false;
+      } finally {
+         if (out != null) {
+            out.release();
+         }
+
+      }
+   }
+
+   private SSLEngineResult wrap(ByteBufAllocator alloc, SSLEngine engine, ByteBuf in, ByteBuf out) throws SSLException {
+      ByteBuf newDirectIn = null;
+
+      try {
+         int readerIndex = in.readerIndex();
+         int readableBytes = in.readableBytes();
+         ByteBuffer[] in0;
+         if (!in.isDirect() &amp;&amp; this.engineType.wantsDirectBuffer) {
+            newDirectIn = alloc.directBuffer(readableBytes);
+            newDirectIn.writeBytes(in, readerIndex, readableBytes);
+            in0 = this.singleBuffer;
+            in0[0] = newDirectIn.internalNioBuffer(newDirectIn.readerIndex(), readableBytes);
+         } else if (!(in instanceof CompositeByteBuf) &amp;&amp; in.nioBufferCount() == 1) {
+            in0 = this.singleBuffer;
+            in0[0] = in.internalNioBuffer(readerIndex, readableBytes);
+         } else {
+            in0 = in.nioBuffers();
+         }
+
+         while(true) {
+            ByteBuffer out0 = out.nioBuffer(out.writerIndex(), out.writableBytes());
+            SSLEngineResult result = engine.wrap(in0, out0);
+            in.skipBytes(result.bytesConsumed());
+            out.writerIndex(out.writerIndex() + result.bytesProduced());
+            switch(result.getStatus()) {
+            case BUFFER_OVERFLOW:
+               out.ensureWritable(engine.getSession().getPacketBufferSize());
+               break;
+            default:
+               SSLEngineResult var11 = result;
+               return var11;
+            }
+         }
+      } finally {
+         this.singleBuffer[0] = null;
+         if (newDirectIn != null) {
+            newDirectIn.release();
+         }
+
+      }
+   }
+
+   public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+      boolean handshakeFailed = this.handshakePromise.cause() != null;
+      ClosedChannelException exception = new ClosedChannelException();
+      this.setHandshakeFailure(ctx, exception, !this.outboundClosed, this.handshakeStarted, false);
+      this.notifyClosePromise(exception);
+
+      try {
+         super.channelInactive(ctx);
+      } catch (DecoderException var5) {
+         if (!handshakeFailed || !(var5.getCause() instanceof SSLException)) {
+            throw var5;
+         }
+      }
+
+   }
+
+   public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+      if (this.ignoreException(cause)) {
+         if (logger.isDebugEnabled()) {
+            logger.debug(&quot;{} Swallowing a harmless &#39;connection reset by peer / broken pipe&#39; error that occurred while writing close_notify in response to the peer&#39;s close_notify&quot;, ctx.channel(), cause);
+         }
+
+         if (ctx.channel().isActive()) {
+            ctx.close();
+         }
+      } else {
+         ctx.fireExceptionCaught(cause);
+      }
+
+   }
+
+   private boolean ignoreException(Throwable t) {
+      if (!(t instanceof SSLException) &amp;&amp; t instanceof IOException &amp;&amp; this.sslClosePromise.isDone()) {
+         String message = t.getMessage();
+         if (message != null &amp;&amp; IGNORABLE_ERROR_MESSAGE.matcher(message).matches()) {
+            return true;
+         }
+
+         StackTraceElement[] elements = t.getStackTrace();
+         StackTraceElement[] var4 = elements;
+         int var5 = elements.length;
+
+         for(int var6 = 0; var6 &lt; var5; ++var6) {
+            StackTraceElement element = var4[var6];
+            String classname = element.getClassName();
+            String methodname = element.getMethodName();
+            if (!classname.startsWith(&quot;io.netty.&quot;) &amp;&amp; &quot;read&quot;.equals(methodname)) {
+               if (IGNORABLE_CLASS_IN_STACK.matcher(classname).matches()) {
+                  return true;
+               }
+
+               try {
+                  Class&lt;?&gt; clazz = PlatformDependent.getClassLoader(this.getClass()).loadClass(classname);
+                  if (SocketChannel.class.isAssignableFrom(clazz) || DatagramChannel.class.isAssignableFrom(clazz)) {
+                     return true;
+                  }
+
+                  if (PlatformDependent.javaVersion() &gt;= 7 &amp;&amp; &quot;com.sun.nio.sctp.SctpChannel&quot;.equals(clazz.getSuperclass().getName())) {
+                     return true;
+                  }
+               } catch (Throwable var11) {
+                  if (logger.isDebugEnabled()) {
+                     logger.debug(&quot;Unexpected exception while loading class {} classname {}&quot;, new Object[]{this.getClass(), classname, var11});
+                  }
+               }
+            }
+         }
+      }
+
+      return false;
+   }
+
+   public static boolean isEncrypted(ByteBuf buffer) {
+      if (buffer.readableBytes() &lt; 5) {
+         throw new IllegalArgumentException(&quot;buffer must have at least 5 readable bytes&quot;);
+      } else {
+         return SslUtils.getEncryptedPacketLength(buffer, buffer.readerIndex()) != -2;
+      }
+   }
+
+   private void decodeJdkCompatible(ChannelHandlerContext ctx, ByteBuf in) throws NotSslRecordException {
+      int packetLength = this.packetLength;
+      int readableBytes;
+      if (packetLength &gt; 0) {
+         if (in.readableBytes() &lt; packetLength) {
+            return;
+         }
+      } else {
+         readableBytes = in.readableBytes();
+         if (readableBytes &lt; 5) {
+            return;
+         }
+
+         packetLength = SslUtils.getEncryptedPacketLength(in, in.readerIndex());
+         if (packetLength == -2) {
+            NotSslRecordException e = new NotSslRecordException(&quot;not an SSL/TLS record: &quot; + ByteBufUtil.hexDump(in));
+            in.skipBytes(in.readableBytes());
+            this.setHandshakeFailure(ctx, e);
+            throw e;
+         }
+
+         assert packetLength &gt; 0;
+
+         if (packetLength &gt; readableBytes) {
+            this.packetLength = packetLength;
+            return;
+         }
+      }
+
+      this.packetLength = 0;
+
+      try {
+         readableBytes = this.unwrap(ctx, in, in.readerIndex(), packetLength);
+
+         assert readableBytes == packetLength || this.engine.isInboundDone() : &quot;we feed the SSLEngine a packets worth of data: &quot; + packetLength + &quot; but it only consumed: &quot; + readableBytes;
+
+         in.skipBytes(readableBytes);
+      } catch (Throwable var6) {
+         this.handleUnwrapThrowable(ctx, var6);
+      }
+
+   }
+
+   private void decodeNonJdkCompatible(ChannelHandlerContext ctx, ByteBuf in) {
+      try {
+         in.skipBytes(this.unwrap(ctx, in, in.readerIndex(), in.readableBytes()));
+      } catch (Throwable var4) {
+         this.handleUnwrapThrowable(ctx, var4);
+      }
+
+   }
+
+   private void handleUnwrapThrowable(ChannelHandlerContext ctx, Throwable cause) {
+      try {
+         if (this.handshakePromise.tryFailure(cause)) {
+            ctx.fireUserEventTriggered(new SslHandshakeCompletionEvent(cause));
+         }
+
+         this.wrapAndFlush(ctx);
+      } catch (SSLException var7) {
+         logger.debug(&quot;SSLException during trying to call SSLEngine.wrap(...) because of an previous SSLException, ignoring...&quot;, var7);
+      } finally {
+         this.setHandshakeFailure(ctx, cause, true, false, true);
+      }
+
+      PlatformDependent.throwException(cause);
+   }
+
+   protected void decode(ChannelHandlerContext ctx, ByteBuf in, List&lt;Object&gt; out) throws SSLException {
+      if (!this.processTask) {
+         if (this.jdkCompatibilityMode) {
+            this.decodeJdkCompatible(ctx, in);
+         } else {
+            this.decodeNonJdkCompatible(ctx, in);
+         }
+
+      }
+   }
+
+   public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+      this.channelReadComplete0(ctx);
+   }
+
+   private void channelReadComplete0(ChannelHandlerContext ctx) {
+      this.discardSomeReadBytes();
+      this.flushIfNeeded(ctx);
+      this.readIfNeeded(ctx);
+      this.firedChannelRead = false;
+      ctx.fireChannelReadComplete();
+   }
+
+   private void readIfNeeded(ChannelHandlerContext ctx) {
+      if (!ctx.channel().config().isAutoRead() &amp;&amp; (!this.firedChannelRead || !this.handshakePromise.isDone())) {
+         ctx.read();
+      }
+
+   }
+
+   private void flushIfNeeded(ChannelHandlerContext ctx) {
+      if (this.needsFlush) {
+         this.forceFlush(ctx);
+      }
+
+   }
+
+   private void unwrapNonAppData(ChannelHandlerContext ctx) throws SSLException {
+      this.unwrap(ctx, Unpooled.EMPTY_BUFFER, 0, 0);
+   }
+
+   private int unwrap(ChannelHandlerContext ctx, ByteBuf packet, int offset, int length) throws SSLException {
+      boolean wrapLater = false;
+      boolean notifyClosure = false;
+      int overflowReadableBytes = -1;
+      ByteBuf decodeOut = this.allocate(ctx, length);
+
+      try {
+         label199:
+         while(!ctx.isRemoved()) {
+            SSLEngineResult result = this.engineType.unwrap(this, packet, offset, length, decodeOut);
+            Status status = result.getStatus();
+            HandshakeStatus handshakeStatus = result.getHandshakeStatus();
+            int produced = result.bytesProduced();
+            int consumed = result.bytesConsumed();
+            offset += consumed;
+            length -= consumed;
+            switch(status) {
+            case BUFFER_OVERFLOW:
+               int readableBytes = decodeOut.readableBytes();
+               int previousOverflowReadableBytes = overflowReadableBytes;
+               overflowReadableBytes = readableBytes;
+               int bufferSize = this.engine.getSession().getApplicationBufferSize() - readableBytes;
+               if (readableBytes &gt; 0) {
+                  this.firedChannelRead = true;
+                  ctx.fireChannelRead(decodeOut);
+                  decodeOut = null;
+                  if (bufferSize &lt;= 0) {
+                     bufferSize = this.engine.getSession().getApplicationBufferSize();
+                  }
+               } else {
+                  decodeOut.release();
+                  decodeOut = null;
+               }
+
+               if (readableBytes == 0 &amp;&amp; previousOverflowReadableBytes == 0) {
+                  throw new IllegalStateException(&quot;Two consecutive overflows but no content was consumed. &quot; + SSLSession.class.getSimpleName() + &quot; getApplicationBufferSize: &quot; + this.engine.getSession().getApplicationBufferSize() + &quot; maybe too small.&quot;);
+               }
+
+               decodeOut = this.allocate(ctx, this.engineType.calculatePendingData(this, bufferSize));
+               continue;
+            case CLOSED:
+               notifyClosure = true;
+               overflowReadableBytes = -1;
+               break;
+            default:
+               overflowReadableBytes = -1;
+            }
+
+            switch(handshakeStatus) {
+            case NEED_TASK:
+               if (!this.runDelegatedTasks(true)) {
+                  wrapLater = false;
+                  break label199;
+               }
+               break;
+            case FINISHED:
+               this.setHandshakeSuccess();
+               wrapLater = true;
+               break;
+            case NOT_HANDSHAKING:
+               if (this.setHandshakeSuccessIfStillHandshaking()) {
+                  wrapLater = true;
+                  continue;
+               }
+
+               if (length == 0) {
+                  break label199;
+               }
+               break;
+            case NEED_WRAP:
+               if (this.wrapNonAppData(ctx, true) &amp;&amp; length == 0) {
+                  break label199;
+               }
+            case NEED_UNWRAP:
+               break;
+            default:
+               throw new IllegalStateException(&quot;unknown handshake status: &quot; + handshakeStatus);
+            }
+
+            if (status == Status.BUFFER_UNDERFLOW || handshakeStatus != HandshakeStatus.NEED_TASK &amp;&amp; consumed == 0 &amp;&amp; produced == 0) {
+               if (handshakeStatus == HandshakeStatus.NEED_UNWRAP) {
+                  this.readIfNeeded(ctx);
+               }
+               break;
+            }
+         }
+
+         if (this.flushedBeforeHandshake &amp;&amp; this.handshakePromise.isDone()) {
+            this.flushedBeforeHandshake = false;
+            wrapLater = true;
+         }
+
+         if (wrapLater) {
+            this.wrap(ctx, true);
+         }
+
+         if (notifyClosure) {
+            this.notifyClosePromise((Throwable)null);
+         }
+      } finally {
+         if (decodeOut != null) {
+            if (decodeOut.isReadable()) {
+               this.firedChannelRead = true;
+               ctx.fireChannelRead(decodeOut);
+            } else {
+               decodeOut.release();
+            }
+         }
+
+      }
+
+      return length - length;
+   }
+
+   private static ByteBuffer toByteBuffer(ByteBuf out, int index, int len) {
+      return out.nioBufferCount() == 1 ? out.internalNioBuffer(index, len) : out.nioBuffer(index, len);
+   }
+
+   private static boolean inEventLoop(Executor executor) {
+      return executor instanceof EventExecutor &amp;&amp; ((EventExecutor)executor).inEventLoop();
+   }
+
+   private static void runAllDelegatedTasks(SSLEngine engine) {
+      while(true) {
+         Runnable task = engine.getDelegatedTask();
+         if (task == null) {
+            return;
+         }
+
+         task.run();
+      }
+   }
+
+   private boolean runDelegatedTasks(boolean inUnwrap) {
+      if (this.delegatedTaskExecutor != ImmediateExecutor.INSTANCE &amp;&amp; !inEventLoop(this.delegatedTaskExecutor)) {
+         this.executeDelegatedTasks(inUnwrap);
+         return false;
+      } else {
+         runAllDelegatedTasks(this.engine);
+         return true;
+      }
+   }
+
+   private void executeDelegatedTasks(boolean inUnwrap) {
+      this.processTask = true;
+
+      try {
+         this.delegatedTaskExecutor.execute(new SslHandler.SslTasksRunner(inUnwrap));
+      } catch (RejectedExecutionException var3) {
+         this.processTask = false;
+         throw var3;
+      }
+   }
+
+   private boolean setHandshakeSuccessIfStillHandshaking() {
+      if (!this.handshakePromise.isDone()) {
+         this.setHandshakeSuccess();
+         return true;
+      } else {
+         return false;
+      }
+   }
+
+   private void setHandshakeSuccess() {
+      this.handshakePromise.trySuccess(this.ctx.channel());
+      if (logger.isDebugEnabled()) {
+         SSLSession session = this.engine.getSession();
+         logger.debug(&quot;{} HANDSHAKEN: protocol:{} cipher suite:{}&quot;, new Object[]{this.ctx.channel(), session.getProtocol(), session.getCipherSuite()});
+      }
+
+      this.ctx.fireUserEventTriggered(SslHandshakeCompletionEvent.SUCCESS);
+      if (this.readDuringHandshake &amp;&amp; !this.ctx.channel().config().isAutoRead()) {
+         this.readDuringHandshake = false;
+         this.ctx.read();
+      }
+
+   }
+
+   private void setHandshakeFailure(ChannelHandlerContext ctx, Throwable cause) {
+      this.setHandshakeFailure(ctx, cause, true, true, false);
+   }
+
+   private void setHandshakeFailure(ChannelHandlerContext ctx, Throwable cause, boolean closeInbound, boolean notify, boolean alwaysFlushAndClose) {
+      try {
+         this.outboundClosed = true;
+         this.engine.closeOutbound();
+         if (closeInbound) {
+            try {
+               this.engine.closeInbound();
+            } catch (SSLException var11) {
+               if (logger.isDebugEnabled()) {
+                  String msg = var11.getMessage();
+                  if (msg == null || !msg.contains(&quot;possible truncation attack&quot;) &amp;&amp; !msg.contains(&quot;closing inbound before receiving peer&#39;s close_notify&quot;)) {
+                     logger.debug(&quot;{} SSLEngine.closeInbound() raised an exception.&quot;, ctx.channel(), var11);
+                  }
+               }
+            }
+         }
+
+         if (this.handshakePromise.tryFailure(cause) || alwaysFlushAndClose) {
+            SslUtils.handleHandshakeFailure(ctx, cause, notify);
+         }
+      } finally {
+         this.releaseAndFailAll(ctx, cause);
+      }
+
+   }
+
+   private void setHandshakeFailureTransportFailure(ChannelHandlerContext ctx, Throwable cause) {
+      try {
+         SSLException transportFailure = new SSLException(&quot;failure when writing TLS control frames&quot;, cause);
+         this.releaseAndFailAll(ctx, transportFailure);
+         if (this.handshakePromise.tryFailure(transportFailure)) {
+            ctx.fireUserEventTriggered(new SslHandshakeCompletionEvent(transportFailure));
+         }
+      } finally {
+         ctx.close();
+      }
+
+   }
+
+   private void releaseAndFailAll(ChannelHandlerContext ctx, Throwable cause) {
+      if (this.pendingUnencryptedWrites != null) {
+         this.pendingUnencryptedWrites.releaseAndFailAll(ctx, cause);
+      }
+
+   }
+
+   private void notifyClosePromise(Throwable cause) {
+      if (cause == null) {
+         if (this.sslClosePromise.trySuccess(this.ctx.channel())) {
+            this.ctx.fireUserEventTriggered(SslCloseCompletionEvent.SUCCESS);
+         }
+      } else if (this.sslClosePromise.tryFailure(cause)) {
+         this.ctx.fireUserEventTriggered(new SslCloseCompletionEvent(cause));
+      }
+
+   }
+
+   private void closeOutboundAndChannel(ChannelHandlerContext ctx, final ChannelPromise promise, boolean disconnect) throws Exception {
+      this.outboundClosed = true;
+      this.engine.closeOutbound();
+      if (!ctx.channel().isActive()) {
+         if (disconnect) {
+            ctx.disconnect(promise);
+         } else {
+            ctx.close(promise);
+         }
+
+      } else {
+         ChannelPromise closeNotifyPromise = ctx.newPromise();
+
+         try {
+            this.flush(ctx, closeNotifyPromise);
+         } finally {
+            if (!this.closeNotify) {
+               this.closeNotify = true;
+               this.safeClose(ctx, closeNotifyPromise, ctx.newPromise().addListener(new ChannelPromiseNotifier(false, new ChannelPromise[]{promise})));
+            } else {
+               this.sslClosePromise.addListener(new FutureListener&lt;Channel&gt;() {
+                  public void operationComplete(Future&lt;Channel&gt; future) {
+                     promise.setSuccess();
+                  }
+               });
+            }
+
+         }
+
+      }
+   }
+
+   private void flush(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
+      if (this.pendingUnencryptedWrites != null) {
+         this.pendingUnencryptedWrites.add(Unpooled.EMPTY_BUFFER, promise);
+      } else {
+         promise.setFailure(newPendingWritesNullException());
+      }
+
+      this.flush(ctx);
+   }
+
+   public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
+      this.ctx = ctx;
+      this.pendingUnencryptedWrites = new SslHandler.SslHandlerCoalescingBufferQueue(ctx.channel(), 16);
+      if (ctx.channel().isActive()) {
+         this.startHandshakeProcessing();
+      }
+
+   }
+
+   private void startHandshakeProcessing() {
+      if (!this.handshakeStarted) {
+         this.handshakeStarted = true;
+         if (this.engine.getUseClientMode()) {
+            this.handshake();
+         }
+
+         this.applyHandshakeTimeout();
+      }
+
+   }
+
+   public Future&lt;Channel&gt; renegotiate() {
+      ChannelHandlerContext ctx = this.ctx;
+      if (ctx == null) {
+         throw new IllegalStateException();
+      } else {
+         return this.renegotiate(ctx.executor().newPromise());
+      }
+   }
+
+   public Future&lt;Channel&gt; renegotiate(final Promise&lt;Channel&gt; promise) {
+      ObjectUtil.checkNotNull(promise, &quot;promise&quot;);
+      ChannelHandlerContext ctx = this.ctx;
+      if (ctx == null) {
+         throw new IllegalStateException();
+      } else {
+         EventExecutor executor = ctx.executor();
+         if (!executor.inEventLoop()) {
+            executor.execute(new Runnable() {
+               public void run() {
+                  SslHandler.this.renegotiateOnEventLoop(promise);
+               }
+            });
+            return promise;
+         } else {
+            this.renegotiateOnEventLoop(promise);
+            return promise;
+         }
+      }
+   }
+
+   private void renegotiateOnEventLoop(Promise&lt;Channel&gt; newHandshakePromise) {
+      Promise&lt;Channel&gt; oldHandshakePromise = this.handshakePromise;
+      if (!oldHandshakePromise.isDone()) {
+         oldHandshakePromise.addListener(new PromiseNotifier(new Promise[]{newHandshakePromise}));
+      } else {
+         this.handshakePromise = newHandshakePromise;
+         this.handshake();
+         this.applyHandshakeTimeout();
+      }
+
+   }
+
+   private void handshake() {
+      if (this.engine.getHandshakeStatus() == HandshakeStatus.NOT_HANDSHAKING) {
+         if (!this.handshakePromise.isDone()) {
+            ChannelHandlerContext ctx = this.ctx;
+
+            try {
+               this.engine.beginHandshake();
+               this.wrapNonAppData(ctx, false);
+            } catch (Throwable var6) {
+               this.setHandshakeFailure(ctx, var6);
+            } finally {
+               this.forceFlush(ctx);
+            }
+
+         }
+      }
+   }
+
+   private void applyHandshakeTimeout() {
+      final Promise&lt;Channel&gt; localHandshakePromise = this.handshakePromise;
+      final long handshakeTimeoutMillis = this.handshakeTimeoutMillis;
+      if (handshakeTimeoutMillis &gt; 0L &amp;&amp; !localHandshakePromise.isDone()) {
+         final ScheduledFuture&lt;?&gt; timeoutFuture = this.ctx.executor().schedule(new Runnable() {
+            public void run() {
+               if (!localHandshakePromise.isDone()) {
+                  SslHandshakeTimeoutException exception = new SslHandshakeTimeoutException(&quot;handshake timed out after &quot; + handshakeTimeoutMillis + &quot;ms&quot;);
+
+                  try {
+                     if (localHandshakePromise.tryFailure(exception)) {
+                        SslUtils.handleHandshakeFailure(SslHandler.this.ctx, exception, true);
+                     }
+                  } finally {
+                     SslHandler.this.releaseAndFailAll(SslHandler.this.ctx, exception);
+                  }
+
+               }
+            }
+         }, handshakeTimeoutMillis, TimeUnit.MILLISECONDS);
+         localHandshakePromise.addListener(new FutureListener&lt;Channel&gt;() {
+            public void operationComplete(Future&lt;Channel&gt; f) throws Exception {
+               timeoutFuture.cancel(false);
+            }
+         });
+      }
+   }
+
+   private void forceFlush(ChannelHandlerContext ctx) {
+      this.needsFlush = false;
+      ctx.flush();
+   }
+
+   public void channelActive(ChannelHandlerContext ctx) throws Exception {
+      if (!this.startTls) {
+         this.startHandshakeProcessing();
+      }
+
+      ctx.fireChannelActive();
+   }
+
+   private void safeClose(final ChannelHandlerContext ctx, final ChannelFuture flushFuture, final ChannelPromise promise) {
+      if (!ctx.channel().isActive()) {
+         ctx.close(promise);
+      } else {
+         final io.netty.util.concurrent.ScheduledFuture timeoutFuture;
+         if (!flushFuture.isDone()) {
+            long closeNotifyTimeout = this.closeNotifyFlushTimeoutMillis;
+            if (closeNotifyTimeout &gt; 0L) {
+               timeoutFuture = ctx.executor().schedule(new Runnable() {
+                  public void run() {
+                     if (!flushFuture.isDone()) {
+                        SslHandler.logger.warn(&quot;{} Last write attempt timed out; force-closing the connection.&quot;, ctx.channel());
+                        SslHandler.addCloseListener(ctx.close(ctx.newPromise()), promise);
+                     }
+
+                  }
+               }, closeNotifyTimeout, TimeUnit.MILLISECONDS);
+            } else {
+               timeoutFuture = null;
+            }
+         } else {
+            timeoutFuture = null;
+         }
+
+         flushFuture.addListener(new ChannelFutureListener() {
+            public void operationComplete(ChannelFuture f) throws Exception {
+               if (timeoutFuture != null) {
+                  timeoutFuture.cancel(false);
+               }
+
+               final long closeNotifyReadTimeout = SslHandler.this.closeNotifyReadTimeoutMillis;
+               if (closeNotifyReadTimeout &lt;= 0L) {
+                  SslHandler.addCloseListener(ctx.close(ctx.newPromise()), promise);
+               } else {
+                  final io.netty.util.concurrent.ScheduledFuture closeNotifyReadTimeoutFuture;
+                  if (!SslHandler.this.sslClosePromise.isDone()) {
+                     closeNotifyReadTimeoutFuture = ctx.executor().schedule(new Runnable() {
+                        public void run() {
+                           if (!SslHandler.this.sslClosePromise.isDone()) {
+                              SslHandler.logger.debug(&quot;{} did not receive close_notify in {}ms; force-closing the connection.&quot;, ctx.channel(), closeNotifyReadTimeout);
+                              SslHandler.addCloseListener(ctx.close(ctx.newPromise()), promise);
+                           }
+
+                        }
+                     }, closeNotifyReadTimeout, TimeUnit.MILLISECONDS);
+                  } else {
+                     closeNotifyReadTimeoutFuture = null;
+                  }
+
+                  SslHandler.this.sslClosePromise.addListener(new FutureListener&lt;Channel&gt;() {
+                     public void operationComplete(Future&lt;Channel&gt; future) throws Exception {
+                        if (closeNotifyReadTimeoutFuture != null) {
+                           closeNotifyReadTimeoutFuture.cancel(false);
+                        }
+
+                        SslHandler.addCloseListener(ctx.close(ctx.newPromise()), promise);
+                     }
+                  });
+               }
+
+            }
+         });
+      }
+   }
+
+   private static void addCloseListener(ChannelFuture future, ChannelPromise promise) {
+      future.addListener(new ChannelPromiseNotifier(false, new ChannelPromise[]{promise}));
+   }
+
+   private ByteBuf allocate(ChannelHandlerContext ctx, int capacity) {
+      ByteBufAllocator alloc = ctx.alloc();
+      return this.engineType.wantsDirectBuffer ? alloc.directBuffer(capacity) : alloc.buffer(capacity);
+   }
+
+   private ByteBuf allocateOutNetBuf(ChannelHandlerContext ctx, int pendingBytes, int numComponents) {
+      return this.engineType.allocateWrapBuffer(this, ctx.alloc(), pendingBytes, numComponents);
+   }
+
+   private static boolean attemptCopyToCumulation(ByteBuf cumulation, ByteBuf next, int wrapDataSize) {
+      int inReadableBytes = next.readableBytes();
+      int cumulationCapacity = cumulation.capacity();
+      if (wrapDataSize - cumulation.readableBytes() &lt; inReadableBytes || (!cumulation.isWritable(inReadableBytes) || cumulationCapacity &lt; wrapDataSize) &amp;&amp; (cumulationCapacity &gt;= wrapDataSize || !ByteBufUtil.ensureWritableSuccess(cumulation.ensureWritable(inReadableBytes, false)))) {
+         return false;
+      } else {
+         cumulation.writeBytes(next);
+         next.release();
+         return true;
+      }
+   }
+
+   private final class LazyChannelPromise extends DefaultPromise&lt;Channel&gt; {
+      private LazyChannelPromise() {
+      }
+
+      protected EventExecutor executor() {
+         if (SslHandler.this.ctx == null) {
+            throw new IllegalStateException();
+         } else {
+            return SslHandler.this.ctx.executor();
+         }
+      }
+
+      protected void checkDeadLock() {
+         if (SslHandler.this.ctx != null) {
+            super.checkDeadLock();
+         }
+      }
+
+      // $FF: synthetic method
+      LazyChannelPromise(Object x1) {
+         this();
+      }
+   }
+
+   private final class SslHandlerCoalescingBufferQueue extends AbstractCoalescingBufferQueue {
+      SslHandlerCoalescingBufferQueue(Channel channel, int initSize) {
+         super(channel, initSize);
+      }
+
+      protected ByteBuf compose(ByteBufAllocator alloc, ByteBuf cumulation, ByteBuf next) {
+         int wrapDataSize = SslHandler.this.wrapDataSize;
+         if (!(cumulation instanceof CompositeByteBuf)) {
+            return SslHandler.attemptCopyToCumulation(cumulation, next, wrapDataSize) ? cumulation : this.copyAndCompose(alloc, cumulation, next);
+         } else {
+            CompositeByteBuf composite = (CompositeByteBuf)cumulation;
+            int numComponents = composite.numComponents();
+            if (numComponents == 0 || !SslHandler.attemptCopyToCumulation(composite.internalComponent(numComponents - 1), next, wrapDataSize)) {
+               composite.addComponent(true, next);
+            }
+
+            return composite;
+         }
+      }
+
+      protected ByteBuf composeFirst(ByteBufAllocator allocator, ByteBuf first) {
+         if (first instanceof CompositeByteBuf) {
+            CompositeByteBuf composite = (CompositeByteBuf)first;
+            if (SslHandler.this.engineType.wantsDirectBuffer) {
+               first = allocator.directBuffer(composite.readableBytes());
+            } else {
+               first = allocator.heapBuffer(composite.readableBytes());
+            }
+
+            try {
+               first.writeBytes(composite);
+            } catch (Throwable var5) {
+               first.release();
+               PlatformDependent.throwException(var5);
+            }
+
+            composite.release();
+         }
+
+         return first;
+      }
+
+      protected ByteBuf removeEmptyValue() {
+         return null;
+      }
+   }
+
+   private final class SslTasksRunner implements Runnable {
+      private final boolean inUnwrap;
+
+      SslTasksRunner(boolean inUnwrap) {
+         this.inUnwrap = inUnwrap;
+      }
+
+      private void taskError(Throwable e) {
+         if (this.inUnwrap) {
+            try {
+               SslHandler.this.handleUnwrapThrowable(SslHandler.this.ctx, e);
+            } catch (Throwable var3) {
+               this.safeExceptionCaught(var3);
+            }
+         } else {
+            SslHandler.this.setHandshakeFailure(SslHandler.this.ctx, e);
+            SslHandler.this.forceFlush(SslHandler.this.ctx);
+         }
+
+      }
+
+      private void safeExceptionCaught(Throwable cause) {
+         try {
+            SslHandler.this.exceptionCaught(SslHandler.this.ctx, this.wrapIfNeeded(cause));
+         } catch (Throwable var3) {
+            SslHandler.this.ctx.fireExceptionCaught(var3);
+         }
+
+      }
+
+      private Throwable wrapIfNeeded(Throwable cause) {
+         if (!this.inUnwrap) {
+            return cause;
+         } else {
+            return (Throwable)(cause instanceof DecoderException ? cause : new DecoderException(cause));
+         }
+      }
+
+      private void tryDecodeAgain() {
+         try {
+            SslHandler.this.channelRead(SslHandler.this.ctx, Unpooled.EMPTY_BUFFER);
+         } catch (Throwable var5) {
+            this.safeExceptionCaught(var5);
+         } finally {
+            SslHandler.this.channelReadComplete0(SslHandler.this.ctx);
+         }
+
+      }
+
+      private void resumeOnEventExecutor() {
+         assert SslHandler.this.ctx.executor().inEventLoop();
+
+         SslHandler.this.processTask = false;
+
+         try {
+            HandshakeStatus status = SslHandler.this.engine.getHandshakeStatus();
+            switch(status) {
+            case NEED_TASK:
+               SslHandler.this.executeDelegatedTasks(this.inUnwrap);
+               break;
+            case FINISHED:
+               SslHandler.this.setHandshakeSuccess();
+            case NOT_HANDSHAKING:
+               SslHandler.this.setHandshakeSuccessIfStillHandshaking();
+
+               try {
+                  SslHandler.this.wrap(SslHandler.this.ctx, this.inUnwrap);
+               } catch (Throwable var4) {
+                  this.taskError(var4);
+                  return;
+               }
+
+               if (this.inUnwrap) {
+                  SslHandler.this.unwrapNonAppData(SslHandler.this.ctx);
+               }
+
+               SslHandler.this.forceFlush(SslHandler.this.ctx);
+               this.tryDecodeAgain();
+               break;
+            case NEED_WRAP:
+               try {
+                  if (!SslHandler.this.wrapNonAppData(SslHandler.this.ctx, false) &amp;&amp; this.inUnwrap) {
+                     SslHandler.this.unwrapNonAppData(SslHandler.this.ctx);
+                  }
+
+                  SslHandler.this.forceFlush(SslHandler.this.ctx);
+               } catch (Throwable var5) {
+                  this.taskError(var5);
+                  return;
+               }
+
+               this.tryDecodeAgain();
+               break;
+            case NEED_UNWRAP:
+               try {
+                  SslHandler.this.unwrapNonAppData(SslHandler.this.ctx);
+               } catch (SSLException var3) {
+                  SslHandler.this.handleUnwrapThrowable(SslHandler.this.ctx, var3);
+                  return;
+               }
+
+               this.tryDecodeAgain();
+               break;
+            default:
+               throw new AssertionError();
+            }
+         } catch (Throwable var6) {
+            this.safeExceptionCaught(var6);
+         }
+
+      }
+
+      public void run() {
+         try {
+            SslHandler.runAllDelegatedTasks(SslHandler.this.engine);
+
+            assert SslHandler.this.engine.getHandshakeStatus() != HandshakeStatus.NEED_TASK;
+
+            SslHandler.this.ctx.executor().execute(new Runnable() {
+               public void run() {
+                  SslTasksRunner.this.resumeOnEventExecutor();
+               }
+            });
+         } catch (Throwable var2) {
+            this.handleException(var2);
+         }
+
+      }
+
+      private void handleException(final Throwable cause) {
+         if (SslHandler.this.ctx.executor().inEventLoop()) {
+            SslHandler.this.processTask = false;
+            this.safeExceptionCaught(cause);
+         } else {
+            try {
+               SslHandler.this.ctx.executor().execute(new Runnable() {
+                  public void run() {
+                     SslHandler.this.processTask = false;
+                     SslTasksRunner.this.safeExceptionCaught(cause);
+                  }
+               });
+            } catch (RejectedExecutionException var3) {
+               SslHandler.this.processTask = false;
+               SslHandler.this.ctx.fireExceptionCaught(cause);
+            }
+         }
+
+      }
+   }
+
+   private static enum SslEngineType {
+      TCNATIVE(true, ByteToMessageDecoder.COMPOSITE_CUMULATOR) {
+         SSLEngineResult unwrap(SslHandler handler, ByteBuf in, int readerIndex, int len, ByteBuf out) throws SSLException {
+            int nioBufferCount = in.nioBufferCount();
+            int writerIndex = out.writerIndex();
+            SSLEngineResult result;
+            if (nioBufferCount &gt; 1) {
+               ReferenceCountedOpenSslEngine opensslEngine = (ReferenceCountedOpenSslEngine)handler.engine;
+
+               try {
+                  handler.singleBuffer[0] = SslHandler.toByteBuffer(out, writerIndex, out.writableBytes());
+                  result = opensslEngine.unwrap(in.nioBuffers(readerIndex, len), handler.singleBuffer);
+               } finally {
+                  handler.singleBuffer[0] = null;
+               }
+            } else {
+               result = handler.engine.unwrap(SslHandler.toByteBuffer(in, readerIndex, len), SslHandler.toByteBuffer(out, writerIndex, out.writableBytes()));
+            }
+
+            out.writerIndex(writerIndex + result.bytesProduced());
+            return result;
+         }
+
+         ByteBuf allocateWrapBuffer(SslHandler handler, ByteBufAllocator allocator, int pendingBytes, int numComponents) {
+            return allocator.directBuffer(((ReferenceCountedOpenSslEngine)handler.engine).calculateMaxLengthForWrap(pendingBytes, numComponents));
+         }
+
+         int calculatePendingData(SslHandler handler, int guess) {
+            int sslPending = ((ReferenceCountedOpenSslEngine)handler.engine).sslPending();
+            return sslPending &gt; 0 ? sslPending : guess;
+         }
+
+         boolean jdkCompatibilityMode(SSLEngine engine) {
+            return ((ReferenceCountedOpenSslEngine)engine).jdkCompatibilityMode;
+         }
+      },
+      CONSCRYPT(true, ByteToMessageDecoder.COMPOSITE_CUMULATOR) {
+         SSLEngineResult unwrap(SslHandler handler, ByteBuf in, int readerIndex, int len, ByteBuf out) throws SSLException {
+            int nioBufferCount = in.nioBufferCount();
+            int writerIndex = out.writerIndex();
+            SSLEngineResult result;
+            if (nioBufferCount &gt; 1) {
+               try {
+                  handler.singleBuffer[0] = SslHandler.toByteBuffer(out, writerIndex, out.writableBytes());
+                  result = ((ConscryptAlpnSslEngine)handler.engine).unwrap(in.nioBuffers(readerIndex, len), handler.singleBuffer);
+               } finally {
+                  handler.singleBuffer[0] = null;
+               }
+            } else {
+               result = handler.engine.unwrap(SslHandler.toByteBuffer(in, readerIndex, len), SslHandler.toByteBuffer(out, writerIndex, out.writableBytes()));
+            }
+
+            out.writerIndex(writerIndex + result.bytesProduced());
+            return result;
+         }
+
+         ByteBuf allocateWrapBuffer(SslHandler handler, ByteBufAllocator allocator, int pendingBytes, int numComponents) {
+            return allocator.directBuffer(((ConscryptAlpnSslEngine)handler.engine).calculateOutNetBufSize(pendingBytes, numComponents));
+         }
+
+         int calculatePendingData(SslHandler handler, int guess) {
+            return guess;
+         }
+
+         boolean jdkCompatibilityMode(SSLEngine engine) {
+            return true;
+         }
+      },
+      JDK(false, ByteToMessageDecoder.MERGE_CUMULATOR) {
+         SSLEngineResult unwrap(SslHandler handler, ByteBuf in, int readerIndex, int len, ByteBuf out) throws SSLException {
+            int writerIndex = out.writerIndex();
+            ByteBuffer inNioBuffer = SslHandler.toByteBuffer(in, readerIndex, len);
+            int position = inNioBuffer.position();
+            SSLEngineResult result = handler.engine.unwrap(inNioBuffer, SslHandler.toByteBuffer(out, writerIndex, out.writableBytes()));
+            out.writerIndex(writerIndex + result.bytesProduced());
+            if (result.bytesConsumed() == 0) {
+               int consumed = inNioBuffer.position() - position;
+               if (consumed != result.bytesConsumed()) {
+                  return new SSLEngineResult(result.getStatus(), result.getHandshakeStatus(), consumed, result.bytesProduced());
+               }
+            }
+
+            return result;
+         }
+
+         ByteBuf allocateWrapBuffer(SslHandler handler, ByteBufAllocator allocator, int pendingBytes, int numComponents) {
+            return allocator.heapBuffer(handler.engine.getSession().getPacketBufferSize());
+         }
+
+         int calculatePendingData(SslHandler handler, int guess) {
+            return guess;
+         }
+
+         boolean jdkCompatibilityMode(SSLEngine engine) {
+            return true;
+         }
+      };
+
+      final boolean wantsDirectBuffer;
+      final Cumulator cumulator;
+
+      static SslHandler.SslEngineType forEngine(SSLEngine engine) {
+         return engine instanceof ReferenceCountedOpenSslEngine ? TCNATIVE : (engine instanceof ConscryptAlpnSslEngine ? CONSCRYPT : JDK);
+      }
+
+      private SslEngineType(boolean wantsDirectBuffer, Cumulator cumulator) {
+         this.wantsDirectBuffer = wantsDirectBuffer;
+         this.cumulator = cumulator;
+      }
+
+      abstract SSLEngineResult unwrap(SslHandler var1, ByteBuf var2, int var3, int var4, ByteBuf var5) throws SSLException;
+
+      abstract int calculatePendingData(SslHandler var1, int var2);
+
+      abstract boolean jdkCompatibilityMode(SSLEngine var1);
+
+      abstract ByteBuf allocateWrapBuffer(SslHandler var1, ByteBufAllocator var2, int var3, int var4);
+
+      // $FF: synthetic method
+      SslEngineType(boolean x2, Cumulator x3, Object x4) {
+         this(x2, x3);
+      }
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:28 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

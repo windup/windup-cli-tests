@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for ClassGraph.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+
+<link href="resources/img/WINDUP/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+<strong class="wu-navbar-header">Windup</strong>
+<img align="right" class="wu-navbar-header" src="resources/img/WINDUP/brand-horizontal.png" />            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="4423800">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_kafka_clients_sb_sample.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_kafka_clients_sb_sample.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_kafka_clients_sb_sample.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_kafka_clients_sb_sample.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Tackle Analysis found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="4423800">
+                            kafka-clients-sb-sample.jar/BOOT-INF/lib/classgraph-4.8.69.jar/io/github/classgraph/ClassGraph.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                        <span class="label label-info" title="INFORMATIONAL">Java Threads</span>
+                                </div>
+
+                                <ul class="classifications">
+                                            <li>
+                                                <div class="title">
+                                                    <em>Threads</em>
+<a title='View Rule: javase-01000' href='windup_ruleproviders.html#javase-01000'><span class='glyphicon glyphicon-link rule-link'></span></a>                                                </div>
+                                                <div class="desc">The application uses Thread APIs.</div>
+                                            </li>
+                                </ul>
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package io.github.classgraph;
+
+import java.io.File;
+import java.net.URI;
+import java.net.URL;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
+import java.util.regex.Pattern;
+import nonapi.io.github.classgraph.classpath.SystemJarFinder;
+import nonapi.io.github.classgraph.concurrency.AutoCloseableExecutorService;
+import nonapi.io.github.classgraph.concurrency.InterruptionChecker;
+import nonapi.io.github.classgraph.scanspec.ScanSpec;
+import nonapi.io.github.classgraph.scanspec.WhiteBlackList;
+import nonapi.io.github.classgraph.utils.JarUtils;
+import nonapi.io.github.classgraph.utils.LogNode;
+import nonapi.io.github.classgraph.utils.VersionFinder;
+
+public class ClassGraph {
+   ScanSpec scanSpec = new ScanSpec();
+   static final int DEFAULT_NUM_WORKER_THREADS = Math.max(2, (int)Math.ceil(Math.min(4.0D, (double)Runtime.getRuntime().availableProcessors() * 0.75D) + (double)Runtime.getRuntime().availableProcessors() * 1.25D));
+   private LogNode topLevelLog;
+
+   public ClassGraph() {
+      ScanResult.init();
+   }
+
+   public static String getVersion() {
+      return VersionFinder.getVersion();
+   }
+
+   public ClassGraph verbose() {
+      if (this.topLevelLog == null) {
+         this.topLevelLog = new LogNode();
+      }
+
+      return this;
+   }
+
+   public ClassGraph verbose(boolean verbose) {
+      if (verbose) {
+         this.verbose();
+      }
+
+      return this;
+   }
+
+   public ClassGraph enableAllInfo() {
+      this.enableClassInfo();
+      this.enableFieldInfo();
+      this.enableMethodInfo();
+      this.enableAnnotationInfo();
+      this.enableStaticFinalFieldConstantInitializerValues();
+      this.ignoreClassVisibility();
+      this.ignoreFieldVisibility();
+      this.ignoreMethodVisibility();
+      return this;
+   }
+
+   public ClassGraph enableClassInfo() {
+      this.scanSpec.enableClassInfo = true;
+      return this;
+   }
+
+   public ClassGraph ignoreClassVisibility() {
+      this.enableClassInfo();
+      this.scanSpec.ignoreClassVisibility = true;
+      return this;
+   }
+
+   public ClassGraph enableMethodInfo() {
+      this.enableClassInfo();
+      this.scanSpec.enableMethodInfo = true;
+      return this;
+   }
+
+   public ClassGraph ignoreMethodVisibility() {
+      this.enableClassInfo();
+      this.enableMethodInfo();
+      this.scanSpec.ignoreMethodVisibility = true;
+      return this;
+   }
+
+   public ClassGraph enableFieldInfo() {
+      this.enableClassInfo();
+      this.scanSpec.enableFieldInfo = true;
+      return this;
+   }
+
+   public ClassGraph ignoreFieldVisibility() {
+      this.enableClassInfo();
+      this.enableFieldInfo();
+      this.scanSpec.ignoreFieldVisibility = true;
+      return this;
+   }
+
+   public ClassGraph enableStaticFinalFieldConstantInitializerValues() {
+      this.enableClassInfo();
+      this.enableFieldInfo();
+      this.scanSpec.enableStaticFinalFieldConstantInitializerValues = true;
+      return this;
+   }
+
+   public ClassGraph enableAnnotationInfo() {
+      this.enableClassInfo();
+      this.scanSpec.enableAnnotationInfo = true;
+      return this;
+   }
+
+   public ClassGraph enableInterClassDependencies() {
+      this.enableClassInfo();
+      this.enableFieldInfo();
+      this.enableMethodInfo();
+      this.enableAnnotationInfo();
+      this.ignoreClassVisibility();
+      this.ignoreFieldVisibility();
+      this.ignoreMethodVisibility();
+      this.scanSpec.enableInterClassDependencies = true;
+      return this;
+   }
+
+   public ClassGraph disableRuntimeInvisibleAnnotations() {
+      this.enableClassInfo();
+      this.scanSpec.disableRuntimeInvisibleAnnotations = true;
+      return this;
+   }
+
+   public ClassGraph disableJarScanning() {
+      this.scanSpec.scanJars = false;
+      return this;
+   }
+
+   public ClassGraph disableNestedJarScanning() {
+      this.scanSpec.scanNestedJars = false;
+      return this;
+   }
+
+   public ClassGraph disableDirScanning() {
+      this.scanSpec.scanDirs = false;
+      return this;
+   }
+
+   public ClassGraph disableModuleScanning() {
+      this.scanSpec.scanModules = false;
+      return this;
+   }
+
+   public ClassGraph enableExternalClasses() {
+      this.enableClassInfo();
+      this.scanSpec.enableExternalClasses = true;
+      return this;
+   }
+
+   public ClassGraph initializeLoadedClasses() {
+      this.scanSpec.initializeLoadedClasses = true;
+      return this;
+   }
+
+   public ClassGraph removeTemporaryFilesAfterScan() {
+      this.scanSpec.removeTemporaryFilesAfterScan = true;
+      return this;
+   }
+
+   public ClassGraph overrideClasspath(String overrideClasspath) {
+      if (overrideClasspath.isEmpty()) {
+         throw new IllegalArgumentException(&quot;Can&#39;t override classpath with an empty path&quot;);
+      } else {
+         String[] var2 = JarUtils.smartPathSplit(overrideClasspath, this.scanSpec);
+         int var3 = var2.length;
+
+         for(int var4 = 0; var4 &lt; var3; ++var4) {
+            String classpathElement = var2[var4];
+            this.scanSpec.addClasspathOverride(classpathElement);
+         }
+
+         return this;
+      }
+   }
+
+   public ClassGraph overrideClasspath(Iterable&lt;?&gt; overrideClasspathElements) {
+      if (!overrideClasspathElements.iterator().hasNext()) {
+         throw new IllegalArgumentException(&quot;Can&#39;t override classpath with an empty path&quot;);
+      } else {
+         Iterator var2 = overrideClasspathElements.iterator();
+
+         while(var2.hasNext()) {
+            Object classpathElement = var2.next();
+            this.scanSpec.addClasspathOverride(classpathElement);
+         }
+
+         return this;
+      }
+   }
+
+   public ClassGraph overrideClasspath(Object... overrideClasspathElements) {
+      if (overrideClasspathElements.length == 0) {
+         throw new IllegalArgumentException(&quot;Can&#39;t override classpath with an empty path&quot;);
+      } else {
+         Object[] var2 = overrideClasspathElements;
+         int var3 = overrideClasspathElements.length;
+
+         for(int var4 = 0; var4 &lt; var3; ++var4) {
+            Object classpathElement = var2[var4];
+            this.scanSpec.addClasspathOverride(classpathElement);
+         }
+
+         return this;
+      }
+   }
+
+   public ClassGraph filterClasspathElements(ClassGraph.ClasspathElementFilter classpathElementFilter) {
+      this.scanSpec.filterClasspathElements(classpathElementFilter);
+      return this;
+   }
+
+   public ClassGraph addClassLoader(ClassLoader classLoader) {
+      this.scanSpec.addClassLoader(classLoader);
+      return this;
+   }
+
+   public ClassGraph overrideClassLoaders(ClassLoader... overrideClassLoaders) {
+      this.scanSpec.overrideClassLoaders(overrideClassLoaders);
+      return this;
+   }
+
+   public ClassGraph ignoreParentClassLoaders() {
+      this.scanSpec.ignoreParentClassLoaders = true;
+      return this;
+   }
+
+   public ClassGraph addModuleLayer(Object moduleLayer) {
+      this.scanSpec.addModuleLayer(moduleLayer);
+      return this;
+   }
+
+   public ClassGraph overrideModuleLayers(Object... overrideModuleLayers) {
+      this.scanSpec.overrideModuleLayers(overrideModuleLayers);
+      return this;
+   }
+
+   public ClassGraph ignoreParentModuleLayers() {
+      this.scanSpec.ignoreParentModuleLayers = true;
+      return this;
+   }
+
+   public ClassGraph whitelistPackages(String... packageNames) {
+      this.enableClassInfo();
+      String[] var2 = packageNames;
+      int var3 = packageNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String packageName = var2[var4];
+         String packageNameNormalized = WhiteBlackList.normalizePackageOrClassName(packageName);
+         if (packageNameNormalized.startsWith(&quot;!&quot;) || packageNameNormalized.startsWith(&quot;-&quot;)) {
+            throw new IllegalArgumentException(&quot;This style of whitelisting/blacklisting is no longer supported: &quot; + packageNameNormalized);
+         }
+
+         this.scanSpec.packageWhiteBlackList.addToWhitelist(packageNameNormalized);
+         String path = WhiteBlackList.packageNameToPath(packageNameNormalized);
+         this.scanSpec.pathWhiteBlackList.addToWhitelist(path + &quot;/&quot;);
+         if (packageNameNormalized.isEmpty()) {
+            this.scanSpec.pathWhiteBlackList.addToWhitelist(&quot;&quot;);
+         }
+
+         if (!packageNameNormalized.contains(&quot;*&quot;)) {
+            if (packageNameNormalized.isEmpty()) {
+               this.scanSpec.packagePrefixWhiteBlackList.addToWhitelist(&quot;&quot;);
+               this.scanSpec.pathPrefixWhiteBlackList.addToWhitelist(&quot;&quot;);
+            } else {
+               this.scanSpec.packagePrefixWhiteBlackList.addToWhitelist(packageNameNormalized + &quot;.&quot;);
+               this.scanSpec.pathPrefixWhiteBlackList.addToWhitelist(path + &quot;/&quot;);
+            }
+         }
+      }
+
+      return this;
+   }
+
+   public ClassGraph whitelistPaths(String... paths) {
+      String[] var2 = paths;
+      int var3 = paths.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String path = var2[var4];
+         String pathNormalized = WhiteBlackList.normalizePath(path);
+         String packageName = WhiteBlackList.pathToPackageName(pathNormalized);
+         this.scanSpec.packageWhiteBlackList.addToWhitelist(packageName);
+         this.scanSpec.pathWhiteBlackList.addToWhitelist(pathNormalized + &quot;/&quot;);
+         if (pathNormalized.isEmpty()) {
+            this.scanSpec.pathWhiteBlackList.addToWhitelist(&quot;&quot;);
+         }
+
+         if (!pathNormalized.contains(&quot;*&quot;)) {
+            if (pathNormalized.isEmpty()) {
+               this.scanSpec.packagePrefixWhiteBlackList.addToWhitelist(&quot;&quot;);
+               this.scanSpec.pathPrefixWhiteBlackList.addToWhitelist(&quot;&quot;);
+            } else {
+               this.scanSpec.packagePrefixWhiteBlackList.addToWhitelist(packageName + &quot;.&quot;);
+               this.scanSpec.pathPrefixWhiteBlackList.addToWhitelist(pathNormalized + &quot;/&quot;);
+            }
+         }
+      }
+
+      return this;
+   }
+
+   public ClassGraph whitelistPackagesNonRecursive(String... packageNames) {
+      this.enableClassInfo();
+      String[] var2 = packageNames;
+      int var3 = packageNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String packageName = var2[var4];
+         String packageNameNormalized = WhiteBlackList.normalizePackageOrClassName(packageName);
+         if (packageNameNormalized.contains(&quot;*&quot;)) {
+            throw new IllegalArgumentException(&quot;Cannot use a glob wildcard here: &quot; + packageNameNormalized);
+         }
+
+         this.scanSpec.packageWhiteBlackList.addToWhitelist(packageNameNormalized);
+         this.scanSpec.pathWhiteBlackList.addToWhitelist(WhiteBlackList.packageNameToPath(packageNameNormalized) + &quot;/&quot;);
+         if (packageNameNormalized.isEmpty()) {
+            this.scanSpec.pathWhiteBlackList.addToWhitelist(&quot;&quot;);
+         }
+      }
+
+      return this;
+   }
+
+   public ClassGraph whitelistPathsNonRecursive(String... paths) {
+      String[] var2 = paths;
+      int var3 = paths.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String path = var2[var4];
+         if (path.contains(&quot;*&quot;)) {
+            throw new IllegalArgumentException(&quot;Cannot use a glob wildcard here: &quot; + path);
+         }
+
+         String pathNormalized = WhiteBlackList.normalizePath(path);
+         this.scanSpec.packageWhiteBlackList.addToWhitelist(WhiteBlackList.pathToPackageName(pathNormalized));
+         this.scanSpec.pathWhiteBlackList.addToWhitelist(pathNormalized + &quot;/&quot;);
+         if (pathNormalized.isEmpty()) {
+            this.scanSpec.pathWhiteBlackList.addToWhitelist(&quot;&quot;);
+         }
+      }
+
+      return this;
+   }
+
+   public ClassGraph blacklistPackages(String... packageNames) {
+      this.enableClassInfo();
+      String[] var2 = packageNames;
+      int var3 = packageNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String packageName = var2[var4];
+         String packageNameNormalized = WhiteBlackList.normalizePackageOrClassName(packageName);
+         if (packageNameNormalized.isEmpty()) {
+            throw new IllegalArgumentException(&quot;Blacklisting the root package (\&quot;\&quot;) will cause nothing to be scanned&quot;);
+         }
+
+         this.scanSpec.packageWhiteBlackList.addToBlacklist(packageNameNormalized);
+         String path = WhiteBlackList.packageNameToPath(packageNameNormalized);
+         this.scanSpec.pathWhiteBlackList.addToBlacklist(path + &quot;/&quot;);
+         if (!packageNameNormalized.contains(&quot;*&quot;)) {
+            this.scanSpec.packagePrefixWhiteBlackList.addToBlacklist(packageNameNormalized + &quot;.&quot;);
+            this.scanSpec.pathPrefixWhiteBlackList.addToBlacklist(path + &quot;/&quot;);
+         }
+      }
+
+      return this;
+   }
+
+   public ClassGraph blacklistPaths(String... paths) {
+      String[] var2 = paths;
+      int var3 = paths.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String path = var2[var4];
+         String pathNormalized = WhiteBlackList.normalizePath(path);
+         if (pathNormalized.isEmpty()) {
+            throw new IllegalArgumentException(&quot;Blacklisting the root package (\&quot;\&quot;) will cause nothing to be scanned&quot;);
+         }
+
+         String packageName = WhiteBlackList.pathToPackageName(pathNormalized);
+         this.scanSpec.packageWhiteBlackList.addToBlacklist(packageName);
+         this.scanSpec.pathWhiteBlackList.addToBlacklist(pathNormalized + &quot;/&quot;);
+         if (!pathNormalized.contains(&quot;*&quot;)) {
+            this.scanSpec.packagePrefixWhiteBlackList.addToBlacklist(packageName + &quot;.&quot;);
+            this.scanSpec.pathPrefixWhiteBlackList.addToBlacklist(pathNormalized + &quot;/&quot;);
+         }
+      }
+
+      return this;
+   }
+
+   public ClassGraph whitelistClasses(String... classNames) {
+      this.enableClassInfo();
+      String[] var2 = classNames;
+      int var3 = classNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String className = var2[var4];
+         if (className.contains(&quot;*&quot;)) {
+            throw new IllegalArgumentException(&quot;Cannot use a glob wildcard here: &quot; + className);
+         }
+
+         String classNameNormalized = WhiteBlackList.normalizePackageOrClassName(className);
+         this.scanSpec.classWhiteBlackList.addToWhitelist(classNameNormalized);
+         this.scanSpec.classfilePathWhiteBlackList.addToWhitelist(WhiteBlackList.classNameToClassfilePath(classNameNormalized));
+         String packageName = PackageInfo.getParentPackageName(classNameNormalized);
+         this.scanSpec.classPackageWhiteBlackList.addToWhitelist(packageName);
+         this.scanSpec.classPackagePathWhiteBlackList.addToWhitelist(WhiteBlackList.packageNameToPath(packageName) + &quot;/&quot;);
+      }
+
+      return this;
+   }
+
+   public ClassGraph blacklistClasses(String... classNames) {
+      this.enableClassInfo();
+      String[] var2 = classNames;
+      int var3 = classNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String className = var2[var4];
+         if (className.contains(&quot;*&quot;)) {
+            throw new IllegalArgumentException(&quot;Cannot use a glob wildcard here: &quot; + className);
+         }
+
+         String classNameNormalized = WhiteBlackList.normalizePackageOrClassName(className);
+         this.scanSpec.classWhiteBlackList.addToBlacklist(classNameNormalized);
+         this.scanSpec.classfilePathWhiteBlackList.addToBlacklist(WhiteBlackList.classNameToClassfilePath(classNameNormalized));
+      }
+
+      return this;
+   }
+
+   public ClassGraph whitelistJars(String... jarLeafNames) {
+      String[] var2 = jarLeafNames;
+      int var3 = jarLeafNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String jarLeafName = var2[var4];
+         String leafName = JarUtils.leafName(jarLeafName);
+         if (!leafName.equals(jarLeafName)) {
+            throw new IllegalArgumentException(&quot;Can only whitelist jars by leafname: &quot; + jarLeafName);
+         }
+
+         this.scanSpec.jarWhiteBlackList.addToWhitelist(leafName);
+      }
+
+      return this;
+   }
+
+   public ClassGraph blacklistJars(String... jarLeafNames) {
+      String[] var2 = jarLeafNames;
+      int var3 = jarLeafNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String jarLeafName = var2[var4];
+         String leafName = JarUtils.leafName(jarLeafName);
+         if (!leafName.equals(jarLeafName)) {
+            throw new IllegalArgumentException(&quot;Can only blacklist jars by leafname: &quot; + jarLeafName);
+         }
+
+         this.scanSpec.jarWhiteBlackList.addToBlacklist(leafName);
+      }
+
+      return this;
+   }
+
+   private void whitelistOrBlacklistLibOrExtJars(boolean whitelist, String... jarLeafNames) {
+      if (jarLeafNames.length == 0) {
+         Iterator var3 = SystemJarFinder.getJreLibOrExtJars().iterator();
+
+         while(var3.hasNext()) {
+            String libOrExtJar = (String)var3.next();
+            this.whitelistOrBlacklistLibOrExtJars(whitelist, JarUtils.leafName(libOrExtJar));
+         }
+      } else {
+         String[] var13 = jarLeafNames;
+         int var14 = jarLeafNames.length;
+
+         for(int var5 = 0; var5 &lt; var14; ++var5) {
+            String jarLeafName = var13[var5];
+            String leafName = JarUtils.leafName(jarLeafName);
+            if (!leafName.equals(jarLeafName)) {
+               throw new IllegalArgumentException(&quot;Can only &quot; + (whitelist ? &quot;whitelist&quot; : &quot;blacklist&quot;) + &quot; jars by leafname: &quot; + jarLeafName);
+            }
+
+            String libOrExtJarLeafName;
+            if (jarLeafName.contains(&quot;*&quot;)) {
+               Pattern pattern = WhiteBlackList.globToPattern(jarLeafName);
+               boolean found = false;
+               Iterator var17 = SystemJarFinder.getJreLibOrExtJars().iterator();
+
+               while(var17.hasNext()) {
+                  libOrExtJarLeafName = (String)var17.next();
+                  String libOrExtJarLeafName = JarUtils.leafName(libOrExtJarLeafName);
+                  if (pattern.matcher(libOrExtJarLeafName).matches()) {
+                     if (!libOrExtJarLeafName.contains(&quot;*&quot;)) {
+                        this.whitelistOrBlacklistLibOrExtJars(whitelist, libOrExtJarLeafName);
+                     }
+
+                     found = true;
+                  }
+               }
+
+               if (!found &amp;&amp; this.topLevelLog != null) {
+                  this.topLevelLog.log(&quot;Could not find lib or ext jar matching wildcard: &quot; + jarLeafName);
+               }
+            } else {
+               boolean found = false;
+               Iterator var9 = SystemJarFinder.getJreLibOrExtJars().iterator();
+
+               while(var9.hasNext()) {
+                  String libOrExtJarPath = (String)var9.next();
+                  libOrExtJarLeafName = JarUtils.leafName(libOrExtJarPath);
+                  if (jarLeafName.equals(libOrExtJarLeafName)) {
+                     if (whitelist) {
+                        this.scanSpec.libOrExtJarWhiteBlackList.addToWhitelist(jarLeafName);
+                     } else {
+                        this.scanSpec.libOrExtJarWhiteBlackList.addToBlacklist(jarLeafName);
+                     }
+
+                     if (this.topLevelLog != null) {
+                        this.topLevelLog.log((whitelist ? &quot;Whitelisting&quot; : &quot;Blacklisting&quot;) + &quot; lib or ext jar: &quot; + libOrExtJarPath);
+                     }
+
+                     found = true;
+                     break;
+                  }
+               }
+
+               if (!found &amp;&amp; this.topLevelLog != null) {
+                  this.topLevelLog.log(&quot;Could not find lib or ext jar: &quot; + jarLeafName);
+               }
+            }
+         }
+      }
+
+   }
+
+   public ClassGraph whitelistLibOrExtJars(String... jarLeafNames) {
+      this.whitelistOrBlacklistLibOrExtJars(true, jarLeafNames);
+      return this;
+   }
+
+   public ClassGraph blacklistLibOrExtJars(String... jarLeafNames) {
+      this.whitelistOrBlacklistLibOrExtJars(false, jarLeafNames);
+      return this;
+   }
+
+   public ClassGraph whitelistModules(String... moduleNames) {
+      String[] var2 = moduleNames;
+      int var3 = moduleNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String moduleName = var2[var4];
+         this.scanSpec.moduleWhiteBlackList.addToWhitelist(WhiteBlackList.normalizePackageOrClassName(moduleName));
+      }
+
+      return this;
+   }
+
+   public ClassGraph blacklistModules(String... moduleNames) {
+      String[] var2 = moduleNames;
+      int var3 = moduleNames.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String moduleName = var2[var4];
+         this.scanSpec.moduleWhiteBlackList.addToBlacklist(WhiteBlackList.normalizePackageOrClassName(moduleName));
+      }
+
+      return this;
+   }
+
+   public ClassGraph whitelistClasspathElementsContainingResourcePath(String... resourcePaths) {
+      String[] var2 = resourcePaths;
+      int var3 = resourcePaths.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String resourcePath = var2[var4];
+         String resourcePathNormalized = WhiteBlackList.normalizePath(resourcePath);
+         this.scanSpec.classpathElementResourcePathWhiteBlackList.addToWhitelist(resourcePathNormalized);
+      }
+
+      return this;
+   }
+
+   public ClassGraph blacklistClasspathElementsContainingResourcePath(String... resourcePaths) {
+      String[] var2 = resourcePaths;
+      int var3 = resourcePaths.length;
+
+      for(int var4 = 0; var4 &lt; var3; ++var4) {
+         String resourcePath = var2[var4];
+         String resourcePathNormalized = WhiteBlackList.normalizePath(resourcePath);
+         this.scanSpec.classpathElementResourcePathWhiteBlackList.addToBlacklist(resourcePathNormalized);
+      }
+
+      return this;
+   }
+
+   public ClassGraph enableRemoteJarScanning() {
+      this.scanSpec.enableURLScheme(&quot;http&quot;);
+      this.scanSpec.enableURLScheme(&quot;https&quot;);
+      return this;
+   }
+
+   public ClassGraph enableURLScheme(String scheme) {
+      this.scanSpec.enableURLScheme(scheme);
+      return this;
+   }
+
+   public ClassGraph enableSystemJarsAndModules() {
+      this.enableClassInfo();
+      this.scanSpec.enableSystemJarsAndModules = true;
+      return this;
+   }
+
+   public ClassGraph setMaxBufferedJarRAMSize(int maxBufferedJarRAMSize) {
+      this.scanSpec.maxBufferedJarRAMSize = maxBufferedJarRAMSize;
+      return this;
+   }
+
+   public ClassGraph enableMemoryMapping() {
+      this.scanSpec.enableMemoryMapping = true;
+      return this;
+   }
+
+   public ClassGraph enableRealtimeLogging() {
+      this.verbose();
+      LogNode.logInRealtime(true);
+      return this;
+   }
+
+   public void scanAsync(final ExecutorService executorService, final int numParallelTasks, final ClassGraph.ScanResultProcessor scanResultProcessor, final ClassGraph.FailureHandler failureHandler) {
+      if (scanResultProcessor == null) {
+         throw new IllegalArgumentException(&quot;scanResultProcessor cannot be null&quot;);
+      } else if (failureHandler == null) {
+         throw new IllegalArgumentException(&quot;failureHandler cannot be null&quot;);
+      } else {
+         executorService.execute(new Runnable() {
+            public void run() {
+               try {
+                  (new Scanner(true, ClassGraph.this.scanSpec, executorService, numParallelTasks, scanResultProcessor, failureHandler, ClassGraph.this.topLevelLog)).call();
+               } catch (CancellationException | ExecutionException | InterruptedException var2) {
+                  failureHandler.onFailure(var2);
+               }
+
+            }
+         });
+      }
+   }
+
+   private Future&lt;ScanResult&gt; scanAsync(boolean performScan, ExecutorService executorService, int numParallelTasks) {
+      try {
+         return executorService.submit(new Scanner(performScan, this.scanSpec, executorService, numParallelTasks, (ClassGraph.ScanResultProcessor)null, (ClassGraph.FailureHandler)null, this.topLevelLog));
+      } catch (final InterruptedException var5) {
+         return executorService.submit(new Callable&lt;ScanResult&gt;() {
+            public ScanResult call() throws Exception {
+               throw var5;
+            }
+         });
+      }
+   }
+
+   public Future&lt;ScanResult&gt; scanAsync(ExecutorService executorService, int numParallelTasks) {
+      return this.scanAsync(true, executorService, numParallelTasks);
+   }
+
+   public ScanResult scan(ExecutorService executorService, int numParallelTasks) {
+      try {
+         ScanResult scanResult = (ScanResult)this.scanAsync(executorService, numParallelTasks).get();
+         if (scanResult == null) {
+            throw new NullPointerException();
+         } else {
+            return scanResult;
+         }
+      } catch (CancellationException | InterruptedException var4) {
+         throw ClassGraphException.newClassGraphException(&quot;Scan interrupted&quot;, var4);
+      } catch (ExecutionException var5) {
+         throw ClassGraphException.newClassGraphException(&quot;Uncaught exception during scan&quot;, InterruptionChecker.getCause(var5));
+      }
+   }
+
+   public ScanResult scan(int numThreads) {
+      AutoCloseableExecutorService executorService = new AutoCloseableExecutorService(numThreads);
+      Throwable var3 = null;
+
+      ScanResult var4;
+      try {
+         var4 = this.scan(executorService, numThreads);
+      } catch (Throwable var13) {
+         var3 = var13;
+         throw var13;
+      } finally {
+         if (executorService != null) {
+            if (var3 != null) {
+               try {
+                  executorService.close();
+               } catch (Throwable var12) {
+                  var3.addSuppressed(var12);
+               }
+            } else {
+               executorService.close();
+            }
+         }
+
+      }
+
+      return var4;
+   }
+
+   public ScanResult scan() {
+      return this.scan(DEFAULT_NUM_WORKER_THREADS);
+   }
+
+   ScanResult getClasspathScanResult(AutoCloseableExecutorService executorService) {
+      try {
+         ScanResult scanResult = (ScanResult)this.scanAsync(false, executorService, DEFAULT_NUM_WORKER_THREADS).get();
+         if (scanResult == null) {
+            throw new NullPointerException();
+         } else {
+            return scanResult;
+         }
+      } catch (CancellationException | InterruptedException var3) {
+         throw ClassGraphException.newClassGraphException(&quot;Scan interrupted&quot;, var3);
+      } catch (ExecutionException var4) {
+         throw ClassGraphException.newClassGraphException(&quot;Uncaught exception during scan&quot;, InterruptionChecker.getCause(var4));
+      }
+   }
+
+   public List&lt;File&gt; getClasspathFiles() {
+      AutoCloseableExecutorService executorService = new AutoCloseableExecutorService(DEFAULT_NUM_WORKER_THREADS);
+      Throwable var2 = null;
+
+      Object var5;
+      try {
+         ScanResult scanResult = this.getClasspathScanResult(executorService);
+         Throwable var4 = null;
+
+         try {
+            var5 = scanResult.getClasspathFiles();
+         } catch (Throwable var28) {
+            var5 = var28;
+            var4 = var28;
+            throw var28;
+         } finally {
+            if (scanResult != null) {
+               if (var4 != null) {
+                  try {
+                     scanResult.close();
+                  } catch (Throwable var27) {
+                     var4.addSuppressed(var27);
+                  }
+               } else {
+                  scanResult.close();
+               }
+            }
+
+         }
+      } catch (Throwable var30) {
+         var2 = var30;
+         throw var30;
+      } finally {
+         if (executorService != null) {
+            if (var2 != null) {
+               try {
+                  executorService.close();
+               } catch (Throwable var26) {
+                  var2.addSuppressed(var26);
+               }
+            } else {
+               executorService.close();
+            }
+         }
+
+      }
+
+      return (List)var5;
+   }
+
+   public String getClasspath() {
+      return JarUtils.pathElementsToPathStr(this.getClasspathFiles());
+   }
+
+   public List&lt;URI&gt; getClasspathURIs() {
+      AutoCloseableExecutorService executorService = new AutoCloseableExecutorService(DEFAULT_NUM_WORKER_THREADS);
+      Throwable var2 = null;
+
+      Object var5;
+      try {
+         ScanResult scanResult = this.getClasspathScanResult(executorService);
+         Throwable var4 = null;
+
+         try {
+            var5 = scanResult.getClasspathURIs();
+         } catch (Throwable var28) {
+            var5 = var28;
+            var4 = var28;
+            throw var28;
+         } finally {
+            if (scanResult != null) {
+               if (var4 != null) {
+                  try {
+                     scanResult.close();
+                  } catch (Throwable var27) {
+                     var4.addSuppressed(var27);
+                  }
+               } else {
+                  scanResult.close();
+               }
+            }
+
+         }
+      } catch (Throwable var30) {
+         var2 = var30;
+         throw var30;
+      } finally {
+         if (executorService != null) {
+            if (var2 != null) {
+               try {
+                  executorService.close();
+               } catch (Throwable var26) {
+                  var2.addSuppressed(var26);
+               }
+            } else {
+               executorService.close();
+            }
+         }
+
+      }
+
+      return (List)var5;
+   }
+
+   public List&lt;URL&gt; getClasspathURLs() {
+      AutoCloseableExecutorService executorService = new AutoCloseableExecutorService(DEFAULT_NUM_WORKER_THREADS);
+      Throwable var2 = null;
+
+      Object var5;
+      try {
+         ScanResult scanResult = this.getClasspathScanResult(executorService);
+         Throwable var4 = null;
+
+         try {
+            var5 = scanResult.getClasspathURLs();
+         } catch (Throwable var28) {
+            var5 = var28;
+            var4 = var28;
+            throw var28;
+         } finally {
+            if (scanResult != null) {
+               if (var4 != null) {
+                  try {
+                     scanResult.close();
+                  } catch (Throwable var27) {
+                     var4.addSuppressed(var27);
+                  }
+               } else {
+                  scanResult.close();
+               }
+            }
+
+         }
+      } catch (Throwable var30) {
+         var2 = var30;
+         throw var30;
+      } finally {
+         if (executorService != null) {
+            if (var2 != null) {
+               try {
+                  executorService.close();
+               } catch (Throwable var26) {
+                  var2.addSuppressed(var26);
+               }
+            } else {
+               executorService.close();
+            }
+         }
+
+      }
+
+      return (List)var5;
+   }
+
+   public List&lt;ModuleRef&gt; getModules() {
+      AutoCloseableExecutorService executorService = new AutoCloseableExecutorService(DEFAULT_NUM_WORKER_THREADS);
+      Throwable var2 = null;
+
+      Object var5;
+      try {
+         ScanResult scanResult = this.getClasspathScanResult(executorService);
+         Throwable var4 = null;
+
+         try {
+            var5 = scanResult.getModules();
+         } catch (Throwable var28) {
+            var5 = var28;
+            var4 = var28;
+            throw var28;
+         } finally {
+            if (scanResult != null) {
+               if (var4 != null) {
+                  try {
+                     scanResult.close();
+                  } catch (Throwable var27) {
+                     var4.addSuppressed(var27);
+                  }
+               } else {
+                  scanResult.close();
+               }
+            }
+
+         }
+      } catch (Throwable var30) {
+         var2 = var30;
+         throw var30;
+      } finally {
+         if (executorService != null) {
+            if (var2 != null) {
+               try {
+                  executorService.close();
+               } catch (Throwable var26) {
+                  var2.addSuppressed(var26);
+               }
+            } else {
+               executorService.close();
+            }
+         }
+
+      }
+
+      return (List)var5;
+   }
+
+   public ModulePathInfo getModulePathInfo() {
+      return this.scanSpec.modulePathInfo;
+   }
+
+   @FunctionalInterface
+   public interface FailureHandler {
+      void onFailure(Throwable var1);
+   }
+
+   @FunctionalInterface
+   public interface ScanResultProcessor {
+      void processScanResult(ScanResult var1);
+   }
+
+   @FunctionalInterface
+   public interface ClasspathElementFilter {
+      boolean includeClasspathElement(String var1);
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Feb 15, 2023, 10:00:29 PM</div>
+
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+            if (location.hash) {
+                var atag = $("a[name='" + location.hash.substr(1)  +  "']");
+                $('html,body').animate({scrollTop: atag.offset().top - 150},'slow');
+            }
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 4423800;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>
