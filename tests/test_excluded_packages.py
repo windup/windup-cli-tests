@@ -11,7 +11,7 @@ def test_excluded_packages(analysis_data):
     report_path = os.getenv('REPORT_OUTPUT_PATH')
     binary_path = os.path.join(
         os.getenv('PROJECT_PATH'),
-        "fixtures/applications",
+        'fixtures/applications',
         application_data['file_name']
     )
 
@@ -25,7 +25,7 @@ def test_excluded_packages(analysis_data):
 
     assert_story_points_from_report_file(76)
 
-    with open(report_path + "/reports/ApplicationDetails_JEE_Example_App.html") as file:
+    with open(report_path + '/reports/ApplicationDetails_JEE_Example_App.html') as file:
         report_detail = file.read()
 
     assert 'com.acme.anvil.service.jms' not in report_detail
