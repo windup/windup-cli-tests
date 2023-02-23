@@ -1,22 +1,17 @@
 import os
 import subprocess
 
-from common.command_common import build_command
-from common.report_common import assert_story_points_from_report_file
+from utils.command import build_command
+from utils.report import assert_story_points_from_report_file
 
 
 def test_excluded_packages(analysis_data):
     application_data = analysis_data['jee_example_app']
 
     report_path = os.getenv('REPORT_OUTPUT_PATH')
-    binary_path = os.path.join(
-        os.getenv('PROJECT_PATH'),
-        'fixtures/applications',
-        application_data['file_name']
-    )
 
     command = build_command(
-        binary_path,
+        application_data['file_name'],
         application_data['source'],
         application_data['target'],
         **{'excludePackages': 'com.acme.anvil.service.jms'}

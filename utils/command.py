@@ -1,12 +1,12 @@
 import os
 
 
-def build_command(binary_path, source, target, **kwargs):
+def build_command(binary_name, source, target, **kwargs):
     """
         Builds a command for executing windup
 
         Args:
-            binary_path (str): Path to the binary file of the application to be analyzed.
+            binary_name (str): binary file of the application to be analyzed.
             source (str): Source of the application.
             target (str): Target for the application to migrate to.
             **kwargs (str): Optional keyword arguments to be passed to Windup as additional options.
@@ -20,8 +20,10 @@ def build_command(binary_path, source, target, **kwargs):
     """
     windup_path = os.getenv('WINDUP_CLI_PATH')
     report_path = os.getenv('REPORT_OUTPUT_PATH')
-    if not binary_path:
+    if not binary_name:
         raise Exception('Binary path is required')
+
+    binary_path = os.path.join(os.getenv('PROJECT_PATH'), 'fixtures/applications', binary_name)
 
     command = windup_path + ' --overwrite -b --input ' + binary_path + ' --output ' + report_path
 
