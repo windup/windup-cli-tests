@@ -36,6 +36,9 @@ def build_command(binary_name, source, target, **kwargs):
     for key, value in kwargs.items():
         if '--' not in key:
             key = '--' + key
-        command += ' ' + key + ' ' + value
+        command += ' ' + key
+
+        if value:
+            command += ' ' + value
 
     return command
