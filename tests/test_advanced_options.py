@@ -46,3 +46,22 @@ def test_analyze_known_libraries(analysis_data):
 
     assert 'org.apache.log4j' in report_detail
 
+
+def test_transaction_analysis(analysis_data):
+    application_data = analysis_data['spring_petclinic']
+    report_path = os.getenv('REPORT_OUTPUT_PATH')
+
+    command = build_command(
+        application_data['file_name'],
+        application_data['source'],
+        application_data['target'],
+        **{'enableTransactionAnalysis': ''}
+    )
+
+    output = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, encoding='utf-8').stdout
+
+    assert 'Report created' in output
+
+    assert_story_points_from_report_file(application_data['story_points'])
+
+    assert os.path.exists(report_path + '/reports/divareport_petclinic.html') is True
