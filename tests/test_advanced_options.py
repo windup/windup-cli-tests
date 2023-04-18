@@ -90,7 +90,7 @@ def test_csv_report(analysis_data):
 def test_custom_rules_analysis(analysis_data):
     application_data = analysis_data['complete_duke']
     report_path = os.getenv('REPORT_OUTPUT_PATH')
-    custom_rule_path = os.path.join(os.getenv('PROJECT_PATH'), 'fixtures/xml', 'javax-package-custom.windup.xml')
+    custom_rule_path = os.path.join(os.getenv('PROJECT_PATH'), 'data/xml', 'javax-package-custom.windup.xml')
 
     command = build_command(
         application_data['file_name'],
