@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 
@@ -42,7 +43,7 @@ def test_analyze_known_libraries(analysis_data):
 
     assert_story_points_from_report_file(104)
 
-    with open(report_path + '/reports/ApplicationDetails_JEE_Example_App.html') as file:
+    with open(report_path + '/api/files.json') as file:
         report_detail = file.read()
 
     assert 'org.apache.log4j' in report_detail
@@ -65,7 +66,10 @@ def test_transaction_analysis(analysis_data):
 
     assert_story_points_from_report_file(application_data['story_points'])
 
-    assert os.path.exists(report_path + '/reports/divareport_petclinic.html') is True
+    with open(report_path + '/api/transactions.json', 'r') as file:
+        json_data = json.load(file)
+
+    assert len(json_data[0]["transactions"]) > 0
 
 
 def test_csv_report(analysis_data):
@@ -102,9 +106,7 @@ def test_custom_rules_analysis(analysis_data):
     output = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, encoding='utf-8').stdout
     assert 'Report created' in output
 
-    migration_issues_path = os.path.join(report_path, 'reports/migration_issues.html')
-    assert os.path.exists(migration_issues_path) is True
-
-    with open(migration_issues_path) as file:
+    with open(report_path + '/api/issues.json') as file:
         file_content = file.read()
+
     assert 'CUSTOM RULE for javax.* package import' in file_content
