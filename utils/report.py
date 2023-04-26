@@ -1,4 +1,5 @@
 import csv
+import json
 import os
 
 from bs4 import BeautifulSoup
@@ -7,13 +8,10 @@ from bs4 import BeautifulSoup
 def assert_story_points_from_report_file(story_points):
     report_path = os.getenv('REPORT_OUTPUT_PATH')
 
-    with open(report_path + "/index.html") as file:
-        html_report = file.read()
-    parsed_report = BeautifulSoup(html_report, 'html.parser')
+    with open(report_path + "/api/applications.json") as file:
+        json_data = json.load(file)
 
-    report_story_points = int(parsed_report.find('span', class_='points').text)
-
-    assert report_story_points == story_points
+    assert json_data[0]['storyPoints'] == story_points
 
 
 def assert_valid_csv(csv_file_path, **kwargs):
