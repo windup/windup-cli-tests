@@ -110,3 +110,23 @@ def test_custom_rules_analysis(analysis_data):
         file_content = file.read()
 
     assert 'CUSTOM RULE for javax.* package import' in file_content
+
+
+def test_skip_source_code_reports(analysis_data):
+    application_data = analysis_data['administracion_efectivo']
+    report_path = os.getenv('REPORT_OUTPUT_PATH')
+
+    command = build_command(
+        application_data['file_name'],
+        application_data['source'],
+        application_data['target'],
+        **{'skipSourceCodeReports': ''}
+    )
+
+    output = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, encoding='utf-8').stdout
+
+    assert 'Report created' in output
+
+    assert os.path.exists(report_path + '/api') is True
+    assert os.path.exists(report_path + '/api/files') is False
+
