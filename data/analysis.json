@@ -20,11 +20,11 @@
     "source": "weblogic",
     "story_points": 29,
     "incidents": {
-        "mandatory": 29,
-        "optional": 0,
-        "potential": 0,
-        "informational": 1,
-        "total": 30
+      "mandatory": 29,
+      "optional": 0,
+      "potential": 0,
+      "informational": 1,
+      "total": 30
     }
   },
   "kafka_clients_sb_sample": {
@@ -34,11 +34,11 @@
     "source": "",
     "story_points": 178,
     "incidents": {
-        "mandatory": 14,
-        "optional": 0,
-        "potential": 31,
-        "informational": 58,
-        "total": 103
+      "mandatory": 14,
+      "optional": 0,
+      "potential": 31,
+      "informational": 58,
+      "total": 103
     }
   },
   "spring_petclinic": {
@@ -48,11 +48,11 @@
     "source": "",
     "story_points": 140,
     "incidents": {
-        "mandatory": 26,
-        "optional": 0,
-        "potential": 147,
-        "informational": 59,
-        "total": 232
+      "mandatory": 26,
+      "optional": 0,
+      "potential": 147,
+      "informational": 59,
+      "total": 232
     }
   },
   "camunda_bpm_spring_boot_starter_example": {
@@ -62,11 +62,25 @@
     "source": "",
     "story_points": 132,
     "incidents": {
-        "mandatory": 5,
-        "optional": 9,
-        "potential": 26,
-        "informational": 105,
-        "total": 145
+      "mandatory": 5,
+      "optional": 9,
+      "potential": 26,
+      "informational": 105,
+      "total": 145
+    }
+  },
+  "administracion_efectivo": {
+    "app_name": "administracion_efectivo",
+    "file_name": "AdministracionEfectivo.ear",
+    "target": "eap8",
+    "source": "",
+    "story_points": 1409,
+    "incidents": {
+      "mandatory": 1297,
+      "optional": 2,
+      "potential": 4,
+      "informational": 70,
+      "total": 1473
     }
   }
 }
