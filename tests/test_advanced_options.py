@@ -2,6 +2,8 @@ import json
 import os
 import subprocess
 
+from bs4 import BeautifulSoup
+
 from utils.command import build_command
 from utils.report import assert_story_points_from_report_file
 from utils.report import assert_valid_csv
@@ -111,6 +113,30 @@ def test_custom_rules_analysis(analysis_data):
 
     assert 'CUSTOM RULE for javax.* package import' in file_content
 
+def test_legacy_report(analysis_data):
+    application_data = analysis_data['jee_example_app']
+    report_path = os.getenv('REPORT_OUTPUT_PATH')
+
+    command = build_command(
+        application_data['file_name'],
+        application_data['source'],
+        application_data['target'],
+        **{'legacyReports': ''}
+    )
+    output = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, encoding='utf-8').stdout
+
+    assert 'Report created' in output
+
+    assert os.path.exists(report_path + '/reports') is True
+    assert os.path.exists(report_path + '/stats') is True
+
+    with open(report_path + "/index.html") as file:
+        html_report = file.read()
+    parsed_report = BeautifulSoup(html_report, 'html.parser')
+
+    report_story_points = int(parsed_report.find('span', class_='points').text)
+
+    assert report_story_points == application_data['story_points']
 
 def test_skip_source_code_reports(analysis_data):
     application_data = analysis_data['administracion_efectivo']
@@ -129,4 +155,3 @@ def test_skip_source_code_reports(analysis_data):
 
     assert os.path.exists(report_path + '/api') is True
     assert os.path.exists(report_path + '/api/files') is False
-
