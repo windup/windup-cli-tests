@@ -5,8 +5,25 @@ import os
 from bs4 import BeautifulSoup
 
 
-def assert_story_points_from_report_file(story_points):
+def assert_story_points_from_report_file(story_points, **kwargs):
+    """
+    Asserts that the story points in the report file match the provided value.
+
+    Args:
+        story_points (int): The expected story points value to match.
+        **kwargs: Optional keyword arguments.
+            report_path (str): The path to the report file. If not provided,
+                the function will use the value of the 'REPORT_OUTPUT_PATH' environment variable.
+
+    Raises:
+        AssertionError: If the story points in the report file do not match the provided value.
+
+    Returns:
+        None.
+
+    """
     report_path = os.getenv('REPORT_OUTPUT_PATH')
+    report_path = kwargs.get('report_path', report_path)
 
     with open(report_path + "/api/applications.json") as file:
         json_data = json.load(file)
@@ -21,7 +38,7 @@ def assert_valid_csv(csv_file_path, **kwargs):
 
         Args:
             csv_file_path (str): The file path of the CSV file to validate.
-            **kwargs (str): Optional keyword arguments.
+            **kwargs: Optional keyword arguments.
                 delimiter (str): The delimiter used in the CSV file. Defaults to ','.
 
         Raises:

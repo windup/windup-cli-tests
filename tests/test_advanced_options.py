@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 from utils.command import build_command
 from utils.report import assert_story_points_from_report_file
 from utils.report import assert_valid_csv
+from zipfile import ZipFile
 
 
 def test_skip_report(analysis_data):
@@ -155,3 +156,30 @@ def test_skip_source_code_reports(analysis_data):
 
     assert os.path.exists(report_path + '/api') is True
     assert os.path.exists(report_path + '/api/files') is False
+
+
+def test_export_zip_report(analysis_data):
+    application_data = analysis_data['jee_example_app']
+    report_path = os.getenv('REPORT_OUTPUT_PATH')
+    zip_report_path = os.path.join(report_path, 'reports.zip')
+    unzipped_report_path = os.path.join(report_path, 'unzippedReport')
+
+    command = build_command(
+        application_data['file_name'],
+        application_data['source'],
+        application_data['target'],
+        **{'exportZipReport': ''}
+    )
+    output = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, encoding='utf-8').stdout
+
+    assert 'Report created' in output
+
+    assert os.path.exists(zip_report_path) is True
+
+    with ZipFile(zip_report_path, 'r') as zip_file:
+        zip_file.extractall(unzipped_report_path)
+
+    assert_story_points_from_report_file(
+        application_data['story_points'],
+        **{'report_path': unzipped_report_path}
+    )
