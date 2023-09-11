@@ -21,7 +21,7 @@ def test_excluded_packages(analysis_data):
 
     assert 'Report created' in output
 
-    assert_story_points_from_report_file(76)
+    assert_story_points_from_report_file()
 
     with open(report_path + '/api/files.json') as file:
         report_detail = file.read()

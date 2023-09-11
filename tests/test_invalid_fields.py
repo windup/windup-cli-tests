@@ -1,9 +1,6 @@
-import os
 import subprocess
 
 from utils.command import build_command
-from utils.report import assert_story_points_from_report_file
-
 
 def test_invalid_target(analysis_data):
     application_data = analysis_data['jee_example_app']
