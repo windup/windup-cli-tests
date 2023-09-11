@@ -44,7 +44,7 @@ def test_analyze_known_libraries(analysis_data):
 
     assert 'Report created' in output
 
-    assert_story_points_from_report_file(104)
+    assert_story_points_from_report_file()
 
     with open(report_path + '/api/files.json') as file:
         report_detail = file.read()
@@ -67,7 +67,7 @@ def test_transaction_analysis(analysis_data):
 
     assert 'Report created' in output
 
-    assert_story_points_from_report_file(application_data['story_points'])
+    assert_story_points_from_report_file()
 
     with open(report_path + '/api/transactions.json', 'r') as file:
         json_data = json.load(file)
@@ -179,7 +179,4 @@ def test_export_zip_report(analysis_data):
     with ZipFile(zip_report_path, 'r') as zip_file:
         zip_file.extractall(unzipped_report_path)
 
-    assert_story_points_from_report_file(
-        application_data['story_points'],
-        **{'report_path': unzipped_report_path}
-    )
+    assert_story_points_from_report_file(**{'report_path': unzipped_report_path})

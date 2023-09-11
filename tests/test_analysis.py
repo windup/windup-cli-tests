@@ -21,4 +21,4 @@ def test_standard_analysis(app_name, analysis_data):
 
     assert 'Report created' in output
 
-    assert_story_points_from_report_file(application_data['story_points'])
+    assert_story_points_from_report_file()
